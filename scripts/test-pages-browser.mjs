@@ -98,9 +98,12 @@ async function activateGlassFolder() {
   await hit.waitFor({ state: 'visible' });
   await frame.evaluate(() => document.fonts.ready);
   const before = await hit.getAttribute('aria-expanded');
-  await hit.click();
+  // Keyboard activation avoids browser-driver coordinate scaling inside the
+  // responsive iframe while exercising the component's real button behavior.
+  await hit.focus();
+  await hit.press('Enter');
   await page.waitForTimeout(700);
-  check('Glass folder dynamic engine responds to a real click', await hit.getAttribute('aria-expanded'), before === 'true' ? 'false' : 'true');
+  check('Glass folder dynamic engine responds to keyboard activation', await hit.getAttribute('aria-expanded'), before === 'true' ? 'false' : 'true');
   report.observations.glassFolderFrame = { url: frame.url(), loadedScripts: await frame.locator('script[src]').evaluateAll(items => items.map(item => item.src)) };
 }
 
@@ -111,7 +114,13 @@ const browser = await chromium.launch({
 });
 try {
   const context = await browser.newContext({ viewport: { width: 1440, height: 1000 }, locale: 'zh-CN' });
-  await context.addInitScript(() => { localStorage.setItem('animuse:locale', 'zh'); });
+  await context.addInitScript(() => {
+    // Init scripts also execute in opaque sandboxed demos. Preferences belong
+    // to the top-level site; those frames intentionally have no localStorage.
+    if (window.top === window) {
+      try { localStorage.setItem('animuse:locale', 'zh'); } catch { /* Browser may disable storage. */ }
+    }
+  });
   page = await context.newPage();
   page.setDefaultTimeout(TIMEOUT);
   page.setDefaultNavigationTimeout(TIMEOUT);
@@ -155,6 +164,9 @@ try {
     const card = page.locator('[data-component-home-card]').nth(visibleIndex);
     const destination = new URL(await card.getAttribute('href'), page.url());
     await page.evaluate(() => { window.__pagesSmokeNavigation = 'home-card'; });
+    // The product pauses the moving marquee on focus; ordinary hover's
+    // stability wait cannot reach a card while its track is still moving.
+    await card.focus();
     await card.hover();
     await page.waitForTimeout(700);
     await card.click();
