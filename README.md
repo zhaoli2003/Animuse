@@ -54,7 +54,11 @@ npm run typecheck
 npm run test:ai
 npm run test:delivery
 npm run test:performance
+npm run test:actions
+npm run test:locale
 ```
+
+后两项浏览器检查需要先启动本地网站。当前交付的检查范围与结果见 [验证记录](docs/verification-review.md)。
 
 全量目录审计见 [组件分类提案](docs/component-taxonomy-proposal.md)，其统计指参考站调研时的状态，不等同于本项目的运行验证结果。
 

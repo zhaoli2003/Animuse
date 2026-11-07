@@ -44,7 +44,7 @@ interface SearchEntry {
   suggested?: boolean;
 }
 
-const ENTRIES: SearchEntry[] = [
+const RAW_ENTRIES: SearchEntry[] = [
   ...COMPONENT_CATALOG.map((component) => ({
     href: component.href,
     label: component.name,
@@ -132,6 +132,19 @@ const ENTRIES: SearchEntry[] = [
     hint: "liquid fluid water ripple warp distort chromatic aberration rainbow fringe swirl eddy melt 3d model glb svg png image logo cursor three.js",
   },
 ];
+
+// Catalog entries and extra search vocabulary can describe the same route.
+// Merge their keywords while presenting one result per component.
+const entriesByHref = new Map<string, SearchEntry>();
+for (const entry of RAW_ENTRIES) {
+  const previous = entriesByHref.get(entry.href);
+  entriesByHref.set(entry.href, previous ? {
+    ...previous,
+    hint: [previous.hint, entry.label, entry.hint].filter(Boolean).join(" "),
+    suggested: previous.suggested || entry.suggested,
+  } : entry);
+}
+const ENTRIES = [...entriesByHref.values()];
 
 function matches(entry: SearchEntry, query: string) {
   const haystack =
