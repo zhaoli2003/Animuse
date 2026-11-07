@@ -9,10 +9,10 @@
     "zh": "优先级、日期和负责人标签相互叠放，为任务标题留出空间；悬停或聚焦时向左展开。"
   },
   "keywords": "标签 叠放 展开 任务 列表 元数据 优先级 日期 负责人 hover stacked metadata tags task Gabriel",
-  "docsPath": "/docs/animations/stacked-metadata",
-  "detailPath": "/ai/components/stacked-metadata.json",
-  "markdownPath": "/ai/components/stacked-metadata.md",
-  "previewPath": "/assets/components/stacked-metadata.png",
+  "docsPath": "/Animuse/docs/animations/stacked-metadata",
+  "detailPath": "/Animuse/ai/components/stacked-metadata.json",
+  "markdownPath": "/Animuse/ai/components/stacked-metadata.md",
+  "previewPath": "/Animuse/assets/motion/stacked-metadata-48ab01174517682383c9aa05.html",
   "discovery": {
     "category": "navigation",
     "useCases": [
@@ -74,7 +74,7 @@
   },
   "packages": {
     "react": {
-      "url": "/ai/packages/stacked-metadata/react.json",
+      "url": "/Animuse/ai/packages/stacked-metadata/react.json",
       "component": "StackedMetadata",
       "dependencies": [
         "react",
@@ -89,7 +89,7 @@
       ]
     },
     "vue": {
-      "url": "/ai/packages/stacked-metadata/vue.json",
+      "url": "/Animuse/ai/packages/stacked-metadata/vue.json",
       "component": "StackedMetadata",
       "dependencies": [
         "vue"
@@ -103,7 +103,7 @@
       ]
     },
     "svelte": {
-      "url": "/ai/packages/stacked-metadata/svelte.json",
+      "url": "/Animuse/ai/packages/stacked-metadata/svelte.json",
       "component": "StackedMetadata",
       "dependencies": [
         "svelte"
@@ -117,7 +117,7 @@
       ]
     },
     "solid": {
-      "url": "/ai/packages/stacked-metadata/solid.json",
+      "url": "/Animuse/ai/packages/stacked-metadata/solid.json",
       "component": "StackedMetadata",
       "dependencies": [
         "solid-js"
@@ -131,7 +131,7 @@
       ]
     },
     "preact": {
-      "url": "/ai/packages/stacked-metadata/preact.json",
+      "url": "/Animuse/ai/packages/stacked-metadata/preact.json",
       "component": "StackedMetadata",
       "dependencies": [
         "preact"
@@ -145,7 +145,7 @@
       ]
     },
     "vanilla": {
-      "url": "/ai/packages/stacked-metadata/vanilla.json",
+      "url": "/Animuse/ai/packages/stacked-metadata/vanilla.json",
       "component": "StackedMetadata",
       "dependencies": [],
       "usage": "import { mount } from \"./StackedMetadata\";\nconst target = document.querySelector<HTMLElement>(\"#demo\")!;\nconst component = mount(target);\n// When your page or route unmounts:\n// component.destroy();",

@@ -9,10 +9,14 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const origin = process.env.ANIMUSE_ORIGIN || "http://127.0.0.1:3000";
 const files = ["animuse-logo.svg", "animuse-mark.svg", "animuse-og.svg", "animuse-og.png", "favicon.svg", "favicon.ico", "apple-touch-icon.png", "icon-192.png", "icon-512.png"];
 const hash = data => createHash("sha256").update(data).digest("hex");
+const masterMark = await fs.readFile(path.join(root, "design/brand/animuse-mark.svg"));
+for (const name of ["animuse-mark.svg", "favicon.svg"]) {
+  assert.equal(hash(await fs.readFile(path.join(root, "public", name))), hash(masterMark), `${name} differs from the SVG master`);
+}
 const results = [];
 for (const name of files) {
   const bytes = await fs.readFile(path.join(root, "public", name));
-  if (name.endsWith(".svg")) assert.match(bytes.toString(), /<title>Animuse/);
+  if (name.endsWith(".svg")) assert.match(bytes.toString(), /<title(?:\s[^>]*)?>Animuse/);
   const response = await fetch(new URL(name, `${origin.replace(/\/$/, "")}/`));
   assert.equal(response.status, 200, name);
   const matches = hash(bytes) === hash(Buffer.from(await response.arrayBuffer()));

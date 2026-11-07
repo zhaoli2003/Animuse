@@ -1,3 +1,4 @@
+import { publicPath } from "@/lib/site-url";
 import { gsap } from "gsap";
 import {
   ACESFilmicToneMapping,
@@ -53,7 +54,7 @@ export async function createSoftArrow(
 
   let model;
   try {
-    model = await new GLTFLoader().loadAsync("/landing/soft-arrow/soft-arrow.glb");
+    model = await new GLTFLoader().loadAsync(publicPath("/landing/soft-arrow/soft-arrow.glb"));
   } catch (error) {
     material.dispose(); environment.dispose(); renderer.dispose();
     throw error;

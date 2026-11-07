@@ -8,22 +8,19 @@ import { getMotionPackages } from "../src/lib/motion-packages.ts";
 import { interactionTranslations } from "../src/lib/i18n/interactions.ts";
 import { docsTranslations } from "../src/lib/i18n/docs.ts";
 import { AI_DISCOVERY, type Discovery } from "../src/data/ai-discovery.ts";
-import { PUBLIC_SITE_URL } from "../src/lib/site-url.ts";
+import { PUBLIC_SITE_URL, normalizeSiteBaseUrl, publicPath } from "../src/lib/site-url.ts";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const OUT = path.join(ROOT, "public", "ai");
 const frameworks = ["react", "vue", "svelte", "solid", "preact", "vanilla"] as const;
 
 const configuredBase = process.env.ANIMUSE_ORIGIN || PUBLIC_SITE_URL;
-let siteBase = "";
-if (configuredBase) {
-  const parsed = new URL(configuredBase);
-  if (!["http:", "https:"].includes(parsed.protocol) || parsed.pathname !== "/" || parsed.search || parsed.hash || parsed.username || parsed.password) {
-    throw new Error("ANIMUSE_ORIGIN / NEXT_PUBLIC_SITE_URL must be an HTTP(S) origin without a path, credentials, query, or fragment.");
-  }
-  siteBase = parsed.origin;
-}
-const localLink = (pathname: string) => `${siteBase}${pathname}`;
+const siteBase = normalizeSiteBaseUrl(configuredBase);
+const siteOrigin = new URL(siteBase).origin;
+const basePath = new URL(siteBase).pathname.replace(/\/$/, "");
+const publicLink = (pathname: string) => publicPath(pathname, basePath);
+const localLink = (pathname: string) => new URL(publicLink(pathname), siteBase + "/").href;
+const siteMotion = JSON.parse(await fs.readFile(path.join(ROOT, "src/data/site-motion.json"), "utf8"));
 const normalize = (text: string) => text.trim().replace(/\s+/g, " ");
 const translations = new Map(Object.entries({ ...docsTranslations, ...interactionTranslations }).map(([en, zh]) => [normalize(en), zh]));
 const zh = (text: string) => translations.get(normalize(text)) ?? text;
@@ -38,15 +35,15 @@ function discovery(slug: string): Discovery {
 const items: CatalogItem[] = [];
 for (const component of INTERACTION_COMPONENTS) {
   const packages = await getMotionPackages(component.slug);
-  const detailPath = `/ai/components/${component.slug}.json`;
-  const markdownPath = `/ai/components/${component.slug}.md`;
+  const detailPath = publicLink(`/ai/components/${component.slug}.json`);
+  const markdownPath = publicLink(`/ai/components/${component.slug}.md`);
   const entry: CatalogItem = {
     slug: component.slug,
     name: { en: component.name, zh: zh(component.name) },
     description: { en: component.description, zh: zh(component.description) },
     keywords: component.keywords,
-    docsPath: component.href, detailPath, markdownPath,
-    previewPath: component.preview,
+    docsPath: publicLink(component.href), detailPath, markdownPath,
+    previewPath: publicLink(siteMotion.components[component.slug]?.documentUrl ?? component.preview),
     discovery: discovery(component.slug),
     frameworks: packages.map((pack) => pack.framework), renderers: component.renderers ?? [],
     source: {
@@ -61,7 +58,7 @@ for (const component of INTERACTION_COMPONENTS) {
   const folder = path.join(OUT, "packages", component.slug);
   await fs.mkdir(folder, { recursive: true });
   for (const pack of packages) {
-    const url = `/ai/packages/${component.slug}/${pack.framework}.json`;
+    const url = publicLink(`/ai/packages/${component.slug}/${pack.framework}.json`);
     const payload = {
       schemaVersion: 1, slug: component.slug, framework: pack.framework, component: pack.component,
       dependencies: pack.dependencies, install: pack.install, usage: pack.usage, source: entry.source,
@@ -134,8 +131,9 @@ const indexItems = items.map((entry) => ({
 const revision = createHash("sha256").update(JSON.stringify(indexItems)).digest("hex");
 const facet = (values: string[]) => Object.fromEntries([...new Set(values)].sort().map((value) => [value, values.filter((item) => item === value).length]));
 const searchIndex = {
-  $schema: "/ai/search-index.schema.json", schemaVersion: 1, revision, total: indexItems.length,
-  links: { catalog: "/ai/catalog.json", guide: "/ai/README.md", skill: "/ai/SKILL.md" },
+  $schema: publicLink("/ai/search-index.schema.json"), schemaVersion: 1, revision, total: indexItems.length,
+  siteOrigin, siteBaseUrl: siteBase + "/", basePath,
+  links: { catalog: publicLink("/ai/catalog.json"), guide: publicLink("/ai/README.md"), skill: publicLink("/ai/SKILL.md") },
   facets: {
     categories: facet(items.map((item) => item.discovery.category)),
     frameworks: facet(items.flatMap((item) => [...item.frameworks])),
@@ -149,8 +147,8 @@ const catalog = {
   schemaVersion: 1,
   title: "Animuse UI collection metadata",
   revision,
-  ...(siteBase ? { siteOrigin: siteBase } : {}),
-  links: { searchIndex: "/ai/search-index.json", searchSchema: "/ai/search-index.schema.json", agentGuide: "/ai/README.md", catalog: "/ai/catalog.json", llms: "/llms.txt", docs: "/docs", components: "/components", skill: "/ai/SKILL.md", aiGuide: "/docs/mcp" },
+  siteOrigin, siteBaseUrl: siteBase + "/", basePath,
+  links: Object.fromEntries(Object.entries({ searchIndex: "/ai/search-index.json", searchSchema: "/ai/search-index.schema.json", agentGuide: "/ai/README.md", catalog: "/ai/catalog.json", llms: "/llms.txt", docs: "/docs", components: "/components", skill: "/ai/SKILL.md", aiGuide: "/docs/mcp" }).map(([name, url]) => [name, publicLink(url)])),
   capabilities: { list: true, bilingualSearch: true, componentMetadata: true, sourceDownload: true, sourceRedistribution: true, perComponentDistribution: true, autoInstall: false },
   classificationPolicy: {
     supportedKinds: ["project-source"],
@@ -165,18 +163,18 @@ await fs.writeFile(path.join(OUT, "README.md"), [
   "面向正在制作或优化网页、应用界面的 Agent。无需用户知道组件名称，先根据页面的具体用途检索并比较少量候选。", "",
   `当前有 ${items.length} 个组件；内容版本 revision 为 ${revision}。以后以实时 total/items 为准，不把列表复制进 Skill。`, "",
   "## 按需读取", "",
-  "1. GET /ai/search-index.json：先读取紧凑的任务索引，不含源码。", 
+  `1. GET ${publicLink("/ai/search-index.json")}：先读取紧凑的任务索引，不含源码。`,
   "2. 根据 name、summary、discovery.useCases/searchTerms 匹配需求；按 frameworks、renderers、discovery.category 筛选，结合 visualTags、interactions 和 caveat 比较。",
   "3. 返回 1–3 个候选，使用 docsPath 或 previewPath 展示效果，说明具体用途与限制。",
   "4. 仅沿选中项的 detailPath 获取 API、依赖、来源与下载地址。代码包地址在 packages[framework].url。",
   "5. 用户已要求实现时，下载所需框架的源码，接入项目并验证；仅咨询时只推荐。", "",
-  "所有 / 开头的链接相对于本站 origin。GET 返回静态 JSON；不支持向这些地址附加 query/framework 参数来过滤，需要在客户端筛选，或使用 Skill 自带的查询工具。", "",
+  `本站基址为 ${siteBase}/。所有 / 开头的返回链接已包含部署目录前缀，相对于本站协议和主机解析，不重复添加前缀。GET 返回静态 JSON；不支持向这些地址附加 query/framework 参数来过滤，需要在客户端筛选，或使用 Skill 自带的查询工具。`, "",
   "## 索引字段", "",
-  "字段结构见 /ai/search-index.schema.json。slug 为稳定组件标识；name 为中英文名称；summary 为简短说明。discovery 提供 category（用途类别）、useCases（应用场景）、searchTerms（中英文用途词）、visualTags（视觉风格）、interactions（交互方式）、caveat（接入注意事项）。frameworks/renderers 来自真实代码包，不根据搜索词猜测支持情况。",
+  `字段结构见 ${publicLink("/ai/search-index.schema.json")}。siteOrigin 仅表示协议和主机，siteBaseUrl 还包含部署目录，basePath 为该目录路径。slug 为稳定组件标识；name 为中英文名称；summary 为简短说明。discovery 提供 category（用途类别）、useCases（应用场景）、searchTerms（中英文用途词）、visualTags（视觉风格）、interactions（交互方式）、caveat（接入注意事项）。frameworks/renderers 来自真实代码包，不根据搜索词猜测支持情况。`,
   "facets 提供可用类别、框架和视觉标签及对应条目数；revision 是索引内容的 SHA-256，不同内容对应不同版本。可在当前任务内复用已读取的索引，下一次任务重新获取。", "",
   "## 安装后的工具", "",
-  "安装命令：npx skills add zhaoli2003/Animuse --skill animuse。仓库需要先发布；该命令本身不代表网站已经部署。", "",
-  "Skill 默认连接 http://127.0.0.1:3000。可用 ANIMUSE_ORIGIN 或 --origin 指定实际站点，--origin 优先。本地地址需要同机站点运行；远程 Agent 不能直接访问用户电脑的回环地址。", "",
+  "安装命令：npx skills add zhaoli2003/Animuse --skill animuse。", "",
+  "Skill 默认连接 https://zhaoli2003.github.io/Animuse。可用 ANIMUSE_ORIGIN 或 --origin 指定站点基址，支持项目目录路径，--origin 优先。本地开发使用 --origin http://127.0.0.1:3000，需要同机站点运行；远程 Agent 不能直接访问用户电脑的回环地址。", "",
   'node "<技能安装目录>/scripts/animuse.mjs" recommend "图片生成等待" --framework react --limit 3',
   'node "<技能安装目录>/scripts/animuse.mjs" recommend "长文章节导航" --category navigation',
   'node "<技能安装目录>/scripts/animuse.mjs" recommend "加载反馈" --exclude-tag particles', "",
@@ -198,9 +196,9 @@ const llms = [
   `- [Component list](${localLink("/components")}): Human-facing previews.`,
   `- [Documentation](${localLink("/docs")}): Usage and browser capabilities.`,
   `- [AI integration guide](${localLink("/docs/mcp")}): Skill installation, search and source downloads.`,
-  `- [Animuse Skill](${localLink("/ai/SKILL.md")}): After the repository is published, install with npx skills add zhaoli2003/Animuse --skill animuse.`,
+  `- [Animuse Skill](${localLink("/ai/SKILL.md")}): Install with npx skills add zhaoli2003/Animuse --skill animuse.`,
   "",
-  "Paths beginning with / are relative to the origin serving this file. The Skill defaults to http://127.0.0.1:3000; set ANIMUSE_ORIGIN or pass --origin for the actual running site. When only a local preview is running, remote AI services cannot fetch it; use the local CLI or paste the copied metadata/prompt. No public deployment is implied.",
+  `Site base URL: ${siteBase}/. Returned paths beginning with / already include the deployment directory and resolve against this origin; do not prepend the directory twice. The Skill defaults to https://zhaoli2003.github.io/Animuse; set ANIMUSE_ORIGIN or pass --origin to use another HTTP(S) base URL, including a project subpath. Use --origin http://127.0.0.1:3000 for a running local preview. Remote AI services cannot access a user's loopback address.`,
   "",
   "## Components",
   "",

@@ -9,10 +9,10 @@
     "zh": "五张渐变卡片沿立体圆环旋转，背面镜像显示，搭配精细粒子图形和边缘弯曲色散拖影。"
   },
   "keywords": "渐变 卡片 环形 旋转 轮播 立体 粒子 球体 色散 弯曲 Basit gradient ring cards carousel 3d chromatic",
-  "docsPath": "/docs/animations/gradient-ring-cards",
-  "detailPath": "/ai/components/gradient-ring-cards.json",
-  "markdownPath": "/ai/components/gradient-ring-cards.md",
-  "previewPath": "/assets/components/gradient-ring-cards.png",
+  "docsPath": "/Animuse/docs/animations/gradient-ring-cards",
+  "detailPath": "/Animuse/ai/components/gradient-ring-cards.json",
+  "markdownPath": "/Animuse/ai/components/gradient-ring-cards.md",
+  "previewPath": "/Animuse/assets/motion/gradient-ring-cards-50c5766a63d2d17d8cdbd47b.html",
   "discovery": {
     "category": "cards",
     "useCases": [
@@ -74,7 +74,7 @@
   },
   "packages": {
     "react": {
-      "url": "/ai/packages/gradient-ring-cards/react.json",
+      "url": "/Animuse/ai/packages/gradient-ring-cards/react.json",
       "component": "GradientRingCards",
       "dependencies": [
         "react",
@@ -91,7 +91,7 @@
       ]
     },
     "vue": {
-      "url": "/ai/packages/gradient-ring-cards/vue.json",
+      "url": "/Animuse/ai/packages/gradient-ring-cards/vue.json",
       "component": "GradientRingCards",
       "dependencies": [
         "vue",
@@ -107,7 +107,7 @@
       ]
     },
     "svelte": {
-      "url": "/ai/packages/gradient-ring-cards/svelte.json",
+      "url": "/Animuse/ai/packages/gradient-ring-cards/svelte.json",
       "component": "GradientRingCards",
       "dependencies": [
         "svelte",
@@ -123,7 +123,7 @@
       ]
     },
     "solid": {
-      "url": "/ai/packages/gradient-ring-cards/solid.json",
+      "url": "/Animuse/ai/packages/gradient-ring-cards/solid.json",
       "component": "GradientRingCards",
       "dependencies": [
         "solid-js",
@@ -139,7 +139,7 @@
       ]
     },
     "preact": {
-      "url": "/ai/packages/gradient-ring-cards/preact.json",
+      "url": "/Animuse/ai/packages/gradient-ring-cards/preact.json",
       "component": "GradientRingCards",
       "dependencies": [
         "preact",
@@ -155,7 +155,7 @@
       ]
     },
     "vanilla": {
-      "url": "/ai/packages/gradient-ring-cards/vanilla.json",
+      "url": "/Animuse/ai/packages/gradient-ring-cards/vanilla.json",
       "component": "GradientRingCards",
       "dependencies": [
         "three@0.185.1",

@@ -9,10 +9,10 @@
     "zh": "字符锤头鲨沿三条预测价格路径游动，依次标记概率、波动率与 dealer gamma；指针在预测区时鲨鱼追向最近的路径，移到左侧K线区时鲨鱼跟着指针自由游动。"
   },
   "keywords": "鲨鱼 锤头鲨 字符 ASCII 价格 路径 预测 K线 概率 金融 图表 终端 hammerhead shark price paths forecast candles chart terminal",
-  "docsPath": "/docs/animations/hammerhead-chart",
-  "detailPath": "/ai/components/hammerhead-chart.json",
-  "markdownPath": "/ai/components/hammerhead-chart.md",
-  "previewPath": "/assets/components/hammerhead-chart.png",
+  "docsPath": "/Animuse/docs/animations/hammerhead-chart",
+  "detailPath": "/Animuse/ai/components/hammerhead-chart.json",
+  "markdownPath": "/Animuse/ai/components/hammerhead-chart.md",
+  "previewPath": "/Animuse/assets/motion/hammerhead-chart-24d7e81b97af719ccb1b6e7a.html",
   "discovery": {
     "category": "data",
     "useCases": [
@@ -68,7 +68,7 @@
   },
   "packages": {
     "react": {
-      "url": "/ai/packages/hammerhead-chart/react.json",
+      "url": "/Animuse/ai/packages/hammerhead-chart/react.json",
       "component": "HammerheadChart",
       "dependencies": [
         "react",
@@ -83,7 +83,7 @@
       ]
     },
     "vue": {
-      "url": "/ai/packages/hammerhead-chart/vue.json",
+      "url": "/Animuse/ai/packages/hammerhead-chart/vue.json",
       "component": "HammerheadChart",
       "dependencies": [
         "vue"
@@ -97,7 +97,7 @@
       ]
     },
     "svelte": {
-      "url": "/ai/packages/hammerhead-chart/svelte.json",
+      "url": "/Animuse/ai/packages/hammerhead-chart/svelte.json",
       "component": "HammerheadChart",
       "dependencies": [
         "svelte"
@@ -111,7 +111,7 @@
       ]
     },
     "solid": {
-      "url": "/ai/packages/hammerhead-chart/solid.json",
+      "url": "/Animuse/ai/packages/hammerhead-chart/solid.json",
       "component": "HammerheadChart",
       "dependencies": [
         "solid-js"
@@ -125,7 +125,7 @@
       ]
     },
     "preact": {
-      "url": "/ai/packages/hammerhead-chart/preact.json",
+      "url": "/Animuse/ai/packages/hammerhead-chart/preact.json",
       "component": "HammerheadChart",
       "dependencies": [
         "preact"
@@ -139,7 +139,7 @@
       ]
     },
     "vanilla": {
-      "url": "/ai/packages/hammerhead-chart/vanilla.json",
+      "url": "/Animuse/ai/packages/hammerhead-chart/vanilla.json",
       "component": "HammerheadChart",
       "dependencies": [],
       "usage": "import { mount } from \"./HammerheadChart\";\nconst target = document.querySelector<HTMLElement>(\"#demo\")!;\nconst component = mount(target);\n// When your page or route unmounts:\n// component.destroy();",

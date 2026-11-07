@@ -9,10 +9,10 @@
     "zh": "真实专辑封面组成三维隧道，悬停吸起，点击沿弧线飞入中央，滚动或拖动不断穿行。"
   },
   "keywords": "专辑 封面 隧道 飞入 原创 雷师傅 三维 厚度 雾 光 专辑墙 album cover tunnel wall fly hover scroll drag LeiShiFu original",
-  "docsPath": "/docs/animations/album-cover-tunnel",
-  "detailPath": "/ai/components/album-cover-tunnel.json",
-  "markdownPath": "/ai/components/album-cover-tunnel.md",
-  "previewPath": "/assets/components/album-cover-tunnel.png",
+  "docsPath": "/Animuse/docs/animations/album-cover-tunnel",
+  "detailPath": "/Animuse/ai/components/album-cover-tunnel.json",
+  "markdownPath": "/Animuse/ai/components/album-cover-tunnel.md",
+  "previewPath": "/Animuse/assets/motion/album-cover-tunnel-269dce65fa8a64287eef669d.html",
   "discovery": {
     "category": "media",
     "useCases": [
@@ -83,7 +83,7 @@
   },
   "packages": {
     "react": {
-      "url": "/ai/packages/album-cover-tunnel/react.json",
+      "url": "/Animuse/ai/packages/album-cover-tunnel/react.json",
       "component": "AlbumCoverTunnel",
       "dependencies": [
         "react",
@@ -99,7 +99,7 @@
       ]
     },
     "vue": {
-      "url": "/ai/packages/album-cover-tunnel/vue.json",
+      "url": "/Animuse/ai/packages/album-cover-tunnel/vue.json",
       "component": "AlbumCoverTunnel",
       "dependencies": [
         "vue",
@@ -114,7 +114,7 @@
       ]
     },
     "svelte": {
-      "url": "/ai/packages/album-cover-tunnel/svelte.json",
+      "url": "/Animuse/ai/packages/album-cover-tunnel/svelte.json",
       "component": "AlbumCoverTunnel",
       "dependencies": [
         "svelte",
@@ -129,7 +129,7 @@
       ]
     },
     "solid": {
-      "url": "/ai/packages/album-cover-tunnel/solid.json",
+      "url": "/Animuse/ai/packages/album-cover-tunnel/solid.json",
       "component": "AlbumCoverTunnel",
       "dependencies": [
         "solid-js",
@@ -144,7 +144,7 @@
       ]
     },
     "preact": {
-      "url": "/ai/packages/album-cover-tunnel/preact.json",
+      "url": "/Animuse/ai/packages/album-cover-tunnel/preact.json",
       "component": "AlbumCoverTunnel",
       "dependencies": [
         "preact",
@@ -159,7 +159,7 @@
       ]
     },
     "vanilla": {
-      "url": "/ai/packages/album-cover-tunnel/vanilla.json",
+      "url": "/Animuse/ai/packages/album-cover-tunnel/vanilla.json",
       "component": "AlbumCoverTunnel",
       "dependencies": [
         "three@0.185.1"

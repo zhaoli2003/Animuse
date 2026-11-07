@@ -130,7 +130,7 @@ export function InteractionPreview({ slug, poster, source, width, height, active
       if (event instanceof MouseEvent && event.button !== 0) return;
       if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
       const link = (event.target as Element).closest<HTMLAnchorElement>("a[href]");
-      if (link && link.origin === location.origin && link.pathname.endsWith(`/${slug}`)) motionDocuments.prepareNavigation(siteMotionUrl(slug));
+      if (link && link.origin === location.origin && link.pathname.replace(/\/+$/, "").endsWith(`/${slug}`)) motionDocuments.prepareNavigation(siteMotionUrl(slug));
     };
     const intersection = new IntersectionObserver(([entry]) => setVisible(entry.isIntersecting), { threshold: .05 });
     const resize = new ResizeObserver(([entry]) => setSize({ width: entry.contentRect.width, height: entry.contentRect.height }));

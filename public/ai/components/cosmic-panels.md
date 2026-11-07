@@ -4,17 +4,17 @@ Orbital loading, flowing halftone clouds, and floating isometric servers form a 
 
 轨道加载、流动半色调星云和悬浮服务器组成三联宇宙视觉。
 
-Docs: http://127.0.0.1:3000/docs/animations/cosmic-panels
-Detail: http://127.0.0.1:3000/ai/components/cosmic-panels.json
+Docs: https://zhaoli2003.github.io/Animuse/docs/animations/cosmic-panels
+Detail: https://zhaoli2003.github.io/Animuse/ai/components/cosmic-panels.json
 
 Use the installed Animuse Skill to pull the selected framework's complete source, or fetch one package JSON directly:
 
-- React: http://127.0.0.1:3000/ai/packages/cosmic-panels/react.json
-- Vue: http://127.0.0.1:3000/ai/packages/cosmic-panels/vue.json
-- Svelte: http://127.0.0.1:3000/ai/packages/cosmic-panels/svelte.json
-- Solid: http://127.0.0.1:3000/ai/packages/cosmic-panels/solid.json
-- Preact: http://127.0.0.1:3000/ai/packages/cosmic-panels/preact.json
-- Vanilla: http://127.0.0.1:3000/ai/packages/cosmic-panels/vanilla.json
+- React: https://zhaoli2003.github.io/Animuse/ai/packages/cosmic-panels/react.json
+- Vue: https://zhaoli2003.github.io/Animuse/ai/packages/cosmic-panels/vue.json
+- Svelte: https://zhaoli2003.github.io/Animuse/ai/packages/cosmic-panels/svelte.json
+- Solid: https://zhaoli2003.github.io/Animuse/ai/packages/cosmic-panels/solid.json
+- Preact: https://zhaoli2003.github.io/Animuse/ai/packages/cosmic-panels/preact.json
+- Vanilla: https://zhaoli2003.github.io/Animuse/ai/packages/cosmic-panels/vanilla.json
 
 Design reference: https://x.com/acream_1/status/2113235166453964924/video/1
 Source notice: Retain source notices and design-reference attribution; no blanket license is assigned by the catalog.

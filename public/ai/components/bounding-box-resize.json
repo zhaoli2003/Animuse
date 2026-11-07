@@ -9,10 +9,10 @@
     "zh": "八个方形控制点连续变成方向箭头，拖动时显示实时尺寸胶囊和辅助线，支持直接输入宽高。"
   },
   "keywords": "选框 拖拽 缩放 边框 控制点 箭头 尺寸 输入 形变 bounding box resize handles arrows dimensions guides selection",
-  "docsPath": "/docs/animations/bounding-box-resize",
-  "detailPath": "/ai/components/bounding-box-resize.json",
-  "markdownPath": "/ai/components/bounding-box-resize.md",
-  "previewPath": "/assets/components/bounding-box-resize.png",
+  "docsPath": "/Animuse/docs/animations/bounding-box-resize",
+  "detailPath": "/Animuse/ai/components/bounding-box-resize.json",
+  "markdownPath": "/Animuse/ai/components/bounding-box-resize.md",
+  "previewPath": "/Animuse/assets/motion/bounding-box-resize-f5abdf005fe521056c44a807.html",
   "discovery": {
     "category": "layout",
     "useCases": [
@@ -67,7 +67,7 @@
   },
   "packages": {
     "react": {
-      "url": "/ai/packages/bounding-box-resize/react.json",
+      "url": "/Animuse/ai/packages/bounding-box-resize/react.json",
       "component": "BoundingBoxResize",
       "dependencies": [
         "react",
@@ -82,7 +82,7 @@
       ]
     },
     "vue": {
-      "url": "/ai/packages/bounding-box-resize/vue.json",
+      "url": "/Animuse/ai/packages/bounding-box-resize/vue.json",
       "component": "BoundingBoxResize",
       "dependencies": [
         "vue"
@@ -96,7 +96,7 @@
       ]
     },
     "svelte": {
-      "url": "/ai/packages/bounding-box-resize/svelte.json",
+      "url": "/Animuse/ai/packages/bounding-box-resize/svelte.json",
       "component": "BoundingBoxResize",
       "dependencies": [
         "svelte"
@@ -110,7 +110,7 @@
       ]
     },
     "solid": {
-      "url": "/ai/packages/bounding-box-resize/solid.json",
+      "url": "/Animuse/ai/packages/bounding-box-resize/solid.json",
       "component": "BoundingBoxResize",
       "dependencies": [
         "solid-js"
@@ -124,7 +124,7 @@
       ]
     },
     "preact": {
-      "url": "/ai/packages/bounding-box-resize/preact.json",
+      "url": "/Animuse/ai/packages/bounding-box-resize/preact.json",
       "component": "BoundingBoxResize",
       "dependencies": [
         "preact"
@@ -138,7 +138,7 @@
       ]
     },
     "vanilla": {
-      "url": "/ai/packages/bounding-box-resize/vanilla.json",
+      "url": "/Animuse/ai/packages/bounding-box-resize/vanilla.json",
       "component": "BoundingBoxResize",
       "dependencies": [],
       "usage": "import { mount } from \"./BoundingBoxResize\";\nconst target = document.querySelector<HTMLElement>(\"#demo\")!;\nconst component = mount(target);\n// When your page or route unmounts:\n// component.destroy();",

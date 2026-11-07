@@ -9,10 +9,10 @@
     "zh": "新图从点击位置沿不规则墨水边缘向外晕开，边界带有轻微透镜折射，白色卡片后的柔焦色影同步换色。"
   },
   "keywords": "墨水 扩散 晕染 图片 轮播 点击 液态 遮罩 折射 ink bloom spread carousel WebGL Lorenzo Cabra Bencho",
-  "docsPath": "/docs/animations/ink-spread-carousel",
-  "detailPath": "/ai/components/ink-spread-carousel.json",
-  "markdownPath": "/ai/components/ink-spread-carousel.md",
-  "previewPath": "/assets/components/ink-spread-carousel.png",
+  "docsPath": "/Animuse/docs/animations/ink-spread-carousel",
+  "detailPath": "/Animuse/ai/components/ink-spread-carousel.json",
+  "markdownPath": "/Animuse/ai/components/ink-spread-carousel.md",
+  "previewPath": "/Animuse/assets/motion/ink-spread-carousel-255428af28b5597f4bc6b625.html",
   "discovery": {
     "category": "cards",
     "useCases": [
@@ -70,7 +70,7 @@
   },
   "packages": {
     "react": {
-      "url": "/ai/packages/ink-spread-carousel/react.json",
+      "url": "/Animuse/ai/packages/ink-spread-carousel/react.json",
       "component": "InkSpreadCarousel",
       "dependencies": [
         "react",
@@ -85,7 +85,7 @@
       ]
     },
     "vue": {
-      "url": "/ai/packages/ink-spread-carousel/vue.json",
+      "url": "/Animuse/ai/packages/ink-spread-carousel/vue.json",
       "component": "InkSpreadCarousel",
       "dependencies": [
         "vue"
@@ -99,7 +99,7 @@
       ]
     },
     "svelte": {
-      "url": "/ai/packages/ink-spread-carousel/svelte.json",
+      "url": "/Animuse/ai/packages/ink-spread-carousel/svelte.json",
       "component": "InkSpreadCarousel",
       "dependencies": [
         "svelte"
@@ -113,7 +113,7 @@
       ]
     },
     "solid": {
-      "url": "/ai/packages/ink-spread-carousel/solid.json",
+      "url": "/Animuse/ai/packages/ink-spread-carousel/solid.json",
       "component": "InkSpreadCarousel",
       "dependencies": [
         "solid-js"
@@ -127,7 +127,7 @@
       ]
     },
     "preact": {
-      "url": "/ai/packages/ink-spread-carousel/preact.json",
+      "url": "/Animuse/ai/packages/ink-spread-carousel/preact.json",
       "component": "InkSpreadCarousel",
       "dependencies": [
         "preact"
@@ -141,7 +141,7 @@
       ]
     },
     "vanilla": {
-      "url": "/ai/packages/ink-spread-carousel/vanilla.json",
+      "url": "/Animuse/ai/packages/ink-spread-carousel/vanilla.json",
       "component": "InkSpreadCarousel",
       "dependencies": [],
       "usage": "import { mount } from \"./InkSpreadCarousel\";\nconst target = document.querySelector<HTMLElement>(\"#demo\")!;\nconst component = mount(target);\n// When your page or route unmounts:\n// component.destroy();",

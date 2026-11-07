@@ -9,10 +9,10 @@
     "zh": "六个彩色按钮从外围顺时针依次收拢成环，弹性停稳；关闭时逆序向外散开并模糊淡出。"
   },
   "keywords": "环形 菜单 交错 展开 圆形 按钮 加号 模糊 错峰 弹簧 stagger radial menu clockwise blur spring",
-  "docsPath": "/docs/animations/staggered-radial-menu",
-  "detailPath": "/ai/components/staggered-radial-menu.json",
-  "markdownPath": "/ai/components/staggered-radial-menu.md",
-  "previewPath": "/assets/components/staggered-radial-menu.png",
+  "docsPath": "/Animuse/docs/animations/staggered-radial-menu",
+  "detailPath": "/Animuse/ai/components/staggered-radial-menu.json",
+  "markdownPath": "/Animuse/ai/components/staggered-radial-menu.md",
+  "previewPath": "/Animuse/assets/motion/staggered-radial-menu-058261190ec1d064a6ff12ac.html",
   "discovery": {
     "category": "navigation",
     "useCases": [
@@ -68,7 +68,7 @@
   },
   "packages": {
     "react": {
-      "url": "/ai/packages/staggered-radial-menu/react.json",
+      "url": "/Animuse/ai/packages/staggered-radial-menu/react.json",
       "component": "StaggeredRadialMenu",
       "dependencies": [
         "react",
@@ -83,7 +83,7 @@
       ]
     },
     "vue": {
-      "url": "/ai/packages/staggered-radial-menu/vue.json",
+      "url": "/Animuse/ai/packages/staggered-radial-menu/vue.json",
       "component": "StaggeredRadialMenu",
       "dependencies": [
         "vue"
@@ -97,7 +97,7 @@
       ]
     },
     "svelte": {
-      "url": "/ai/packages/staggered-radial-menu/svelte.json",
+      "url": "/Animuse/ai/packages/staggered-radial-menu/svelte.json",
       "component": "StaggeredRadialMenu",
       "dependencies": [
         "svelte"
@@ -111,7 +111,7 @@
       ]
     },
     "solid": {
-      "url": "/ai/packages/staggered-radial-menu/solid.json",
+      "url": "/Animuse/ai/packages/staggered-radial-menu/solid.json",
       "component": "StaggeredRadialMenu",
       "dependencies": [
         "solid-js"
@@ -125,7 +125,7 @@
       ]
     },
     "preact": {
-      "url": "/ai/packages/staggered-radial-menu/preact.json",
+      "url": "/Animuse/ai/packages/staggered-radial-menu/preact.json",
       "component": "StaggeredRadialMenu",
       "dependencies": [
         "preact"
@@ -139,7 +139,7 @@
       ]
     },
     "vanilla": {
-      "url": "/ai/packages/staggered-radial-menu/vanilla.json",
+      "url": "/Animuse/ai/packages/staggered-radial-menu/vanilla.json",
       "component": "StaggeredRadialMenu",
       "dependencies": [],
       "usage": "import { mount } from \"./StaggeredRadialMenu\";\nconst target = document.querySelector<HTMLElement>(\"#demo\")!;\nconst component = mount(target);\n// When your page or route unmounts:\n// component.destroy();",

@@ -5,8 +5,11 @@
   "additionalProperties": false,
   "required": ["$schema", "schemaVersion", "revision", "total", "links", "facets", "items"],
   "properties": {
-    "$schema": { "const": "/ai/search-index.schema.json" },
+    "$schema": { "type": "string", "pattern": "^/(?:[^/?#]+/)*ai/search-index\\.schema\\.json$" },
     "schemaVersion": { "const": 1 },
+    "siteOrigin": { "type": "string", "pattern": "^https?://[^/?#]+$" },
+    "siteBaseUrl": { "type": "string", "pattern": "^https?://[^?#]+/$" },
+    "basePath": { "type": "string", "pattern": "^(?:/[^/?#]+)*$" },
     "revision": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
     "total": { "type": "integer", "minimum": 0 },
     "links": {
@@ -22,7 +25,7 @@
     "items": { "type": "array", "items": { "$ref": "#/definitions/component" } }
   },
   "definitions": {
-    "path": { "type": "string", "pattern": "^/" },
+    "path": { "type": "string", "pattern": "^/[^/?#]" },
     "strings": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
     "counts": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 1 } },
     "component": {

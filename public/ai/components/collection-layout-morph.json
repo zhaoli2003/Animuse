@@ -9,10 +9,10 @@
     "zh": "Claude、Codex、Grok 三张 SVG 在列表、并排卡片与叠放之间连续移动、缩放和重排。"
   },
   "keywords": "列表 卡片 叠放 堆叠 布局 切换 图片 共享 元素 Claude Codex Grok list card pack shared layout morph collectibles Shawn Kel",
-  "docsPath": "/docs/animations/collection-layout-morph",
-  "detailPath": "/ai/components/collection-layout-morph.json",
-  "markdownPath": "/ai/components/collection-layout-morph.md",
-  "previewPath": "/assets/components/collection-layout-morph.png",
+  "docsPath": "/Animuse/docs/animations/collection-layout-morph",
+  "detailPath": "/Animuse/ai/components/collection-layout-morph.json",
+  "markdownPath": "/Animuse/ai/components/collection-layout-morph.md",
+  "previewPath": "/Animuse/assets/motion/collection-layout-morph-710eca20250020bb2c76cd35.html",
   "discovery": {
     "category": "layout",
     "useCases": [
@@ -68,7 +68,7 @@
   },
   "packages": {
     "react": {
-      "url": "/ai/packages/collection-layout-morph/react.json",
+      "url": "/Animuse/ai/packages/collection-layout-morph/react.json",
       "component": "CollectionLayoutMorph",
       "dependencies": [
         "react",
@@ -84,7 +84,7 @@
       ]
     },
     "vue": {
-      "url": "/ai/packages/collection-layout-morph/vue.json",
+      "url": "/Animuse/ai/packages/collection-layout-morph/vue.json",
       "component": "CollectionLayoutMorph",
       "dependencies": [
         "vue",
@@ -99,7 +99,7 @@
       ]
     },
     "svelte": {
-      "url": "/ai/packages/collection-layout-morph/svelte.json",
+      "url": "/Animuse/ai/packages/collection-layout-morph/svelte.json",
       "component": "CollectionLayoutMorph",
       "dependencies": [
         "svelte",
@@ -114,7 +114,7 @@
       ]
     },
     "solid": {
-      "url": "/ai/packages/collection-layout-morph/solid.json",
+      "url": "/Animuse/ai/packages/collection-layout-morph/solid.json",
       "component": "CollectionLayoutMorph",
       "dependencies": [
         "solid-js",
@@ -129,7 +129,7 @@
       ]
     },
     "preact": {
-      "url": "/ai/packages/collection-layout-morph/preact.json",
+      "url": "/Animuse/ai/packages/collection-layout-morph/preact.json",
       "component": "CollectionLayoutMorph",
       "dependencies": [
         "preact",
@@ -144,7 +144,7 @@
       ]
     },
     "vanilla": {
-      "url": "/ai/packages/collection-layout-morph/vanilla.json",
+      "url": "/Animuse/ai/packages/collection-layout-morph/vanilla.json",
       "component": "CollectionLayoutMorph",
       "dependencies": [
         "gsap@3.12.7"

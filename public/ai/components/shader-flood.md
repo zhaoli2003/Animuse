@@ -4,17 +4,17 @@ Live marbled liquid fills each feature card from your entry point and drains tow
 
 实时液体纹理从鼠标进入的位置铺满卡片，再向离开的位置收拢。每张卡片拥有独立的三色色板。
 
-Docs: http://127.0.0.1:3000/docs/animations/shader-flood
-Detail: http://127.0.0.1:3000/ai/components/shader-flood.json
+Docs: https://zhaoli2003.github.io/Animuse/docs/animations/shader-flood
+Detail: https://zhaoli2003.github.io/Animuse/ai/components/shader-flood.json
 
 Use the installed Animuse Skill to pull the selected framework's complete source, or fetch one package JSON directly:
 
-- React: http://127.0.0.1:3000/ai/packages/shader-flood/react.json
-- Vue: http://127.0.0.1:3000/ai/packages/shader-flood/vue.json
-- Svelte: http://127.0.0.1:3000/ai/packages/shader-flood/svelte.json
-- Solid: http://127.0.0.1:3000/ai/packages/shader-flood/solid.json
-- Preact: http://127.0.0.1:3000/ai/packages/shader-flood/preact.json
-- Vanilla: http://127.0.0.1:3000/ai/packages/shader-flood/vanilla.json
+- React: https://zhaoli2003.github.io/Animuse/ai/packages/shader-flood/react.json
+- Vue: https://zhaoli2003.github.io/Animuse/ai/packages/shader-flood/vue.json
+- Svelte: https://zhaoli2003.github.io/Animuse/ai/packages/shader-flood/svelte.json
+- Solid: https://zhaoli2003.github.io/Animuse/ai/packages/shader-flood/solid.json
+- Preact: https://zhaoli2003.github.io/Animuse/ai/packages/shader-flood/preact.json
+- Vanilla: https://zhaoli2003.github.io/Animuse/ai/packages/shader-flood/vanilla.json
 
 Design reference: https://x.com/Ashishgogula/status/2111150387227156670/video/1
 Source notice: Original design rights remain with Ashish Gogula / Planes. Pro source is not included or accessed; no redistribution permission is claimed. Independently authored rendering and lifecycle. Lucide icons retain their ISC notice. Reference video and extracted frames stay internal.

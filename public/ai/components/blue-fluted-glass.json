@@ -9,10 +9,10 @@
     "zh": "蓝色流体缓慢折叠流动，经竖向毛玻璃棱纹折射，中央白色 LeiBox 标志保持固定。"
   },
   "keywords": "蓝色 棱纹 流动 背景 毛玻璃 竖纹 流体 渐变 品牌 标志 blue fluted ribbed frosted glass fluid gradient background logo LeiBox",
-  "docsPath": "/docs/animations/blue-fluted-glass",
-  "detailPath": "/ai/components/blue-fluted-glass.json",
-  "markdownPath": "/ai/components/blue-fluted-glass.md",
-  "previewPath": "/assets/components/blue-fluted-glass.png",
+  "docsPath": "/Animuse/docs/animations/blue-fluted-glass",
+  "detailPath": "/Animuse/ai/components/blue-fluted-glass.json",
+  "markdownPath": "/Animuse/ai/components/blue-fluted-glass.md",
+  "previewPath": "/Animuse/assets/motion/blue-fluted-glass-18bb4fd514b0e7d6be95bee8.html",
   "discovery": {
     "category": "background",
     "useCases": [
@@ -69,7 +69,7 @@
   },
   "packages": {
     "react": {
-      "url": "/ai/packages/blue-fluted-glass/react.json",
+      "url": "/Animuse/ai/packages/blue-fluted-glass/react.json",
       "component": "BlueFlutedGlass",
       "dependencies": [
         "react",
@@ -84,7 +84,7 @@
       ]
     },
     "vue": {
-      "url": "/ai/packages/blue-fluted-glass/vue.json",
+      "url": "/Animuse/ai/packages/blue-fluted-glass/vue.json",
       "component": "BlueFlutedGlass",
       "dependencies": [
         "vue"
@@ -98,7 +98,7 @@
       ]
     },
     "svelte": {
-      "url": "/ai/packages/blue-fluted-glass/svelte.json",
+      "url": "/Animuse/ai/packages/blue-fluted-glass/svelte.json",
       "component": "BlueFlutedGlass",
       "dependencies": [
         "svelte"
@@ -112,7 +112,7 @@
       ]
     },
     "solid": {
-      "url": "/ai/packages/blue-fluted-glass/solid.json",
+      "url": "/Animuse/ai/packages/blue-fluted-glass/solid.json",
       "component": "BlueFlutedGlass",
       "dependencies": [
         "solid-js"
@@ -126,7 +126,7 @@
       ]
     },
     "preact": {
-      "url": "/ai/packages/blue-fluted-glass/preact.json",
+      "url": "/Animuse/ai/packages/blue-fluted-glass/preact.json",
       "component": "BlueFlutedGlass",
       "dependencies": [
         "preact"
@@ -140,7 +140,7 @@
       ]
     },
     "vanilla": {
-      "url": "/ai/packages/blue-fluted-glass/vanilla.json",
+      "url": "/Animuse/ai/packages/blue-fluted-glass/vanilla.json",
       "component": "BlueFlutedGlass",
       "dependencies": [],
       "usage": "import { mount } from \"./BlueFlutedGlass\";\nconst target = document.querySelector<HTMLElement>(\"#demo\")!;\nconst component = mount(target);\n// When your page or route unmounts:\n// component.destroy();",

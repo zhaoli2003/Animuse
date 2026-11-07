@@ -9,10 +9,10 @@
     "zh": "黑色胶囊随六个导航入口移动、变宽，通过裁切切换文字；头像使用 LeiBox Logo。"
   },
   "keywords": "流体 提示 气泡 胶囊 导航 侧栏 悬浮 Logo LeiBox fluid tooltip capsule navigation sidebar hover profile",
-  "docsPath": "/docs/animations/fluid-tooltip",
-  "detailPath": "/ai/components/fluid-tooltip.json",
-  "markdownPath": "/ai/components/fluid-tooltip.md",
-  "previewPath": "/assets/components/fluid-tooltip.png",
+  "docsPath": "/Animuse/docs/animations/fluid-tooltip",
+  "detailPath": "/Animuse/ai/components/fluid-tooltip.json",
+  "markdownPath": "/Animuse/ai/components/fluid-tooltip.md",
+  "previewPath": "/Animuse/assets/motion/fluid-tooltip-a6dae36a146ba921a5284f1c.html",
   "discovery": {
     "category": "navigation",
     "useCases": [
@@ -74,7 +74,7 @@
   },
   "packages": {
     "react": {
-      "url": "/ai/packages/fluid-tooltip/react.json",
+      "url": "/Animuse/ai/packages/fluid-tooltip/react.json",
       "component": "FluidTooltip",
       "dependencies": [
         "react",
@@ -90,7 +90,7 @@
       ]
     },
     "vue": {
-      "url": "/ai/packages/fluid-tooltip/vue.json",
+      "url": "/Animuse/ai/packages/fluid-tooltip/vue.json",
       "component": "FluidTooltip",
       "dependencies": [
         "vue",
@@ -105,7 +105,7 @@
       ]
     },
     "svelte": {
-      "url": "/ai/packages/fluid-tooltip/svelte.json",
+      "url": "/Animuse/ai/packages/fluid-tooltip/svelte.json",
       "component": "FluidTooltip",
       "dependencies": [
         "svelte",
@@ -120,7 +120,7 @@
       ]
     },
     "solid": {
-      "url": "/ai/packages/fluid-tooltip/solid.json",
+      "url": "/Animuse/ai/packages/fluid-tooltip/solid.json",
       "component": "FluidTooltip",
       "dependencies": [
         "solid-js",
@@ -135,7 +135,7 @@
       ]
     },
     "preact": {
-      "url": "/ai/packages/fluid-tooltip/preact.json",
+      "url": "/Animuse/ai/packages/fluid-tooltip/preact.json",
       "component": "FluidTooltip",
       "dependencies": [
         "preact",
@@ -150,7 +150,7 @@
       ]
     },
     "vanilla": {
-      "url": "/ai/packages/fluid-tooltip/vanilla.json",
+      "url": "/Animuse/ai/packages/fluid-tooltip/vanilla.json",
       "component": "FluidTooltip",
       "dependencies": [
         "gsap@3.12.7"

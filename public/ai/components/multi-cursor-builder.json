@@ -9,10 +9,10 @@
     "zh": "12个彩色光标随滚动打字、画框、搬入图片并排版，选框实时跟随，上滚可撤回搭建。"
   },
   "keywords": "多光标 页面 搭建 自动 排版 选框 滚动 回退 字体 Figma cursor builder page scroll construction",
-  "docsPath": "/docs/animations/multi-cursor-builder",
-  "detailPath": "/ai/components/multi-cursor-builder.json",
-  "markdownPath": "/ai/components/multi-cursor-builder.md",
-  "previewPath": "/assets/components/multi-cursor-builder.png",
+  "docsPath": "/Animuse/docs/animations/multi-cursor-builder",
+  "detailPath": "/Animuse/ai/components/multi-cursor-builder.json",
+  "markdownPath": "/Animuse/ai/components/multi-cursor-builder.md",
+  "previewPath": "/Animuse/assets/motion/multi-cursor-builder-1113be868081c0df320237b8.html",
   "discovery": {
     "category": "hero",
     "useCases": [
@@ -75,7 +75,7 @@
   },
   "packages": {
     "react": {
-      "url": "/ai/packages/multi-cursor-builder/react.json",
+      "url": "/Animuse/ai/packages/multi-cursor-builder/react.json",
       "component": "MultiCursorBuilder",
       "dependencies": [
         "react",
@@ -90,7 +90,7 @@
       ]
     },
     "vue": {
-      "url": "/ai/packages/multi-cursor-builder/vue.json",
+      "url": "/Animuse/ai/packages/multi-cursor-builder/vue.json",
       "component": "MultiCursorBuilder",
       "dependencies": [
         "vue"
@@ -104,7 +104,7 @@
       ]
     },
     "svelte": {
-      "url": "/ai/packages/multi-cursor-builder/svelte.json",
+      "url": "/Animuse/ai/packages/multi-cursor-builder/svelte.json",
       "component": "MultiCursorBuilder",
       "dependencies": [
         "svelte"
@@ -118,7 +118,7 @@
       ]
     },
     "solid": {
-      "url": "/ai/packages/multi-cursor-builder/solid.json",
+      "url": "/Animuse/ai/packages/multi-cursor-builder/solid.json",
       "component": "MultiCursorBuilder",
       "dependencies": [
         "solid-js"
@@ -132,7 +132,7 @@
       ]
     },
     "preact": {
-      "url": "/ai/packages/multi-cursor-builder/preact.json",
+      "url": "/Animuse/ai/packages/multi-cursor-builder/preact.json",
       "component": "MultiCursorBuilder",
       "dependencies": [
         "preact"
@@ -146,7 +146,7 @@
       ]
     },
     "vanilla": {
-      "url": "/ai/packages/multi-cursor-builder/vanilla.json",
+      "url": "/Animuse/ai/packages/multi-cursor-builder/vanilla.json",
       "component": "MultiCursorBuilder",
       "dependencies": [],
       "usage": "import { mount } from \"./MultiCursorBuilder\";\nconst target = document.querySelector<HTMLElement>(\"#demo\")!;\nconst component = mount(target);\n// When your page or route unmounts:\n// component.destroy();",

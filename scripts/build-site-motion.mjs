@@ -5,6 +5,7 @@ import { createHash } from 'node:crypto';
 import { gzipSync } from 'node:zlib';
 import { transform } from 'esbuild';
 import sharp from 'sharp';
+import { rewriteWebsiteResources } from './website-base-path.mjs';
 
 const hash = bytes => createHash('sha256').update(bytes).digest('hex').slice(0, 24);
 const notice = text => text.replace(/\/\*(?!\!)([\s\S]*?)\*\//g, (comment, body) => /license|copyright|\bOFL\b/i.test(body) ? '/*!' + body + '*/' : comment);
@@ -19,6 +20,7 @@ export async function buildSiteMotion({ root = process.cwd(), slugs } = {}) {
   const output = { schemaVersion: 1, chineseFontStylesheet: '', components: {} };
   const lengths = new Map(), images = new Map();
   async function asset(bytes, extension, prefix = '') {
+    if (['html', 'js', 'css'].includes(extension)) bytes = rewriteWebsiteResources(bytes.toString());
     bytes = Buffer.isBuffer(bytes) ? bytes : Buffer.from(bytes);
     const url = `/assets/motion/${prefix}${hash(bytes)}.${extension}`;
     const target = path.join(root, 'public', url);

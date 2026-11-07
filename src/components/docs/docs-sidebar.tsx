@@ -1,4 +1,6 @@
 "use client";
+import { routePath } from "@/lib/route-path";
+import { publicPath } from "@/lib/site-url";
 
 import { T as TranslatedText, useLanguage } from "@/components/common/language-provider";
 
@@ -71,7 +73,7 @@ export function DocsNavList({
   onNavigate?: () => void;
   showPreviews?: boolean;
 }) {
-  const pathname = usePathname();
+  const pathname = routePath(usePathname());
   const shouldReduceMotion = useReducedMotion();
   const [preview, setPreview] = useState<NavPreview | null>(null);
   const hoverTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
@@ -232,7 +234,7 @@ export function DocsNavList({
                       width={preview.entry.canvasWidth} height={preview.entry.canvasHeight} active />
                   </div> : <video
                     key={preview.entry.video}
-                    src={preview.entry.video}
+                    src={publicPath(preview.entry.video)}
                     autoPlay
                     loop
                     muted

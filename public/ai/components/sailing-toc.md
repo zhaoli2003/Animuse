@@ -4,17 +4,17 @@ A sailing ship follows the current section along a bending dashed route, with sc
 
 帆船随当前章节沿弯曲虚线移动，支持滚动跟随与点击目录平滑跳转。
 
-Docs: http://127.0.0.1:3000/docs/animations/sailing-toc
-Detail: http://127.0.0.1:3000/ai/components/sailing-toc.json
+Docs: https://zhaoli2003.github.io/Animuse/docs/animations/sailing-toc
+Detail: https://zhaoli2003.github.io/Animuse/ai/components/sailing-toc.json
 
 Use the installed Animuse Skill to pull the selected framework's complete source, or fetch one package JSON directly:
 
-- React: http://127.0.0.1:3000/ai/packages/sailing-toc/react.json
-- Vue: http://127.0.0.1:3000/ai/packages/sailing-toc/vue.json
-- Svelte: http://127.0.0.1:3000/ai/packages/sailing-toc/svelte.json
-- Solid: http://127.0.0.1:3000/ai/packages/sailing-toc/solid.json
-- Preact: http://127.0.0.1:3000/ai/packages/sailing-toc/preact.json
-- Vanilla: http://127.0.0.1:3000/ai/packages/sailing-toc/vanilla.json
+- React: https://zhaoli2003.github.io/Animuse/ai/packages/sailing-toc/react.json
+- Vue: https://zhaoli2003.github.io/Animuse/ai/packages/sailing-toc/vue.json
+- Svelte: https://zhaoli2003.github.io/Animuse/ai/packages/sailing-toc/svelte.json
+- Solid: https://zhaoli2003.github.io/Animuse/ai/packages/sailing-toc/solid.json
+- Preact: https://zhaoli2003.github.io/Animuse/ai/packages/sailing-toc/preact.json
+- Vanilla: https://zhaoli2003.github.io/Animuse/ai/packages/sailing-toc/vanilla.json
 
 Design reference: https://x.com/emirayaz/status/2113414926911881647/video/1
 Source notice: Retain source notices and design-reference attribution; no blanket license is assigned by the catalog.

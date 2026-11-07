@@ -4,17 +4,17 @@ Six monochrome actions spring inward with a short clockwise stagger, framed by f
 
 黑色图标随短暂顺时针错峰收拢成环，保留细灰边、白色高光与柔和阴影，关闭时六项一起向外散开。
 
-Docs: http://127.0.0.1:3000/docs/animations/soft-action-wheel
-Detail: http://127.0.0.1:3000/ai/components/soft-action-wheel.json
+Docs: https://zhaoli2003.github.io/Animuse/docs/animations/soft-action-wheel
+Detail: https://zhaoli2003.github.io/Animuse/ai/components/soft-action-wheel.json
 
 Use the installed Animuse Skill to pull the selected framework's complete source, or fetch one package JSON directly:
 
-- React: http://127.0.0.1:3000/ai/packages/soft-action-wheel/react.json
-- Vue: http://127.0.0.1:3000/ai/packages/soft-action-wheel/vue.json
-- Svelte: http://127.0.0.1:3000/ai/packages/soft-action-wheel/svelte.json
-- Solid: http://127.0.0.1:3000/ai/packages/soft-action-wheel/solid.json
-- Preact: http://127.0.0.1:3000/ai/packages/soft-action-wheel/preact.json
-- Vanilla: http://127.0.0.1:3000/ai/packages/soft-action-wheel/vanilla.json
+- React: https://zhaoli2003.github.io/Animuse/ai/packages/soft-action-wheel/react.json
+- Vue: https://zhaoli2003.github.io/Animuse/ai/packages/soft-action-wheel/vue.json
+- Svelte: https://zhaoli2003.github.io/Animuse/ai/packages/soft-action-wheel/svelte.json
+- Solid: https://zhaoli2003.github.io/Animuse/ai/packages/soft-action-wheel/solid.json
+- Preact: https://zhaoli2003.github.io/Animuse/ai/packages/soft-action-wheel/preact.json
+- Vanilla: https://zhaoli2003.github.io/Animuse/ai/packages/soft-action-wheel/vanilla.json
 
 Design reference: https://x.com/withAnimationUI/status/2110643020890849625/video/1
 Source notice: Original design license not supplied or independently verified; the reference video is retained only for internal comparison.

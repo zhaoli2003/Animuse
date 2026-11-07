@@ -9,10 +9,10 @@
     "zh": "八足蜘蛛结网牵引专辑封面，在队列与播放区之间连续搬运，搭配真实专辑图片和可操作的本地播放控件。"
   },
   "keywords": "蜘蛛 蛛丝 结网 专辑 封面 音乐 播放器 队列 切歌 牵引 spider web music player album cover queue track switcher Divan Raj",
-  "docsPath": "/docs/animations/spider-music-player",
-  "detailPath": "/ai/components/spider-music-player.json",
-  "markdownPath": "/ai/components/spider-music-player.md",
-  "previewPath": "/assets/components/spider-music-player.png",
+  "docsPath": "/Animuse/docs/animations/spider-music-player",
+  "detailPath": "/Animuse/ai/components/spider-music-player.json",
+  "markdownPath": "/Animuse/ai/components/spider-music-player.md",
+  "previewPath": "/Animuse/assets/motion/spider-music-player-0278f4237d355cd826f6564d.html",
   "discovery": {
     "category": "media",
     "useCases": [
@@ -75,7 +75,7 @@
   },
   "packages": {
     "react": {
-      "url": "/ai/packages/spider-music-player/react.json",
+      "url": "/Animuse/ai/packages/spider-music-player/react.json",
       "component": "SpiderMusicPlayer",
       "dependencies": [
         "react",
@@ -91,7 +91,7 @@
       ]
     },
     "vue": {
-      "url": "/ai/packages/spider-music-player/vue.json",
+      "url": "/Animuse/ai/packages/spider-music-player/vue.json",
       "component": "SpiderMusicPlayer",
       "dependencies": [
         "vue",
@@ -106,7 +106,7 @@
       ]
     },
     "svelte": {
-      "url": "/ai/packages/spider-music-player/svelte.json",
+      "url": "/Animuse/ai/packages/spider-music-player/svelte.json",
       "component": "SpiderMusicPlayer",
       "dependencies": [
         "svelte",
@@ -121,7 +121,7 @@
       ]
     },
     "solid": {
-      "url": "/ai/packages/spider-music-player/solid.json",
+      "url": "/Animuse/ai/packages/spider-music-player/solid.json",
       "component": "SpiderMusicPlayer",
       "dependencies": [
         "solid-js",
@@ -136,7 +136,7 @@
       ]
     },
     "preact": {
-      "url": "/ai/packages/spider-music-player/preact.json",
+      "url": "/Animuse/ai/packages/spider-music-player/preact.json",
       "component": "SpiderMusicPlayer",
       "dependencies": [
         "preact",
@@ -151,7 +151,7 @@
       ]
     },
     "vanilla": {
-      "url": "/ai/packages/spider-music-player/vanilla.json",
+      "url": "/Animuse/ai/packages/spider-music-player/vanilla.json",
       "component": "SpiderMusicPlayer",
       "dependencies": [
         "gsap@3.12.7"

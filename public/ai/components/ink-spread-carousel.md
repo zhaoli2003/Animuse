@@ -4,17 +4,17 @@ A new photo spreads from your press with a rippling ink edge and a thin lens dis
 
 新图从点击位置沿不规则墨水边缘向外晕开，边界带有轻微透镜折射，白色卡片后的柔焦色影同步换色。
 
-Docs: http://127.0.0.1:3000/docs/animations/ink-spread-carousel
-Detail: http://127.0.0.1:3000/ai/components/ink-spread-carousel.json
+Docs: https://zhaoli2003.github.io/Animuse/docs/animations/ink-spread-carousel
+Detail: https://zhaoli2003.github.io/Animuse/ai/components/ink-spread-carousel.json
 
 Use the installed Animuse Skill to pull the selected framework's complete source, or fetch one package JSON directly:
 
-- React: http://127.0.0.1:3000/ai/packages/ink-spread-carousel/react.json
-- Vue: http://127.0.0.1:3000/ai/packages/ink-spread-carousel/vue.json
-- Svelte: http://127.0.0.1:3000/ai/packages/ink-spread-carousel/svelte.json
-- Solid: http://127.0.0.1:3000/ai/packages/ink-spread-carousel/solid.json
-- Preact: http://127.0.0.1:3000/ai/packages/ink-spread-carousel/preact.json
-- Vanilla: http://127.0.0.1:3000/ai/packages/ink-spread-carousel/vanilla.json
+- React: https://zhaoli2003.github.io/Animuse/ai/packages/ink-spread-carousel/react.json
+- Vue: https://zhaoli2003.github.io/Animuse/ai/packages/ink-spread-carousel/vue.json
+- Svelte: https://zhaoli2003.github.io/Animuse/ai/packages/ink-spread-carousel/svelte.json
+- Solid: https://zhaoli2003.github.io/Animuse/ai/packages/ink-spread-carousel/solid.json
+- Preact: https://zhaoli2003.github.io/Animuse/ai/packages/ink-spread-carousel/preact.json
+- Vanilla: https://zhaoli2003.github.io/Animuse/ai/packages/ink-spread-carousel/vanilla.json
 
 Design reference: https://x.com/cabralorenzo/status/2114082220566860026/video/1
 Source notice: Original design and image/source license not supplied or independently verified. Original footage, photos and Pro source are not redistributed. Four new images were generated for this reconstruction. Lucide icons retain their ISC notice.

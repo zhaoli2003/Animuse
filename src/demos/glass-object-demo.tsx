@@ -1,4 +1,5 @@
 "use client";
+import { publicPath } from "@/lib/site-url";
 
 import { T, useLanguage } from "@/components/common/language-provider";
 
@@ -144,14 +145,14 @@ export function GlassObjectDemo() {
     <>
       <div className="relative h-[420px] overflow-hidden rounded-xl border border-border/60 sm:h-[520px]">
         <GlassObject
-          src={src}
+          src={publicPath(src)}
           {...values}
           autoRotate={autoRotate}
           zoom={zoom}
           tint={tint === CLEAR_TINT ? "" : tint}
           highlight={highlight}
           background={effectiveBackground}
-          backgroundImage={backdrop ? DEMO_IMAGES[imageIndex] : ""}
+          backgroundImage={backdrop ? publicPath(DEMO_IMAGES[imageIndex]) : ""}
           onLoad={() => setStatus("ready")}
           onError={() => setStatus("error")}
           className="h-full w-full"

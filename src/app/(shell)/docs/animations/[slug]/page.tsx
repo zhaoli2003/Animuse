@@ -1,3 +1,4 @@
+import { publicPath } from "@/lib/site-url";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Download } from "lucide-react";
@@ -36,10 +37,10 @@ export default async function MotionPage({params}:Props){
         )}
       </MotionDemoSection>}
       afterCode={<>{doc.afterCode}<div className="mt-4 flex flex-wrap items-center gap-4 text-xs text-muted-foreground">
-        <a href={entry.originalHtml??"/motion/"+slug+".html"} download={entry.sourceFile} className="inline-flex items-center gap-1.5 rounded py-1 hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-2"><Download aria-hidden className="size-3.5"/><T>{entry.originalHtml?"Download original HTML":entry.recreatedHtml?"Download standalone HTML":"Download original HTML"}</T></a>
-        {slug === "multi-cursor-builder" ? <a href="/motion/multi-cursor-builder.html" download="多光标页面搭建-独立演示.html" className="inline-flex items-center gap-1.5 rounded py-1 underline underline-offset-4"><Download aria-hidden className="size-3.5"/><T>Download standalone HTML</T></a> : null}
-        {slug === "deep-agent-composer" || slug === "reasoning-effort-slider" ? <a href="/motion/deep-agent-original-source.txt" download="DeepAgent-原版源码.txt" className="inline-flex items-center gap-1.5 rounded py-1 underline underline-offset-4"><Download aria-hidden className="size-3.5"/><T>Download original Deep Agent source</T></a> : null}
-        {entry.suppliedSource?<a href={entry.suppliedSource} download="GlassFolder.tsx" className="inline-flex items-center gap-1.5 rounded py-1 underline underline-offset-4"><Download aria-hidden className="size-3.5"/><T>Download supplied React source</T></a>:null}
+        <a href={publicPath(entry.originalHtml??"/motion/"+slug+".html")} download={entry.sourceFile} className="inline-flex items-center gap-1.5 rounded py-1 hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-2"><Download aria-hidden className="size-3.5"/><T>{entry.originalHtml?"Download original HTML":entry.recreatedHtml?"Download standalone HTML":"Download original HTML"}</T></a>
+        {slug === "multi-cursor-builder" ? <a href={publicPath("/motion/multi-cursor-builder.html")} download="多光标页面搭建-独立演示.html" className="inline-flex items-center gap-1.5 rounded py-1 underline underline-offset-4"><Download aria-hidden className="size-3.5"/><T>Download standalone HTML</T></a> : null}
+        {slug === "deep-agent-composer" || slug === "reasoning-effort-slider" ? <a href={publicPath("/motion/deep-agent-original-source.txt")} download="DeepAgent-原版源码.txt" className="inline-flex items-center gap-1.5 rounded py-1 underline underline-offset-4"><Download aria-hidden className="size-3.5"/><T>Download original Deep Agent source</T></a> : null}
+        {entry.suppliedSource?<a href={publicPath(entry.suppliedSource)} download="GlassFolder.tsx" className="inline-flex items-center gap-1.5 rounded py-1 underline underline-offset-4"><Download aria-hidden className="size-3.5"/><T>Download supplied React source</T></a>:null}
         {entry.original?<span><T>Original by LeiShiFu</T></span>:entry.referenceUrl?<a className="rounded py-1 underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2" href={entry.referenceAuthorUrl??entry.referenceUrl} target="_blank" rel="noreferrer"><T>Author</T> · {entry.referenceAuthor}</a>:entry.referenceAuthor&&!entry.communitySubmission?<span><T>Reference</T> · <T>{entry.referenceAuthor}</T></span>:null}
       </div></>}
       apiReference={[

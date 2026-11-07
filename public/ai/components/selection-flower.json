@@ -9,10 +9,10 @@
     "zh": "拖选真实文字，每个字符周围长出随机配色的描边花朵；松手后花瓣、叶片和茎依次反向收回。"
   },
   "keywords": "文字 选区 选择 拖选 开花 花朵 生长 收回 植物 随机 text selection flowers bloom grow reverse seeded canvas Omerico",
-  "docsPath": "/docs/animations/selection-flower",
-  "detailPath": "/ai/components/selection-flower.json",
-  "markdownPath": "/ai/components/selection-flower.md",
-  "previewPath": "/assets/components/selection-flower.png",
+  "docsPath": "/Animuse/docs/animations/selection-flower",
+  "detailPath": "/Animuse/ai/components/selection-flower.json",
+  "markdownPath": "/Animuse/ai/components/selection-flower.md",
+  "previewPath": "/Animuse/assets/motion/selection-flower-9028117829580af4205a8cec.html",
   "discovery": {
     "category": "text",
     "useCases": [
@@ -68,7 +68,7 @@
   },
   "packages": {
     "react": {
-      "url": "/ai/packages/selection-flower/react.json",
+      "url": "/Animuse/ai/packages/selection-flower/react.json",
       "component": "SelectionFlower",
       "dependencies": [
         "react",
@@ -83,7 +83,7 @@
       ]
     },
     "vue": {
-      "url": "/ai/packages/selection-flower/vue.json",
+      "url": "/Animuse/ai/packages/selection-flower/vue.json",
       "component": "SelectionFlower",
       "dependencies": [
         "vue"
@@ -97,7 +97,7 @@
       ]
     },
     "svelte": {
-      "url": "/ai/packages/selection-flower/svelte.json",
+      "url": "/Animuse/ai/packages/selection-flower/svelte.json",
       "component": "SelectionFlower",
       "dependencies": [
         "svelte"
@@ -111,7 +111,7 @@
       ]
     },
     "solid": {
-      "url": "/ai/packages/selection-flower/solid.json",
+      "url": "/Animuse/ai/packages/selection-flower/solid.json",
       "component": "SelectionFlower",
       "dependencies": [
         "solid-js"
@@ -125,7 +125,7 @@
       ]
     },
     "preact": {
-      "url": "/ai/packages/selection-flower/preact.json",
+      "url": "/Animuse/ai/packages/selection-flower/preact.json",
       "component": "SelectionFlower",
       "dependencies": [
         "preact"
@@ -139,7 +139,7 @@
       ]
     },
     "vanilla": {
-      "url": "/ai/packages/selection-flower/vanilla.json",
+      "url": "/Animuse/ai/packages/selection-flower/vanilla.json",
       "component": "SelectionFlower",
       "dependencies": [],
       "usage": "import { mount } from \"./SelectionFlower\";\nconst target = document.querySelector<HTMLElement>(\"#demo\")!;\nconst component = mount(target);\n// When your page or route unmounts:\n// component.destroy();",

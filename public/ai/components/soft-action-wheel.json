@@ -9,10 +9,10 @@
     "zh": "黑色图标随短暂顺时针错峰收拢成环，保留细灰边、白色高光与柔和阴影，关闭时六项一起向外散开。"
   },
   "keywords": "柔光 浅色 环形 菜单 展开 细边 高光 阴影 模糊 弹簧 action wheel soft neumorphic radial menu",
-  "docsPath": "/docs/animations/soft-action-wheel",
-  "detailPath": "/ai/components/soft-action-wheel.json",
-  "markdownPath": "/ai/components/soft-action-wheel.md",
-  "previewPath": "/assets/components/soft-action-wheel.png",
+  "docsPath": "/Animuse/docs/animations/soft-action-wheel",
+  "detailPath": "/Animuse/ai/components/soft-action-wheel.json",
+  "markdownPath": "/Animuse/ai/components/soft-action-wheel.md",
+  "previewPath": "/Animuse/assets/motion/soft-action-wheel-e2b533456a07c7c6981d3aa4.html",
   "discovery": {
     "category": "navigation",
     "useCases": [
@@ -70,7 +70,7 @@
   },
   "packages": {
     "react": {
-      "url": "/ai/packages/soft-action-wheel/react.json",
+      "url": "/Animuse/ai/packages/soft-action-wheel/react.json",
       "component": "SoftActionWheel",
       "dependencies": [
         "react",
@@ -85,7 +85,7 @@
       ]
     },
     "vue": {
-      "url": "/ai/packages/soft-action-wheel/vue.json",
+      "url": "/Animuse/ai/packages/soft-action-wheel/vue.json",
       "component": "SoftActionWheel",
       "dependencies": [
         "vue"
@@ -99,7 +99,7 @@
       ]
     },
     "svelte": {
-      "url": "/ai/packages/soft-action-wheel/svelte.json",
+      "url": "/Animuse/ai/packages/soft-action-wheel/svelte.json",
       "component": "SoftActionWheel",
       "dependencies": [
         "svelte"
@@ -113,7 +113,7 @@
       ]
     },
     "solid": {
-      "url": "/ai/packages/soft-action-wheel/solid.json",
+      "url": "/Animuse/ai/packages/soft-action-wheel/solid.json",
       "component": "SoftActionWheel",
       "dependencies": [
         "solid-js"
@@ -127,7 +127,7 @@
       ]
     },
     "preact": {
-      "url": "/ai/packages/soft-action-wheel/preact.json",
+      "url": "/Animuse/ai/packages/soft-action-wheel/preact.json",
       "component": "SoftActionWheel",
       "dependencies": [
         "preact"
@@ -141,7 +141,7 @@
       ]
     },
     "vanilla": {
-      "url": "/ai/packages/soft-action-wheel/vanilla.json",
+      "url": "/Animuse/ai/packages/soft-action-wheel/vanilla.json",
       "component": "SoftActionWheel",
       "dependencies": [],
       "usage": "import { mount } from \"./SoftActionWheel\";\nconst target = document.querySelector<HTMLElement>(\"#demo\")!;\nconst component = mount(target);\n// When your page or route unmounts:\n// component.destroy();",

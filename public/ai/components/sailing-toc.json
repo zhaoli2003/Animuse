@@ -9,10 +9,10 @@
     "zh": "帆船随当前章节沿弯曲虚线移动，支持滚动跟随与点击目录平滑跳转。"
   },
   "keywords": "帆船 滚动 目录 导航 航线 虚线 弹簧 船 阅读 sailing ship scroll contents navigation toc spring",
-  "docsPath": "/docs/animations/sailing-toc",
-  "detailPath": "/ai/components/sailing-toc.json",
-  "markdownPath": "/ai/components/sailing-toc.md",
-  "previewPath": "/assets/components/sailing-toc.png",
+  "docsPath": "/Animuse/docs/animations/sailing-toc",
+  "detailPath": "/Animuse/ai/components/sailing-toc.json",
+  "markdownPath": "/Animuse/ai/components/sailing-toc.md",
+  "previewPath": "/Animuse/assets/motion/sailing-toc-37635568049e17dfd354ea74.html",
   "discovery": {
     "category": "navigation",
     "useCases": [
@@ -71,7 +71,7 @@
   },
   "packages": {
     "react": {
-      "url": "/ai/packages/sailing-toc/react.json",
+      "url": "/Animuse/ai/packages/sailing-toc/react.json",
       "component": "SailingToc",
       "dependencies": [
         "react",
@@ -86,7 +86,7 @@
       ]
     },
     "vue": {
-      "url": "/ai/packages/sailing-toc/vue.json",
+      "url": "/Animuse/ai/packages/sailing-toc/vue.json",
       "component": "SailingToc",
       "dependencies": [
         "vue"
@@ -100,7 +100,7 @@
       ]
     },
     "svelte": {
-      "url": "/ai/packages/sailing-toc/svelte.json",
+      "url": "/Animuse/ai/packages/sailing-toc/svelte.json",
       "component": "SailingToc",
       "dependencies": [
         "svelte"
@@ -114,7 +114,7 @@
       ]
     },
     "solid": {
-      "url": "/ai/packages/sailing-toc/solid.json",
+      "url": "/Animuse/ai/packages/sailing-toc/solid.json",
       "component": "SailingToc",
       "dependencies": [
         "solid-js"
@@ -128,7 +128,7 @@
       ]
     },
     "preact": {
-      "url": "/ai/packages/sailing-toc/preact.json",
+      "url": "/Animuse/ai/packages/sailing-toc/preact.json",
       "component": "SailingToc",
       "dependencies": [
         "preact"
@@ -142,7 +142,7 @@
       ]
     },
     "vanilla": {
-      "url": "/ai/packages/sailing-toc/vanilla.json",
+      "url": "/Animuse/ai/packages/sailing-toc/vanilla.json",
       "component": "SailingToc",
       "dependencies": [],
       "usage": "import { mount } from \"./SailingToc\";\nconst target = document.querySelector<HTMLElement>(\"#demo\")!;\nconst component = mount(target);\n// When your page or route unmounts:\n// component.destroy();",

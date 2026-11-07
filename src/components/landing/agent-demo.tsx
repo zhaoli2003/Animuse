@@ -1,4 +1,5 @@
 "use client";
+import { publicPath } from "@/lib/site-url";
 
 import { Fragment, memo, useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
 import { Check, ChevronRight, Copy, LayoutGrid, Search, Sparkles, X } from "lucide-react";
@@ -97,7 +98,7 @@ function MacCursor({ kind }: { kind: Cursor["kind"] }) {
   const size = 56;
   // Keep the approved display size and align the original 32px asset hotspot.
   // eslint-disable-next-line @next/next/no-img-element
-  return <img src={cursor.src} alt="" draggable={false} width={size} height={size} className="agent-demo-mac-cursor" style={{ left: -cursor.hotspot[0] * size / 32, top: -cursor.hotspot[1] * size / 32 }} />;
+  return <img src={publicPath(cursor.src)} alt="" draggable={false} width={size} height={size} className="agent-demo-mac-cursor" style={{ left: -cursor.hotspot[0] * size / 32, top: -cursor.hotspot[1] * size / 32 }} />;
 }
 
 export function AgentDemo({ code }: { code: DemoCode }) {
@@ -249,7 +250,7 @@ export function AgentDemo({ code }: { code: DemoCode }) {
 function LibraryLogo() {
   // The existing SVG includes both the symbol and the custom wordmark.
   // eslint-disable-next-line @next/next/no-img-element
-  return <img src="/animuse-logo.svg" alt="Animuse" className="agent-demo-library-logo h-[25px] w-auto invert dark:invert-0" />;
+  return <img src={publicPath("/animuse-logo.svg")} alt="Animuse" className="agent-demo-library-logo h-[25px] w-auto invert dark:invert-0" />;
 }
 const LibrarySidebar = memo(function LibrarySidebar() {
   return <aside className="g4-side hidden w-[228px] shrink-0 flex-col leading-6 lg:flex">
@@ -459,6 +460,6 @@ function Dock({ pointer, playing }: { pointer: Cursor; playing: boolean }) {
   const duration = `${Math.max(140, pointer.ms)}ms`;
   return <div ref={ref} className="g5k-dock">{DOCK.map((entry, index) => <span key={entry.key} className="g5k-slot" style={{ width: sizes[index], transitionDuration: duration }}>{showLabel && label === key && index === largest && sizes[index] > 80 && <span className="g5k-label">{entry.name}</span>}<span data-ap-dock={entry.key} className={cn("g5k-tile", entry.key === "leibox" && "agent-demo-leibox-tile")} style={{ width: sizes[index], height: sizes[index], transitionDuration: duration }}>
     {/* eslint-disable-next-line @next/next/no-img-element */}
-    <img src={entry.src} alt="" draggable={false} className="h-full w-full" />
+    <img src={publicPath(entry.src)} alt="" draggable={false} className="h-full w-full" />
   </span><span className={cn("g5k-run", entry.key !== "finder" && "g5k-run-on")} /></span>)}</div>;
 }

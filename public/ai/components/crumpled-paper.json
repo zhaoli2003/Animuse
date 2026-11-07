@@ -9,10 +9,10 @@
     "zh": "三张纸团随悬停展开为手写信、蓝色山景照片和印刷便笺，纸面沿真实折叠网格连续变形。"
   },
   "keywords": "揉皱 纸团 纸张 展开 信件 照片 折痕 网格 悬停 crumpled paper unfold mesh letter photograph webgl",
-  "docsPath": "/docs/animations/crumpled-paper",
-  "detailPath": "/ai/components/crumpled-paper.json",
-  "markdownPath": "/ai/components/crumpled-paper.md",
-  "previewPath": "/assets/components/crumpled-paper.png",
+  "docsPath": "/Animuse/docs/animations/crumpled-paper",
+  "detailPath": "/Animuse/ai/components/crumpled-paper.json",
+  "markdownPath": "/Animuse/ai/components/crumpled-paper.md",
+  "previewPath": "/Animuse/assets/motion/crumpled-paper-db5f951309d26cc6534d1df2.html",
   "discovery": {
     "category": "cards",
     "useCases": [
@@ -68,7 +68,7 @@
   },
   "packages": {
     "react": {
-      "url": "/ai/packages/crumpled-paper/react.json",
+      "url": "/Animuse/ai/packages/crumpled-paper/react.json",
       "component": "CrumpledPaper",
       "dependencies": [
         "react",
@@ -83,7 +83,7 @@
       ]
     },
     "vue": {
-      "url": "/ai/packages/crumpled-paper/vue.json",
+      "url": "/Animuse/ai/packages/crumpled-paper/vue.json",
       "component": "CrumpledPaper",
       "dependencies": [
         "vue"
@@ -97,7 +97,7 @@
       ]
     },
     "svelte": {
-      "url": "/ai/packages/crumpled-paper/svelte.json",
+      "url": "/Animuse/ai/packages/crumpled-paper/svelte.json",
       "component": "CrumpledPaper",
       "dependencies": [
         "svelte"
@@ -111,7 +111,7 @@
       ]
     },
     "solid": {
-      "url": "/ai/packages/crumpled-paper/solid.json",
+      "url": "/Animuse/ai/packages/crumpled-paper/solid.json",
       "component": "CrumpledPaper",
       "dependencies": [
         "solid-js"
@@ -125,7 +125,7 @@
       ]
     },
     "preact": {
-      "url": "/ai/packages/crumpled-paper/preact.json",
+      "url": "/Animuse/ai/packages/crumpled-paper/preact.json",
       "component": "CrumpledPaper",
       "dependencies": [
         "preact"
@@ -139,7 +139,7 @@
       ]
     },
     "vanilla": {
-      "url": "/ai/packages/crumpled-paper/vanilla.json",
+      "url": "/Animuse/ai/packages/crumpled-paper/vanilla.json",
       "component": "CrumpledPaper",
       "dependencies": [],
       "usage": "import { mount } from \"./CrumpledPaper\";\nconst target = document.querySelector<HTMLElement>(\"#demo\")!;\nconst component = mount(target);\n// When your page or route unmounts:\n// component.destroy();",

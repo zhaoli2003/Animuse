@@ -9,10 +9,10 @@
     "zh": "字符鲨鱼在细网格上摆尾游动、追逐鱼群，支持指针避让与点击惊散，并可叠加半透明本地输入框。"
   },
   "keywords": "ASCII 字符 鲨鱼 鱼群 游动 海洋 捕食 追逐 避让 水波 网格 背景 输入框 shark ocean fish boids stacked drewdi",
-  "docsPath": "/docs/animations/ascii-sharks",
-  "detailPath": "/ai/components/ascii-sharks.json",
-  "markdownPath": "/ai/components/ascii-sharks.md",
-  "previewPath": "/assets/components/ascii-sharks.png",
+  "docsPath": "/Animuse/docs/animations/ascii-sharks",
+  "detailPath": "/Animuse/ai/components/ascii-sharks.json",
+  "markdownPath": "/Animuse/ai/components/ascii-sharks.md",
+  "previewPath": "/Animuse/assets/motion/ascii-sharks-e6df67f2d731b02fd3b2a65a.html",
   "discovery": {
     "category": "background",
     "useCases": [
@@ -71,7 +71,7 @@
   },
   "packages": {
     "react": {
-      "url": "/ai/packages/ascii-sharks/react.json",
+      "url": "/Animuse/ai/packages/ascii-sharks/react.json",
       "component": "AsciiSharks",
       "dependencies": [
         "react",
@@ -86,7 +86,7 @@
       ]
     },
     "vue": {
-      "url": "/ai/packages/ascii-sharks/vue.json",
+      "url": "/Animuse/ai/packages/ascii-sharks/vue.json",
       "component": "AsciiSharks",
       "dependencies": [
         "vue"
@@ -100,7 +100,7 @@
       ]
     },
     "svelte": {
-      "url": "/ai/packages/ascii-sharks/svelte.json",
+      "url": "/Animuse/ai/packages/ascii-sharks/svelte.json",
       "component": "AsciiSharks",
       "dependencies": [
         "svelte"
@@ -114,7 +114,7 @@
       ]
     },
     "solid": {
-      "url": "/ai/packages/ascii-sharks/solid.json",
+      "url": "/Animuse/ai/packages/ascii-sharks/solid.json",
       "component": "AsciiSharks",
       "dependencies": [
         "solid-js"
@@ -128,7 +128,7 @@
       ]
     },
     "preact": {
-      "url": "/ai/packages/ascii-sharks/preact.json",
+      "url": "/Animuse/ai/packages/ascii-sharks/preact.json",
       "component": "AsciiSharks",
       "dependencies": [
         "preact"
@@ -142,7 +142,7 @@
       ]
     },
     "vanilla": {
-      "url": "/ai/packages/ascii-sharks/vanilla.json",
+      "url": "/Animuse/ai/packages/ascii-sharks/vanilla.json",
       "component": "AsciiSharks",
       "dependencies": [],
       "usage": "import { mount } from \"./AsciiSharks\";\nconst target = document.querySelector<HTMLElement>(\"#demo\")!;\nconst component = mount(target);\n// When your page or route unmounts:\n// component.destroy();",

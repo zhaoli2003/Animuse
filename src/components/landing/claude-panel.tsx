@@ -5,6 +5,7 @@ import { useLanguage } from "@/components/common/language-provider";
 import { useDemoActivity } from "@/components/landing/demo-panel";
 import { cn } from "@/lib/utils";
 import { optimizedImage } from "@/lib/optimized-image";
+import { publicPath } from "@/lib/site-url";
 import panels from "./claude-panels.generated.json";
 import { claudeDictionary, mountClaudePanel } from "./claude-panels.generated.js";
 
@@ -14,14 +15,15 @@ function panelMarkup(html: string, sizes: string) {
     const image = optimizedImage(url, sizes);
     return "srcSet" in image
       ? `${prefix}${image.src}" srcset="${image.srcSet}" sizes="${image.sizes}"`
-      : match;
-  });
+      : `${prefix}${image.src}"`;
+  }).replace(/\b(src|href|poster|data-src)="(\/(?!\/)[^"]*)"/g,
+    (_, attribute: string, url: string) => `${attribute}="${publicPath(url)}"`);
 }
 
 // Keep React from replacing the DOM owned by the scoped controller on a parent update.
 const content = {
   discovery: { __html: panelMarkup(panels.discovery.html, "(min-width: 1024px) 540px, 100vw") },
-  frameworks: { __html: panels.frameworks.html },
+  frameworks: { __html: panelMarkup(panels.frameworks.html, "72px") },
   agent: { __html: panelMarkup(panels.agent.html, "72px") },
 };
 interface PanelController {

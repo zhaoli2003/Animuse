@@ -1,4 +1,5 @@
 "use client";
+import { publicPath } from "@/lib/site-url";
 
 import { useEffect, useRef } from "react";
 
@@ -36,7 +37,7 @@ export function PreviewVideo({
     const sync = () => {
       window.clearTimeout(releaseTimer);
       if (inView && !document.hidden && !motion.matches && (hovered || focused)) {
-        if (!video.hasAttribute("src")) video.src = src;
+        if (!video.hasAttribute("src")) video.src = publicPath(src);
         void video.play().catch(() => {});
         return;
       }

@@ -8,6 +8,7 @@ import { highlight } from "@/components/docs/highlight";
 import { Footer } from "@/components/landing/footer";
 import { INTERACTION_COMPONENTS } from "@/data/interaction-components";
 import { LEIBOX_SKILL_INSTALL_COMMAND } from "@/lib/leibox-skill";
+import { publicPath, siteUrl } from "@/lib/site-url";
 
 export const metadata: Metadata = {
   title: "AI integration",
@@ -26,7 +27,7 @@ Install the Skill in the AI client you use. Then ask it to search the live Animu
 
 Example: ${EXAMPLE}
 
-Current collection: ${INTERACTION_COMPONENTS.length} components. The Skill fetches /ai/catalog.json for every query, so new published entries are available without reinstalling the Skill.
+Current collection: ${INTERACTION_COMPONENTS.length} components. The Skill defaults to https://zhaoli2003.github.io/Animuse and reads the live collection at ${siteUrl("/ai/catalog.json")}. Newly published entries are available without reinstalling the Skill. Override ANIMUSE_ORIGIN or --origin to use another site base URL, including http://127.0.0.1:3000 for local development.
 
 ${COMMANDS}
 
@@ -47,7 +48,7 @@ export default async function AiIntegrationPage() {
         <h2 id="install-skill"><T>Install the Animuse Skill</T></h2>
         <p><T>Run this command in your project and choose the AI client you use. No Animuse repository checkout, API key or MCP server is required.</T></p>
         <div className="my-6"><CodeBlock source={LEIBOX_SKILL_INSTALL_COMMAND} fileName="Terminal" /></div>
-        <p>当前版本在本地运行，默认目录地址为 <code>http://127.0.0.1:3000</code>。请先启动网站；部署后可设置 <code>ANIMUSE_ORIGIN</code>，或使用 <code>--origin</code> 指定新的目录地址。</p>
+        <p>默认站点地址为 <code>https://zhaoli2003.github.io/Animuse</code>。可设置 <code>ANIMUSE_ORIGIN</code>，或使用 <code>--origin</code> 指定另一个站点，支持项目目录路径。本地开发时先启动网站，再使用 <code>--origin http://127.0.0.1:3000</code>。</p>
         <h2><T>Ask your AI</T></h2>
         <p><T>After installation, describe the component you need and your AI will search, choose the matching framework and download the actual source files.</T></p>
         <blockquote><T>Use Animuse to find a glass folder component and integrate its React source into my current page.</T></blockquote>
@@ -55,10 +56,10 @@ export default async function AiIntegrationPage() {
         <h2><T>The complete collection</T></h2>
         <p><strong>{INTERACTION_COMPONENTS.length}</strong> <T>components are currently searchable, with six framework versions where offered.</T></p>
         <ul>
-          <li><a href="/ai/catalog.json"><code>/ai/catalog.json</code></a> — <T>Searchable component metadata</T></li>
-          <li><a href="/ai/components/glass-folder.json"><code>/ai/components/glass-folder.json</code></a> — <T>Example component detail as JSON</T></li>
-          <li><a href="/ai/packages/glass-folder/react.json"><code>/ai/packages/glass-folder/react.json</code></a> — <T>Complete React source, dependencies and usage</T></li>
-          <li><a href="/llms.txt"><code>/llms.txt</code></a> — <T>Index for AI readers</T></li>
+          <li><a href={publicPath("/ai/catalog.json")}><code>{publicPath("/ai/catalog.json")}</code></a> — <T>Searchable component metadata</T></li>
+          <li><a href={publicPath("/ai/components/glass-folder.json")}><code>{publicPath("/ai/components/glass-folder.json")}</code></a> — <T>Example component detail as JSON</T></li>
+          <li><a href={publicPath("/ai/packages/glass-folder/react.json")}><code>{publicPath("/ai/packages/glass-folder/react.json")}</code></a> — <T>Complete React source, dependencies and usage</T></li>
+          <li><a href={publicPath("/llms.txt")}><code>{publicPath("/llms.txt")}</code></a> — <T>Index for AI readers</T></li>
         </ul>
         <h2><T>Search and download with the installed helper</T></h2>
         <p><T>The Skill includes a standalone Node.js helper. Resolve its path from the installed Skill folder and run it in your target project.</T></p>
@@ -70,7 +71,7 @@ export default async function AiIntegrationPage() {
           <summary className="cursor-pointer text-sm font-medium"><T>Read Skill instructions</T></summary>
           <div className="mt-4"><CodeBlock html={skillHtml} source={skillSource} fileName="SKILL.md" /></div>
         </details>
-        <p><a href="/ai/SKILL.md" download="SKILL.md"><T>Download SKILL.md</T></a></p>
+        <p><a href={publicPath("/ai/SKILL.md")} download="SKILL.md"><T>Download SKILL.md</T></a></p>
       </div>
       <div className="mt-24"><Footer variant="docs" /></div>
     </article>

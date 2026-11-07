@@ -9,10 +9,10 @@
     "zh": "转账详情在粉金色光雾与上浮粒子后逐渐虚化，经过两段处理提示，再恢复为清晰的成功状态。"
   },
   "keywords": "转账 确认 弹窗 光雾 模糊 粒子 处理 成功 transfer confirm payment glow blur dialog Gabriel",
-  "docsPath": "/docs/animations/transfer-glow",
-  "detailPath": "/ai/components/transfer-glow.json",
-  "markdownPath": "/ai/components/transfer-glow.md",
-  "previewPath": "/assets/components/transfer-glow.png",
+  "docsPath": "/Animuse/docs/animations/transfer-glow",
+  "detailPath": "/Animuse/ai/components/transfer-glow.json",
+  "markdownPath": "/Animuse/ai/components/transfer-glow.md",
+  "previewPath": "/Animuse/assets/motion/transfer-glow-035dd1535d783de44759a5ca.html",
   "discovery": {
     "category": "feedback",
     "useCases": [
@@ -74,7 +74,7 @@
   },
   "packages": {
     "react": {
-      "url": "/ai/packages/transfer-glow/react.json",
+      "url": "/Animuse/ai/packages/transfer-glow/react.json",
       "component": "TransferGlow",
       "dependencies": [
         "react",
@@ -89,7 +89,7 @@
       ]
     },
     "vue": {
-      "url": "/ai/packages/transfer-glow/vue.json",
+      "url": "/Animuse/ai/packages/transfer-glow/vue.json",
       "component": "TransferGlow",
       "dependencies": [
         "vue"
@@ -103,7 +103,7 @@
       ]
     },
     "svelte": {
-      "url": "/ai/packages/transfer-glow/svelte.json",
+      "url": "/Animuse/ai/packages/transfer-glow/svelte.json",
       "component": "TransferGlow",
       "dependencies": [
         "svelte"
@@ -117,7 +117,7 @@
       ]
     },
     "solid": {
-      "url": "/ai/packages/transfer-glow/solid.json",
+      "url": "/Animuse/ai/packages/transfer-glow/solid.json",
       "component": "TransferGlow",
       "dependencies": [
         "solid-js"
@@ -131,7 +131,7 @@
       ]
     },
     "preact": {
-      "url": "/ai/packages/transfer-glow/preact.json",
+      "url": "/Animuse/ai/packages/transfer-glow/preact.json",
       "component": "TransferGlow",
       "dependencies": [
         "preact"
@@ -145,7 +145,7 @@
       ]
     },
     "vanilla": {
-      "url": "/ai/packages/transfer-glow/vanilla.json",
+      "url": "/Animuse/ai/packages/transfer-glow/vanilla.json",
       "component": "TransferGlow",
       "dependencies": [],
       "usage": "import { mount } from \"./TransferGlow\";\nconst target = document.querySelector<HTMLElement>(\"#demo\")!;\nconst component = mount(target);\n// When your page or route unmounts:\n// component.destroy();",

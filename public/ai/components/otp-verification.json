@@ -9,10 +9,10 @@
     "zh": "胶囊展开为六位验证码输入框，收拢验证后呈现错误摇动或绿色成功反馈。"
   },
   "keywords": "otp verification code input password authentication pill morph error success 验证码 验证 输入 密码 胶囊 动效 错误 成功",
-  "docsPath": "/docs/components/otp-verification",
-  "detailPath": "/ai/components/otp-verification.json",
-  "markdownPath": "/ai/components/otp-verification.md",
-  "previewPath": "/assets/components/otp-verification.png",
+  "docsPath": "/Animuse/docs/components/otp-verification",
+  "detailPath": "/Animuse/ai/components/otp-verification.json",
+  "markdownPath": "/Animuse/ai/components/otp-verification.md",
+  "previewPath": "/Animuse/assets/components/otp-verification.png",
   "discovery": {
     "category": "input",
     "useCases": [
@@ -68,7 +68,7 @@
   },
   "packages": {
     "react": {
-      "url": "/ai/packages/otp-verification/react.json",
+      "url": "/Animuse/ai/packages/otp-verification/react.json",
       "component": "OtpVerification",
       "dependencies": [
         "react",
@@ -84,7 +84,7 @@
       ]
     },
     "vue": {
-      "url": "/ai/packages/otp-verification/vue.json",
+      "url": "/Animuse/ai/packages/otp-verification/vue.json",
       "component": "OtpVerification",
       "dependencies": [
         "vue",
@@ -99,7 +99,7 @@
       ]
     },
     "svelte": {
-      "url": "/ai/packages/otp-verification/svelte.json",
+      "url": "/Animuse/ai/packages/otp-verification/svelte.json",
       "component": "OtpVerification",
       "dependencies": [
         "svelte",
@@ -114,7 +114,7 @@
       ]
     },
     "solid": {
-      "url": "/ai/packages/otp-verification/solid.json",
+      "url": "/Animuse/ai/packages/otp-verification/solid.json",
       "component": "OtpVerification",
       "dependencies": [
         "solid-js",
@@ -129,7 +129,7 @@
       ]
     },
     "preact": {
-      "url": "/ai/packages/otp-verification/preact.json",
+      "url": "/Animuse/ai/packages/otp-verification/preact.json",
       "component": "OtpVerification",
       "dependencies": [
         "preact",
@@ -144,7 +144,7 @@
       ]
     },
     "vanilla": {
-      "url": "/ai/packages/otp-verification/vanilla.json",
+      "url": "/Animuse/ai/packages/otp-verification/vanilla.json",
       "component": "OtpVerification",
       "dependencies": [
         "gsap@3.12.7"

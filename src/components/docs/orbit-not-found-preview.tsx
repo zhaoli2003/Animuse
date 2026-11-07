@@ -1,4 +1,5 @@
 "use client";
+import { publicPath } from "@/lib/site-url";
 
 import { useEffect, useRef, useState } from "react";
 
@@ -26,7 +27,7 @@ export function OrbitNotFoundPreview() {
   return (
     <MotionDemoFrame width={width} height={height} responsive={false} viewportRef={viewport}>
       <iframe
-        src="/demos/orbit-not-found"
+        src={publicPath("/demos/orbit-not-found/")}
         title={t("Orbit 404 Page")}
         loading="lazy"
         width={width}

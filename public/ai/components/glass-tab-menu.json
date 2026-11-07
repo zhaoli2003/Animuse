@@ -9,10 +9,10 @@
     "zh": "四项磨砂标签栏连续展开为六宫格菜单，选中块通透滑动，加号旋转为关闭按钮。"
   },
   "keywords": "玻璃 标签栏 菜单 展开 六宫格 加号 磨砂 滑动 glass tabs menu morph frosted toolbar creation",
-  "docsPath": "/docs/animations/glass-tab-menu",
-  "detailPath": "/ai/components/glass-tab-menu.json",
-  "markdownPath": "/ai/components/glass-tab-menu.md",
-  "previewPath": "/assets/components/glass-tab-menu.png",
+  "docsPath": "/Animuse/docs/animations/glass-tab-menu",
+  "detailPath": "/Animuse/ai/components/glass-tab-menu.json",
+  "markdownPath": "/Animuse/ai/components/glass-tab-menu.md",
+  "previewPath": "/Animuse/assets/motion/glass-tab-menu-ac6a3afd1f2fbf3bd0c27c56.html",
   "discovery": {
     "category": "navigation",
     "useCases": [
@@ -68,7 +68,7 @@
   },
   "packages": {
     "react": {
-      "url": "/ai/packages/glass-tab-menu/react.json",
+      "url": "/Animuse/ai/packages/glass-tab-menu/react.json",
       "component": "GlassTabMenu",
       "dependencies": [
         "react",
@@ -83,7 +83,7 @@
       ]
     },
     "vue": {
-      "url": "/ai/packages/glass-tab-menu/vue.json",
+      "url": "/Animuse/ai/packages/glass-tab-menu/vue.json",
       "component": "GlassTabMenu",
       "dependencies": [
         "vue"
@@ -97,7 +97,7 @@
       ]
     },
     "svelte": {
-      "url": "/ai/packages/glass-tab-menu/svelte.json",
+      "url": "/Animuse/ai/packages/glass-tab-menu/svelte.json",
       "component": "GlassTabMenu",
       "dependencies": [
         "svelte"
@@ -111,7 +111,7 @@
       ]
     },
     "solid": {
-      "url": "/ai/packages/glass-tab-menu/solid.json",
+      "url": "/Animuse/ai/packages/glass-tab-menu/solid.json",
       "component": "GlassTabMenu",
       "dependencies": [
         "solid-js"
@@ -125,7 +125,7 @@
       ]
     },
     "preact": {
-      "url": "/ai/packages/glass-tab-menu/preact.json",
+      "url": "/Animuse/ai/packages/glass-tab-menu/preact.json",
       "component": "GlassTabMenu",
       "dependencies": [
         "preact"
@@ -139,7 +139,7 @@
       ]
     },
     "vanilla": {
-      "url": "/ai/packages/glass-tab-menu/vanilla.json",
+      "url": "/Animuse/ai/packages/glass-tab-menu/vanilla.json",
       "component": "GlassTabMenu",
       "dependencies": [],
       "usage": "import { mount } from \"./GlassTabMenu\";\nconst target = document.querySelector<HTMLElement>(\"#demo\")!;\nconst component = mount(target);\n// When your page or route unmounts:\n// component.destroy();",

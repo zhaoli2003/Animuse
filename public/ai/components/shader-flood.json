@@ -9,10 +9,10 @@
     "zh": "实时液体纹理从鼠标进入的位置铺满卡片，再向离开的位置收拢。每张卡片拥有独立的三色色板。"
   },
   "keywords": "液体 注入 卡片 网格 三色 着色器 悬浮 方向 shader flood liquid feature cards hover palette seed Planes Ashish Gogula",
-  "docsPath": "/docs/animations/shader-flood",
-  "detailPath": "/ai/components/shader-flood.json",
-  "markdownPath": "/ai/components/shader-flood.md",
-  "previewPath": "/assets/components/shader-flood.png",
+  "docsPath": "/Animuse/docs/animations/shader-flood",
+  "detailPath": "/Animuse/ai/components/shader-flood.json",
+  "markdownPath": "/Animuse/ai/components/shader-flood.md",
+  "previewPath": "/Animuse/assets/motion/shader-flood-14456a736f9603394e46530b.html",
   "discovery": {
     "category": "cards",
     "useCases": [
@@ -78,7 +78,7 @@
   },
   "packages": {
     "react": {
-      "url": "/ai/packages/shader-flood/react.json",
+      "url": "/Animuse/ai/packages/shader-flood/react.json",
       "component": "ShaderFlood",
       "dependencies": [
         "react",
@@ -93,7 +93,7 @@
       ]
     },
     "vue": {
-      "url": "/ai/packages/shader-flood/vue.json",
+      "url": "/Animuse/ai/packages/shader-flood/vue.json",
       "component": "ShaderFlood",
       "dependencies": [
         "vue"
@@ -107,7 +107,7 @@
       ]
     },
     "svelte": {
-      "url": "/ai/packages/shader-flood/svelte.json",
+      "url": "/Animuse/ai/packages/shader-flood/svelte.json",
       "component": "ShaderFlood",
       "dependencies": [
         "svelte"
@@ -121,7 +121,7 @@
       ]
     },
     "solid": {
-      "url": "/ai/packages/shader-flood/solid.json",
+      "url": "/Animuse/ai/packages/shader-flood/solid.json",
       "component": "ShaderFlood",
       "dependencies": [
         "solid-js"
@@ -135,7 +135,7 @@
       ]
     },
     "preact": {
-      "url": "/ai/packages/shader-flood/preact.json",
+      "url": "/Animuse/ai/packages/shader-flood/preact.json",
       "component": "ShaderFlood",
       "dependencies": [
         "preact"
@@ -149,7 +149,7 @@
       ]
     },
     "vanilla": {
-      "url": "/ai/packages/shader-flood/vanilla.json",
+      "url": "/Animuse/ai/packages/shader-flood/vanilla.json",
       "component": "ShaderFlood",
       "dependencies": [],
       "usage": "import { mount } from \"./ShaderFlood\";\nconst target = document.querySelector<HTMLElement>(\"#demo\")!;\nconst component = mount(target);\n// When your page or route unmounts:\n// component.destroy();",

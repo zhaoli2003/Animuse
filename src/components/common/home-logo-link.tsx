@@ -1,4 +1,5 @@
 "use client";
+import { routePath } from "@/lib/route-path";
 
 import { gsap } from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
@@ -11,7 +12,7 @@ import { SiteLogo } from "@/components/common/site-logo";
 gsap.registerPlugin(ScrollToPlugin);
 
 export function HomeLogoLink({ className }: { className?: string }) {
-  const pathname = usePathname();
+  const pathname = routePath(usePathname());
   const scrollTween = useRef<gsap.core.Tween | null>(null);
 
   useEffect(() => () => {

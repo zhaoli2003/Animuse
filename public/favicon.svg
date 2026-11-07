@@ -1,1 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="Animuse"><title>Animuse</title><rect width="128" height="128" rx="30" fill="#111"/><path d="M34 96 56 32h16l22 64H77l-4-14H54l-4 14Zm24-28h11l-5-20Z" fill="white" fill-rule="evenodd"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-labelledby="title description">
+  <title id="title">Animuse</title>
+  <desc id="description">An original single-storey lowercase a. A broad rounded loop and a rising diagonal terminal suggest a component in motion.</desc>
+  <rect width="128" height="128" rx="30" fill="#111111"/>
+  <path fill="#ffffff" fill-rule="evenodd" d="M61 19C35 19 18 38 18 65C18 92 35 110 60 110C73 110 83 105 89 96V108H110V19L89 27V34C82 24 72 19 61 19ZM63 41C78 41 88 51 88 65C88 79 78 89 63 89C48 89 39 79 39 65C39 51 48 41 63 41Z"/>
+</svg>

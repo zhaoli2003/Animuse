@@ -9,7 +9,7 @@ import { UrlStateProvider } from "@/components/common/url-state-provider";
 import { LanguageProvider } from "@/components/common/language-provider";
 import { LogoTransitionProvider } from "@/components/common/logo-transition-provider";
 import { ComponentEntryTransition } from "@/components/common/component-entry-transition";
-import { SITE_URL } from "@/lib/site-url";
+import { SITE_URL, publicPath, siteUrl } from "@/lib/site-url";
 import { FONT_BOOTSTRAP_SCRIPT } from "@/lib/site-fonts";
 const DESCRIPTION =
   "Animuse is a personal collection of UI inspiration, interaction experiments and design references for learning and research.";
@@ -54,17 +54,17 @@ export const metadata: Metadata = {
     url: SITE_URL,
     siteName: "Animuse",
     locale: "zh_CN",
-    images: [{ url: "/animuse-og.png", width: 1200, height: 630, alt: "Animuse" }],
+    images: [{ url: siteUrl("/animuse-og.png"), width: 1200, height: 630, alt: "Animuse" }],
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/animuse-og.png"],
+    images: [siteUrl("/animuse-og.png")],
   },
   icons: {
-    icon: [{ url: "/favicon.svg?v=animuse", type: "image/svg+xml" }],
-    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
+    icon: [{ url: publicPath("/favicon.svg?v=animuse-a-v1"), type: "image/svg+xml" }],
+    apple: [{ url: publicPath("/apple-touch-icon.png"), sizes: "180x180" }],
   },
-  manifest: "/site.webmanifest",
+  manifest: publicPath("/site.webmanifest"),
   other: {
     "font-attribution": "Chinese typeface: MiSans VF by Xiaomi. https://hyperos.mi.com/font/zh/",
   },
@@ -92,7 +92,7 @@ export default function RootLayout({
         <script dangerouslySetInnerHTML={{ __html: FONT_BOOTSTRAP_SCRIPT }} />
         <noscript>
           {/* eslint-disable-next-line @next/next/no-css-tags -- Font fallback when the locale bootstrap cannot run. */}
-          <link rel="stylesheet" href="/fonts/misans.css" />
+          <link rel="stylesheet" href={publicPath("/fonts/misans.css")} />
         </noscript>
       </head>
       <body className="flex min-h-full flex-col bg-background text-foreground">

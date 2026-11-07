@@ -4,17 +4,17 @@ A three-dimensional wall of real album covers: hover to lift, click to fly a cov
 
 真实专辑封面组成三维隧道，悬停吸起，点击沿弧线飞入中央，滚动或拖动不断穿行。
 
-Docs: http://127.0.0.1:3000/docs/animations/album-cover-tunnel
-Detail: http://127.0.0.1:3000/ai/components/album-cover-tunnel.json
+Docs: https://zhaoli2003.github.io/Animuse/docs/animations/album-cover-tunnel
+Detail: https://zhaoli2003.github.io/Animuse/ai/components/album-cover-tunnel.json
 
 Use the installed Animuse Skill to pull the selected framework's complete source, or fetch one package JSON directly:
 
-- React: http://127.0.0.1:3000/ai/packages/album-cover-tunnel/react.json
-- Vue: http://127.0.0.1:3000/ai/packages/album-cover-tunnel/vue.json
-- Svelte: http://127.0.0.1:3000/ai/packages/album-cover-tunnel/svelte.json
-- Solid: http://127.0.0.1:3000/ai/packages/album-cover-tunnel/solid.json
-- Preact: http://127.0.0.1:3000/ai/packages/album-cover-tunnel/preact.json
-- Vanilla: http://127.0.0.1:3000/ai/packages/album-cover-tunnel/vanilla.json
+- React: https://zhaoli2003.github.io/Animuse/ai/packages/album-cover-tunnel/react.json
+- Vue: https://zhaoli2003.github.io/Animuse/ai/packages/album-cover-tunnel/vue.json
+- Svelte: https://zhaoli2003.github.io/Animuse/ai/packages/album-cover-tunnel/svelte.json
+- Solid: https://zhaoli2003.github.io/Animuse/ai/packages/album-cover-tunnel/solid.json
+- Preact: https://zhaoli2003.github.io/Animuse/ai/packages/album-cover-tunnel/preact.json
+- Vanilla: https://zhaoli2003.github.io/Animuse/ai/packages/album-cover-tunnel/vanilla.json
 
 Design reference: LeiShiFu original interaction / 雷师傅原创
 Source notice: Interaction credited to LeiShiFu. Album artwork is demonstration content; rights remain with the respective artwork owners. Three.js retains its MIT notice. Original attribution applies to the interaction, not album artwork.

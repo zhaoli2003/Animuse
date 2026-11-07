@@ -1,4 +1,6 @@
 "use client";
+import { routePath } from "@/lib/route-path";
+import { publicPath } from "@/lib/site-url";
 
 import { gsap } from "gsap";
 import { usePathname } from "next/navigation";
@@ -30,7 +32,7 @@ function placeOverlay(image: HTMLImageElement, snapshot: Snapshot) {
 
 /** One persistent carrier for navigation Logos, outside moving page/header parents. */
 export function LogoTransitionProvider({ children }: { children: ReactNode }) {
-  const pathname = usePathname();
+  const pathname = routePath(usePathname());
   const overlay = useRef<HTMLImageElement>(null);
   const pending = useRef<Snapshot | null>(null);
   const target = useRef<HTMLImageElement | null>(null);
@@ -147,6 +149,6 @@ export function LogoTransitionProvider({ children }: { children: ReactNode }) {
   return <LogoTransitionContext.Provider value={context}>
     {children}
     {/* eslint-disable-next-line @next/next/no-img-element */}
-    <img ref={overlay} src="/animuse-logo.svg" alt="" aria-hidden="true" width={640} height={160} className={styles.overlay} data-logo-motion="idle" />
+    <img ref={overlay} src={publicPath("/animuse-logo.svg")} alt="" aria-hidden="true" width={640} height={160} className={styles.overlay} data-logo-motion="idle" />
   </LogoTransitionContext.Provider>;
 }

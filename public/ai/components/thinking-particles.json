@@ -9,10 +9,10 @@
     "zh": "粒子随五个思考步骤连续变形，完成后收起并逐字显示回答，支持暂停、重播和复制。"
   },
   "keywords": "思考 步骤 粒子 变形 放大镜 魔方 积木 机械臂 礼物 AI 推理 thinking reasoning particles morph agent",
-  "docsPath": "/docs/animations/thinking-particles",
-  "detailPath": "/ai/components/thinking-particles.json",
-  "markdownPath": "/ai/components/thinking-particles.md",
-  "previewPath": "/assets/components/thinking-particles.png",
+  "docsPath": "/Animuse/docs/animations/thinking-particles",
+  "detailPath": "/Animuse/ai/components/thinking-particles.json",
+  "markdownPath": "/Animuse/ai/components/thinking-particles.md",
+  "previewPath": "/Animuse/assets/motion/thinking-particles-71f36c57c7bbb21be99082db.html",
   "discovery": {
     "category": "feedback",
     "useCases": [
@@ -68,7 +68,7 @@
   },
   "packages": {
     "react": {
-      "url": "/ai/packages/thinking-particles/react.json",
+      "url": "/Animuse/ai/packages/thinking-particles/react.json",
       "component": "ThinkingParticles",
       "dependencies": [
         "react",
@@ -83,7 +83,7 @@
       ]
     },
     "vue": {
-      "url": "/ai/packages/thinking-particles/vue.json",
+      "url": "/Animuse/ai/packages/thinking-particles/vue.json",
       "component": "ThinkingParticles",
       "dependencies": [
         "vue"
@@ -97,7 +97,7 @@
       ]
     },
     "svelte": {
-      "url": "/ai/packages/thinking-particles/svelte.json",
+      "url": "/Animuse/ai/packages/thinking-particles/svelte.json",
       "component": "ThinkingParticles",
       "dependencies": [
         "svelte"
@@ -111,7 +111,7 @@
       ]
     },
     "solid": {
-      "url": "/ai/packages/thinking-particles/solid.json",
+      "url": "/Animuse/ai/packages/thinking-particles/solid.json",
       "component": "ThinkingParticles",
       "dependencies": [
         "solid-js"
@@ -125,7 +125,7 @@
       ]
     },
     "preact": {
-      "url": "/ai/packages/thinking-particles/preact.json",
+      "url": "/Animuse/ai/packages/thinking-particles/preact.json",
       "component": "ThinkingParticles",
       "dependencies": [
         "preact"
@@ -139,7 +139,7 @@
       ]
     },
     "vanilla": {
-      "url": "/ai/packages/thinking-particles/vanilla.json",
+      "url": "/Animuse/ai/packages/thinking-particles/vanilla.json",
       "component": "ThinkingParticles",
       "dependencies": [],
       "usage": "import { mount } from \"./ThinkingParticles\";\nconst target = document.querySelector<HTMLElement>(\"#demo\")!;\nconst component = mount(target);\n// When your page or route unmounts:\n// component.destroy();",

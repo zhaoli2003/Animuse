@@ -9,10 +9,10 @@
     "zh": "20 × 20 点阵围绕两个移动焦点呼吸，呈现图片生成中的等待反馈。"
   },
   "keywords": "动效 AI 生成 图片 加载 等待 反馈 点阵 光点 loading generating dots focus",
-  "docsPath": "/docs/animations/ai-generating",
-  "detailPath": "/ai/components/ai-generating.json",
-  "markdownPath": "/ai/components/ai-generating.md",
-  "previewPath": "/assets/components/ai-generating.png",
+  "docsPath": "/Animuse/docs/animations/ai-generating",
+  "detailPath": "/Animuse/ai/components/ai-generating.json",
+  "markdownPath": "/Animuse/ai/components/ai-generating.md",
+  "previewPath": "/Animuse/assets/motion/ai-generating-93d6bdc462e6a2dd75050b9e.html",
   "discovery": {
     "category": "feedback",
     "useCases": [
@@ -69,7 +69,7 @@
   },
   "packages": {
     "react": {
-      "url": "/ai/packages/ai-generating/react.json",
+      "url": "/Animuse/ai/packages/ai-generating/react.json",
       "component": "AiImageGeneration",
       "dependencies": [
         "react",
@@ -84,7 +84,7 @@
       ]
     },
     "vue": {
-      "url": "/ai/packages/ai-generating/vue.json",
+      "url": "/Animuse/ai/packages/ai-generating/vue.json",
       "component": "AiImageGeneration",
       "dependencies": [
         "vue"
@@ -98,7 +98,7 @@
       ]
     },
     "svelte": {
-      "url": "/ai/packages/ai-generating/svelte.json",
+      "url": "/Animuse/ai/packages/ai-generating/svelte.json",
       "component": "AiImageGeneration",
       "dependencies": [
         "svelte"
@@ -112,7 +112,7 @@
       ]
     },
     "solid": {
-      "url": "/ai/packages/ai-generating/solid.json",
+      "url": "/Animuse/ai/packages/ai-generating/solid.json",
       "component": "AiImageGeneration",
       "dependencies": [
         "solid-js"
@@ -126,7 +126,7 @@
       ]
     },
     "preact": {
-      "url": "/ai/packages/ai-generating/preact.json",
+      "url": "/Animuse/ai/packages/ai-generating/preact.json",
       "component": "AiImageGeneration",
       "dependencies": [
         "preact"
@@ -140,7 +140,7 @@
       ]
     },
     "vanilla": {
-      "url": "/ai/packages/ai-generating/vanilla.json",
+      "url": "/Animuse/ai/packages/ai-generating/vanilla.json",
       "component": "AiImageGeneration",
       "dependencies": [],
       "usage": "import { mount } from \"./AiImageGeneration\";\nconst target = document.querySelector<HTMLElement>(\"#demo\")!;\nconst component = mount(target);\n// When your page or route unmounts:\n// component.destroy();",

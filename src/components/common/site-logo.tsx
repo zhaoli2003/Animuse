@@ -1,4 +1,6 @@
 "use client";
+import { routePath } from "@/lib/route-path";
+import { publicPath } from "@/lib/site-url";
 
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -10,7 +12,7 @@ import { cn } from "@/lib/utils";
 export function SiteLogo({ className, navigation = false }: { className?: string; navigation?: boolean }) {
   const ref = useRef<HTMLImageElement>(null);
   const transition = useContext(LogoTransitionContext);
-  const pathname = usePathname();
+  const pathname = routePath(usePathname());
 
   useLayoutEffect(() => {
     const el = ref.current;
@@ -21,7 +23,7 @@ export function SiteLogo({ className, navigation = false }: { className?: string
   return (
     <Image
       ref={ref}
-      src="/animuse-logo.svg"
+      src={publicPath("/animuse-logo.svg")}
       alt="Animuse"
       width={640}
       height={160}

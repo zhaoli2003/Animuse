@@ -7,7 +7,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const publicDir = path.join(root, "public");
 // Animuse's own assets; upstream component demo artwork stays intact.
 const wordmark = '<svg xmlns="http://www.w3.org/2000/svg" width="640" height="160" viewBox="0 0 640 160" role="img" aria-label="Animuse"><title>Animuse</title><text x="4" y="130" fill="white" font-family="Arial,Helvetica,sans-serif" font-size="154" font-weight="750" letter-spacing="-6">Animuse</text></svg>\n';
-const mark = '<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="Animuse"><title>Animuse</title><rect width="128" height="128" rx="30" fill="#111"/><path d="M34 96 56 32h16l22 64H77l-4-14H54l-4 14Zm24-28h11l-5-20Z" fill="white" fill-rule="evenodd"/></svg>\n';
+const mark = await fs.readFile(path.join(root, "design/brand/animuse-mark.svg"), "utf8");
 const og = '<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630"><title>Animuse — Free UI components for your next idea</title><rect width="1200" height="630" fill="#0a0a0a"/><text x="92" y="296" fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="174" font-weight="750" letter-spacing="-7">Animuse</text><text x="100" y="385" fill="#b7b7b7" font-family="Arial,Helvetica,sans-serif" font-size="31">Free UI components. Ready for your next idea.</text><path d="M100 490h1000" stroke="#343434"/><text x="100" y="548" fill="#8a8a8a" font-family="Arial,Helvetica,sans-serif" font-size="24">Curated by zhaoli</text></svg>\n';
 
 for (const [name, svg] of Object.entries({

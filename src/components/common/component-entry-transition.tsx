@@ -10,6 +10,7 @@ import { syncScrollHeaderEvent } from "@/components/common/scroll-hide-header";
 import { ComponentDocHeader, MotionDemoFrame, MotionDemoSection } from "@/components/docs/component-doc-chrome";
 import { captureTitleLayout, mountTitleLayout, tweenTitleLayout, type TitleLayout } from "@/lib/component-title-motion";
 import type { MotionDocLayout } from "@/lib/motion-doc-layout";
+import { routePath } from "@/lib/route-path";
 
 import styles from "./component-entry-transition.module.css";
 
@@ -58,7 +59,7 @@ function restoreCollectionScroll(top: number) {
 }
 
 function activeDetail(slot: HTMLElement, href: string) {
-  const slug = href.split("/").pop();
+  const slug = routePath(href).split("/").pop();
   return [...slot.querySelectorAll<HTMLElement>("[data-component-document]")].find(article => {
     if (article.dataset.componentDocument !== slug) return false;
     for (let parent: HTMLElement | null = article; parent && parent !== slot; parent = parent.parentElement) {
@@ -219,7 +220,7 @@ function demoPanel(article: HTMLElement) {
 
 /** One shared card carrier opens into the demo and returns to its gallery slot. */
 export function ComponentEntryTransition({ children }: { children: ReactNode }) {
-  const pathname = usePathname();
+  const pathname = routePath(usePathname());
   const router = useRouter();
   const main = useRef<HTMLElement>(null);
   const sourceMain = useRef<HTMLElement>(null);
@@ -338,7 +339,7 @@ export function ComponentEntryTransition({ children }: { children: ReactNode }) 
       const target = event.target instanceof Element ? event.target : null;
       const navigation = target?.closest<HTMLAnchorElement>("a[href]");
       const destination = navigation ? new URL(navigation.href) : null;
-      const returningToCollection = destination?.origin === location.origin && destination.pathname === collectionHref;
+      const returningToCollection = destination?.origin === location.origin && routePath(destination.pathname) === collectionHref;
       if (navigation?.target === "_blank" || navigation?.hasAttribute("download")) return;
       // A facet link starts a new collection view; it is not the animated Back link.
       if (returningToCollection && (destination.search || destination.hash)) {
@@ -351,7 +352,7 @@ export function ComponentEntryTransition({ children }: { children: ReactNode }) 
         if (returningToCollection) {
           event.preventDefault();
           router.back();
-        } else if (destination?.origin === location.origin && destination.pathname === openingRef.current.href) {
+        } else if (destination?.origin === location.origin && routePath(destination.pathname) === openingRef.current.href) {
           event.preventDefault();
         }
         return;
@@ -374,7 +375,8 @@ export function ComponentEntryTransition({ children }: { children: ReactNode }) 
       const media = card?.firstElementChild as HTMLElement | null;
       const heading = card?.querySelector<HTMLElement>("h2, h3");
       const sourceCaption = card?.hasAttribute("data-component-home-card") ? card.querySelector<HTMLElement>("[data-component-caption]") : link;
-      const href = card?.dataset.componentCard;
+      const cardHref = card?.dataset.componentCard;
+      const href = cardHref ? routePath(cardHref) : undefined;
       const slot = card?.closest<HTMLElement>("main");
       if (!card || !link || !article || !media || !heading || !sourceCaption || !slot || !href?.startsWith("/docs/")) return;
       if (link.target === "_blank" || link.hasAttribute("download")) return;
@@ -493,7 +495,7 @@ export function ComponentEntryTransition({ children }: { children: ReactNode }) 
   useEffect(() => {
     const pop = () => {
       const entry = pending.current;
-      const backToCollection = window.location.pathname === collectionHref;
+      const backToCollection = routePath(window.location.pathname) === collectionHref;
       // Query-only history entries belong to the filters. Do not replay an old
       // detail return or restore its scroll position while browsing those entries.
       const returningFromDetail = Boolean(openingRef.current || entry?.direction === "enter" ||
@@ -508,7 +510,8 @@ export function ComponentEntryTransition({ children }: { children: ReactNode }) 
       } : undefined;
       const interrupted = Boolean(entry && !entry.quick);
       finish();
-      const queued = window.history.state?.[previewHistoryKey];
+      const queuedValue = window.history.state?.[previewHistoryKey];
+      const queued = typeof queuedValue === "string" ? routePath(queuedValue) : undefined;
       if (typeof queued === "string" && queued.startsWith("/docs/")) {
         closeOpening(false);
         router.replace(queued, { scroll: false });
@@ -534,7 +537,8 @@ export function ComponentEntryTransition({ children }: { children: ReactNode }) 
     let intentTimer: number | undefined;
     let mobileTimer: number | undefined;
     const warm = (card: Element | null) => {
-      const href = card?.getAttribute("data-component-card");
+      const cardHref = card?.getAttribute("data-component-card");
+      const href = cardHref ? routePath(cardHref) : undefined;
       if (openingRef.current || warmed.size >= 2 || !href?.startsWith("/docs/") || warmed.has(href)) return;
       warmed.add(href);
       router.prefetch(href);
@@ -686,7 +690,7 @@ export function ComponentEntryTransition({ children }: { children: ReactNode }) 
         const saved = restore.current;
         const link = [...slot.querySelectorAll<HTMLElement>("[data-component-card]")].find(node => node.dataset.componentCard === saved.href)?.querySelector("a");
         if (!link) return false;
-        if (window.location.pathname === collectionHref) {
+        if (routePath(window.location.pathname) === collectionHref) {
           restore.current = null;
           marker?.closest(".page-enter")?.setAttribute("data-component-entry-page", collectionHref);
           if (saved.origin === "/") link.scrollIntoView({ block: "center", behavior: "instant" });
@@ -734,12 +738,12 @@ export function ComponentEntryTransition({ children }: { children: ReactNode }) 
     const { slot, href } = opening;
     const handoff = () => {
       if (openingRef.current !== opening) return;
-      if (location.pathname !== collectionHref && location.pathname !== href) {
+      if (routePath(location.pathname) !== collectionHref && routePath(location.pathname) !== href) {
         finish();
         closeOpening(false);
         return;
       }
-      if (location.pathname !== href || pending.current?.direction === "enter") return;
+      if (routePath(location.pathname) !== href || pending.current?.direction === "enter") return;
       const detail = activeDetail(slot, href);
       if (!detail) return;
       const preview = slot.querySelector<HTMLElement>("[data-component-entry-preview]");

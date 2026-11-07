@@ -4,7 +4,7 @@ import path from 'node:path';
 import { createHash } from 'node:crypto';
 import { pathToFileURL } from 'node:url';
 
-const DEFAULT_ORIGIN = 'http://127.0.0.1:3000';
+const DEFAULT_ORIGIN = 'https://zhaoli2003.github.io/Animuse';
 const FRAMEWORKS = ['react', 'vue', 'svelte', 'solid', 'preact', 'vanilla'];
 const normalized = (value) => value.normalize('NFKC').toLocaleLowerCase('en-US').trim();
 
@@ -75,12 +75,31 @@ async function readJson(url) {
   return response.json();
 }
 
+function normalizeBaseUrl(value) {
+  try {
+    const input = value.trim();
+    const url = new URL(input);
+    const rawPath = input.match(/^https?:\/\/[^/?#]+([^?#]*)/i)?.[1] ?? '';
+    if (!['http:', 'https:'].includes(url.protocol) || url.search || url.hash || url.username || url.password
+      || input.includes('\\') || /%(?:2f|5c|00)/i.test(rawPath) || decodeURIComponent(rawPath).split('/').some(part => part === '.' || part === '..')) throw new Error('Invalid base URL');
+    return url.origin + url.pathname.replace(/\/+$/, '');
+  } catch { throw new SkillError('INVALID_ARGUMENTS', 'Catalog base URL must use HTTP(S), may include a project path, and must not contain credentials, query, fragment, or traversal.', 2); }
+}
+
 function sourceUrl(value, origin) {
-  const url = new URL(value, origin);
-  if (!['http:', 'https:'].includes(url.protocol) || url.origin !== new URL(origin).origin) {
-    throw new SkillError('INVALID_SOURCE', 'Component source must be served by the configured Animuse origin.');
-  }
-  return url.href;
+  try {
+    const base = new URL(origin + '/');
+    const prefix = base.pathname.replace(/\/$/, '');
+    if (typeof value !== 'string' || !value || value.includes('\\') || value.startsWith('//')
+      || /%(?:2f|5c|00)/i.test(value) || decodeURIComponent(value).split('/').some(part => part === '.' || part === '..')) throw new Error('Invalid path');
+    // Logical /ai and /r links also work with a directory base. Already prefixed
+    // public paths and absolute URLs keep their normal URL meaning.
+    const reference = prefix && /^\/(?:ai|r)(?:\/|$)/.test(value) && !value.startsWith(prefix + '/') ? value.slice(1) : value;
+    const url = new URL(reference, base);
+    if (!['http:', 'https:'].includes(url.protocol) || url.origin !== base.origin || url.username || url.password || url.search || url.hash
+      || (prefix && !url.pathname.startsWith(prefix + '/'))) throw new Error('Outside site base');
+    return url.href;
+  } catch { throw new SkillError('INVALID_SOURCE', 'Component source must stay within the configured Animuse site base URL.'); }
 }
 
 export async function run(args, { cwd = process.cwd(), env = process.env } = {}) {
@@ -102,18 +121,12 @@ export async function run(args, { cwd = process.cwd(), env = process.env } = {})
   if (!/^\d+$/.test(String(options.limit)) || Number(options.limit) < 1 || Number(options.limit) > 10) throw new SkillError('INVALID_ARGUMENTS', '--limit 必须是 1 到 10 的整数。', 2);
   options.limit = Number(options.limit);
   options.excludeTag = options['exclude-tag'];
-  let parsedOrigin;
-  try { parsedOrigin = new URL(options.origin); }
-  catch { throw new SkillError('INVALID_ARGUMENTS', 'Catalog origin must be a valid HTTP(S) origin.', 2); }
-  if (!['http:', 'https:'].includes(parsedOrigin.protocol) || parsedOrigin.pathname !== '/' || parsedOrigin.search || parsedOrigin.hash || parsedOrigin.username || parsedOrigin.password) {
-    throw new SkillError('INVALID_ARGUMENTS', 'Catalog origin must use HTTP(S) without a path, credentials, query, or fragment.', 2);
-  }
-  const origin = parsedOrigin.origin;
+  const origin = normalizeBaseUrl(options.origin);
   if (help) {
     if (values.length) throw new SkillError('INVALID_ARGUMENTS', 'Help does not accept a query.', 2);
     return {
       name: 'animuse', commands: ['recommend <需求> --limit 3', 'list', 'search <关键词>', 'show <slug>', 'pull <slug> --framework react --out <folder>'],
-      options: ['--framework react|vue|svelte|solid|preact|vanilla', '--renderer webgl|webgpu', '--category <用途类别>', '--exclude-tag <视觉标签,视觉标签>', '--limit 1..10 (recommend)', '--out <folder> (pull)', '--origin <catalog-origin>'],
+      options: ['--framework react|vue|svelte|solid|preact|vanilla', '--renderer webgl|webgpu', '--category <用途类别>', '--exclude-tag <视觉标签,视觉标签>', '--limit 1..10 (recommend)', '--out <folder> (pull)', '--origin <site-base-url>'],
       origin, defaultOrigin: DEFAULT_ORIGIN, originEnvironment: 'ANIMUSE_ORIGIN',
       installation: 'npx skills add zhaoli2003/Animuse --skill animuse',
       writes: '只有 pull 写入源码；不会覆盖内容不同的已有文件，也不会执行安装。',
@@ -123,7 +136,7 @@ export async function run(args, { cwd = process.cwd(), env = process.env } = {})
   if (['search', 'recommend'].includes(command) && !values.join(' ').trim()) throw new SkillError('INVALID_ARGUMENTS', '请提供搜索词或界面需求。', 2);
   if (['show', 'pull'].includes(command) && (values.length !== 1 || !/^[a-z]+(?:-[a-z]+)*$/.test(values[0]))) throw new SkillError('INVALID_ARGUMENTS', 'Provide one component slug.', 2);
   if (command === 'recommend') {
-    const index = await readJson(new URL('/ai/search-index.json', origin));
+    const index = await readJson(sourceUrl('ai/search-index.json', origin));
     if (index?.schemaVersion !== 1 || !Array.isArray(index.items) || index.items.some((item) =>
       !item || typeof item.slug !== 'string' || typeof item.name?.en !== 'string' || typeof item.name?.zh !== 'string'
       || typeof item.summary !== 'string' || typeof item.docsPath !== 'string' || typeof item.detailPath !== 'string'
@@ -133,7 +146,7 @@ export async function run(args, { cwd = process.cwd(), env = process.env } = {})
     return { schemaVersion: 1, revision: index.revision, query: values.join(' '), count: items.length, items,
       next: items.length ? '比较用途与注意事项，再读取选中条目的 detailPath；只下载所需框架。' : '未找到合适组件，可缩短用途词重试；仍无结果时使用现有组件或正常实现。' };
   }
-  const catalog = await readJson(new URL('/ai/catalog.json', origin));
+  const catalog = await readJson(sourceUrl('ai/catalog.json', origin));
   if (!Array.isArray(catalog?.items) || catalog.items.some((item) => !item || typeof item.slug !== 'string' || !item.name?.en || !item.name?.zh || !item.description?.en || !item.description?.zh || !Array.isArray(item.frameworks) || !Array.isArray(item.renderers) || !validDiscovery(item.discovery))) throw new SkillError('INVALID_CATALOG', '实时目录缺少必要字段。');
   const candidates = catalog.items.filter((item) => matchesFilters(item, options));
   if (command === 'list') return { count: candidates.length, items: candidates };

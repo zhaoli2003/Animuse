@@ -9,10 +9,10 @@
     "zh": "从右上角拖开立体金属包装，可停在半途并继续拉动弯折封条，完全撕开后释放抹茶粉末。"
   },
   "keywords": "包装 撕开 撕口 抹茶 粉末 粒子 消散 金属 产品 package tear matcha powder reveal Andreas",
-  "docsPath": "/docs/animations/matcha-powder-reveal",
-  "detailPath": "/ai/components/matcha-powder-reveal.json",
-  "markdownPath": "/ai/components/matcha-powder-reveal.md",
-  "previewPath": "/assets/components/matcha-powder-reveal.png",
+  "docsPath": "/Animuse/docs/animations/matcha-powder-reveal",
+  "detailPath": "/Animuse/ai/components/matcha-powder-reveal.json",
+  "markdownPath": "/Animuse/ai/components/matcha-powder-reveal.md",
+  "previewPath": "/Animuse/assets/motion/matcha-powder-reveal-4afb55e686ed60729c28b6c1.html",
   "discovery": {
     "category": "hero",
     "useCases": [
@@ -75,7 +75,7 @@
   },
   "packages": {
     "react": {
-      "url": "/ai/packages/matcha-powder-reveal/react.json",
+      "url": "/Animuse/ai/packages/matcha-powder-reveal/react.json",
       "component": "MatchaPowderReveal",
       "dependencies": [
         "react",
@@ -91,7 +91,7 @@
       ]
     },
     "vue": {
-      "url": "/ai/packages/matcha-powder-reveal/vue.json",
+      "url": "/Animuse/ai/packages/matcha-powder-reveal/vue.json",
       "component": "MatchaPowderReveal",
       "dependencies": [
         "vue",
@@ -106,7 +106,7 @@
       ]
     },
     "svelte": {
-      "url": "/ai/packages/matcha-powder-reveal/svelte.json",
+      "url": "/Animuse/ai/packages/matcha-powder-reveal/svelte.json",
       "component": "MatchaPowderReveal",
       "dependencies": [
         "svelte",
@@ -121,7 +121,7 @@
       ]
     },
     "solid": {
-      "url": "/ai/packages/matcha-powder-reveal/solid.json",
+      "url": "/Animuse/ai/packages/matcha-powder-reveal/solid.json",
       "component": "MatchaPowderReveal",
       "dependencies": [
         "solid-js",
@@ -136,7 +136,7 @@
       ]
     },
     "preact": {
-      "url": "/ai/packages/matcha-powder-reveal/preact.json",
+      "url": "/Animuse/ai/packages/matcha-powder-reveal/preact.json",
       "component": "MatchaPowderReveal",
       "dependencies": [
         "preact",
@@ -151,7 +151,7 @@
       ]
     },
     "vanilla": {
-      "url": "/ai/packages/matcha-powder-reveal/vanilla.json",
+      "url": "/Animuse/ai/packages/matcha-powder-reveal/vanilla.json",
       "component": "MatchaPowderReveal",
       "dependencies": [
         "three@0.185.1"

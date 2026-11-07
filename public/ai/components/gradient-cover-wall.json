@@ -9,10 +9,10 @@
     "zh": "六张颗粒渐变封面，搭配细线纹样、缓慢漂移的色团和弹簧柔光交互。"
   },
   "keywords": "渐变 封面 卡片墙 颗粒 噪点 柔光 纹样 弹簧 gradient grain noise cover wall radial spring canvas",
-  "docsPath": "/docs/animations/gradient-cover-wall",
-  "detailPath": "/ai/components/gradient-cover-wall.json",
-  "markdownPath": "/ai/components/gradient-cover-wall.md",
-  "previewPath": "/assets/components/gradient-cover-wall.png",
+  "docsPath": "/Animuse/docs/animations/gradient-cover-wall",
+  "detailPath": "/Animuse/ai/components/gradient-cover-wall.json",
+  "markdownPath": "/Animuse/ai/components/gradient-cover-wall.md",
+  "previewPath": "/Animuse/assets/motion/gradient-cover-wall-b56bd3ce624d4be9a0be828c.html",
   "discovery": {
     "category": "cards",
     "useCases": [
@@ -68,7 +68,7 @@
   },
   "packages": {
     "react": {
-      "url": "/ai/packages/gradient-cover-wall/react.json",
+      "url": "/Animuse/ai/packages/gradient-cover-wall/react.json",
       "component": "GradientCoverWall",
       "dependencies": [
         "react",
@@ -83,7 +83,7 @@
       ]
     },
     "vue": {
-      "url": "/ai/packages/gradient-cover-wall/vue.json",
+      "url": "/Animuse/ai/packages/gradient-cover-wall/vue.json",
       "component": "GradientCoverWall",
       "dependencies": [
         "vue"
@@ -97,7 +97,7 @@
       ]
     },
     "svelte": {
-      "url": "/ai/packages/gradient-cover-wall/svelte.json",
+      "url": "/Animuse/ai/packages/gradient-cover-wall/svelte.json",
       "component": "GradientCoverWall",
       "dependencies": [
         "svelte"
@@ -111,7 +111,7 @@
       ]
     },
     "solid": {
-      "url": "/ai/packages/gradient-cover-wall/solid.json",
+      "url": "/Animuse/ai/packages/gradient-cover-wall/solid.json",
       "component": "GradientCoverWall",
       "dependencies": [
         "solid-js"
@@ -125,7 +125,7 @@
       ]
     },
     "preact": {
-      "url": "/ai/packages/gradient-cover-wall/preact.json",
+      "url": "/Animuse/ai/packages/gradient-cover-wall/preact.json",
       "component": "GradientCoverWall",
       "dependencies": [
         "preact"
@@ -139,7 +139,7 @@
       ]
     },
     "vanilla": {
-      "url": "/ai/packages/gradient-cover-wall/vanilla.json",
+      "url": "/Animuse/ai/packages/gradient-cover-wall/vanilla.json",
       "component": "GradientCoverWall",
       "dependencies": [],
       "usage": "import { mount } from \"./GradientCoverWall\";\nconst target = document.querySelector<HTMLElement>(\"#demo\")!;\nconst component = mount(target);\n// When your page or route unmounts:\n// component.destroy();",

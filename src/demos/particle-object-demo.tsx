@@ -1,4 +1,5 @@
 "use client";
+import { publicPath } from "@/lib/site-url";
 
 import { T, useLanguage } from "@/components/common/language-provider";
 
@@ -136,7 +137,7 @@ export function ParticleObjectDemo() {
     <>
       <div className="relative h-[420px] overflow-hidden rounded-xl border border-border/60 sm:h-[520px]" style={{backgroundImage:`url("${optimizedImage("/landing/agent-demo/alpine-lake.png").src}")`,backgroundSize:"cover",backgroundPosition:"center"}}>
         <ParticleObject
-          src={src}
+          src={publicPath(src)}
           {...values}
           {...toggles}
           background={background ?? ""}

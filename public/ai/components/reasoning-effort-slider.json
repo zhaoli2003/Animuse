@@ -9,10 +9,10 @@
     "zh": "三档模型思考强度滑块，保留流动星空填充、随拖速变化的果冻形变与柔和吸附。"
   },
   "keywords": "模型 思考 强度 推理 滑块 深度 简单 中度 深度 星空 液态 拖拽 Deep Agent reasoning effort thinking slider jelly",
-  "docsPath": "/docs/animations/reasoning-effort-slider",
-  "detailPath": "/ai/components/reasoning-effort-slider.json",
-  "markdownPath": "/ai/components/reasoning-effort-slider.md",
-  "previewPath": "/assets/components/reasoning-effort-slider.png",
+  "docsPath": "/Animuse/docs/animations/reasoning-effort-slider",
+  "detailPath": "/Animuse/ai/components/reasoning-effort-slider.json",
+  "markdownPath": "/Animuse/ai/components/reasoning-effort-slider.md",
+  "previewPath": "/Animuse/assets/motion/reasoning-effort-slider-62f0f8f66d73d04ddb8a8744.html",
   "discovery": {
     "category": "input",
     "useCases": [
@@ -70,7 +70,7 @@
   },
   "packages": {
     "react": {
-      "url": "/ai/packages/reasoning-effort-slider/react.json",
+      "url": "/Animuse/ai/packages/reasoning-effort-slider/react.json",
       "component": "ReasoningEffortSlider",
       "dependencies": [
         "react",
@@ -95,7 +95,7 @@
       ]
     },
     "vue": {
-      "url": "/ai/packages/reasoning-effort-slider/vue.json",
+      "url": "/Animuse/ai/packages/reasoning-effort-slider/vue.json",
       "component": "ReasoningEffortSlider",
       "dependencies": [
         "vue",
@@ -121,7 +121,7 @@
       ]
     },
     "svelte": {
-      "url": "/ai/packages/reasoning-effort-slider/svelte.json",
+      "url": "/Animuse/ai/packages/reasoning-effort-slider/svelte.json",
       "component": "ReasoningEffortSlider",
       "dependencies": [
         "svelte",
@@ -147,7 +147,7 @@
       ]
     },
     "solid": {
-      "url": "/ai/packages/reasoning-effort-slider/solid.json",
+      "url": "/Animuse/ai/packages/reasoning-effort-slider/solid.json",
       "component": "ReasoningEffortSlider",
       "dependencies": [
         "solid-js",
@@ -173,7 +173,7 @@
       ]
     },
     "preact": {
-      "url": "/ai/packages/reasoning-effort-slider/preact.json",
+      "url": "/Animuse/ai/packages/reasoning-effort-slider/preact.json",
       "component": "ReasoningEffortSlider",
       "dependencies": [
         "preact",
@@ -199,7 +199,7 @@
       ]
     },
     "vanilla": {
-      "url": "/ai/packages/reasoning-effort-slider/vanilla.json",
+      "url": "/Animuse/ai/packages/reasoning-effort-slider/vanilla.json",
       "component": "ReasoningEffortSlider",
       "dependencies": [
         "react",

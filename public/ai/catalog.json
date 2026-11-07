@@ -1,18 +1,20 @@
 {
   "schemaVersion": 1,
   "title": "Animuse UI collection metadata",
-  "revision": "7a7b156221ece73083681916b358ba9beffeec9cf84b5f82f6aa32561b62e5bf",
-  "siteOrigin": "http://127.0.0.1:3000",
+  "revision": "87b8816b39d38c4af582d2f263281e01caed66786380e1523bae3b2089bf011a",
+  "siteOrigin": "https://zhaoli2003.github.io",
+  "siteBaseUrl": "https://zhaoli2003.github.io/Animuse/",
+  "basePath": "/Animuse",
   "links": {
-    "searchIndex": "/ai/search-index.json",
-    "searchSchema": "/ai/search-index.schema.json",
-    "agentGuide": "/ai/README.md",
-    "catalog": "/ai/catalog.json",
-    "llms": "/llms.txt",
-    "docs": "/docs",
-    "components": "/components",
-    "skill": "/ai/SKILL.md",
-    "aiGuide": "/docs/mcp"
+    "searchIndex": "/Animuse/ai/search-index.json",
+    "searchSchema": "/Animuse/ai/search-index.schema.json",
+    "agentGuide": "/Animuse/ai/README.md",
+    "catalog": "/Animuse/ai/catalog.json",
+    "llms": "/Animuse/llms.txt",
+    "docs": "/Animuse/docs",
+    "components": "/Animuse/components",
+    "skill": "/Animuse/ai/SKILL.md",
+    "aiGuide": "/Animuse/docs/mcp"
   },
   "capabilities": {
     "list": true,
@@ -42,10 +44,10 @@
         "zh": "纯 CSS 立体按钮，悬停时下沉，按住时表面内缩。"
       },
       "keywords": "按压 按钮 立体 触感 投稿 少荃 tactile button press css",
-      "docsPath": "/docs/animations/tactile-push-button",
-      "detailPath": "/ai/components/tactile-push-button.json",
-      "markdownPath": "/ai/components/tactile-push-button.md",
-      "previewPath": "/assets/components/tactile-push-button.png",
+      "docsPath": "/Animuse/docs/animations/tactile-push-button",
+      "detailPath": "/Animuse/ai/components/tactile-push-button.json",
+      "markdownPath": "/Animuse/ai/components/tactile-push-button.md",
+      "previewPath": "/Animuse/assets/motion/tactile-push-button-6e7e0670d8989948b69ccc14.html",
       "discovery": {
         "category": "input",
         "useCases": [
@@ -113,10 +115,10 @@
         "zh": "12个彩色光标随滚动打字、画框、搬入图片并排版，选框实时跟随，上滚可撤回搭建。"
       },
       "keywords": "多光标 页面 搭建 自动 排版 选框 滚动 回退 字体 Figma cursor builder page scroll construction",
-      "docsPath": "/docs/animations/multi-cursor-builder",
-      "detailPath": "/ai/components/multi-cursor-builder.json",
-      "markdownPath": "/ai/components/multi-cursor-builder.md",
-      "previewPath": "/assets/components/multi-cursor-builder.png",
+      "docsPath": "/Animuse/docs/animations/multi-cursor-builder",
+      "detailPath": "/Animuse/ai/components/multi-cursor-builder.json",
+      "markdownPath": "/Animuse/ai/components/multi-cursor-builder.md",
+      "previewPath": "/Animuse/assets/motion/multi-cursor-builder-1113be868081c0df320237b8.html",
       "discovery": {
         "category": "hero",
         "useCases": [
@@ -189,10 +191,10 @@
         "zh": "真实专辑封面组成三维隧道，悬停吸起，点击沿弧线飞入中央，滚动或拖动不断穿行。"
       },
       "keywords": "专辑 封面 隧道 飞入 原创 雷师傅 三维 厚度 雾 光 专辑墙 album cover tunnel wall fly hover scroll drag LeiShiFu original",
-      "docsPath": "/docs/animations/album-cover-tunnel",
-      "detailPath": "/ai/components/album-cover-tunnel.json",
-      "markdownPath": "/ai/components/album-cover-tunnel.md",
-      "previewPath": "/assets/components/album-cover-tunnel.png",
+      "docsPath": "/Animuse/docs/animations/album-cover-tunnel",
+      "detailPath": "/Animuse/ai/components/album-cover-tunnel.json",
+      "markdownPath": "/Animuse/ai/components/album-cover-tunnel.md",
+      "previewPath": "/Animuse/assets/motion/album-cover-tunnel-269dce65fa8a64287eef669d.html",
       "discovery": {
         "category": "media",
         "useCases": [
@@ -273,10 +275,10 @@
         "zh": "优先级、日期和负责人标签相互叠放，为任务标题留出空间；悬停或聚焦时向左展开。"
       },
       "keywords": "标签 叠放 展开 任务 列表 元数据 优先级 日期 负责人 hover stacked metadata tags task Gabriel",
-      "docsPath": "/docs/animations/stacked-metadata",
-      "detailPath": "/ai/components/stacked-metadata.json",
-      "markdownPath": "/ai/components/stacked-metadata.md",
-      "previewPath": "/assets/components/stacked-metadata.png",
+      "docsPath": "/Animuse/docs/animations/stacked-metadata",
+      "detailPath": "/Animuse/ai/components/stacked-metadata.json",
+      "markdownPath": "/Animuse/ai/components/stacked-metadata.md",
+      "previewPath": "/Animuse/assets/motion/stacked-metadata-48ab01174517682383c9aa05.html",
       "discovery": {
         "category": "navigation",
         "useCases": [
@@ -348,10 +350,10 @@
         "zh": "转账详情在粉金色光雾与上浮粒子后逐渐虚化，经过两段处理提示，再恢复为清晰的成功状态。"
       },
       "keywords": "转账 确认 弹窗 光雾 模糊 粒子 处理 成功 transfer confirm payment glow blur dialog Gabriel",
-      "docsPath": "/docs/animations/transfer-glow",
-      "detailPath": "/ai/components/transfer-glow.json",
-      "markdownPath": "/ai/components/transfer-glow.md",
-      "previewPath": "/assets/components/transfer-glow.png",
+      "docsPath": "/Animuse/docs/animations/transfer-glow",
+      "detailPath": "/Animuse/ai/components/transfer-glow.json",
+      "markdownPath": "/Animuse/ai/components/transfer-glow.md",
+      "previewPath": "/Animuse/assets/motion/transfer-glow-035dd1535d783de44759a5ca.html",
       "discovery": {
         "category": "feedback",
         "useCases": [
@@ -423,10 +425,10 @@
         "zh": "实时液体纹理从鼠标进入的位置铺满卡片，再向离开的位置收拢。每张卡片拥有独立的三色色板。"
       },
       "keywords": "液体 注入 卡片 网格 三色 着色器 悬浮 方向 shader flood liquid feature cards hover palette seed Planes Ashish Gogula",
-      "docsPath": "/docs/animations/shader-flood",
-      "detailPath": "/ai/components/shader-flood.json",
-      "markdownPath": "/ai/components/shader-flood.md",
-      "previewPath": "/assets/components/shader-flood.png",
+      "docsPath": "/Animuse/docs/animations/shader-flood",
+      "detailPath": "/Animuse/ai/components/shader-flood.json",
+      "markdownPath": "/Animuse/ai/components/shader-flood.md",
+      "previewPath": "/Animuse/assets/motion/shader-flood-14456a736f9603394e46530b.html",
       "discovery": {
         "category": "cards",
         "useCases": [
@@ -502,10 +504,10 @@
         "zh": "字符鲨鱼在细网格上摆尾游动、追逐鱼群，支持指针避让与点击惊散，并可叠加半透明本地输入框。"
       },
       "keywords": "ASCII 字符 鲨鱼 鱼群 游动 海洋 捕食 追逐 避让 水波 网格 背景 输入框 shark ocean fish boids stacked drewdi",
-      "docsPath": "/docs/animations/ascii-sharks",
-      "detailPath": "/ai/components/ascii-sharks.json",
-      "markdownPath": "/ai/components/ascii-sharks.md",
-      "previewPath": "/assets/components/ascii-sharks.png",
+      "docsPath": "/Animuse/docs/animations/ascii-sharks",
+      "detailPath": "/Animuse/ai/components/ascii-sharks.json",
+      "markdownPath": "/Animuse/ai/components/ascii-sharks.md",
+      "previewPath": "/Animuse/assets/motion/ascii-sharks-e6df67f2d731b02fd3b2a65a.html",
       "discovery": {
         "category": "background",
         "useCases": [
@@ -574,10 +576,10 @@
         "zh": "新图从点击位置沿不规则墨水边缘向外晕开，边界带有轻微透镜折射，白色卡片后的柔焦色影同步换色。"
       },
       "keywords": "墨水 扩散 晕染 图片 轮播 点击 液态 遮罩 折射 ink bloom spread carousel WebGL Lorenzo Cabra Bencho",
-      "docsPath": "/docs/animations/ink-spread-carousel",
-      "detailPath": "/ai/components/ink-spread-carousel.json",
-      "markdownPath": "/ai/components/ink-spread-carousel.md",
-      "previewPath": "/assets/components/ink-spread-carousel.png",
+      "docsPath": "/Animuse/docs/animations/ink-spread-carousel",
+      "detailPath": "/Animuse/ai/components/ink-spread-carousel.json",
+      "markdownPath": "/Animuse/ai/components/ink-spread-carousel.md",
+      "previewPath": "/Animuse/assets/motion/ink-spread-carousel-255428af28b5597f4bc6b625.html",
       "discovery": {
         "category": "cards",
         "useCases": [
@@ -645,10 +647,10 @@
         "zh": "三个固定点阵轮廓，分别呈现蓝绿粒子流、黑白空心圆弧与橙红纹理。"
       },
       "keywords": "粒子 纹理 点阵 三联 流动 空心 圆弧 蓝绿 橙红 Sarvam Anushka particle texture trio noise flow field",
-      "docsPath": "/docs/animations/particle-texture-trio",
-      "detailPath": "/ai/components/particle-texture-trio.json",
-      "markdownPath": "/ai/components/particle-texture-trio.md",
-      "previewPath": "/assets/components/particle-texture-trio.png",
+      "docsPath": "/Animuse/docs/animations/particle-texture-trio",
+      "detailPath": "/Animuse/ai/components/particle-texture-trio.json",
+      "markdownPath": "/Animuse/ai/components/particle-texture-trio.md",
+      "previewPath": "/Animuse/assets/motion/particle-texture-trio-f6a3fa07d81988146fa95140.html",
       "discovery": {
         "category": "background",
         "useCases": [
@@ -720,10 +722,10 @@
         "zh": "从右上角拖开立体金属包装，可停在半途并继续拉动弯折封条，完全撕开后释放抹茶粉末。"
       },
       "keywords": "包装 撕开 撕口 抹茶 粉末 粒子 消散 金属 产品 package tear matcha powder reveal Andreas",
-      "docsPath": "/docs/animations/matcha-powder-reveal",
-      "detailPath": "/ai/components/matcha-powder-reveal.json",
-      "markdownPath": "/ai/components/matcha-powder-reveal.md",
-      "previewPath": "/assets/components/matcha-powder-reveal.png",
+      "docsPath": "/Animuse/docs/animations/matcha-powder-reveal",
+      "detailPath": "/Animuse/ai/components/matcha-powder-reveal.json",
+      "markdownPath": "/Animuse/ai/components/matcha-powder-reveal.md",
+      "previewPath": "/Animuse/assets/motion/matcha-powder-reveal-4afb55e686ed60729c28b6c1.html",
       "discovery": {
         "category": "hero",
         "useCases": [
@@ -796,10 +798,10 @@
         "zh": "Claude、Codex、Cursor 三张竖版封面，保留选定配图、真实 SVG 标志与独立中文介绍。"
       },
       "keywords": "AI Claude Codex Cursor 品牌 封面 三联 卡片 海报",
-      "docsPath": "/docs/animations/ai-brand-cover-cards",
-      "detailPath": "/ai/components/ai-brand-cover-cards.json",
-      "markdownPath": "/ai/components/ai-brand-cover-cards.md",
-      "previewPath": "/assets/components/ai-brand-cover-cards.png",
+      "docsPath": "/Animuse/docs/animations/ai-brand-cover-cards",
+      "detailPath": "/Animuse/ai/components/ai-brand-cover-cards.json",
+      "markdownPath": "/Animuse/ai/components/ai-brand-cover-cards.md",
+      "previewPath": "/Animuse/assets/motion/ai-brand-cover-cards-a94dc4193c5769e3b7c24866.html",
       "discovery": {
         "category": "cards",
         "useCases": [
@@ -866,10 +868,10 @@
         "zh": "表情网格滚入上下边缘时向内弯折、压缩，搜索栏保持固定，支持搜索与选择。"
       },
       "keywords": "折边 折叠 滚动 表情 选择器 上下 边缘 emoji scroll folded edges canvas html drawElementImage Enes",
-      "docsPath": "/docs/animations/folded-emoji-scroll",
-      "detailPath": "/ai/components/folded-emoji-scroll.json",
-      "markdownPath": "/ai/components/folded-emoji-scroll.md",
-      "previewPath": "/assets/components/folded-emoji-scroll.png",
+      "docsPath": "/Animuse/docs/animations/folded-emoji-scroll",
+      "detailPath": "/Animuse/ai/components/folded-emoji-scroll.json",
+      "markdownPath": "/Animuse/ai/components/folded-emoji-scroll.md",
+      "previewPath": "/Animuse/assets/motion/folded-emoji-scroll-c90478cc6c79bbc2d21c20dd.html",
       "discovery": {
         "category": "input",
         "useCases": [
@@ -941,10 +943,10 @@
         "zh": "五张渐变卡片沿立体圆环旋转，背面镜像显示，搭配精细粒子图形和边缘弯曲色散拖影。"
       },
       "keywords": "渐变 卡片 环形 旋转 轮播 立体 粒子 球体 色散 弯曲 Basit gradient ring cards carousel 3d chromatic",
-      "docsPath": "/docs/animations/gradient-ring-cards",
-      "detailPath": "/ai/components/gradient-ring-cards.json",
-      "markdownPath": "/ai/components/gradient-ring-cards.md",
-      "previewPath": "/assets/components/gradient-ring-cards.png",
+      "docsPath": "/Animuse/docs/animations/gradient-ring-cards",
+      "detailPath": "/Animuse/ai/components/gradient-ring-cards.json",
+      "markdownPath": "/Animuse/ai/components/gradient-ring-cards.md",
+      "previewPath": "/Animuse/assets/motion/gradient-ring-cards-50c5766a63d2d17d8cdbd47b.html",
       "discovery": {
         "category": "cards",
         "useCases": [
@@ -1016,10 +1018,10 @@
         "zh": "黑色胶囊随六个导航入口移动、变宽，通过裁切切换文字；头像使用 LeiBox Logo。"
       },
       "keywords": "流体 提示 气泡 胶囊 导航 侧栏 悬浮 Logo LeiBox fluid tooltip capsule navigation sidebar hover profile",
-      "docsPath": "/docs/animations/fluid-tooltip",
-      "detailPath": "/ai/components/fluid-tooltip.json",
-      "markdownPath": "/ai/components/fluid-tooltip.md",
-      "previewPath": "/assets/components/fluid-tooltip.png",
+      "docsPath": "/Animuse/docs/animations/fluid-tooltip",
+      "detailPath": "/Animuse/ai/components/fluid-tooltip.json",
+      "markdownPath": "/Animuse/ai/components/fluid-tooltip.md",
+      "previewPath": "/Animuse/assets/motion/fluid-tooltip-a6dae36a146ba921a5284f1c.html",
       "discovery": {
         "category": "navigation",
         "useCases": [
@@ -1091,10 +1093,10 @@
         "zh": "八足蜘蛛结网牵引专辑封面，在队列与播放区之间连续搬运，搭配真实专辑图片和可操作的本地播放控件。"
       },
       "keywords": "蜘蛛 蛛丝 结网 专辑 封面 音乐 播放器 队列 切歌 牵引 spider web music player album cover queue track switcher Divan Raj",
-      "docsPath": "/docs/animations/spider-music-player",
-      "detailPath": "/ai/components/spider-music-player.json",
-      "markdownPath": "/ai/components/spider-music-player.md",
-      "previewPath": "/assets/components/spider-music-player.png",
+      "docsPath": "/Animuse/docs/animations/spider-music-player",
+      "detailPath": "/Animuse/ai/components/spider-music-player.json",
+      "markdownPath": "/Animuse/ai/components/spider-music-player.md",
+      "previewPath": "/Animuse/assets/motion/spider-music-player-0278f4237d355cd826f6564d.html",
       "discovery": {
         "category": "media",
         "useCases": [
@@ -1167,10 +1169,10 @@
         "zh": "Claude、Codex、Grok 三张 SVG 在列表、并排卡片与叠放之间连续移动、缩放和重排。"
       },
       "keywords": "列表 卡片 叠放 堆叠 布局 切换 图片 共享 元素 Claude Codex Grok list card pack shared layout morph collectibles Shawn Kel",
-      "docsPath": "/docs/animations/collection-layout-morph",
-      "detailPath": "/ai/components/collection-layout-morph.json",
-      "markdownPath": "/ai/components/collection-layout-morph.md",
-      "previewPath": "/assets/components/collection-layout-morph.png",
+      "docsPath": "/Animuse/docs/animations/collection-layout-morph",
+      "detailPath": "/Animuse/ai/components/collection-layout-morph.json",
+      "markdownPath": "/Animuse/ai/components/collection-layout-morph.md",
+      "previewPath": "/Animuse/assets/motion/collection-layout-morph-710eca20250020bb2c76cd35.html",
       "discovery": {
         "category": "layout",
         "useCases": [
@@ -1236,10 +1238,10 @@
         "zh": "三张人像海报统一搭配左上角标、中央品牌字标与底部介绍，图片轻缓缩放，标志和文字保持固定。"
       },
       "keywords": "品牌 海报 三联 卡片 人像 图片 肖像 字标 标志 排版 LeiBox brand poster cards portrait triptych logo identity photography",
-      "docsPath": "/docs/animations/brand-poster-cards",
-      "detailPath": "/ai/components/brand-poster-cards.json",
-      "markdownPath": "/ai/components/brand-poster-cards.md",
-      "previewPath": "/assets/components/brand-poster-cards.png",
+      "docsPath": "/Animuse/docs/animations/brand-poster-cards",
+      "detailPath": "/Animuse/ai/components/brand-poster-cards.json",
+      "markdownPath": "/Animuse/ai/components/brand-poster-cards.md",
+      "previewPath": "/Animuse/assets/motion/brand-poster-cards-2d54ad2b5f60923cddca2bd2.html",
       "discovery": {
         "category": "cards",
         "useCases": [
@@ -1306,10 +1308,10 @@
         "zh": "三张点阵卡片同步呈现双色扩散波纹、旋转旋涡与圆形扩张，保留印刷排版和渐变背景。"
       },
       "keywords": "点阵 波纹 旋涡 漩涡 圆形 扩散 三联 卡片 LeiBox 雷师傅 Chris Halaska dot matrix ripple spiral pulse",
-      "docsPath": "/docs/animations/dot-matrix-trio",
-      "detailPath": "/ai/components/dot-matrix-trio.json",
-      "markdownPath": "/ai/components/dot-matrix-trio.md",
-      "previewPath": "/assets/components/dot-matrix-trio.png",
+      "docsPath": "/Animuse/docs/animations/dot-matrix-trio",
+      "detailPath": "/Animuse/ai/components/dot-matrix-trio.json",
+      "markdownPath": "/Animuse/ai/components/dot-matrix-trio.md",
+      "previewPath": "/Animuse/assets/motion/dot-matrix-trio-17b92841e2eeb9c82184d340.html",
       "discovery": {
         "category": "background",
         "useCases": [
@@ -1376,10 +1378,10 @@
         "zh": "拖选真实文字，每个字符周围长出随机配色的描边花朵；松手后花瓣、叶片和茎依次反向收回。"
       },
       "keywords": "文字 选区 选择 拖选 开花 花朵 生长 收回 植物 随机 text selection flowers bloom grow reverse seeded canvas Omerico",
-      "docsPath": "/docs/animations/selection-flower",
-      "detailPath": "/ai/components/selection-flower.json",
-      "markdownPath": "/ai/components/selection-flower.md",
-      "previewPath": "/assets/components/selection-flower.png",
+      "docsPath": "/Animuse/docs/animations/selection-flower",
+      "detailPath": "/Animuse/ai/components/selection-flower.json",
+      "markdownPath": "/Animuse/ai/components/selection-flower.md",
+      "previewPath": "/Animuse/assets/motion/selection-flower-9028117829580af4205a8cec.html",
       "discovery": {
         "category": "text",
         "useCases": [
@@ -1445,10 +1447,10 @@
         "zh": "点击三处内联胶囊，相同字母连续重排，句子随宽度变化居中，贴纸图标弹性切换。"
       },
       "keywords": "内联 词组 文字 字符 字母 变形 重排 胶囊 图标 Torph Graphical text morph inline phrase letter flip",
-      "docsPath": "/docs/animations/inline-text-morph",
-      "detailPath": "/ai/components/inline-text-morph.json",
-      "markdownPath": "/ai/components/inline-text-morph.md",
-      "previewPath": "/assets/components/inline-text-morph.png",
+      "docsPath": "/Animuse/docs/animations/inline-text-morph",
+      "detailPath": "/Animuse/ai/components/inline-text-morph.json",
+      "markdownPath": "/Animuse/ai/components/inline-text-morph.md",
+      "previewPath": "/Animuse/assets/motion/inline-text-morph-032f8c26d00450668ee7fa8b.html",
       "discovery": {
         "category": "text",
         "useCases": [
@@ -1514,10 +1516,10 @@
         "zh": "脑形褶皱随六档思考强度逐层增加，进入 Galaxy 后点亮闪动点阵、放射粒子与光晕，并伴随短促震动。"
       },
       "keywords": "脑形 大脑 褶皱 脑沟 沟回 生长 滑块 推理 强度 粒子 点阵 发光 六档 银河 brain folds wrinkles particle effort slider galaxy low medium high extra max ozzy",
-      "docsPath": "/docs/animations/galaxy-effort-slider",
-      "detailPath": "/ai/components/galaxy-effort-slider.json",
-      "markdownPath": "/ai/components/galaxy-effort-slider.md",
-      "previewPath": "/assets/components/galaxy-effort-slider.png",
+      "docsPath": "/Animuse/docs/animations/galaxy-effort-slider",
+      "detailPath": "/Animuse/ai/components/galaxy-effort-slider.json",
+      "markdownPath": "/Animuse/ai/components/galaxy-effort-slider.md",
+      "previewPath": "/Animuse/assets/motion/galaxy-effort-slider-685a758cae78a1afdd1025e3.html",
       "discovery": {
         "category": "input",
         "useCases": [
@@ -1583,10 +1585,10 @@
         "zh": "选择笔记文字，唤出磨砂九色调色器；跨行选区随颜色变化，并可跳回最近上色的段落。"
       },
       "keywords": "文字 选区 调色器 颜色 笔记 备忘录 荧光 历史 磨砂 notes text color selection palette highlight typography",
-      "docsPath": "/docs/animations/notes-text-color",
-      "detailPath": "/ai/components/notes-text-color.json",
-      "markdownPath": "/ai/components/notes-text-color.md",
-      "previewPath": "/assets/components/notes-text-color.png",
+      "docsPath": "/Animuse/docs/animations/notes-text-color",
+      "detailPath": "/Animuse/ai/components/notes-text-color.json",
+      "markdownPath": "/Animuse/ai/components/notes-text-color.md",
+      "previewPath": "/Animuse/assets/motion/notes-text-color-4c8f0d4755251df5a05f280e.html",
       "discovery": {
         "category": "text",
         "useCases": [
@@ -1653,10 +1655,10 @@
         "zh": "八个方形控制点连续变成方向箭头，拖动时显示实时尺寸胶囊和辅助线，支持直接输入宽高。"
       },
       "keywords": "选框 拖拽 缩放 边框 控制点 箭头 尺寸 输入 形变 bounding box resize handles arrows dimensions guides selection",
-      "docsPath": "/docs/animations/bounding-box-resize",
-      "detailPath": "/ai/components/bounding-box-resize.json",
-      "markdownPath": "/ai/components/bounding-box-resize.md",
-      "previewPath": "/assets/components/bounding-box-resize.png",
+      "docsPath": "/Animuse/docs/animations/bounding-box-resize",
+      "detailPath": "/Animuse/ai/components/bounding-box-resize.json",
+      "markdownPath": "/Animuse/ai/components/bounding-box-resize.md",
+      "previewPath": "/Animuse/assets/motion/bounding-box-resize-f5abdf005fe521056c44a807.html",
       "discovery": {
         "category": "layout",
         "useCases": [
@@ -1721,10 +1723,10 @@
         "zh": "黑色图标随短暂顺时针错峰收拢成环，保留细灰边、白色高光与柔和阴影，关闭时六项一起向外散开。"
       },
       "keywords": "柔光 浅色 环形 菜单 展开 细边 高光 阴影 模糊 弹簧 action wheel soft neumorphic radial menu",
-      "docsPath": "/docs/animations/soft-action-wheel",
-      "detailPath": "/ai/components/soft-action-wheel.json",
-      "markdownPath": "/ai/components/soft-action-wheel.md",
-      "previewPath": "/assets/components/soft-action-wheel.png",
+      "docsPath": "/Animuse/docs/animations/soft-action-wheel",
+      "detailPath": "/Animuse/ai/components/soft-action-wheel.json",
+      "markdownPath": "/Animuse/ai/components/soft-action-wheel.md",
+      "previewPath": "/Animuse/assets/motion/soft-action-wheel-e2b533456a07c7c6981d3aa4.html",
       "discovery": {
         "category": "navigation",
         "useCases": [
@@ -1792,10 +1794,10 @@
         "zh": "六个彩色按钮从外围顺时针依次收拢成环，弹性停稳；关闭时逆序向外散开并模糊淡出。"
       },
       "keywords": "环形 菜单 交错 展开 圆形 按钮 加号 模糊 错峰 弹簧 stagger radial menu clockwise blur spring",
-      "docsPath": "/docs/animations/staggered-radial-menu",
-      "detailPath": "/ai/components/staggered-radial-menu.json",
-      "markdownPath": "/ai/components/staggered-radial-menu.md",
-      "previewPath": "/assets/components/staggered-radial-menu.png",
+      "docsPath": "/Animuse/docs/animations/staggered-radial-menu",
+      "detailPath": "/Animuse/ai/components/staggered-radial-menu.json",
+      "markdownPath": "/Animuse/ai/components/staggered-radial-menu.md",
+      "previewPath": "/Animuse/assets/motion/staggered-radial-menu-058261190ec1d064a6ff12ac.html",
       "discovery": {
         "category": "navigation",
         "useCases": [
@@ -1861,10 +1863,10 @@
         "zh": "把手靠近时显现，拖动时同向弯曲；超过面板宽度边界后弹性拉伸，松手回弹。"
       },
       "keywords": "弹性 面板 缩放 调整 宽度 拖动 把手 弯曲 回弹 elastic panel resize spring handle drag",
-      "docsPath": "/docs/animations/elastic-panel-resize",
-      "detailPath": "/ai/components/elastic-panel-resize.json",
-      "markdownPath": "/ai/components/elastic-panel-resize.md",
-      "previewPath": "/assets/components/elastic-panel-resize.png",
+      "docsPath": "/Animuse/docs/animations/elastic-panel-resize",
+      "detailPath": "/Animuse/ai/components/elastic-panel-resize.json",
+      "markdownPath": "/Animuse/ai/components/elastic-panel-resize.md",
+      "previewPath": "/Animuse/assets/motion/elastic-panel-resize-f861bd19d4f7f0471ea7384c.html",
       "discovery": {
         "category": "layout",
         "useCases": [
@@ -1930,10 +1932,10 @@
         "zh": "蓝色流体缓慢折叠流动，经竖向毛玻璃棱纹折射，中央白色 LeiBox 标志保持固定。"
       },
       "keywords": "蓝色 棱纹 流动 背景 毛玻璃 竖纹 流体 渐变 品牌 标志 blue fluted ribbed frosted glass fluid gradient background logo LeiBox",
-      "docsPath": "/docs/animations/blue-fluted-glass",
-      "detailPath": "/ai/components/blue-fluted-glass.json",
-      "markdownPath": "/ai/components/blue-fluted-glass.md",
-      "previewPath": "/assets/components/blue-fluted-glass.png",
+      "docsPath": "/Animuse/docs/animations/blue-fluted-glass",
+      "detailPath": "/Animuse/ai/components/blue-fluted-glass.json",
+      "markdownPath": "/Animuse/ai/components/blue-fluted-glass.md",
+      "previewPath": "/Animuse/assets/motion/blue-fluted-glass-18bb4fd514b0e7d6be95bee8.html",
       "discovery": {
         "category": "background",
         "useCases": [
@@ -2000,10 +2002,10 @@
         "zh": "三档模型思考强度滑块，保留流动星空填充、随拖速变化的果冻形变与柔和吸附。"
       },
       "keywords": "模型 思考 强度 推理 滑块 深度 简单 中度 深度 星空 液态 拖拽 Deep Agent reasoning effort thinking slider jelly",
-      "docsPath": "/docs/animations/reasoning-effort-slider",
-      "detailPath": "/ai/components/reasoning-effort-slider.json",
-      "markdownPath": "/ai/components/reasoning-effort-slider.md",
-      "previewPath": "/assets/components/reasoning-effort-slider.png",
+      "docsPath": "/Animuse/docs/animations/reasoning-effort-slider",
+      "detailPath": "/Animuse/ai/components/reasoning-effort-slider.json",
+      "markdownPath": "/Animuse/ai/components/reasoning-effort-slider.md",
+      "previewPath": "/Animuse/assets/motion/reasoning-effort-slider-62f0f8f66d73d04ddb8a8744.html",
       "discovery": {
         "category": "input",
         "useCases": [
@@ -2071,10 +2073,10 @@
         "zh": "直接迁入 Deep Agent 原版对话输入框，包含权限菜单、上下文容量、附件、模型选择和思考强度滑块。"
       },
       "keywords": "Agent 对话 输入框 模型 思考 强度 推理 菜单 附件 计划 模式 Deep Agent composer chat model thinking reasoning effort slider",
-      "docsPath": "/docs/animations/deep-agent-composer",
-      "detailPath": "/ai/components/deep-agent-composer.json",
-      "markdownPath": "/ai/components/deep-agent-composer.md",
-      "previewPath": "/assets/components/deep-agent-composer.png",
+      "docsPath": "/Animuse/docs/animations/deep-agent-composer",
+      "detailPath": "/Animuse/ai/components/deep-agent-composer.json",
+      "markdownPath": "/Animuse/ai/components/deep-agent-composer.md",
+      "previewPath": "/Animuse/assets/motion/deep-agent-composer-34b0c7872598500e6f096e7a.html",
       "discovery": {
         "category": "input",
         "useCases": [
@@ -2142,10 +2144,10 @@
         "zh": "字符锤头鲨沿三条预测价格路径游动，依次标记概率、波动率与 dealer gamma；指针在预测区时鲨鱼追向最近的路径，移到左侧K线区时鲨鱼跟着指针自由游动。"
       },
       "keywords": "鲨鱼 锤头鲨 字符 ASCII 价格 路径 预测 K线 概率 金融 图表 终端 hammerhead shark price paths forecast candles chart terminal",
-      "docsPath": "/docs/animations/hammerhead-chart",
-      "detailPath": "/ai/components/hammerhead-chart.json",
-      "markdownPath": "/ai/components/hammerhead-chart.md",
-      "previewPath": "/assets/components/hammerhead-chart.png",
+      "docsPath": "/Animuse/docs/animations/hammerhead-chart",
+      "detailPath": "/Animuse/ai/components/hammerhead-chart.json",
+      "markdownPath": "/Animuse/ai/components/hammerhead-chart.md",
+      "previewPath": "/Animuse/assets/motion/hammerhead-chart-24d7e81b97af719ccb1b6e7a.html",
       "discovery": {
         "category": "data",
         "useCases": [
@@ -2211,10 +2213,10 @@
         "zh": "四项磨砂标签栏连续展开为六宫格菜单，选中块通透滑动，加号旋转为关闭按钮。"
       },
       "keywords": "玻璃 标签栏 菜单 展开 六宫格 加号 磨砂 滑动 glass tabs menu morph frosted toolbar creation",
-      "docsPath": "/docs/animations/glass-tab-menu",
-      "detailPath": "/ai/components/glass-tab-menu.json",
-      "markdownPath": "/ai/components/glass-tab-menu.md",
-      "previewPath": "/assets/components/glass-tab-menu.png",
+      "docsPath": "/Animuse/docs/animations/glass-tab-menu",
+      "detailPath": "/Animuse/ai/components/glass-tab-menu.json",
+      "markdownPath": "/Animuse/ai/components/glass-tab-menu.md",
+      "previewPath": "/Animuse/assets/motion/glass-tab-menu-ac6a3afd1f2fbf3bd0c27c56.html",
       "discovery": {
         "category": "navigation",
         "useCases": [
@@ -2280,10 +2282,10 @@
         "zh": "三张纸团随悬停展开为手写信、蓝色山景照片和印刷便笺，纸面沿真实折叠网格连续变形。"
       },
       "keywords": "揉皱 纸团 纸张 展开 信件 照片 折痕 网格 悬停 crumpled paper unfold mesh letter photograph webgl",
-      "docsPath": "/docs/animations/crumpled-paper",
-      "detailPath": "/ai/components/crumpled-paper.json",
-      "markdownPath": "/ai/components/crumpled-paper.md",
-      "previewPath": "/assets/components/crumpled-paper.png",
+      "docsPath": "/Animuse/docs/animations/crumpled-paper",
+      "detailPath": "/Animuse/ai/components/crumpled-paper.json",
+      "markdownPath": "/Animuse/ai/components/crumpled-paper.md",
+      "previewPath": "/Animuse/assets/motion/crumpled-paper-db5f951309d26cc6534d1df2.html",
       "discovery": {
         "category": "cards",
         "useCases": [
@@ -2349,10 +2351,10 @@
         "zh": "帆船随当前章节沿弯曲虚线移动，支持滚动跟随与点击目录平滑跳转。"
       },
       "keywords": "帆船 滚动 目录 导航 航线 虚线 弹簧 船 阅读 sailing ship scroll contents navigation toc spring",
-      "docsPath": "/docs/animations/sailing-toc",
-      "detailPath": "/ai/components/sailing-toc.json",
-      "markdownPath": "/ai/components/sailing-toc.md",
-      "previewPath": "/assets/components/sailing-toc.png",
+      "docsPath": "/Animuse/docs/animations/sailing-toc",
+      "detailPath": "/Animuse/ai/components/sailing-toc.json",
+      "markdownPath": "/Animuse/ai/components/sailing-toc.md",
+      "previewPath": "/Animuse/assets/motion/sailing-toc-37635568049e17dfd354ea74.html",
       "discovery": {
         "category": "navigation",
         "useCases": [
@@ -2421,10 +2423,10 @@
         "zh": "粒子随五个思考步骤连续变形，完成后收起并逐字显示回答，支持暂停、重播和复制。"
       },
       "keywords": "思考 步骤 粒子 变形 放大镜 魔方 积木 机械臂 礼物 AI 推理 thinking reasoning particles morph agent",
-      "docsPath": "/docs/animations/thinking-particles",
-      "detailPath": "/ai/components/thinking-particles.json",
-      "markdownPath": "/ai/components/thinking-particles.md",
-      "previewPath": "/assets/components/thinking-particles.png",
+      "docsPath": "/Animuse/docs/animations/thinking-particles",
+      "detailPath": "/Animuse/ai/components/thinking-particles.json",
+      "markdownPath": "/Animuse/ai/components/thinking-particles.md",
+      "previewPath": "/Animuse/assets/motion/thinking-particles-71f36c57c7bbb21be99082db.html",
       "discovery": {
         "category": "feedback",
         "useCases": [
@@ -2490,10 +2492,10 @@
         "zh": "磨砂文件夹展开为扇形文件，支持生成纹理、添加落入动效和键盘菜单。"
       },
       "keywords": "glass folder files frosted blur art marble add fan menu 玻璃 文件夹 文件 磨砂 扇出 添加 菜单 纹理",
-      "docsPath": "/docs/animations/glass-folder",
-      "detailPath": "/ai/components/glass-folder.json",
-      "markdownPath": "/ai/components/glass-folder.md",
-      "previewPath": "/assets/components/glass-folder.png",
+      "docsPath": "/Animuse/docs/animations/glass-folder",
+      "detailPath": "/Animuse/ai/components/glass-folder.json",
+      "markdownPath": "/Animuse/ai/components/glass-folder.md",
+      "previewPath": "/Animuse/assets/motion/glass-folder-278e938ff81929b7d931aa37.html",
       "discovery": {
         "category": "files",
         "useCases": [
@@ -2562,10 +2564,10 @@
         "zh": "轨道加载、流动半色调星云和悬浮服务器组成三联宇宙视觉。"
       },
       "keywords": "cosmic space orbit loading astronaut servers globe halftone canvas 宇宙 星云 轨道 点阵 半色调 地球 服务器",
-      "docsPath": "/docs/animations/cosmic-panels",
-      "detailPath": "/ai/components/cosmic-panels.json",
-      "markdownPath": "/ai/components/cosmic-panels.md",
-      "previewPath": "/assets/components/cosmic-panels.png",
+      "docsPath": "/Animuse/docs/animations/cosmic-panels",
+      "detailPath": "/Animuse/ai/components/cosmic-panels.json",
+      "markdownPath": "/Animuse/ai/components/cosmic-panels.md",
+      "previewPath": "/Animuse/assets/motion/cosmic-panels-bf247e2d359c6766223b6476.html",
       "discovery": {
         "category": "background",
         "useCases": [
@@ -2630,10 +2632,10 @@
         "zh": "六张颗粒渐变封面，搭配细线纹样、缓慢漂移的色团和弹簧柔光交互。"
       },
       "keywords": "渐变 封面 卡片墙 颗粒 噪点 柔光 纹样 弹簧 gradient grain noise cover wall radial spring canvas",
-      "docsPath": "/docs/animations/gradient-cover-wall",
-      "detailPath": "/ai/components/gradient-cover-wall.json",
-      "markdownPath": "/ai/components/gradient-cover-wall.md",
-      "previewPath": "/assets/components/gradient-cover-wall.png",
+      "docsPath": "/Animuse/docs/animations/gradient-cover-wall",
+      "detailPath": "/Animuse/ai/components/gradient-cover-wall.json",
+      "markdownPath": "/Animuse/ai/components/gradient-cover-wall.md",
+      "previewPath": "/Animuse/assets/motion/gradient-cover-wall-b56bd3ce624d4be9a0be828c.html",
       "discovery": {
         "category": "cards",
         "useCases": [
@@ -2699,10 +2701,10 @@
         "zh": "胶囊展开为六位验证码输入框，收拢验证后呈现错误摇动或绿色成功反馈。"
       },
       "keywords": "otp verification code input password authentication pill morph error success 验证码 验证 输入 密码 胶囊 动效 错误 成功",
-      "docsPath": "/docs/components/otp-verification",
-      "detailPath": "/ai/components/otp-verification.json",
-      "markdownPath": "/ai/components/otp-verification.md",
-      "previewPath": "/assets/components/otp-verification.png",
+      "docsPath": "/Animuse/docs/components/otp-verification",
+      "detailPath": "/Animuse/ai/components/otp-verification.json",
+      "markdownPath": "/Animuse/ai/components/otp-verification.md",
+      "previewPath": "/Animuse/assets/components/otp-verification.png",
       "discovery": {
         "category": "input",
         "useCases": [
@@ -2768,10 +2770,10 @@
         "zh": "竖线重构 Apple、Google 与 Tesla 标志，结合弹簧回弹及随鼠标变化的检测框连线。"
       },
       "keywords": "品牌 线条 卡片 竖线 苹果 谷歌 特斯拉 检测框 连线 识别 噪声 弹簧 logo brand apple google tesla canvas luminance detection spring",
-      "docsPath": "/docs/animations/brand-line-cards",
-      "detailPath": "/ai/components/brand-line-cards.json",
-      "markdownPath": "/ai/components/brand-line-cards.md",
-      "previewPath": "/assets/components/brand-line-cards.png",
+      "docsPath": "/Animuse/docs/animations/brand-line-cards",
+      "detailPath": "/Animuse/ai/components/brand-line-cards.json",
+      "markdownPath": "/Animuse/ai/components/brand-line-cards.md",
+      "previewPath": "/Animuse/assets/motion/brand-line-cards-7347344e62290467a04238ec.html",
       "discovery": {
         "category": "cards",
         "useCases": [
@@ -2836,10 +2838,10 @@
         "zh": "可展开收拢的分享面板，支持邮箱邀请、成员权限和真实链接复制。"
       },
       "keywords": "motion animation share invite collaboration permissions email 动效 分享 邀请 协作 权限 邮箱 弹簧 面板 形变",
-      "docsPath": "/docs/components/share-invite",
-      "detailPath": "/ai/components/share-invite.json",
-      "markdownPath": "/ai/components/share-invite.md",
-      "previewPath": "/assets/components/share-invite.png",
+      "docsPath": "/Animuse/docs/components/share-invite",
+      "detailPath": "/Animuse/ai/components/share-invite.json",
+      "markdownPath": "/Animuse/ai/components/share-invite.md",
+      "previewPath": "/Animuse/assets/components/share-invite.png",
       "discovery": {
         "category": "collaboration",
         "useCases": [
@@ -2908,10 +2910,10 @@
         "zh": "权限申请胶囊弹性展开，堆叠头像与成员列表交错切换。"
       },
       "keywords": "动效 访问 权限 申请 弹性 展开 收起 头像 access request spring morph panel",
-      "docsPath": "/docs/animations/bouncy-access",
-      "detailPath": "/ai/components/bouncy-access.json",
-      "markdownPath": "/ai/components/bouncy-access.md",
-      "previewPath": "/assets/components/bouncy-access.png",
+      "docsPath": "/Animuse/docs/animations/bouncy-access",
+      "detailPath": "/Animuse/ai/components/bouncy-access.json",
+      "markdownPath": "/Animuse/ai/components/bouncy-access.md",
+      "previewPath": "/Animuse/assets/motion/bouncy-access-4dd1a7b544cc8f9e6264b008.html",
       "discovery": {
         "category": "collaboration",
         "useCases": [
@@ -2976,10 +2978,10 @@
         "zh": "日程卡片随拖拽速度拉伸、跟随，并在浮动状态中切换聚焦内容。"
       },
       "keywords": "动效 气动 对焦 拖拽 日历 日程 速度 惯性 形变 drag velocity focus calendar physics",
-      "docsPath": "/docs/animations/velocity-drag",
-      "detailPath": "/ai/components/velocity-drag.json",
-      "markdownPath": "/ai/components/velocity-drag.md",
-      "previewPath": "/assets/components/velocity-drag.png",
+      "docsPath": "/Animuse/docs/animations/velocity-drag",
+      "detailPath": "/Animuse/ai/components/velocity-drag.json",
+      "markdownPath": "/Animuse/ai/components/velocity-drag.md",
+      "previewPath": "/Animuse/assets/motion/velocity-drag-6931d6fce1d3b91489bab6c7.html",
       "discovery": {
         "category": "layout",
         "useCases": [
@@ -3044,10 +3046,10 @@
         "zh": "20 × 20 点阵围绕两个移动焦点呼吸，呈现图片生成中的等待反馈。"
       },
       "keywords": "动效 AI 生成 图片 加载 等待 反馈 点阵 光点 loading generating dots focus",
-      "docsPath": "/docs/animations/ai-generating",
-      "detailPath": "/ai/components/ai-generating.json",
-      "markdownPath": "/ai/components/ai-generating.md",
-      "previewPath": "/assets/components/ai-generating.png",
+      "docsPath": "/Animuse/docs/animations/ai-generating",
+      "detailPath": "/Animuse/ai/components/ai-generating.json",
+      "markdownPath": "/Animuse/ai/components/ai-generating.md",
+      "previewPath": "/Animuse/assets/motion/ai-generating-93d6bdc462e6a2dd75050b9e.html",
       "discovery": {
         "category": "feedback",
         "useCases": [

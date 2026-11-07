@@ -9,10 +9,10 @@
     "zh": "点击三处内联胶囊，相同字母连续重排，句子随宽度变化居中，贴纸图标弹性切换。"
   },
   "keywords": "内联 词组 文字 字符 字母 变形 重排 胶囊 图标 Torph Graphical text morph inline phrase letter flip",
-  "docsPath": "/docs/animations/inline-text-morph",
-  "detailPath": "/ai/components/inline-text-morph.json",
-  "markdownPath": "/ai/components/inline-text-morph.md",
-  "previewPath": "/assets/components/inline-text-morph.png",
+  "docsPath": "/Animuse/docs/animations/inline-text-morph",
+  "detailPath": "/Animuse/ai/components/inline-text-morph.json",
+  "markdownPath": "/Animuse/ai/components/inline-text-morph.md",
+  "previewPath": "/Animuse/assets/motion/inline-text-morph-032f8c26d00450668ee7fa8b.html",
   "discovery": {
     "category": "text",
     "useCases": [
@@ -68,7 +68,7 @@
   },
   "packages": {
     "react": {
-      "url": "/ai/packages/inline-text-morph/react.json",
+      "url": "/Animuse/ai/packages/inline-text-morph/react.json",
       "component": "InlineTextMorph",
       "dependencies": [
         "react",
@@ -83,7 +83,7 @@
       ]
     },
     "vue": {
-      "url": "/ai/packages/inline-text-morph/vue.json",
+      "url": "/Animuse/ai/packages/inline-text-morph/vue.json",
       "component": "InlineTextMorph",
       "dependencies": [
         "vue"
@@ -97,7 +97,7 @@
       ]
     },
     "svelte": {
-      "url": "/ai/packages/inline-text-morph/svelte.json",
+      "url": "/Animuse/ai/packages/inline-text-morph/svelte.json",
       "component": "InlineTextMorph",
       "dependencies": [
         "svelte"
@@ -111,7 +111,7 @@
       ]
     },
     "solid": {
-      "url": "/ai/packages/inline-text-morph/solid.json",
+      "url": "/Animuse/ai/packages/inline-text-morph/solid.json",
       "component": "InlineTextMorph",
       "dependencies": [
         "solid-js"
@@ -125,7 +125,7 @@
       ]
     },
     "preact": {
-      "url": "/ai/packages/inline-text-morph/preact.json",
+      "url": "/Animuse/ai/packages/inline-text-morph/preact.json",
       "component": "InlineTextMorph",
       "dependencies": [
         "preact"
@@ -139,7 +139,7 @@
       ]
     },
     "vanilla": {
-      "url": "/ai/packages/inline-text-morph/vanilla.json",
+      "url": "/Animuse/ai/packages/inline-text-morph/vanilla.json",
       "component": "InlineTextMorph",
       "dependencies": [],
       "usage": "import { mount } from \"./InlineTextMorph\";\nconst target = document.querySelector<HTMLElement>(\"#demo\")!;\nconst component = mount(target);\n// When your page or route unmounts:\n// component.destroy();",

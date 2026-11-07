@@ -9,10 +9,10 @@
     "zh": "三个固定点阵轮廓，分别呈现蓝绿粒子流、黑白空心圆弧与橙红纹理。"
   },
   "keywords": "粒子 纹理 点阵 三联 流动 空心 圆弧 蓝绿 橙红 Sarvam Anushka particle texture trio noise flow field",
-  "docsPath": "/docs/animations/particle-texture-trio",
-  "detailPath": "/ai/components/particle-texture-trio.json",
-  "markdownPath": "/ai/components/particle-texture-trio.md",
-  "previewPath": "/assets/components/particle-texture-trio.png",
+  "docsPath": "/Animuse/docs/animations/particle-texture-trio",
+  "detailPath": "/Animuse/ai/components/particle-texture-trio.json",
+  "markdownPath": "/Animuse/ai/components/particle-texture-trio.md",
+  "previewPath": "/Animuse/assets/motion/particle-texture-trio-f6a3fa07d81988146fa95140.html",
   "discovery": {
     "category": "background",
     "useCases": [
@@ -74,7 +74,7 @@
   },
   "packages": {
     "react": {
-      "url": "/ai/packages/particle-texture-trio/react.json",
+      "url": "/Animuse/ai/packages/particle-texture-trio/react.json",
       "component": "ParticleTextureTrio",
       "dependencies": [
         "react",
@@ -89,7 +89,7 @@
       ]
     },
     "vue": {
-      "url": "/ai/packages/particle-texture-trio/vue.json",
+      "url": "/Animuse/ai/packages/particle-texture-trio/vue.json",
       "component": "ParticleTextureTrio",
       "dependencies": [
         "vue"
@@ -103,7 +103,7 @@
       ]
     },
     "svelte": {
-      "url": "/ai/packages/particle-texture-trio/svelte.json",
+      "url": "/Animuse/ai/packages/particle-texture-trio/svelte.json",
       "component": "ParticleTextureTrio",
       "dependencies": [
         "svelte"
@@ -117,7 +117,7 @@
       ]
     },
     "solid": {
-      "url": "/ai/packages/particle-texture-trio/solid.json",
+      "url": "/Animuse/ai/packages/particle-texture-trio/solid.json",
       "component": "ParticleTextureTrio",
       "dependencies": [
         "solid-js"
@@ -131,7 +131,7 @@
       ]
     },
     "preact": {
-      "url": "/ai/packages/particle-texture-trio/preact.json",
+      "url": "/Animuse/ai/packages/particle-texture-trio/preact.json",
       "component": "ParticleTextureTrio",
       "dependencies": [
         "preact"
@@ -145,7 +145,7 @@
       ]
     },
     "vanilla": {
-      "url": "/ai/packages/particle-texture-trio/vanilla.json",
+      "url": "/Animuse/ai/packages/particle-texture-trio/vanilla.json",
       "component": "ParticleTextureTrio",
       "dependencies": [],
       "usage": "import { mount } from \"./ParticleTextureTrio\";\nconst target = document.querySelector<HTMLElement>(\"#demo\")!;\nconst component = mount(target);\n// When your page or route unmounts:\n// component.destroy();",

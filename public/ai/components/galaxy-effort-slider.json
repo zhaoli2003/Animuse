@@ -9,10 +9,10 @@
     "zh": "脑形褶皱随六档思考强度逐层增加，进入 Galaxy 后点亮闪动点阵、放射粒子与光晕，并伴随短促震动。"
   },
   "keywords": "脑形 大脑 褶皱 脑沟 沟回 生长 滑块 推理 强度 粒子 点阵 发光 六档 银河 brain folds wrinkles particle effort slider galaxy low medium high extra max ozzy",
-  "docsPath": "/docs/animations/galaxy-effort-slider",
-  "detailPath": "/ai/components/galaxy-effort-slider.json",
-  "markdownPath": "/ai/components/galaxy-effort-slider.md",
-  "previewPath": "/assets/components/galaxy-effort-slider.png",
+  "docsPath": "/Animuse/docs/animations/galaxy-effort-slider",
+  "detailPath": "/Animuse/ai/components/galaxy-effort-slider.json",
+  "markdownPath": "/Animuse/ai/components/galaxy-effort-slider.md",
+  "previewPath": "/Animuse/assets/motion/galaxy-effort-slider-685a758cae78a1afdd1025e3.html",
   "discovery": {
     "category": "input",
     "useCases": [
@@ -68,7 +68,7 @@
   },
   "packages": {
     "react": {
-      "url": "/ai/packages/galaxy-effort-slider/react.json",
+      "url": "/Animuse/ai/packages/galaxy-effort-slider/react.json",
       "component": "GalaxyEffortSlider",
       "dependencies": [
         "react",
@@ -83,7 +83,7 @@
       ]
     },
     "vue": {
-      "url": "/ai/packages/galaxy-effort-slider/vue.json",
+      "url": "/Animuse/ai/packages/galaxy-effort-slider/vue.json",
       "component": "GalaxyEffortSlider",
       "dependencies": [
         "vue"
@@ -97,7 +97,7 @@
       ]
     },
     "svelte": {
-      "url": "/ai/packages/galaxy-effort-slider/svelte.json",
+      "url": "/Animuse/ai/packages/galaxy-effort-slider/svelte.json",
       "component": "GalaxyEffortSlider",
       "dependencies": [
         "svelte"
@@ -111,7 +111,7 @@
       ]
     },
     "solid": {
-      "url": "/ai/packages/galaxy-effort-slider/solid.json",
+      "url": "/Animuse/ai/packages/galaxy-effort-slider/solid.json",
       "component": "GalaxyEffortSlider",
       "dependencies": [
         "solid-js"
@@ -125,7 +125,7 @@
       ]
     },
     "preact": {
-      "url": "/ai/packages/galaxy-effort-slider/preact.json",
+      "url": "/Animuse/ai/packages/galaxy-effort-slider/preact.json",
       "component": "GalaxyEffortSlider",
       "dependencies": [
         "preact"
@@ -139,7 +139,7 @@
       ]
     },
     "vanilla": {
-      "url": "/ai/packages/galaxy-effort-slider/vanilla.json",
+      "url": "/Animuse/ai/packages/galaxy-effort-slider/vanilla.json",
       "component": "GalaxyEffortSlider",
       "dependencies": [],
       "usage": "import { mount } from \"./GalaxyEffortSlider\";\nconst target = document.querySelector<HTMLElement>(\"#demo\")!;\nconst component = mount(target);\n// When your page or route unmounts:\n// component.destroy();",

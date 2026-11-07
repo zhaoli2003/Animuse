@@ -1,6 +1,7 @@
 import siteAssets from '@/data/site-motion.json';
+import { publicPath } from '@/lib/site-url';
 const FONT_STYLESHEET_ID = "leibox-chinese-fonts";
-const FONT_STYLESHEET_URL = siteAssets.chineseFontStylesheet;
+const FONT_STYLESHEET_URL = publicPath(siteAssets.chineseFontStylesheet);
 
 export function loadChineseFonts(document: Document) {
   if (document.getElementById(FONT_STYLESHEET_ID)) return;

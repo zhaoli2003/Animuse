@@ -9,10 +9,10 @@
     "zh": "可展开收拢的分享面板，支持邮箱邀请、成员权限和真实链接复制。"
   },
   "keywords": "motion animation share invite collaboration permissions email 动效 分享 邀请 协作 权限 邮箱 弹簧 面板 形变",
-  "docsPath": "/docs/components/share-invite",
-  "detailPath": "/ai/components/share-invite.json",
-  "markdownPath": "/ai/components/share-invite.md",
-  "previewPath": "/assets/components/share-invite.png",
+  "docsPath": "/Animuse/docs/components/share-invite",
+  "detailPath": "/Animuse/ai/components/share-invite.json",
+  "markdownPath": "/Animuse/ai/components/share-invite.md",
+  "previewPath": "/Animuse/assets/components/share-invite.png",
   "discovery": {
     "category": "collaboration",
     "useCases": [
@@ -71,7 +71,7 @@
   },
   "packages": {
     "react": {
-      "url": "/ai/packages/share-invite/react.json",
+      "url": "/Animuse/ai/packages/share-invite/react.json",
       "component": "ShareInvite",
       "dependencies": [
         "react",
@@ -87,7 +87,7 @@
       ]
     },
     "vue": {
-      "url": "/ai/packages/share-invite/vue.json",
+      "url": "/Animuse/ai/packages/share-invite/vue.json",
       "component": "ShareInvite",
       "dependencies": [
         "vue",
@@ -102,7 +102,7 @@
       ]
     },
     "svelte": {
-      "url": "/ai/packages/share-invite/svelte.json",
+      "url": "/Animuse/ai/packages/share-invite/svelte.json",
       "component": "ShareInvite",
       "dependencies": [
         "svelte",
@@ -117,7 +117,7 @@
       ]
     },
     "solid": {
-      "url": "/ai/packages/share-invite/solid.json",
+      "url": "/Animuse/ai/packages/share-invite/solid.json",
       "component": "ShareInvite",
       "dependencies": [
         "solid-js",
@@ -132,7 +132,7 @@
       ]
     },
     "preact": {
-      "url": "/ai/packages/share-invite/preact.json",
+      "url": "/Animuse/ai/packages/share-invite/preact.json",
       "component": "ShareInvite",
       "dependencies": [
         "preact",
@@ -147,7 +147,7 @@
       ]
     },
     "vanilla": {
-      "url": "/ai/packages/share-invite/vanilla.json",
+      "url": "/Animuse/ai/packages/share-invite/vanilla.json",
       "component": "ShareInvite",
       "dependencies": [
         "gsap@3.12.7"

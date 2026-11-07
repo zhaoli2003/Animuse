@@ -1,5 +1,9 @@
 # Animuse
 
+**在线访问：[zhaoli2003.github.io/Animuse](https://zhaoli2003.github.io/Animuse/)** · [浏览组件](https://zhaoli2003.github.io/Animuse/components/)
+
+GitHub Pages 从 `main` 的提交自动构建并部署。发布流程设置 `/Animuse` 子路径，生成真实的静态导航文件；本地开发仍可使用根路径。
+
 **animuse** — 由 zhaoli 维护的免费开源 UI 组件图鉴。
 
 在网页中浏览和体验组件，复制接入提示词、下载独立源码，也可以通过 Agent Skill 搜索和使用组件。
@@ -34,7 +38,7 @@ npm start
 npx skills add zhaoli2003/Animuse --skill animuse
 ```
 
-Skill 默认从 `http://127.0.0.1:3000` 读取目录，因此先启动网站。之后可用 `ANIMUSE_ORIGIN` 环境变量或 `--origin` 指向你的静态部署。
+Skill 默认从 `https://zhaoli2003.github.io/Animuse` 读取目录。可用 `ANIMUSE_ORIGIN` 环境变量或 `--origin` 指定另一个站点基址，支持项目目录路径。本地开发时先启动网站，再传入 `--origin http://127.0.0.1:3000`。
 
 ```bash
 node integrations/skills/animuse/scripts/animuse.mjs search "玻璃 文件夹"

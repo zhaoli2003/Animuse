@@ -9,10 +9,10 @@
     "zh": "轨道加载、流动半色调星云和悬浮服务器组成三联宇宙视觉。"
   },
   "keywords": "cosmic space orbit loading astronaut servers globe halftone canvas 宇宙 星云 轨道 点阵 半色调 地球 服务器",
-  "docsPath": "/docs/animations/cosmic-panels",
-  "detailPath": "/ai/components/cosmic-panels.json",
-  "markdownPath": "/ai/components/cosmic-panels.md",
-  "previewPath": "/assets/components/cosmic-panels.png",
+  "docsPath": "/Animuse/docs/animations/cosmic-panels",
+  "detailPath": "/Animuse/ai/components/cosmic-panels.json",
+  "markdownPath": "/Animuse/ai/components/cosmic-panels.md",
+  "previewPath": "/Animuse/assets/motion/cosmic-panels-bf247e2d359c6766223b6476.html",
   "discovery": {
     "category": "background",
     "useCases": [
@@ -67,7 +67,7 @@
   },
   "packages": {
     "react": {
-      "url": "/ai/packages/cosmic-panels/react.json",
+      "url": "/Animuse/ai/packages/cosmic-panels/react.json",
       "component": "CosmicPanels",
       "dependencies": [
         "react",
@@ -82,7 +82,7 @@
       ]
     },
     "vue": {
-      "url": "/ai/packages/cosmic-panels/vue.json",
+      "url": "/Animuse/ai/packages/cosmic-panels/vue.json",
       "component": "CosmicPanels",
       "dependencies": [
         "vue"
@@ -96,7 +96,7 @@
       ]
     },
     "svelte": {
-      "url": "/ai/packages/cosmic-panels/svelte.json",
+      "url": "/Animuse/ai/packages/cosmic-panels/svelte.json",
       "component": "CosmicPanels",
       "dependencies": [
         "svelte"
@@ -110,7 +110,7 @@
       ]
     },
     "solid": {
-      "url": "/ai/packages/cosmic-panels/solid.json",
+      "url": "/Animuse/ai/packages/cosmic-panels/solid.json",
       "component": "CosmicPanels",
       "dependencies": [
         "solid-js"
@@ -124,7 +124,7 @@
       ]
     },
     "preact": {
-      "url": "/ai/packages/cosmic-panels/preact.json",
+      "url": "/Animuse/ai/packages/cosmic-panels/preact.json",
       "component": "CosmicPanels",
       "dependencies": [
         "preact"
@@ -138,7 +138,7 @@
       ]
     },
     "vanilla": {
-      "url": "/ai/packages/cosmic-panels/vanilla.json",
+      "url": "/Animuse/ai/packages/cosmic-panels/vanilla.json",
       "component": "CosmicPanels",
       "dependencies": [],
       "usage": "import { mount } from \"./CosmicPanels\";\nconst target = document.querySelector<HTMLElement>(\"#demo\")!;\nconst component = mount(target);\n// When your page or route unmounts:\n// component.destroy();",

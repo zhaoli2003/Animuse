@@ -9,10 +9,10 @@
     "zh": "权限申请胶囊弹性展开，堆叠头像与成员列表交错切换。"
   },
   "keywords": "动效 访问 权限 申请 弹性 展开 收起 头像 access request spring morph panel",
-  "docsPath": "/docs/animations/bouncy-access",
-  "detailPath": "/ai/components/bouncy-access.json",
-  "markdownPath": "/ai/components/bouncy-access.md",
-  "previewPath": "/assets/components/bouncy-access.png",
+  "docsPath": "/Animuse/docs/animations/bouncy-access",
+  "detailPath": "/Animuse/ai/components/bouncy-access.json",
+  "markdownPath": "/Animuse/ai/components/bouncy-access.md",
+  "previewPath": "/Animuse/assets/motion/bouncy-access-4dd1a7b544cc8f9e6264b008.html",
   "discovery": {
     "category": "collaboration",
     "useCases": [
@@ -67,7 +67,7 @@
   },
   "packages": {
     "react": {
-      "url": "/ai/packages/bouncy-access/react.json",
+      "url": "/Animuse/ai/packages/bouncy-access/react.json",
       "component": "BouncyAccessRequest",
       "dependencies": [
         "react",
@@ -82,7 +82,7 @@
       ]
     },
     "vue": {
-      "url": "/ai/packages/bouncy-access/vue.json",
+      "url": "/Animuse/ai/packages/bouncy-access/vue.json",
       "component": "BouncyAccessRequest",
       "dependencies": [
         "vue"
@@ -96,7 +96,7 @@
       ]
     },
     "svelte": {
-      "url": "/ai/packages/bouncy-access/svelte.json",
+      "url": "/Animuse/ai/packages/bouncy-access/svelte.json",
       "component": "BouncyAccessRequest",
       "dependencies": [
         "svelte"
@@ -110,7 +110,7 @@
       ]
     },
     "solid": {
-      "url": "/ai/packages/bouncy-access/solid.json",
+      "url": "/Animuse/ai/packages/bouncy-access/solid.json",
       "component": "BouncyAccessRequest",
       "dependencies": [
         "solid-js"
@@ -124,7 +124,7 @@
       ]
     },
     "preact": {
-      "url": "/ai/packages/bouncy-access/preact.json",
+      "url": "/Animuse/ai/packages/bouncy-access/preact.json",
       "component": "BouncyAccessRequest",
       "dependencies": [
         "preact"
@@ -138,7 +138,7 @@
       ]
     },
     "vanilla": {
-      "url": "/ai/packages/bouncy-access/vanilla.json",
+      "url": "/Animuse/ai/packages/bouncy-access/vanilla.json",
       "component": "BouncyAccessRequest",
       "dependencies": [],
       "usage": "import { mount } from \"./BouncyAccessRequest\";\nconst target = document.querySelector<HTMLElement>(\"#demo\")!;\nconst component = mount(target);\n// When your page or route unmounts:\n// component.destroy();",

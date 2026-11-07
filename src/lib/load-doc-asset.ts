@@ -1,7 +1,10 @@
+import { publicPath } from "@/lib/site-url";
+
 /** Shared requests are cached only on success; failed requests can be retried. */
 const requests = new Map<string, Promise<unknown>>();
 const MAX_CACHED_ASSETS = 24;
 export function loadDocAsset<T>(url: string): Promise<T> {
+  url = publicPath(url);
   let request = requests.get(url);
   if (!request) {
     request = fetch(url).then(response => {

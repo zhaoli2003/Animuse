@@ -1,4 +1,5 @@
 "use client";
+import { publicPath } from "@/lib/site-url";
 
 import { gsap } from "gsap";
 import { ArrowLeft, ArrowRight, RotateCcw } from "lucide-react";
@@ -144,7 +145,7 @@ const MotionCard = forwardRef<CardHandle, { scheme: Scheme; recommended: boolean
         <span className={styles.routeLabel}>{ROUTES.find((entry) => entry.id === route)!.name}</span>
         {/* Use the existing artwork without registering demo images as navigation Logos. */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img ref={logo} src="/leibox-logo.svg" width={604} height={208} alt="LeiBox" className={styles.movingLogo} />
+        <img ref={logo} src={publicPath("/leibox-logo.svg")} width={604} height={208} alt="LeiBox" className={styles.movingLogo} />
         <span className={styles.pathLabel}>{fromName}<ArrowRight size={10} aria-hidden="true" />{ROUTES.find((entry) => entry.id === route)!.name}</span>
       </div>
       <p className={styles.summary}>{scheme.summary}</p>

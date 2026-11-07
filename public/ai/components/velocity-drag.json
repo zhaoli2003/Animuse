@@ -9,10 +9,10 @@
     "zh": "日程卡片随拖拽速度拉伸、跟随，并在浮动状态中切换聚焦内容。"
   },
   "keywords": "动效 气动 对焦 拖拽 日历 日程 速度 惯性 形变 drag velocity focus calendar physics",
-  "docsPath": "/docs/animations/velocity-drag",
-  "detailPath": "/ai/components/velocity-drag.json",
-  "markdownPath": "/ai/components/velocity-drag.md",
-  "previewPath": "/assets/components/velocity-drag.png",
+  "docsPath": "/Animuse/docs/animations/velocity-drag",
+  "detailPath": "/Animuse/ai/components/velocity-drag.json",
+  "markdownPath": "/Animuse/ai/components/velocity-drag.md",
+  "previewPath": "/Animuse/assets/motion/velocity-drag-6931d6fce1d3b91489bab6c7.html",
   "discovery": {
     "category": "layout",
     "useCases": [
@@ -67,7 +67,7 @@
   },
   "packages": {
     "react": {
-      "url": "/ai/packages/velocity-drag/react.json",
+      "url": "/Animuse/ai/packages/velocity-drag/react.json",
       "component": "VelocityFocusDrag",
       "dependencies": [
         "react",
@@ -82,7 +82,7 @@
       ]
     },
     "vue": {
-      "url": "/ai/packages/velocity-drag/vue.json",
+      "url": "/Animuse/ai/packages/velocity-drag/vue.json",
       "component": "VelocityFocusDrag",
       "dependencies": [
         "vue"
@@ -96,7 +96,7 @@
       ]
     },
     "svelte": {
-      "url": "/ai/packages/velocity-drag/svelte.json",
+      "url": "/Animuse/ai/packages/velocity-drag/svelte.json",
       "component": "VelocityFocusDrag",
       "dependencies": [
         "svelte"
@@ -110,7 +110,7 @@
       ]
     },
     "solid": {
-      "url": "/ai/packages/velocity-drag/solid.json",
+      "url": "/Animuse/ai/packages/velocity-drag/solid.json",
       "component": "VelocityFocusDrag",
       "dependencies": [
         "solid-js"
@@ -124,7 +124,7 @@
       ]
     },
     "preact": {
-      "url": "/ai/packages/velocity-drag/preact.json",
+      "url": "/Animuse/ai/packages/velocity-drag/preact.json",
       "component": "VelocityFocusDrag",
       "dependencies": [
         "preact"
@@ -138,7 +138,7 @@
       ]
     },
     "vanilla": {
-      "url": "/ai/packages/velocity-drag/vanilla.json",
+      "url": "/Animuse/ai/packages/velocity-drag/vanilla.json",
       "component": "VelocityFocusDrag",
       "dependencies": [],
       "usage": "import { mount } from \"./VelocityFocusDrag\";\nconst target = document.querySelector<HTMLElement>(\"#demo\")!;\nconst component = mount(target);\n// When your page or route unmounts:\n// component.destroy();",

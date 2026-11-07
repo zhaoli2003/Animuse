@@ -9,10 +9,10 @@
     "zh": "把手靠近时显现，拖动时同向弯曲；超过面板宽度边界后弹性拉伸，松手回弹。"
   },
   "keywords": "弹性 面板 缩放 调整 宽度 拖动 把手 弯曲 回弹 elastic panel resize spring handle drag",
-  "docsPath": "/docs/animations/elastic-panel-resize",
-  "detailPath": "/ai/components/elastic-panel-resize.json",
-  "markdownPath": "/ai/components/elastic-panel-resize.md",
-  "previewPath": "/assets/components/elastic-panel-resize.png",
+  "docsPath": "/Animuse/docs/animations/elastic-panel-resize",
+  "detailPath": "/Animuse/ai/components/elastic-panel-resize.json",
+  "markdownPath": "/Animuse/ai/components/elastic-panel-resize.md",
+  "previewPath": "/Animuse/assets/motion/elastic-panel-resize-f861bd19d4f7f0471ea7384c.html",
   "discovery": {
     "category": "layout",
     "useCases": [
@@ -68,7 +68,7 @@
   },
   "packages": {
     "react": {
-      "url": "/ai/packages/elastic-panel-resize/react.json",
+      "url": "/Animuse/ai/packages/elastic-panel-resize/react.json",
       "component": "ElasticPanelResize",
       "dependencies": [
         "react",
@@ -83,7 +83,7 @@
       ]
     },
     "vue": {
-      "url": "/ai/packages/elastic-panel-resize/vue.json",
+      "url": "/Animuse/ai/packages/elastic-panel-resize/vue.json",
       "component": "ElasticPanelResize",
       "dependencies": [
         "vue"
@@ -97,7 +97,7 @@
       ]
     },
     "svelte": {
-      "url": "/ai/packages/elastic-panel-resize/svelte.json",
+      "url": "/Animuse/ai/packages/elastic-panel-resize/svelte.json",
       "component": "ElasticPanelResize",
       "dependencies": [
         "svelte"
@@ -111,7 +111,7 @@
       ]
     },
     "solid": {
-      "url": "/ai/packages/elastic-panel-resize/solid.json",
+      "url": "/Animuse/ai/packages/elastic-panel-resize/solid.json",
       "component": "ElasticPanelResize",
       "dependencies": [
         "solid-js"
@@ -125,7 +125,7 @@
       ]
     },
     "preact": {
-      "url": "/ai/packages/elastic-panel-resize/preact.json",
+      "url": "/Animuse/ai/packages/elastic-panel-resize/preact.json",
       "component": "ElasticPanelResize",
       "dependencies": [
         "preact"
@@ -139,7 +139,7 @@
       ]
     },
     "vanilla": {
-      "url": "/ai/packages/elastic-panel-resize/vanilla.json",
+      "url": "/Animuse/ai/packages/elastic-panel-resize/vanilla.json",
       "component": "ElasticPanelResize",
       "dependencies": [],
       "usage": "import { mount } from \"./ElasticPanelResize\";\nconst target = document.querySelector<HTMLElement>(\"#demo\")!;\nconst component = mount(target);\n// When your page or route unmounts:\n// component.destroy();",

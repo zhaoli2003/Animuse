@@ -4,17 +4,17 @@ A six-digit code unfolds from a pill, contracts to verify, and responds with an 
 
 胶囊展开为六位验证码输入框，收拢验证后呈现错误摇动或绿色成功反馈。
 
-Docs: http://127.0.0.1:3000/docs/components/otp-verification
-Detail: http://127.0.0.1:3000/ai/components/otp-verification.json
+Docs: https://zhaoli2003.github.io/Animuse/docs/components/otp-verification
+Detail: https://zhaoli2003.github.io/Animuse/ai/components/otp-verification.json
 
 Use the installed Animuse Skill to pull the selected framework's complete source, or fetch one package JSON directly:
 
-- React: http://127.0.0.1:3000/ai/packages/otp-verification/react.json
-- Vue: http://127.0.0.1:3000/ai/packages/otp-verification/vue.json
-- Svelte: http://127.0.0.1:3000/ai/packages/otp-verification/svelte.json
-- Solid: http://127.0.0.1:3000/ai/packages/otp-verification/solid.json
-- Preact: http://127.0.0.1:3000/ai/packages/otp-verification/preact.json
-- Vanilla: http://127.0.0.1:3000/ai/packages/otp-verification/vanilla.json
+- React: https://zhaoli2003.github.io/Animuse/ai/packages/otp-verification/react.json
+- Vue: https://zhaoli2003.github.io/Animuse/ai/packages/otp-verification/vue.json
+- Svelte: https://zhaoli2003.github.io/Animuse/ai/packages/otp-verification/svelte.json
+- Solid: https://zhaoli2003.github.io/Animuse/ai/packages/otp-verification/solid.json
+- Preact: https://zhaoli2003.github.io/Animuse/ai/packages/otp-verification/preact.json
+- Vanilla: https://zhaoli2003.github.io/Animuse/ai/packages/otp-verification/vanilla.json
 
 Design reference: https://x.com/bestsaasdesigns/status/2111020282551132539/video/1
 Source notice: Retain source notices and design-reference attribution; no blanket license is assigned by the catalog.

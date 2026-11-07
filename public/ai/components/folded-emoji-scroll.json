@@ -9,10 +9,10 @@
     "zh": "表情网格滚入上下边缘时向内弯折、压缩，搜索栏保持固定，支持搜索与选择。"
   },
   "keywords": "折边 折叠 滚动 表情 选择器 上下 边缘 emoji scroll folded edges canvas html drawElementImage Enes",
-  "docsPath": "/docs/animations/folded-emoji-scroll",
-  "detailPath": "/ai/components/folded-emoji-scroll.json",
-  "markdownPath": "/ai/components/folded-emoji-scroll.md",
-  "previewPath": "/assets/components/folded-emoji-scroll.png",
+  "docsPath": "/Animuse/docs/animations/folded-emoji-scroll",
+  "detailPath": "/Animuse/ai/components/folded-emoji-scroll.json",
+  "markdownPath": "/Animuse/ai/components/folded-emoji-scroll.md",
+  "previewPath": "/Animuse/assets/motion/folded-emoji-scroll-c90478cc6c79bbc2d21c20dd.html",
   "discovery": {
     "category": "input",
     "useCases": [
@@ -74,7 +74,7 @@
   },
   "packages": {
     "react": {
-      "url": "/ai/packages/folded-emoji-scroll/react.json",
+      "url": "/Animuse/ai/packages/folded-emoji-scroll/react.json",
       "component": "FoldedEmojiScroll",
       "dependencies": [
         "react",
@@ -89,7 +89,7 @@
       ]
     },
     "vue": {
-      "url": "/ai/packages/folded-emoji-scroll/vue.json",
+      "url": "/Animuse/ai/packages/folded-emoji-scroll/vue.json",
       "component": "FoldedEmojiScroll",
       "dependencies": [
         "vue"
@@ -103,7 +103,7 @@
       ]
     },
     "svelte": {
-      "url": "/ai/packages/folded-emoji-scroll/svelte.json",
+      "url": "/Animuse/ai/packages/folded-emoji-scroll/svelte.json",
       "component": "FoldedEmojiScroll",
       "dependencies": [
         "svelte"
@@ -117,7 +117,7 @@
       ]
     },
     "solid": {
-      "url": "/ai/packages/folded-emoji-scroll/solid.json",
+      "url": "/Animuse/ai/packages/folded-emoji-scroll/solid.json",
       "component": "FoldedEmojiScroll",
       "dependencies": [
         "solid-js"
@@ -131,7 +131,7 @@
       ]
     },
     "preact": {
-      "url": "/ai/packages/folded-emoji-scroll/preact.json",
+      "url": "/Animuse/ai/packages/folded-emoji-scroll/preact.json",
       "component": "FoldedEmojiScroll",
       "dependencies": [
         "preact"
@@ -145,7 +145,7 @@
       ]
     },
     "vanilla": {
-      "url": "/ai/packages/folded-emoji-scroll/vanilla.json",
+      "url": "/Animuse/ai/packages/folded-emoji-scroll/vanilla.json",
       "component": "FoldedEmojiScroll",
       "dependencies": [],
       "usage": "import { mount } from \"./FoldedEmojiScroll\";\nconst target = document.querySelector<HTMLElement>(\"#demo\")!;\nconst component = mount(target);\n// When your page or route unmounts:\n// component.destroy();",

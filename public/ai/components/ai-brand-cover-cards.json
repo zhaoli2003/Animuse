@@ -9,10 +9,10 @@
     "zh": "Claude、Codex、Cursor 三张竖版封面，保留选定配图、真实 SVG 标志与独立中文介绍。"
   },
   "keywords": "AI Claude Codex Cursor 品牌 封面 三联 卡片 海报",
-  "docsPath": "/docs/animations/ai-brand-cover-cards",
-  "detailPath": "/ai/components/ai-brand-cover-cards.json",
-  "markdownPath": "/ai/components/ai-brand-cover-cards.md",
-  "previewPath": "/assets/components/ai-brand-cover-cards.png",
+  "docsPath": "/Animuse/docs/animations/ai-brand-cover-cards",
+  "detailPath": "/Animuse/ai/components/ai-brand-cover-cards.json",
+  "markdownPath": "/Animuse/ai/components/ai-brand-cover-cards.md",
+  "previewPath": "/Animuse/assets/motion/ai-brand-cover-cards-a94dc4193c5769e3b7c24866.html",
   "discovery": {
     "category": "cards",
     "useCases": [
@@ -69,7 +69,7 @@
   },
   "packages": {
     "react": {
-      "url": "/ai/packages/ai-brand-cover-cards/react.json",
+      "url": "/Animuse/ai/packages/ai-brand-cover-cards/react.json",
       "component": "AiBrandCoverCards",
       "dependencies": [
         "react",
@@ -85,7 +85,7 @@
       ]
     },
     "vue": {
-      "url": "/ai/packages/ai-brand-cover-cards/vue.json",
+      "url": "/Animuse/ai/packages/ai-brand-cover-cards/vue.json",
       "component": "AiBrandCoverCards",
       "dependencies": [
         "vue",
@@ -100,7 +100,7 @@
       ]
     },
     "svelte": {
-      "url": "/ai/packages/ai-brand-cover-cards/svelte.json",
+      "url": "/Animuse/ai/packages/ai-brand-cover-cards/svelte.json",
       "component": "AiBrandCoverCards",
       "dependencies": [
         "svelte",
@@ -115,7 +115,7 @@
       ]
     },
     "solid": {
-      "url": "/ai/packages/ai-brand-cover-cards/solid.json",
+      "url": "/Animuse/ai/packages/ai-brand-cover-cards/solid.json",
       "component": "AiBrandCoverCards",
       "dependencies": [
         "solid-js",
@@ -130,7 +130,7 @@
       ]
     },
     "preact": {
-      "url": "/ai/packages/ai-brand-cover-cards/preact.json",
+      "url": "/Animuse/ai/packages/ai-brand-cover-cards/preact.json",
       "component": "AiBrandCoverCards",
       "dependencies": [
         "preact",
@@ -145,7 +145,7 @@
       ]
     },
     "vanilla": {
-      "url": "/ai/packages/ai-brand-cover-cards/vanilla.json",
+      "url": "/Animuse/ai/packages/ai-brand-cover-cards/vanilla.json",
       "component": "AiBrandCoverCards",
       "dependencies": [
         "gsap@3.12.7"

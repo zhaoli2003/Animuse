@@ -9,10 +9,10 @@
     "zh": "三张点阵卡片同步呈现双色扩散波纹、旋转旋涡与圆形扩张，保留印刷排版和渐变背景。"
   },
   "keywords": "点阵 波纹 旋涡 漩涡 圆形 扩散 三联 卡片 LeiBox 雷师傅 Chris Halaska dot matrix ripple spiral pulse",
-  "docsPath": "/docs/animations/dot-matrix-trio",
-  "detailPath": "/ai/components/dot-matrix-trio.json",
-  "markdownPath": "/ai/components/dot-matrix-trio.md",
-  "previewPath": "/assets/components/dot-matrix-trio.png",
+  "docsPath": "/Animuse/docs/animations/dot-matrix-trio",
+  "detailPath": "/Animuse/ai/components/dot-matrix-trio.json",
+  "markdownPath": "/Animuse/ai/components/dot-matrix-trio.md",
+  "previewPath": "/Animuse/assets/motion/dot-matrix-trio-17b92841e2eeb9c82184d340.html",
   "discovery": {
     "category": "background",
     "useCases": [
@@ -69,7 +69,7 @@
   },
   "packages": {
     "react": {
-      "url": "/ai/packages/dot-matrix-trio/react.json",
+      "url": "/Animuse/ai/packages/dot-matrix-trio/react.json",
       "component": "DotMatrixTrio",
       "dependencies": [
         "react",
@@ -84,7 +84,7 @@
       ]
     },
     "vue": {
-      "url": "/ai/packages/dot-matrix-trio/vue.json",
+      "url": "/Animuse/ai/packages/dot-matrix-trio/vue.json",
       "component": "DotMatrixTrio",
       "dependencies": [
         "vue"
@@ -98,7 +98,7 @@
       ]
     },
     "svelte": {
-      "url": "/ai/packages/dot-matrix-trio/svelte.json",
+      "url": "/Animuse/ai/packages/dot-matrix-trio/svelte.json",
       "component": "DotMatrixTrio",
       "dependencies": [
         "svelte"
@@ -112,7 +112,7 @@
       ]
     },
     "solid": {
-      "url": "/ai/packages/dot-matrix-trio/solid.json",
+      "url": "/Animuse/ai/packages/dot-matrix-trio/solid.json",
       "component": "DotMatrixTrio",
       "dependencies": [
         "solid-js"
@@ -126,7 +126,7 @@
       ]
     },
     "preact": {
-      "url": "/ai/packages/dot-matrix-trio/preact.json",
+      "url": "/Animuse/ai/packages/dot-matrix-trio/preact.json",
       "component": "DotMatrixTrio",
       "dependencies": [
         "preact"
@@ -140,7 +140,7 @@
       ]
     },
     "vanilla": {
-      "url": "/ai/packages/dot-matrix-trio/vanilla.json",
+      "url": "/Animuse/ai/packages/dot-matrix-trio/vanilla.json",
       "component": "DotMatrixTrio",
       "dependencies": [],
       "usage": "import { mount } from \"./DotMatrixTrio\";\nconst target = document.querySelector<HTMLElement>(\"#demo\")!;\nconst component = mount(target);\n// When your page or route unmounts:\n// component.destroy();",

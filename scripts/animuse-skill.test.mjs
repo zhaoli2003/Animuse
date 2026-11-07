@@ -10,22 +10,32 @@ import { run } from '../integrations/skills/animuse/scripts/animuse.mjs';
 const publicRoot = path.resolve('public');
 const fixtureRoot = path.resolve('node_modules/.cache/animuse-skill-tests');
 let origin, server;
+let catalogBasePath = '';
 const overrides = new Map();
 const requests = [];
+function logicalPath(value) {
+  const pathname = new URL(value, 'http://fixture.invalid').pathname;
+  return catalogBasePath && pathname.startsWith(catalogBasePath + '/') ? pathname.slice(catalogBasePath.length) : pathname;
+}
+const publicFile = value => path.join(publicRoot, logicalPath(value));
 test.before(async () => {
   await fs.mkdir(fixtureRoot, { recursive: true });
+  const catalog = JSON.parse(await fs.readFile(path.join(publicRoot, 'ai/catalog.json')));
+  catalogBasePath = catalog.basePath ?? '';
   server = createServer(async (request, response) => {
     const pathname = new URL(request.url, 'http://localhost').pathname;
-    requests.push(pathname);
-    const file = path.resolve(publicRoot, '.' + pathname);
+    const relative = logicalPath(pathname);
+    requests.push(relative);
+    const file = path.resolve(publicRoot, '.' + relative);
     try {
+      assert(!catalogBasePath || pathname.startsWith(catalogBasePath + '/'));
       assert(file.startsWith(publicRoot + path.sep));
-      const content = overrides.has(pathname) ? JSON.stringify(overrides.get(pathname)) : await fs.readFile(file);
+      const content = overrides.has(relative) ? JSON.stringify(overrides.get(relative)) : await fs.readFile(file);
       response.writeHead(200, { 'Content-Type': 'application/json' }); response.end(content);
     } catch { response.writeHead(404); response.end('{}'); }
   });
   await new Promise((resolve) => server.listen(0, '127.0.0.1', resolve));
-  origin = `http://127.0.0.1:${server.address().port}`;
+  origin = `http://127.0.0.1:${server.address().port}${catalogBasePath}`;
 });
 test.after(() => new Promise((resolve) => server.close(resolve)));
 const invoke = (args, cwd = fixtureRoot) => run([...args, '--origin', origin], { cwd });
@@ -44,13 +54,13 @@ test('task index validates against its published schema and covers exactly the l
   assert.equal(index.revision, catalog.revision);
   assert(indexBytes.length < catalogBytes.length * 0.75);
   for (const item of index.items) {
-    const detail = JSON.parse(await fs.readFile(path.join(publicRoot, item.detailPath)));
+    const detail = JSON.parse(await fs.readFile(publicFile(item.detailPath)));
     assert.deepEqual(item.frameworks, detail.frameworks);
     assert.deepEqual(item.discovery, detail.discovery);
     assert.equal(item.sourceProvider, detail.distribution.installProvider);
     assert(!Object.hasOwn(item, 'files'));
     assert(!Object.hasOwn(item, 'packages'));
-    await fs.access(path.join(publicRoot, item.previewPath));
+    await fs.access(publicFile(item.previewPath));
   }
   for (const [category, count] of Object.entries(index.facets.categories)) assert.equal(count, index.items.filter((item) => item.discovery.category === category).length);
 });
@@ -113,10 +123,10 @@ test('all generated framework bundles preserve the real files, dependencies and 
   const catalog = JSON.parse(await fs.readFile(path.join(publicRoot, 'ai/catalog.json')));
   let packages = 0;
   for (const item of catalog.items.filter((entry) => entry.source.kind === 'project-source')) {
-    const detail = JSON.parse(await fs.readFile(path.join(publicRoot, item.detailPath)));
+    const detail = JSON.parse(await fs.readFile(publicFile(item.detailPath)));
     const original = JSON.parse(await fs.readFile(path.join(publicRoot, 'motion-frameworks', item.slug, 'packages.json')));
     for (const framework of item.frameworks) {
-      const bundle = JSON.parse(await fs.readFile(path.join(publicRoot, detail.packages[framework].url)));
+      const bundle = JSON.parse(await fs.readFile(publicFile(detail.packages[framework].url)));
       const source = original.find((entry) => entry.framework === framework);
       assert.deepEqual(bundle.dependencies, source.dependencies);
       assert.equal(bundle.usage, source.usage);
@@ -139,17 +149,18 @@ test('pull downloads every required file and repeated pulls reuse identical cont
   assert((await invoke(args)).files.every((file) => file.skipped));
 });
 
-test('origin uses local default, environment configuration and command override in that order', async () => {
+test('origin uses the public default, environment configuration and command override in that order', async () => {
   const help = await run(['help'], { env: {} });
   assert.equal(help.name, 'animuse');
-  assert.equal(help.origin, 'http://127.0.0.1:3000');
+  assert.equal(help.origin, 'https://zhaoli2003.github.io/Animuse');
   assert.equal(help.originEnvironment, 'ANIMUSE_ORIGIN');
   const configured = await run(['list'], { env: { ANIMUSE_ORIGIN: origin } });
   assert(configured.items.some((item) => item.slug === 'glass-folder'));
   const overridden = await run(['list', '--origin', origin], { env: { ANIMUSE_ORIGIN: 'https://unused.invalid' } });
   assert.deepEqual(overridden, configured);
   assert.equal((await run(['help', '--origin', origin + '/'], { env: {} })).origin, origin);
-  for (const invalid of ['not-a-url', 'file:///tmp', 'https://user:password@example.com', origin + '/ai', origin + '?query=1', origin + '#section']) {
+  assert.equal((await run(['help', '--origin', 'http://127.0.0.1:3000'], { env: {} })).origin, 'http://127.0.0.1:3000');
+  for (const invalid of ['not-a-url', 'file:///tmp', 'https://user:password@example.com', origin + '/../outside', origin + '/%2e%2e/outside', origin + '/%2fother', origin + '?query=1', origin + '#section']) {
     await assert.rejects(run(['list', '--origin', invalid], { env: {} }), { code: 'INVALID_ARGUMENTS', status: 2 });
   }
 });
@@ -219,8 +230,8 @@ test('skill discovery installs Chinese instructions, UI metadata and the source 
   assert.deepEqual((await fs.readdir(path.join(publicRoot, 'ai/scripts'))).filter(filename => filename.endsWith('.mjs')), ['animuse.mjs']);
 });
 
-test('published helpers retain the local default and support a configured site', async () => {
-  const expected = 'http://127.0.0.1:3000';
+test('published helpers retain the public default and support a configured site', async () => {
+  const expected = 'https://zhaoli2003.github.io/Animuse';
   assert.equal((await run(['help'], { env: {} })).origin, expected);
   for (const prefix of ['ai', '.well-known/agent-skills/animuse', '.well-known/skills/animuse']) {
     const folder = path.join(publicRoot, prefix);

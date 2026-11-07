@@ -9,10 +9,10 @@
     "zh": "磨砂文件夹展开为扇形文件，支持生成纹理、添加落入动效和键盘菜单。"
   },
   "keywords": "glass folder files frosted blur art marble add fan menu 玻璃 文件夹 文件 磨砂 扇出 添加 菜单 纹理",
-  "docsPath": "/docs/animations/glass-folder",
-  "detailPath": "/ai/components/glass-folder.json",
-  "markdownPath": "/ai/components/glass-folder.md",
-  "previewPath": "/assets/components/glass-folder.png",
+  "docsPath": "/Animuse/docs/animations/glass-folder",
+  "detailPath": "/Animuse/ai/components/glass-folder.json",
+  "markdownPath": "/Animuse/ai/components/glass-folder.md",
+  "previewPath": "/Animuse/assets/motion/glass-folder-278e938ff81929b7d931aa37.html",
   "discovery": {
     "category": "files",
     "useCases": [
@@ -71,7 +71,7 @@
   },
   "packages": {
     "react": {
-      "url": "/ai/packages/glass-folder/react.json",
+      "url": "/Animuse/ai/packages/glass-folder/react.json",
       "component": "GlassFolder",
       "dependencies": [
         "react",
@@ -86,7 +86,7 @@
       ]
     },
     "vue": {
-      "url": "/ai/packages/glass-folder/vue.json",
+      "url": "/Animuse/ai/packages/glass-folder/vue.json",
       "component": "GlassFolder",
       "dependencies": [
         "vue"
@@ -100,7 +100,7 @@
       ]
     },
     "svelte": {
-      "url": "/ai/packages/glass-folder/svelte.json",
+      "url": "/Animuse/ai/packages/glass-folder/svelte.json",
       "component": "GlassFolder",
       "dependencies": [
         "svelte"
@@ -114,7 +114,7 @@
       ]
     },
     "solid": {
-      "url": "/ai/packages/glass-folder/solid.json",
+      "url": "/Animuse/ai/packages/glass-folder/solid.json",
       "component": "GlassFolder",
       "dependencies": [
         "solid-js"
@@ -128,7 +128,7 @@
       ]
     },
     "preact": {
-      "url": "/ai/packages/glass-folder/preact.json",
+      "url": "/Animuse/ai/packages/glass-folder/preact.json",
       "component": "GlassFolder",
       "dependencies": [
         "preact"
@@ -142,7 +142,7 @@
       ]
     },
     "vanilla": {
-      "url": "/ai/packages/glass-folder/vanilla.json",
+      "url": "/Animuse/ai/packages/glass-folder/vanilla.json",
       "component": "GlassFolder",
       "dependencies": [],
       "usage": "import { mount } from \"./GlassFolder\";\nconst target = document.querySelector<HTMLElement>(\"#demo\")!;\nconst component = mount(target);\n// When your page or route unmounts:\n// component.destroy();",

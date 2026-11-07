@@ -9,10 +9,10 @@
     "zh": "直接迁入 Deep Agent 原版对话输入框，包含权限菜单、上下文容量、附件、模型选择和思考强度滑块。"
   },
   "keywords": "Agent 对话 输入框 模型 思考 强度 推理 菜单 附件 计划 模式 Deep Agent composer chat model thinking reasoning effort slider",
-  "docsPath": "/docs/animations/deep-agent-composer",
-  "detailPath": "/ai/components/deep-agent-composer.json",
-  "markdownPath": "/ai/components/deep-agent-composer.md",
-  "previewPath": "/assets/components/deep-agent-composer.png",
+  "docsPath": "/Animuse/docs/animations/deep-agent-composer",
+  "detailPath": "/Animuse/ai/components/deep-agent-composer.json",
+  "markdownPath": "/Animuse/ai/components/deep-agent-composer.md",
+  "previewPath": "/Animuse/assets/motion/deep-agent-composer-34b0c7872598500e6f096e7a.html",
   "discovery": {
     "category": "input",
     "useCases": [
@@ -70,7 +70,7 @@
   },
   "packages": {
     "react": {
-      "url": "/ai/packages/deep-agent-composer/react.json",
+      "url": "/Animuse/ai/packages/deep-agent-composer/react.json",
       "component": "DeepAgentComposer",
       "dependencies": [
         "react",
@@ -95,7 +95,7 @@
       ]
     },
     "vue": {
-      "url": "/ai/packages/deep-agent-composer/vue.json",
+      "url": "/Animuse/ai/packages/deep-agent-composer/vue.json",
       "component": "DeepAgentComposer",
       "dependencies": [
         "vue",
@@ -121,7 +121,7 @@
       ]
     },
     "svelte": {
-      "url": "/ai/packages/deep-agent-composer/svelte.json",
+      "url": "/Animuse/ai/packages/deep-agent-composer/svelte.json",
       "component": "DeepAgentComposer",
       "dependencies": [
         "svelte",
@@ -147,7 +147,7 @@
       ]
     },
     "solid": {
-      "url": "/ai/packages/deep-agent-composer/solid.json",
+      "url": "/Animuse/ai/packages/deep-agent-composer/solid.json",
       "component": "DeepAgentComposer",
       "dependencies": [
         "solid-js",
@@ -173,7 +173,7 @@
       ]
     },
     "preact": {
-      "url": "/ai/packages/deep-agent-composer/preact.json",
+      "url": "/Animuse/ai/packages/deep-agent-composer/preact.json",
       "component": "DeepAgentComposer",
       "dependencies": [
         "preact",
@@ -199,7 +199,7 @@
       ]
     },
     "vanilla": {
-      "url": "/ai/packages/deep-agent-composer/vanilla.json",
+      "url": "/Animuse/ai/packages/deep-agent-composer/vanilla.json",
       "component": "DeepAgentComposer",
       "dependencies": [
         "react",
