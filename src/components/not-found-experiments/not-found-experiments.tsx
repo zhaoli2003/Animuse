@@ -96,7 +96,7 @@ function NotFoundDesign({ design, typography, items, preview = false }: {
     <div ref={root} className={`${styles.page} ${orbit ? styles.orbit : styles.brand}`} data-404-design={design} data-404-font={typography}>
       <header className={styles.header}>
         <Link href="/" target={target} prefetch={preview ? false : undefined} aria-label={zh ? "LeiBox 首页" : "LeiBox home"} className={styles.logoLink}>
-          <SiteLogo navigation className={styles.wordmark} appearance={orbit ? undefined : "light"} />
+          <SiteLogo navigation className={styles.wordmark} />
         </Link>
         {!orbit && <nav aria-label={zh ? "404 设计对比" : "404 design comparison"} className={styles.switcher}>
           <Link href="/404-preview?design=brand" replace prefetch={false} aria-current={!orbit ? "page" : undefined}>
@@ -155,7 +155,7 @@ function NotFoundDesign({ design, typography, items, preview = false }: {
           <div className={styles.brandComposition} aria-hidden="true" data-arrive>
             <span className={styles.solidFour}>4</span>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img data-brand-mark src={publicPath("/animuse-mark.svg?v=pick-v2")} alt="" width={512} height={512} className={styles.brandMark} />
+            <img data-brand-mark src={publicPath("/animuse-mark.svg")} alt="" width={512} height={512} className={styles.brandMark} />
             <span className={styles.solidFour}>4</span>
           </div>
           <div className={styles.brandActions} data-arrive>

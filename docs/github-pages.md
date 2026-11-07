@@ -2,8 +2,8 @@
 
 - 网站：https://zhaoli2003.github.io/Animuse/
 - 组件：https://zhaoli2003.github.io/Animuse/components/
-- 首次发布流程：[GitHub Actions run 42395474124](https://github.com/zhaoli2003/Animuse/actions/runs/42395474124)
-- 首次发布的产品提交：`de248aea9bb7c7a26abb6fb76759c67b370570c0`。
+- 发布流程：[GitHub Actions run 42395474124](https://github.com/zhaoli2003/Animuse/actions/runs/42395474124)
+- 本次发布的产品提交：`de248aea9bb7c7a26abb6fb76759c67b370570c0`。
 
 ## 更新与本地运行
 
@@ -28,11 +28,9 @@ npx skills add zhaoli2003/Animuse --skill animuse
 
 ## 图标
 
-图标采用「挑走一个组件」：两张错开的卡片与前卡片上的镂空光标，对应浏览、交互和取用组件的流程。唯一矢量源为 `design/brand/animuse-mark.svg`，`npm run brand:build` 生成浅色/深色 SVG 组合标识、跟随浏览器主题的 favicon、16/32/48px ICO 和 180/192/512px 安装图标。网站字标、导航过渡及分享封面同步使用这一图形；橙色保持不变。明暗及真实小尺寸展示见 `design/brand/animuse-icon-preview.png`。
+原创小写 a：粗圆角主体、单一内孔、右上斜切。唯一矢量源为 `design/brand/animuse-mark.svg`，`npm run brand:build` 生成 SVG、16/32/48px ICO 和 180/192/512px 安装图标。字体字标保持 Animuse。明暗及小尺寸展示见 `design/brand/animuse-icon-preview.png`。
 
-替换图标的本地验证：静态构建及类型检查通过，11 个品牌资源内容与服务响应一致；实际检查桌面浅深主题、375px 手机页面、保存主题后刷新、目录导航，以及两种 404 展示页的品牌颜色。首次渲染使用一致的主题快照，解决已保存深色模式时图片地址未更新的问题。品牌资源带版本标记，避免沿用旧图标缓存。
-
-## 2026-11-08 首次发布验证
+## 2026-11-08 实际验证
 
 - GitHub Linux 构建、筛选检查及部署均成功。
 - 公网浏览器 60/60 项通过，6 张截图；本站 HTTP 错误、路径越界、页面异常及控制台错误均为 0。

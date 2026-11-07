@@ -7,7 +7,6 @@ import { gsap } from "gsap";
 import { T, useLanguage } from "@/components/common/language-provider";
 import { cn } from "@/lib/utils";
 import { DocsNavList } from "@/components/docs/docs-sidebar";
-import { SiteLogo } from "@/components/common/site-logo";
 import { InteractionPreview } from "@/components/common/interaction-preview";
 import { COMPONENT_CATALOG } from "@/data/component-catalog";
 import { INTERACTION_PREVIEWS as INTERACTION_COMPONENTS, type InteractionPreviewEntry } from "@/data/interaction-previews";
@@ -58,7 +57,7 @@ const UI = COLLECTION.filter(entry => /Panel|Text|Drag|Menu/.test(entry.category
 const PIECES = [GLASS_FOLDER, GLASS_FOLDER];
 const DOCK = [
   { key: "finder", name: "Finder", src: "/landing/agent-demo/finder.webp" },
-  { key: "leibox", name: "Animuse", src: "/animuse-mark.svg?v=pick-v2" },
+  { key: "leibox", name: "Animuse", src: "/animuse-mark.svg" },
   { key: "codex", name: "Codex", src: "/landing/agent-demo/codex.webp" },
   { key: "claude", name: "Claude", src: "/landing/agent-demo/claude.webp" },
 ] as const;
@@ -249,7 +248,9 @@ export function AgentDemo({ code }: { code: DemoCode }) {
 }
 
 function LibraryLogo() {
-  return <SiteLogo className="agent-demo-library-logo" />;
+  // The existing SVG includes both the symbol and the custom wordmark.
+  // eslint-disable-next-line @next/next/no-img-element
+  return <img src={publicPath("/animuse-logo.svg")} alt="Animuse" className="agent-demo-library-logo h-[25px] w-auto invert dark:invert-0" />;
 }
 const LibrarySidebar = memo(function LibrarySidebar() {
   return <aside className="g4-side hidden w-[228px] shrink-0 flex-col leading-6 lg:flex">

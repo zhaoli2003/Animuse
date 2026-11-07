@@ -28,6 +28,7 @@
 .agent-demo .agent-demo-leibox-tile { display: grid; place-items: center; }
 .agent-demo .agent-demo-leibox-tile img { width: 80%; height: 80%; border-radius: 22%; }
 .agent-demo .agent-demo-leibox-tile img { padding: 7px; background: #fff; }
+.agent-demo .agent-demo-library-mark { filter: invert(1); }
 .agent-demo .g5k-dock { background-color: color-mix(in srgb, #2e2e32 42%, var(--background)); }
 .agent-demo[data-playing="false"] *, .agent-demo[data-playing="false"] *::after { animation-play-state: paused !important; transition: none !important; }
 @media (prefers-reduced-motion: reduce) {

@@ -54,17 +54,17 @@ export const metadata: Metadata = {
     url: SITE_URL,
     siteName: "Animuse",
     locale: "zh_CN",
-    images: [{ url: siteUrl("/animuse-og.png?v=pick-v2"), width: 1200, height: 630, alt: "Animuse" }],
+    images: [{ url: siteUrl("/animuse-og.png"), width: 1200, height: 630, alt: "Animuse" }],
   },
   twitter: {
     card: "summary_large_image",
-    images: [siteUrl("/animuse-og.png?v=pick-v2")],
+    images: [siteUrl("/animuse-og.png")],
   },
   icons: {
-    icon: [{ url: publicPath("/favicon.svg?v=animuse-pick-v2"), type: "image/svg+xml" }],
-    apple: [{ url: publicPath("/apple-touch-icon.png?v=animuse-pick-v2"), sizes: "180x180" }],
+    icon: [{ url: publicPath("/favicon.svg?v=animuse-a-v1"), type: "image/svg+xml" }],
+    apple: [{ url: publicPath("/apple-touch-icon.png"), sizes: "180x180" }],
   },
-  manifest: publicPath("/site.webmanifest?v=pick-v2"),
+  manifest: publicPath("/site.webmanifest"),
   other: {
     "font-attribution": "Chinese typeface: MiSans VF by Xiaomi. https://hyperos.mi.com/font/zh/",
   },
