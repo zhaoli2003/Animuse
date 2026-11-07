@@ -7,7 +7,7 @@ Three synchronized dot grids form expanding two-color ripples, a rotating spiral
 Docs: http://127.0.0.1:3000/docs/animations/dot-matrix-trio
 Detail: http://127.0.0.1:3000/ai/components/dot-matrix-trio.json
 
-Use the installed ZLUIAtlas Skill to pull the selected framework's complete source, or fetch one package JSON directly:
+Use the installed Animuse Skill to pull the selected framework's complete source, or fetch one package JSON directly:
 
 - React: http://127.0.0.1:3000/ai/packages/dot-matrix-trio/react.json
 - Vue: http://127.0.0.1:3000/ai/packages/dot-matrix-trio/vue.json

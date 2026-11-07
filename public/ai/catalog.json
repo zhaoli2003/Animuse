@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "title": "ZLUIAtlas UI collection metadata",
-  "revision": "9744599de609f3e9cd28a855c9859053f2f326f0a00d32b117d881350d5880cb",
+  "title": "Animuse UI collection metadata",
+  "revision": "7a7b156221ece73083681916b358ba9beffeec9cf84b5f82f6aa32561b62e5bf",
   "siteOrigin": "http://127.0.0.1:3000",
   "links": {
     "searchIndex": "/ai/search-index.json",
@@ -28,7 +28,7 @@
       "project-source"
     ],
     "currentKind": "project-source",
-    "distribution": "Framework packages are served by ZLUIAtlas with LeiBox author's permission. Original authorship and per-component third-party licenses are retained; no blanket MIT license is assigned."
+    "distribution": "Framework packages are served by Animuse with LeiBox author's permission. Original authorship and per-component third-party licenses are retained; no blanket MIT license is assigned."
   },
   "items": [
     {
@@ -95,10 +95,10 @@
       "distribution": {
         "canRedistributeSource": true,
         "installFromThisSite": true,
-        "installProvider": "zlui-atlas",
+        "installProvider": "animuse",
         "notice": {
-          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
-          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+          "en": "Distributed by Animuse with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "Animuse 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
         }
       }
     },
@@ -171,10 +171,10 @@
       "distribution": {
         "canRedistributeSource": true,
         "installFromThisSite": true,
-        "installProvider": "zlui-atlas",
+        "installProvider": "animuse",
         "notice": {
-          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
-          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+          "en": "Distributed by Animuse with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "Animuse 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
         }
       }
     },
@@ -255,10 +255,10 @@
       "distribution": {
         "canRedistributeSource": true,
         "installFromThisSite": true,
-        "installProvider": "zlui-atlas",
+        "installProvider": "animuse",
         "notice": {
-          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
-          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+          "en": "Distributed by Animuse with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "Animuse 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
         }
       }
     },
@@ -330,10 +330,10 @@
       "distribution": {
         "canRedistributeSource": true,
         "installFromThisSite": true,
-        "installProvider": "zlui-atlas",
+        "installProvider": "animuse",
         "notice": {
-          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
-          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+          "en": "Distributed by Animuse with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "Animuse 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
         }
       }
     },
@@ -405,10 +405,10 @@
       "distribution": {
         "canRedistributeSource": true,
         "installFromThisSite": true,
-        "installProvider": "zlui-atlas",
+        "installProvider": "animuse",
         "notice": {
-          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
-          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+          "en": "Distributed by Animuse with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "Animuse 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
         }
       }
     },
@@ -484,10 +484,10 @@
       "distribution": {
         "canRedistributeSource": true,
         "installFromThisSite": true,
-        "installProvider": "zlui-atlas",
+        "installProvider": "animuse",
         "notice": {
-          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
-          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+          "en": "Distributed by Animuse with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "Animuse 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
         }
       }
     },
@@ -556,10 +556,10 @@
       "distribution": {
         "canRedistributeSource": true,
         "installFromThisSite": true,
-        "installProvider": "zlui-atlas",
+        "installProvider": "animuse",
         "notice": {
-          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
-          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+          "en": "Distributed by Animuse with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "Animuse 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
         }
       }
     },
@@ -627,10 +627,10 @@
       "distribution": {
         "canRedistributeSource": true,
         "installFromThisSite": true,
-        "installProvider": "zlui-atlas",
+        "installProvider": "animuse",
         "notice": {
-          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
-          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+          "en": "Distributed by Animuse with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "Animuse 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
         }
       }
     },
@@ -702,10 +702,10 @@
       "distribution": {
         "canRedistributeSource": true,
         "installFromThisSite": true,
-        "installProvider": "zlui-atlas",
+        "installProvider": "animuse",
         "notice": {
-          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
-          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+          "en": "Distributed by Animuse with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "Animuse 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
         }
       }
     },
@@ -778,10 +778,10 @@
       "distribution": {
         "canRedistributeSource": true,
         "installFromThisSite": true,
-        "installProvider": "zlui-atlas",
+        "installProvider": "animuse",
         "notice": {
-          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
-          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+          "en": "Distributed by Animuse with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "Animuse 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
         }
       }
     },
@@ -848,10 +848,10 @@
       "distribution": {
         "canRedistributeSource": true,
         "installFromThisSite": true,
-        "installProvider": "zlui-atlas",
+        "installProvider": "animuse",
         "notice": {
-          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
-          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+          "en": "Distributed by Animuse with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "Animuse 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
         }
       }
     },
@@ -923,10 +923,10 @@
       "distribution": {
         "canRedistributeSource": true,
         "installFromThisSite": true,
-        "installProvider": "zlui-atlas",
+        "installProvider": "animuse",
         "notice": {
-          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
-          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+          "en": "Distributed by Animuse with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "Animuse 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
         }
       }
     },
@@ -998,10 +998,10 @@
       "distribution": {
         "canRedistributeSource": true,
         "installFromThisSite": true,
-        "installProvider": "zlui-atlas",
+        "installProvider": "animuse",
         "notice": {
-          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
-          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+          "en": "Distributed by Animuse with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "Animuse 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
         }
       }
     },
@@ -1073,10 +1073,10 @@
       "distribution": {
         "canRedistributeSource": true,
         "installFromThisSite": true,
-        "installProvider": "zlui-atlas",
+        "installProvider": "animuse",
         "notice": {
-          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
-          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+          "en": "Distributed by Animuse with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "Animuse 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
         }
       }
     },
@@ -1149,10 +1149,10 @@
       "distribution": {
         "canRedistributeSource": true,
         "installFromThisSite": true,
-        "installProvider": "zlui-atlas",
+        "installProvider": "animuse",
         "notice": {
-          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
-          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+          "en": "Distributed by Animuse with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "Animuse 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
         }
       }
     },
@@ -1218,10 +1218,10 @@
       "distribution": {
         "canRedistributeSource": true,
         "installFromThisSite": true,
-        "installProvider": "zlui-atlas",
+        "installProvider": "animuse",
         "notice": {
-          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
-          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+          "en": "Distributed by Animuse with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "Animuse 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
         }
       }
     },
@@ -1288,10 +1288,10 @@
       "distribution": {
         "canRedistributeSource": true,
         "installFromThisSite": true,
-        "installProvider": "zlui-atlas",
+        "installProvider": "animuse",
         "notice": {
-          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
-          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+          "en": "Distributed by Animuse with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "Animuse 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
         }
       }
     },
@@ -1358,10 +1358,10 @@
       "distribution": {
         "canRedistributeSource": true,
         "installFromThisSite": true,
-        "installProvider": "zlui-atlas",
+        "installProvider": "animuse",
         "notice": {
-          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
-          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+          "en": "Distributed by Animuse with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "Animuse 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
         }
       }
     },
@@ -1427,10 +1427,10 @@
       "distribution": {
         "canRedistributeSource": true,
         "installFromThisSite": true,
-        "installProvider": "zlui-atlas",
+        "installProvider": "animuse",
         "notice": {
-          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
-          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+          "en": "Distributed by Animuse with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "Animuse 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
         }
       }
     },
@@ -1496,10 +1496,10 @@
       "distribution": {
         "canRedistributeSource": true,
         "installFromThisSite": true,
-        "installProvider": "zlui-atlas",
+        "installProvider": "animuse",
         "notice": {
-          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
-          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+          "en": "Distributed by Animuse with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "Animuse 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
         }
       }
     },
@@ -1565,10 +1565,10 @@
       "distribution": {
         "canRedistributeSource": true,
         "installFromThisSite": true,
-        "installProvider": "zlui-atlas",
+        "installProvider": "animuse",
         "notice": {
-          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
-          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+          "en": "Distributed by Animuse with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "Animuse 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
         }
       }
     },
@@ -1635,10 +1635,10 @@
       "distribution": {
         "canRedistributeSource": true,
         "installFromThisSite": true,
-        "installProvider": "zlui-atlas",
+        "installProvider": "animuse",
         "notice": {
-          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
-          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+          "en": "Distributed by Animuse with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "Animuse 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
         }
       }
     },
@@ -1703,10 +1703,10 @@
       "distribution": {
         "canRedistributeSource": true,
         "installFromThisSite": true,
-        "installProvider": "zlui-atlas",
+        "installProvider": "animuse",
         "notice": {
-          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
-          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+          "en": "Distributed by Animuse with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "Animuse 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
         }
       }
     },
@@ -1774,10 +1774,10 @@
       "distribution": {
         "canRedistributeSource": true,
         "installFromThisSite": true,
-        "installProvider": "zlui-atlas",
+        "installProvider": "animuse",
         "notice": {
-          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
-          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+          "en": "Distributed by Animuse with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "Animuse 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
         }
       }
     },
@@ -1843,10 +1843,10 @@
       "distribution": {
         "canRedistributeSource": true,
         "installFromThisSite": true,
-        "installProvider": "zlui-atlas",
+        "installProvider": "animuse",
         "notice": {
-          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
-          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+          "en": "Distributed by Animuse with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "Animuse 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
         }
       }
     },
@@ -1912,10 +1912,10 @@
       "distribution": {
         "canRedistributeSource": true,
         "installFromThisSite": true,
-        "installProvider": "zlui-atlas",
+        "installProvider": "animuse",
         "notice": {
-          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
-          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+          "en": "Distributed by Animuse with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "Animuse 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
         }
       }
     },
@@ -1982,10 +1982,10 @@
       "distribution": {
         "canRedistributeSource": true,
         "installFromThisSite": true,
-        "installProvider": "zlui-atlas",
+        "installProvider": "animuse",
         "notice": {
-          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
-          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+          "en": "Distributed by Animuse with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "Animuse 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
         }
       }
     },
@@ -2053,10 +2053,10 @@
       "distribution": {
         "canRedistributeSource": true,
         "installFromThisSite": true,
-        "installProvider": "zlui-atlas",
+        "installProvider": "animuse",
         "notice": {
-          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
-          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+          "en": "Distributed by Animuse with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "Animuse 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
         }
       }
     },
@@ -2124,10 +2124,10 @@
       "distribution": {
         "canRedistributeSource": true,
         "installFromThisSite": true,
-        "installProvider": "zlui-atlas",
+        "installProvider": "animuse",
         "notice": {
-          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
-          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+          "en": "Distributed by Animuse with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "Animuse 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
         }
       }
     },
@@ -2193,10 +2193,10 @@
       "distribution": {
         "canRedistributeSource": true,
         "installFromThisSite": true,
-        "installProvider": "zlui-atlas",
+        "installProvider": "animuse",
         "notice": {
-          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
-          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+          "en": "Distributed by Animuse with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "Animuse 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
         }
       }
     },
@@ -2262,10 +2262,10 @@
       "distribution": {
         "canRedistributeSource": true,
         "installFromThisSite": true,
-        "installProvider": "zlui-atlas",
+        "installProvider": "animuse",
         "notice": {
-          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
-          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+          "en": "Distributed by Animuse with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "Animuse 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
         }
       }
     },
@@ -2331,10 +2331,10 @@
       "distribution": {
         "canRedistributeSource": true,
         "installFromThisSite": true,
-        "installProvider": "zlui-atlas",
+        "installProvider": "animuse",
         "notice": {
-          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
-          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+          "en": "Distributed by Animuse with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "Animuse 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
         }
       }
     },
@@ -2403,10 +2403,10 @@
       "distribution": {
         "canRedistributeSource": true,
         "installFromThisSite": true,
-        "installProvider": "zlui-atlas",
+        "installProvider": "animuse",
         "notice": {
-          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
-          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+          "en": "Distributed by Animuse with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "Animuse 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
         }
       }
     },
@@ -2472,10 +2472,10 @@
       "distribution": {
         "canRedistributeSource": true,
         "installFromThisSite": true,
-        "installProvider": "zlui-atlas",
+        "installProvider": "animuse",
         "notice": {
-          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
-          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+          "en": "Distributed by Animuse with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "Animuse 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
         }
       }
     },
@@ -2544,10 +2544,10 @@
       "distribution": {
         "canRedistributeSource": true,
         "installFromThisSite": true,
-        "installProvider": "zlui-atlas",
+        "installProvider": "animuse",
         "notice": {
-          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
-          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+          "en": "Distributed by Animuse with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "Animuse 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
         }
       }
     },
@@ -2612,10 +2612,10 @@
       "distribution": {
         "canRedistributeSource": true,
         "installFromThisSite": true,
-        "installProvider": "zlui-atlas",
+        "installProvider": "animuse",
         "notice": {
-          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
-          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+          "en": "Distributed by Animuse with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "Animuse 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
         }
       }
     },
@@ -2681,10 +2681,10 @@
       "distribution": {
         "canRedistributeSource": true,
         "installFromThisSite": true,
-        "installProvider": "zlui-atlas",
+        "installProvider": "animuse",
         "notice": {
-          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
-          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+          "en": "Distributed by Animuse with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "Animuse 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
         }
       }
     },
@@ -2750,10 +2750,10 @@
       "distribution": {
         "canRedistributeSource": true,
         "installFromThisSite": true,
-        "installProvider": "zlui-atlas",
+        "installProvider": "animuse",
         "notice": {
-          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
-          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+          "en": "Distributed by Animuse with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "Animuse 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
         }
       }
     },
@@ -2818,10 +2818,10 @@
       "distribution": {
         "canRedistributeSource": true,
         "installFromThisSite": true,
-        "installProvider": "zlui-atlas",
+        "installProvider": "animuse",
         "notice": {
-          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
-          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+          "en": "Distributed by Animuse with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "Animuse 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
         }
       }
     },
@@ -2890,10 +2890,10 @@
       "distribution": {
         "canRedistributeSource": true,
         "installFromThisSite": true,
-        "installProvider": "zlui-atlas",
+        "installProvider": "animuse",
         "notice": {
-          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
-          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+          "en": "Distributed by Animuse with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "Animuse 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
         }
       }
     },
@@ -2958,10 +2958,10 @@
       "distribution": {
         "canRedistributeSource": true,
         "installFromThisSite": true,
-        "installProvider": "zlui-atlas",
+        "installProvider": "animuse",
         "notice": {
-          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
-          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+          "en": "Distributed by Animuse with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "Animuse 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
         }
       }
     },
@@ -3026,10 +3026,10 @@
       "distribution": {
         "canRedistributeSource": true,
         "installFromThisSite": true,
-        "installProvider": "zlui-atlas",
+        "installProvider": "animuse",
         "notice": {
-          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
-          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+          "en": "Distributed by Animuse with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "Animuse 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
         }
       }
     },
@@ -3096,10 +3096,10 @@
       "distribution": {
         "canRedistributeSource": true,
         "installFromThisSite": true,
-        "installProvider": "zlui-atlas",
+        "installProvider": "animuse",
         "notice": {
-          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
-          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+          "en": "Distributed by Animuse with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "Animuse 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
         }
       }
     }

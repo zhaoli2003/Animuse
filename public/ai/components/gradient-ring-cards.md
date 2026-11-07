@@ -7,7 +7,7 @@ Five gradient cards rotate around a 3D ring, with mirrored backs, fine particle 
 Docs: http://127.0.0.1:3000/docs/animations/gradient-ring-cards
 Detail: http://127.0.0.1:3000/ai/components/gradient-ring-cards.json
 
-Use the installed ZLUIAtlas Skill to pull the selected framework's complete source, or fetch one package JSON directly:
+Use the installed Animuse Skill to pull the selected framework's complete source, or fetch one package JSON directly:
 
 - React: http://127.0.0.1:3000/ai/packages/gradient-ring-cards/react.json
 - Vue: http://127.0.0.1:3000/ai/packages/gradient-ring-cards/vue.json

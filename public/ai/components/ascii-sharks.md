@@ -7,7 +7,7 @@ Character-built sharks swim, hunt and bend through schools of fish on a fine gri
 Docs: http://127.0.0.1:3000/docs/animations/ascii-sharks
 Detail: http://127.0.0.1:3000/ai/components/ascii-sharks.json
 
-Use the installed ZLUIAtlas Skill to pull the selected framework's complete source, or fetch one package JSON directly:
+Use the installed Animuse Skill to pull the selected framework's complete source, or fetch one package JSON directly:
 
 - React: http://127.0.0.1:3000/ai/packages/ascii-sharks/react.json
 - Vue: http://127.0.0.1:3000/ai/packages/ascii-sharks/vue.json

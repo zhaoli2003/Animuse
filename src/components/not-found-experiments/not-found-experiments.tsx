@@ -154,7 +154,7 @@ function NotFoundDesign({ design, typography, items, preview = false }: {
           <div className={styles.brandComposition} aria-hidden="true" data-arrive>
             <span className={styles.solidFour}>4</span>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img data-brand-mark src="/leibox-mark.svg" alt="" width={512} height={512} className={styles.brandMark} />
+            <img data-brand-mark src="/animuse-mark.svg" alt="" width={512} height={512} className={styles.brandMark} />
             <span className={styles.solidFour}>4</span>
           </div>
           <div className={styles.brandActions} data-arrive>

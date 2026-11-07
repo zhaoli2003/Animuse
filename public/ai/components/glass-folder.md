@@ -7,7 +7,7 @@ Frosted folders open into a fan of real files, with generated artwork, a drop-in
 Docs: http://127.0.0.1:3000/docs/animations/glass-folder
 Detail: http://127.0.0.1:3000/ai/components/glass-folder.json
 
-Use the installed ZLUIAtlas Skill to pull the selected framework's complete source, or fetch one package JSON directly:
+Use the installed Animuse Skill to pull the selected framework's complete source, or fetch one package JSON directly:
 
 - React: http://127.0.0.1:3000/ai/packages/glass-folder/react.json
 - Vue: http://127.0.0.1:3000/ai/packages/glass-folder/vue.json

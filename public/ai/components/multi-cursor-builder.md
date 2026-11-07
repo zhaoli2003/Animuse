@@ -7,7 +7,7 @@ Twelve colorful cursors type, draw, carry images and arrange a page as you scrol
 Docs: http://127.0.0.1:3000/docs/animations/multi-cursor-builder
 Detail: http://127.0.0.1:3000/ai/components/multi-cursor-builder.json
 
-Use the installed ZLUIAtlas Skill to pull the selected framework's complete source, or fetch one package JSON directly:
+Use the installed Animuse Skill to pull the selected framework's complete source, or fetch one package JSON directly:
 
 - React: http://127.0.0.1:3000/ai/packages/multi-cursor-builder/react.json
 - Vue: http://127.0.0.1:3000/ai/packages/multi-cursor-builder/vue.json

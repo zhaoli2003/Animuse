@@ -7,7 +7,7 @@ A searchable emoji grid folds its actual content into the top and bottom edges a
 Docs: http://127.0.0.1:3000/docs/animations/folded-emoji-scroll
 Detail: http://127.0.0.1:3000/ai/components/folded-emoji-scroll.json
 
-Use the installed ZLUIAtlas Skill to pull the selected framework's complete source, or fetch one package JSON directly:
+Use the installed Animuse Skill to pull the selected framework's complete source, or fetch one package JSON directly:
 
 - React: http://127.0.0.1:3000/ai/packages/folded-emoji-scroll/react.json
 - Vue: http://127.0.0.1:3000/ai/packages/folded-emoji-scroll/vue.json

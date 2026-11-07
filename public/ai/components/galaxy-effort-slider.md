@@ -7,7 +7,7 @@ A pink brain gains more folds as effort increases through six levels, then glows
 Docs: http://127.0.0.1:3000/docs/animations/galaxy-effort-slider
 Detail: http://127.0.0.1:3000/ai/components/galaxy-effort-slider.json
 
-Use the installed ZLUIAtlas Skill to pull the selected framework's complete source, or fetch one package JSON directly:
+Use the installed Animuse Skill to pull the selected framework's complete source, or fetch one package JSON directly:
 
 - React: http://127.0.0.1:3000/ai/packages/galaxy-effort-slider/react.json
 - Vue: http://127.0.0.1:3000/ai/packages/galaxy-effort-slider/vue.json

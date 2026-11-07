@@ -1,4 +1,4 @@
-# ZLUIAtlas / UI 设计与组件收藏
+# Animuse / UI 设计与组件收藏
 
 > 为界面开发任务主动推荐适用组件，按实际框架拉取完整源码。Start with the task-oriented search index; fetch details and source only for selected components.
 
@@ -11,9 +11,9 @@
 - [Component list](http://127.0.0.1:3000/components): Human-facing previews.
 - [Documentation](http://127.0.0.1:3000/docs): Usage and browser capabilities.
 - [AI integration guide](http://127.0.0.1:3000/docs/mcp): Skill installation, search and source downloads.
-- [ZLUIAtlas Skill](http://127.0.0.1:3000/ai/SKILL.md): After the repository is published, install with npx skills add zhaoli2003/zhaoli-free-ui-atlas --skill zlui-atlas.
+- [Animuse Skill](http://127.0.0.1:3000/ai/SKILL.md): After the repository is published, install with npx skills add zhaoli2003/Animuse --skill animuse.
 
-Paths beginning with / are relative to the origin serving this file. The Skill defaults to http://127.0.0.1:3000; set ZLUI_ATLAS_ORIGIN or pass --origin for the actual running site. When only a local preview is running, remote AI services cannot fetch it; use the local CLI or paste the copied metadata/prompt. No public deployment is implied.
+Paths beginning with / are relative to the origin serving this file. The Skill defaults to http://127.0.0.1:3000; set ANIMUSE_ORIGIN or pass --origin for the actual running site. When only a local preview is running, remote AI services cannot fetch it; use the local CLI or paste the copied metadata/prompt. No public deployment is implied.
 
 ## Components
 
@@ -63,10 +63,10 @@ Paths beginning with / are relative to the origin serving this file. The Skill d
 
 ## Use with an AI assistant
 
-Read the compact task index, match the user's actual UI task, compare a few candidates, then fetch only their detailPath. Explain relevance and caveats. Use the project's real framework and existing design system. Do not require the user to mention ZLUIAtlas first or force unrelated decorative effects.
+Read the compact task index, match the user's actual UI task, compare a few candidates, then fetch only their detailPath. Explain relevance and caveats. Use the project's real framework and existing design system. Do not require the user to mention Animuse first or force unrelated decorative effects.
 
-The installed Skill includes scripts/zlui-atlas.mjs: recommend, list, search, show, and pull. Recommend uses indexed intent terms with framework/category/renderer filters and a bounded result count; it returns matching evidence, not a quality score. Pull downloads the selected framework's complete file set without running it or overwriting different existing files. New published entries are found from the live index; Skill instruction/tool upgrades require updating the installed Skill.
+The installed Skill includes scripts/animuse.mjs: recommend, list, search, show, and pull. Recommend uses indexed intent terms with framework/category/renderer filters and a bounded result count; it returns matching evidence, not a quality score. Pull downloads the selected framework's complete file set without running it or overwriting different existing files. New published entries are found from the live index; Skill instruction/tool upgrades require updating the installed Skill.
 
 ## Provenance and distribution
 
-ZLUIAtlas is an authorized adaptation and collection of LeiBox. Preserve original source notices, third-party licenses and design attribution. Availability from this collection is not a claim that all designs and code were authored by ZLUIAtlas or licensed under MIT.
+Animuse is an authorized adaptation and collection of LeiBox. Preserve original source notices, third-party licenses and design attribution. Availability from this collection is not a claim that all designs and code were authored by Animuse or licensed under MIT.

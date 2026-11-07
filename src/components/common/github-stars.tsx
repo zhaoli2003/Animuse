@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { PROJECT_REPO as REPO } from "@/lib/github";
 import { useLanguage } from "@/components/common/language-provider";
 
-const CACHE_KEY = `zlui-atlas:stars:${REPO}`;
+const CACHE_KEY = `animuse:stars:${REPO}`;
 const CACHE_TTL = 5 * 60 * 1000;
 
 function formatStars(n: number): string {
@@ -104,8 +104,8 @@ export function GitHubStars() {
       rel="noreferrer"
       aria-label={
         stars !== null
-          ? `${t("ZLUIAtlas on GitHub")} · ${t("Star")} ${stars}`
-          : t("ZLUIAtlas on GitHub")
+          ? `${t("Animuse on GitHub")} · ${t("Star")} ${stars}`
+          : t("Animuse on GitHub")
       }
       className="group inline-flex h-8 items-center gap-2 rounded-full border border-border/70 px-2.5 text-[13px] font-medium text-muted-foreground transition-colors duration-150 hover:border-border hover:text-foreground sm:px-3"
     >

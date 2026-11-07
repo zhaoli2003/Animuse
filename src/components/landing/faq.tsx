@@ -11,7 +11,7 @@ import { cn } from "@/lib/utils";
 
 const ITEMS = [
   {
-    question: "Can I copy every item in ZLUIAtlas?",
+    question: "Can I copy every item in Animuse?",
     answer:
       "For learning use only. Each item keeps its own source and license. A reference link or free access does not grant permission to redistribute protected code, designs or media.",
   },

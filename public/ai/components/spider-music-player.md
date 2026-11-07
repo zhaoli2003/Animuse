@@ -7,7 +7,7 @@ An eight-legged spider spins a web around an album cover and carries it between 
 Docs: http://127.0.0.1:3000/docs/animations/spider-music-player
 Detail: http://127.0.0.1:3000/ai/components/spider-music-player.json
 
-Use the installed ZLUIAtlas Skill to pull the selected framework's complete source, or fetch one package JSON directly:
+Use the installed Animuse Skill to pull the selected framework's complete source, or fetch one package JSON directly:
 
 - React: http://127.0.0.1:3000/ai/packages/spider-music-player/react.json
 - Vue: http://127.0.0.1:3000/ai/packages/spider-music-player/vue.json

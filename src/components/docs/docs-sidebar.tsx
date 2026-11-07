@@ -282,7 +282,7 @@ export function DocsSidebar() {
       <div className="px-5 pt-5 pb-4">
         <Link prefetch={false}
           href="/"
-          aria-label={t("ZLUIAtlas home")}
+          aria-label={t("Animuse home")}
           className="inline-block transition-opacity duration-150 hover:opacity-70"
         >
           <SiteLogo navigation />

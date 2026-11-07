@@ -129,8 +129,8 @@ export default async function MotionPage({params}:Props){
         ...(slug === "fluid-tooltip" ? [
           {name:"options.active",type:'"today" | "tasks" | "calendar" | "focus" | "settings" | "profile"',defaultValue:'"today"',description:"Selected navigation item; hovering only changes the tooltip."},
           {name:"options.onSelect",type:"(id: string) => void",description:"Called when a different navigation item is selected."},
-          {name:"options.profileLabel",type:"string",defaultValue:'"ZLUIAtlas"',description:"Profile tooltip text. Defaults to ZLUIAtlas."},
-          {name:"options.logoSrc",type:"string",description:"Profile logo URL. The embedded ZLUIAtlas vector is the default and error fallback."},
+          {name:"options.profileLabel",type:"string",defaultValue:'"Animuse"',description:"Profile tooltip text. Defaults to Animuse."},
+          {name:"options.logoSrc",type:"string",description:"Profile logo URL. The embedded Animuse vector is the default and error fallback."},
         ] : []),
         ...(slug === "spider-music-player" ? [
           {name:"options.track",type:"number",defaultValue:"0",description:"Initial or updated song index in the local queue."},
@@ -143,8 +143,8 @@ export default async function MotionPage({params}:Props){
         ...((slug === "brand-poster-cards" || slug === "ai-brand-cover-cards") ? [
           {name:"options.images",type:"(string | { src: string; alt?: string; position?: string })[]",description:"Three image URLs or objects with src, alt and position. Default portraits are embedded."},
           {name:"options.description",type:"string",description:"Shared introduction shown at the bottom of all three posters."},
-          {name:"options.logoSrc",type:"string",description:"Full centered wordmark image. The default uses the existing ZLUIAtlas vector artwork."},
-          {name:"options.symbolSrc",type:"string",description:"Small symbol at the top-left corner. The default uses the ZLUIAtlas symbol."},
+          {name:"options.logoSrc",type:"string",description:"Full centered wordmark image. The default uses the existing Animuse vector artwork."},
+          {name:"options.symbolSrc",type:"string",description:"Small symbol at the top-left corner. The default uses the Animuse symbol."},
         ] : []),
         ...((slug === "reasoning-effort-slider" || slug === "deep-agent-composer") ? DEEP_AGENT_API : []),
         ...(slug === "deep-agent-composer" ? DEEP_AGENT_COMPOSER_API : []),

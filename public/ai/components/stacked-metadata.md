@@ -7,7 +7,7 @@ Overlapping priority, date and assignee tags leave room for task titles, then sp
 Docs: http://127.0.0.1:3000/docs/animations/stacked-metadata
 Detail: http://127.0.0.1:3000/ai/components/stacked-metadata.json
 
-Use the installed ZLUIAtlas Skill to pull the selected framework's complete source, or fetch one package JSON directly:
+Use the installed Animuse Skill to pull the selected framework's complete source, or fetch one package JSON directly:
 
 - React: http://127.0.0.1:3000/ai/packages/stacked-metadata/react.json
 - Vue: http://127.0.0.1:3000/ai/packages/stacked-metadata/vue.json

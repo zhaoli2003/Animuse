@@ -63,10 +63,10 @@
   "distribution": {
     "canRedistributeSource": true,
     "installFromThisSite": true,
-    "installProvider": "zlui-atlas",
+    "installProvider": "animuse",
     "notice": {
-      "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
-      "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+      "en": "Distributed by Animuse with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+      "zh": "Animuse 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
     }
   },
   "packages": {

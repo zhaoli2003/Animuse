@@ -7,7 +7,7 @@ A compact access request expands into an avatar list with staggered spring motio
 Docs: http://127.0.0.1:3000/docs/animations/bouncy-access
 Detail: http://127.0.0.1:3000/ai/components/bouncy-access.json
 
-Use the installed ZLUIAtlas Skill to pull the selected framework's complete source, or fetch one package JSON directly:
+Use the installed Animuse Skill to pull the selected framework's complete source, or fetch one package JSON directly:
 
 - React: http://127.0.0.1:3000/ai/packages/bouncy-access/react.json
 - Vue: http://127.0.0.1:3000/ai/packages/bouncy-access/vue.json

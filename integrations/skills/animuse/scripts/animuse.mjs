@@ -78,7 +78,7 @@ async function readJson(url) {
 function sourceUrl(value, origin) {
   const url = new URL(value, origin);
   if (!['http:', 'https:'].includes(url.protocol) || url.origin !== new URL(origin).origin) {
-    throw new SkillError('INVALID_SOURCE', 'Component source must be served by the configured ZLUIAtlas origin.');
+    throw new SkillError('INVALID_SOURCE', 'Component source must be served by the configured Animuse origin.');
   }
   return url.href;
 }
@@ -87,7 +87,7 @@ export async function run(args, { cwd = process.cwd(), env = process.env } = {})
   const [command = 'help', ...rest] = args;
   const help = ['help', '--help', '-h'].includes(command);
   if (!help && !['recommend', 'list', 'search', 'show', 'pull'].includes(command)) throw new SkillError('INVALID_ARGUMENTS', `未知命令：${command}`, 2);
-  const options = { origin: env.ZLUI_ATLAS_ORIGIN || DEFAULT_ORIGIN, limit: 3 };
+  const options = { origin: env.ANIMUSE_ORIGIN || DEFAULT_ORIGIN, limit: 3 };
   const values = [];
   for (let index = 0; index < rest.length; index++) {
     if (rest[index].startsWith('--')) {
@@ -112,10 +112,10 @@ export async function run(args, { cwd = process.cwd(), env = process.env } = {})
   if (help) {
     if (values.length) throw new SkillError('INVALID_ARGUMENTS', 'Help does not accept a query.', 2);
     return {
-      name: 'zlui-atlas', commands: ['recommend <需求> --limit 3', 'list', 'search <关键词>', 'show <slug>', 'pull <slug> --framework react --out <folder>'],
+      name: 'animuse', commands: ['recommend <需求> --limit 3', 'list', 'search <关键词>', 'show <slug>', 'pull <slug> --framework react --out <folder>'],
       options: ['--framework react|vue|svelte|solid|preact|vanilla', '--renderer webgl|webgpu', '--category <用途类别>', '--exclude-tag <视觉标签,视觉标签>', '--limit 1..10 (recommend)', '--out <folder> (pull)', '--origin <catalog-origin>'],
-      origin, defaultOrigin: DEFAULT_ORIGIN, originEnvironment: 'ZLUI_ATLAS_ORIGIN',
-      installation: 'npx skills add zhaoli2003/zhaoli-free-ui-atlas --skill zlui-atlas',
+      origin, defaultOrigin: DEFAULT_ORIGIN, originEnvironment: 'ANIMUSE_ORIGIN',
+      installation: 'npx skills add zhaoli2003/Animuse --skill animuse',
       writes: '只有 pull 写入源码；不会覆盖内容不同的已有文件，也不会执行安装。',
     };
   }
@@ -165,7 +165,7 @@ export async function run(args, { cwd = process.cwd(), env = process.env } = {})
     return { name, content: file.content, sha256 };
   });
   if (new Set(files.map((file) => file.name.toLowerCase())).size !== files.length) throw new SkillError('INVALID_PACKAGE', 'Source package contains duplicate filenames.');
-  const destination = path.resolve(cwd, options.out ?? `components/zlui-atlas/${entry.slug}`);
+  const destination = path.resolve(cwd, options.out ?? `components/animuse/${entry.slug}`);
   const plans = [];
   for (const file of files) {
     const target = path.join(destination, file.name);
@@ -180,7 +180,7 @@ export async function run(args, { cwd = process.cwd(), env = process.env } = {})
   await fs.mkdir(destination, { recursive: true });
   for (const file of plans) if (!file.skipped) await fs.writeFile(file.target, file.content, { flag: 'wx' });
   return {
-    slug: entry.slug, framework: options.framework, renderer: selectedRenderer, provider: local ? 'zlui-atlas' : 'upstream', origin,
+    slug: entry.slug, framework: options.framework, renderer: selectedRenderer, provider: local ? 'animuse' : 'upstream', origin,
     destination, files: plans.map(({ target, sha256, skipped }) => ({ path: target, sha256, skipped })),
     dependencies: pkg.dependencies ?? [], devDependencies: pkg.devDependencies ?? [], usage: pkg.usage ?? detail.usage?.[options.framework] ?? '',
     source: detail.source, next: 'Review the files, install missing dependencies with the project package manager, import the entry and verify the rendered result.',

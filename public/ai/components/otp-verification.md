@@ -7,7 +7,7 @@ A six-digit code unfolds from a pill, contracts to verify, and responds with an 
 Docs: http://127.0.0.1:3000/docs/components/otp-verification
 Detail: http://127.0.0.1:3000/ai/components/otp-verification.json
 
-Use the installed ZLUIAtlas Skill to pull the selected framework's complete source, or fetch one package JSON directly:
+Use the installed Animuse Skill to pull the selected framework's complete source, or fetch one package JSON directly:
 
 - React: http://127.0.0.1:3000/ai/packages/otp-verification/react.json
 - Vue: http://127.0.0.1:3000/ai/packages/otp-verification/vue.json

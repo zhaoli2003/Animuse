@@ -7,7 +7,7 @@ Calendar events turn into a floating focus card that stretches and follows drag 
 Docs: http://127.0.0.1:3000/docs/animations/velocity-drag
 Detail: http://127.0.0.1:3000/ai/components/velocity-drag.json
 
-Use the installed ZLUIAtlas Skill to pull the selected framework's complete source, or fetch one package JSON directly:
+Use the installed Animuse Skill to pull the selected framework's complete source, or fetch one package JSON directly:
 
 - React: http://127.0.0.1:3000/ai/packages/velocity-drag/react.json
 - Vue: http://127.0.0.1:3000/ai/packages/velocity-drag/vue.json

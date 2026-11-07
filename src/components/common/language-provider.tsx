@@ -19,7 +19,21 @@ let transientLocale: Locale | null = null;
 const serverLocale = (): Locale => "zh";
 function readLocale(): Locale {
   if (transientLocale) return transientLocale;
-  try { return localStorage.getItem(LOCALE_STORAGE_KEY) === "en" ? "en" : "zh"; }
+  try {
+    let saved = localStorage.getItem(LOCALE_STORAGE_KEY);
+    if (saved === null) {
+      // Keep the visitor's language when upgrading from the previous brand.
+      const previous = localStorage.getItem("zlui-atlas:locale");
+      if (previous === "en" || previous === "zh") {
+        saved = previous;
+        try {
+          localStorage.setItem(LOCALE_STORAGE_KEY, previous);
+          localStorage.removeItem("zlui-atlas:locale");
+        } catch { /* Read-only storage can still preserve the language for this visit. */ }
+      }
+    }
+    return saved === "en" ? "en" : "zh";
+  }
   catch { return "zh"; }
 }
 function subscribeLocale(listener: () => void) {

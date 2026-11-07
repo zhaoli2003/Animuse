@@ -38,7 +38,7 @@ const rawRequest = (origin, target, method = 'GET', headers = {}) => new Promise
 });
 
 async function fixture(t, prepare = async () => {}) {
-  const temporary = await fs.mkdtemp(path.join(os.tmpdir(), 'zlui-static-test-'));
+  const temporary = await fs.mkdtemp(path.join(os.tmpdir(), 'animuse-static-test-'));
   const root = path.join(temporary, 'site');
   await fs.mkdir(root);
   await fs.writeFile(path.join(root, 'index.html'), '<h1>Fixture</h1>');
@@ -56,7 +56,7 @@ async function fixture(t, prepare = async () => {}) {
 }
 
 test('unversioned static resources can be cached without making them immutable', async () => {
-  for (const url of ['/fonts/misans.css', '/zlui-atlas-logo.svg', '/assets/components/original-asciify.png', '/motion/crumpled-paper.html']) {
+  for (const url of ['/fonts/misans.css', '/animuse-logo.svg', '/assets/components/original-asciify.png', '/motion/crumpled-paper.html']) {
     const response = await fetch(base + url, { method: 'HEAD' });
     assert.equal(response.status, 200, url);
     const policy = response.headers.get('cache-control');

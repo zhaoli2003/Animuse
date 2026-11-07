@@ -7,7 +7,7 @@ Drag to select real text and grow seeded, outlined flowers around each character
 Docs: http://127.0.0.1:3000/docs/animations/selection-flower
 Detail: http://127.0.0.1:3000/ai/components/selection-flower.json
 
-Use the installed ZLUIAtlas Skill to pull the selected framework's complete source, or fetch one package JSON directly:
+Use the installed Animuse Skill to pull the selected framework's complete source, or fetch one package JSON directly:
 
 - React: http://127.0.0.1:3000/ai/packages/selection-flower/react.json
 - Vue: http://127.0.0.1:3000/ai/packages/selection-flower/vue.json

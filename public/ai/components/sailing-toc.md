@@ -7,7 +7,7 @@ A sailing ship follows the current section along a bending dashed route, with sc
 Docs: http://127.0.0.1:3000/docs/animations/sailing-toc
 Detail: http://127.0.0.1:3000/ai/components/sailing-toc.json
 
-Use the installed ZLUIAtlas Skill to pull the selected framework's complete source, or fetch one package JSON directly:
+Use the installed Animuse Skill to pull the selected framework's complete source, or fetch one package JSON directly:
 
 - React: http://127.0.0.1:3000/ai/packages/sailing-toc/react.json
 - Vue: http://127.0.0.1:3000/ai/packages/sailing-toc/vue.json

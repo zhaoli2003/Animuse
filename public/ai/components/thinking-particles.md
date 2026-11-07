@@ -7,7 +7,7 @@ Particles morph through five thinking steps, then collapse into a streamed answe
 Docs: http://127.0.0.1:3000/docs/animations/thinking-particles
 Detail: http://127.0.0.1:3000/ai/components/thinking-particles.json
 
-Use the installed ZLUIAtlas Skill to pull the selected framework's complete source, or fetch one package JSON directly:
+Use the installed Animuse Skill to pull the selected framework's complete source, or fetch one package JSON directly:
 
 - React: http://127.0.0.1:3000/ai/packages/thinking-particles/react.json
 - Vue: http://127.0.0.1:3000/ai/packages/thinking-particles/vue.json

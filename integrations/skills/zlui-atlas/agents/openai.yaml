@@ -1,6 +1,0 @@
-interface:
-  display_name: "ZLUIAtlas 组件库"
-  short_description: "按界面用途搜索 ZLUIAtlas 交互与动效，匹配项目框架并下载完整源码接入"
-  default_prompt: "使用 $zlui-atlas 为当前界面查找合适组件，说明用途，并按项目框架接入源码。"
-policy:
-  allow_implicit_invocation: true

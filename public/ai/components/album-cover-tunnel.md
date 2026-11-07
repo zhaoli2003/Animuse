@@ -7,7 +7,7 @@ A three-dimensional wall of real album covers: hover to lift, click to fly a cov
 Docs: http://127.0.0.1:3000/docs/animations/album-cover-tunnel
 Detail: http://127.0.0.1:3000/ai/components/album-cover-tunnel.json
 
-Use the installed ZLUIAtlas Skill to pull the selected framework's complete source, or fetch one package JSON directly:
+Use the installed Animuse Skill to pull the selected framework's complete source, or fetch one package JSON directly:
 
 - React: http://127.0.0.1:3000/ai/packages/album-cover-tunnel/react.json
 - Vue: http://127.0.0.1:3000/ai/packages/album-cover-tunnel/vue.json

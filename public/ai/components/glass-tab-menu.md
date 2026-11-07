@@ -7,7 +7,7 @@ A frosted four-tab bar expands into six creation actions, with a translucent sli
 Docs: http://127.0.0.1:3000/docs/animations/glass-tab-menu
 Detail: http://127.0.0.1:3000/ai/components/glass-tab-menu.json
 
-Use the installed ZLUIAtlas Skill to pull the selected framework's complete source, or fetch one package JSON directly:
+Use the installed Animuse Skill to pull the selected framework's complete source, or fetch one package JSON directly:
 
 - React: http://127.0.0.1:3000/ai/packages/glass-tab-menu/react.json
 - Vue: http://127.0.0.1:3000/ai/packages/glass-tab-menu/vue.json

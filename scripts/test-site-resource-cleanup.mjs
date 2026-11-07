@@ -4,7 +4,7 @@ const browser=await chromium.launch({channel:'chrome',headless:true}),report={pa
 try{
  for(const locale of ['en','zh']){
   const context=await browser.newContext({viewport:{width:1440,height:1000}}),page=await context.newPage(),errors=[],requests=[];
-  await context.addInitScript(locale=>localStorage.setItem('leibox:locale',locale),locale);page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>requests.push(r.url()));
+  await context.addInitScript(locale=>localStorage.setItem('animuse:locale',locale),locale);page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>requests.push(r.url()));
   await page.goto(base,{waitUntil:'networkidle'});await page.evaluate(()=>document.fonts.ready);await expect(page.locator('html')).toHaveAttribute('lang',locale==='en'?'en':'zh-CN');
   assert(!requests.some(url=>url.includes('/landing/agent-demo/alpine-lake.png')),'homepage never downloads the redundant PNG');
   const backgrounds=requests.filter(url=>/\/assets\/optimized\/alpine-lake-/.test(url));assert.equal(backgrounds.length,1,'preload and background share a single request');

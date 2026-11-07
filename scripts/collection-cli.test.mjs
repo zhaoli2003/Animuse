@@ -59,7 +59,7 @@ test('help is JSON and CLI operations leave generated catalog and source unchang
   assert.deepEqual(after, before);
 });
 test('downloadable project Skill is rebuilt from the repository source', async () => {
-  const source = await fs.readFile(path.join(ROOT, 'integrations/skills/zlui-atlas/SKILL.md'), 'utf8');
+  const source = await fs.readFile(path.join(ROOT, 'integrations/skills/animuse/SKILL.md'), 'utf8');
   const downloadable = await fs.readFile(path.join(ROOT, 'public/ai/SKILL.md'), 'utf8');
   assert.equal(downloadable, source);
   assert(!/[A-Z]:[\\/]/.test(downloadable));

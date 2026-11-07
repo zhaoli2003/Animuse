@@ -7,7 +7,7 @@ A restrained 20-by-20 dot field pulses around two moving focal points while an i
 Docs: http://127.0.0.1:3000/docs/animations/ai-generating
 Detail: http://127.0.0.1:3000/ai/components/ai-generating.json
 
-Use the installed ZLUIAtlas Skill to pull the selected framework's complete source, or fetch one package JSON directly:
+Use the installed Animuse Skill to pull the selected framework's complete source, or fetch one package JSON directly:
 
 - React: http://127.0.0.1:3000/ai/packages/ai-generating/react.json
 - Vue: http://127.0.0.1:3000/ai/packages/ai-generating/vue.json

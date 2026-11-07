@@ -56,7 +56,7 @@ const UI = COLLECTION.filter(entry => /Panel|Text|Drag|Menu/.test(entry.category
 const PIECES = [GLASS_FOLDER, GLASS_FOLDER];
 const DOCK = [
   { key: "finder", name: "Finder", src: "/landing/agent-demo/finder.webp" },
-  { key: "leibox", name: "ZLUIAtlas", src: "/zlui-atlas-mark.svg" },
+  { key: "leibox", name: "Animuse", src: "/animuse-mark.svg" },
   { key: "codex", name: "Codex", src: "/landing/agent-demo/codex.webp" },
   { key: "claude", name: "Claude", src: "/landing/agent-demo/claude.webp" },
 ] as const;
@@ -237,7 +237,7 @@ export function AgentDemo({ code }: { code: DemoCode }) {
         <ComponentRail rail="top" title="Components" subtitle="Creative components you can drop into any project." pieces={TOP} />
         <ComponentRail rail="fresh" title="Live demos" subtitle="Inspect before you use" pieces={FRESH} />
         <Categories />
-        <ComponentRail rail="heroes" title="Motion & interaction" subtitle="Reusable interactions from the ZLUIAtlas collection." pieces={HEROES} />
+        <ComponentRail rail="heroes" title="Motion & interaction" subtitle="Reusable interactions from the Animuse collection." pieces={HEROES} />
         <ComponentRail rail="ui" title="Text & controls" subtitle="Details for your next interface." pieces={UI} />
       </div></div><PromptModal piece={piece} open={current.modal} copied={current.copied} playing={activity.playing} code={code} /></div>
       <div className="g5p-layer">{app.mounted && (app.agent === "claude" ? <ClaudeWindow s={app} piece={piece} typed={typed} playing={activity.playing} code={code} /> : <CodexWindow s={app} piece={piece} typed={typed} playing={activity.playing} code={code} />)}<Dock pointer={cursor} playing={activity.playing} /></div>
@@ -249,7 +249,7 @@ export function AgentDemo({ code }: { code: DemoCode }) {
 function LibraryLogo() {
   // The existing SVG includes both the symbol and the custom wordmark.
   // eslint-disable-next-line @next/next/no-img-element
-  return <img src="/zlui-atlas-logo.svg" alt="ZLUIAtlas" className="agent-demo-library-logo h-[25px] w-auto invert dark:invert-0" />;
+  return <img src="/animuse-logo.svg" alt="Animuse" className="agent-demo-library-logo h-[25px] w-auto invert dark:invert-0" />;
 }
 const LibrarySidebar = memo(function LibrarySidebar() {
   return <aside className="g4-side hidden w-[228px] shrink-0 flex-col leading-6 lg:flex">
@@ -291,7 +291,7 @@ const Categories = memo(function Categories() {
 function PromptModal({ piece, open, copied, playing, code }: { piece: Piece; open: boolean; copied: boolean; playing: boolean; code: DemoCode }) {
   const { t } = useLanguage();
   return <div className={cn("g5-ap-dim", open && "g5-ap-on")}><div className="g5-ap-modal">
-    <div className="flex items-center gap-3 px-4 py-3"><span className="g5-ap-av"><Sparkles className="size-3.5" /></span><div className="min-w-0 flex-1"><p className="truncate text-[14px] font-semibold"><T>{piece.name}</T></p><p className="truncate text-[12px] text-muted-foreground">ZLUIAtlas · React</p></div><span data-ap-copy className="g5-ap-copy">{copied ? <Check className="size-3.5" /> : <Copy className="size-3.5" />}<T>{copied ? "Copied" : "Copy for AI"}</T></span><span className="inline-flex size-7 shrink-0 items-center justify-center"><X className="size-4 text-muted-foreground" /></span></div>
+    <div className="flex items-center gap-3 px-4 py-3"><span className="g5-ap-av"><Sparkles className="size-3.5" /></span><div className="min-w-0 flex-1"><p className="truncate text-[14px] font-semibold"><T>{piece.name}</T></p><p className="truncate text-[12px] text-muted-foreground">Animuse · React</p></div><span data-ap-copy className="g5-ap-copy">{copied ? <Check className="size-3.5" /> : <Copy className="size-3.5" />}<T>{copied ? "Copied" : "Copy for AI"}</T></span><span className="inline-flex size-7 shrink-0 items-center justify-center"><X className="size-4 text-muted-foreground" /></span></div>
     <div className="agent-demo-modal-tabs flex items-center gap-4 border-y border-border/60 px-4 py-2 text-[11px]"><span className="font-medium"><T>Demo</T></span><span className="text-muted-foreground"><T>Code</T></span><span className="ml-auto text-muted-foreground">{t("React · {count} files").replace("{count}", String(code.files.length))}</span></div>
     <div className="g5-ap-stage"><PiecePreview piece={piece} active={open && playing} /></div>
     <div className="agent-demo-source-preview border-t border-border/60"><div className="border-b border-border/60 bg-muted/40 px-4 py-2 font-mono text-[10px]">{code.files[0].name}</div><pre className="max-h-24 overflow-hidden px-4 py-3 font-mono text-[10px] leading-relaxed"><code>{code.entry}</code></pre></div>
@@ -348,7 +348,7 @@ function ClaudeWindow({ s, piece, typed, playing, code }: { s: App; piece: Piece
       <aside className="g5cc-side"><div className="g5cc-search"><Icon name="search" className="size-[11px]" /><T>Search</T></div><ul className="g5cc-nav"><li className={cn(!sent && "g5cc-on")}><Icon name="plus" />New</li><li><Icon name="folder" />Projects <span className="g5cc-beta">Beta</span></li><li><Icon name="clock" />Scheduled</li><li><Icon name="more" sw={2.6} />More</li></ul><p className="g5cc-head">Pinned <Icon name="right" className="size-2.5" /></p>{sent && <><p className="g5cc-head g5p-in">Working</p><ul className="g5cc-nav g5p-in"><li className="g5cc-on"><span className="truncate">{title}</span>{!done && <span className="ml-auto size-1.5 shrink-0 rounded-full bg-white/40" />}</li></ul></>}<p className="g5cc-head">Idle</p><ul className="g5cc-nav">{["Footer animation experiments", "Layout width adjustment", "Restore background controls", "Payout investigation", "Show more"].map(text => <li key={text} className={text === "Show more" ? "text-white/45" : undefined}><span className="truncate"><T>{text}</T></span></li>)}</ul></aside>
       <div className="g5cc-main"><div className="g5cc-col">
         {sent ? <div ref={thread} className="g5cc-thread">
-          <div className="g5p-grow"><div className="g5cc-user"><p>{typed.trim()}</p><p className="mt-2.5"><T>Integrate GlassFolder from ZLUIAtlas into this project.</T></p><p className="mt-2 text-white/55">/docs/animations/glass-folder · React</p><pre data-demo-source className="agent-demo-pasted-code mt-2.5">{s.pasted}</pre><p className="mt-1 text-[11px] text-white/70">{t("{count} source files").replace("{count}", String(code.files.length))} · <T>Show more</T></p></div></div>
+          <div className="g5p-grow"><div className="g5cc-user"><p>{typed.trim()}</p><p className="mt-2.5"><T>Integrate GlassFolder from Animuse into this project.</T></p><p className="mt-2 text-white/55">/docs/animations/glass-folder · React</p><pre data-demo-source className="agent-demo-pasted-code mt-2.5">{s.pasted}</pre><p className="mt-1 text-[11px] text-white/70">{t("{count} source files").replace("{count}", String(code.files.length))} · <T>Show more</T></p></div></div>
           {s.lines >= 3 && <div className="g5p-grow"><div className="grid gap-[9px]"><p className="g5cc-grey"><T>Read supplied source</T> <span className="text-white/75">GlassFolder.tsx…</span> <Icon name="right" className="inline size-2.5" /></p><p className="g5cc-say"><T>The React bundle includes its interaction core and styles. No registry package is needed.</T></p></div></div>}
           {done && <div className="g5p-grow"><div className="grid gap-2"><p className="g5cc-say"><T>I&apos;m done 🤙 added</T> <code className="g5cc-code">{code.files[0].name}</code> <T>and its demo, wired to your theme tokens.</T></p><p className="g5cc-say">TLDR: <code className="g5cc-code">{`<${component} />`}</code> <T>is in</T> <code className="g5cc-code">components/ui</code><T>, typecheck passes.</T></p></div></div>}
         </div> : <div className="flex flex-1 flex-col items-center justify-center"><div className="g5cc-pick">{["acme-website", "growth", "personal"].map((name, index) => <p key={name} className={cn("g5cc-pick-row", index === 0 && "text-white")}><Icon name="computer" />{name}{index === 0 && <Icon name="check" className="ml-auto" />}</p>)}<p className="g5cc-pick-row border-t border-white/[0.07] pt-2 text-white/60"><T>Choose environment</T><Icon name="right" className="size-2.5 rotate-90" /></p></div><div className="g5cc-pick mt-2"><p className="g5cc-pick-row"><Icon name="terminal" /><T>Import 11 Claude Code CLI sessions</T></p><p className="g5cc-pick-row"><Icon name="bolt" /><T>Turn on auto mode</T></p></div></div>}
@@ -416,7 +416,7 @@ function CodexWindow({ s, piece, typed, playing, code }: { s: App; piece: Piece;
           {sent ? <div ref={thread} className="g5x-thread">
             <div className="g5p-grow"><div className="g5x-user">{typed.trim()} <span className="g5x-chip">{t("Pasted text · {lines} lines").replace("{lines}", String(code.lineCount))}</span></div></div>
             {s.lines >= 2 && <div className="g5p-grow"><p className="g5x-worked"><span><T>{busy ? "Working" : "Worked for 18s"}</T></span><Icon name="right" /></p></div>}
-            {s.lines >= 3 && <div className="g5p-grow"><p className="g5x-say">{t("Added {name} from ZLUIAtlas, ").replace("{name}", piece.name)}<span className="text-[#7aa7ff]"><T>using the supplied React source</T></span><T>. The component and demo are ready.</T></p></div>}
+            {s.lines >= 3 && <div className="g5p-grow"><p className="g5x-say">{t("Added {name} from Animuse, ").replace("{name}", piece.name)}<span className="text-[#7aa7ff]"><T>using the supplied React source</T></span><T>. The component and demo are ready.</T></p></div>}
             {code.files.slice(0, 2).map((file, index) => s.lines >= index + 4 && <div key={file.name} className="g5p-grow"><div className="g5x-card"><span className="g5x-card-ico"><Icon name="file" className="size-[15px] text-[#7fb4ff]" /></span><span className="min-w-0 flex-1"><span className="block truncate text-[13px] text-white">{file.name}</span><span className="block truncate text-[11.5px] text-white/45">components/ui · +{file.lines} −0</span></span><span className="g5x-open"><T>Open in</T><Icon name="right" className="size-2.5 rotate-90" /></span></div></div>)}
             <div className="g5x-slot">{busy ? <span className="g5x-think g5p-in"><T>Thinking</T></span> : <CodexActions />}</div>
           </div> : <div className="g5x-empty"><CodexMark /><p>{emptyPrompt[0]}<span>demo-project</span>{emptyPrompt[1]}</p></div>}

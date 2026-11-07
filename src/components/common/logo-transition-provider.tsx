@@ -147,6 +147,6 @@ export function LogoTransitionProvider({ children }: { children: ReactNode }) {
   return <LogoTransitionContext.Provider value={context}>
     {children}
     {/* eslint-disable-next-line @next/next/no-img-element */}
-    <img ref={overlay} src="/zlui-atlas-logo.svg" alt="" aria-hidden="true" width={640} height={160} className={styles.overlay} data-logo-motion="idle" />
+    <img ref={overlay} src="/animuse-logo.svg" alt="" aria-hidden="true" width={640} height={160} className={styles.overlay} data-logo-motion="idle" />
   </LogoTransitionContext.Provider>;
 }

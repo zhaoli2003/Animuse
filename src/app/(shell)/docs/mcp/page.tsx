@@ -11,18 +11,18 @@ import { LEIBOX_SKILL_INSTALL_COMMAND } from "@/lib/leibox-skill";
 
 export const metadata: Metadata = {
   title: "AI integration",
-  description: "Install ZLUIAtlas Skill, search the live collection and pull complete component source into your project.",
+  description: "Install Animuse Skill, search the live collection and pull complete component source into your project.",
   alternates: { canonical: "/docs/mcp" },
 };
-const EXAMPLE = "用 ZLUIAtlas 找一个玻璃文件夹组件，使用我项目里的 React，把完整源码接入当前页面。";
-const COMMANDS = `node <installed-skill>/scripts/zlui-atlas.mjs search "玻璃 文件夹"
-node <installed-skill>/scripts/zlui-atlas.mjs show glass-folder --framework react
-node <installed-skill>/scripts/zlui-atlas.mjs pull glass-folder --framework react --out src/components/zlui-atlas/glass-folder`;
-const MARKDOWN = `# ZLUIAtlas Skill
+const EXAMPLE = "用 Animuse 找一个玻璃文件夹组件，使用我项目里的 React，把完整源码接入当前页面。";
+const COMMANDS = `node <installed-skill>/scripts/animuse.mjs search "玻璃 文件夹"
+node <installed-skill>/scripts/animuse.mjs show glass-folder --framework react
+node <installed-skill>/scripts/animuse.mjs pull glass-folder --framework react --out src/components/animuse/glass-folder`;
+const MARKDOWN = `# Animuse Skill
 
 ${LEIBOX_SKILL_INSTALL_COMMAND}
 
-Install the Skill in the AI client you use. Then ask it to search the live ZLUIAtlas collection, choose your project's framework and pull the complete source into your project. No ZLUIAtlas repository checkout, API key or MCP server is required.
+Install the Skill in the AI client you use. Then ask it to search the live Animuse collection, choose your project's framework and pull the complete source into your project. No Animuse repository checkout, API key or MCP server is required.
 
 Example: ${EXAMPLE}
 
@@ -34,23 +34,23 @@ For learning use only.
 `;
 
 export default async function AiIntegrationPage() {
-  const skillSource = await readFile(path.join(process.cwd(), "integrations/skills/zlui-atlas/SKILL.md"), "utf8");
+  const skillSource = await readFile(path.join(process.cwd(), "integrations/skills/animuse/SKILL.md"), "utf8");
   const skillHtml = await highlight(skillSource, "markdown");
   return (
     <article className="page-enter mx-auto w-full max-w-3xl">
       <div className="typeset typeset-docs">
         <div className="flex items-start justify-between gap-4">
-          <h1><T>Use the ZLUIAtlas Skill</T></h1>
+          <h1><T>Use the Animuse Skill</T></h1>
           <CopyButton text={MARKDOWN} label="Copy as Markdown" className="mt-1 shrink-0 border border-border/70 px-3" />
         </div>
         <p className="max-w-xl text-muted-foreground"><T>Install once. Let your AI search the collection and pull complete component source into your project.</T></p>
-        <h2 id="install-skill"><T>Install the ZLUIAtlas Skill</T></h2>
-        <p><T>Run this command in your project and choose the AI client you use. No ZLUIAtlas repository checkout, API key or MCP server is required.</T></p>
+        <h2 id="install-skill"><T>Install the Animuse Skill</T></h2>
+        <p><T>Run this command in your project and choose the AI client you use. No Animuse repository checkout, API key or MCP server is required.</T></p>
         <div className="my-6"><CodeBlock source={LEIBOX_SKILL_INSTALL_COMMAND} fileName="Terminal" /></div>
-        <p>当前版本在本地运行，默认目录地址为 <code>http://127.0.0.1:3000</code>。请先启动网站；部署后可设置 <code>ZLUI_ATLAS_ORIGIN</code>，或使用 <code>--origin</code> 指定新的目录地址。</p>
+        <p>当前版本在本地运行，默认目录地址为 <code>http://127.0.0.1:3000</code>。请先启动网站；部署后可设置 <code>ANIMUSE_ORIGIN</code>，或使用 <code>--origin</code> 指定新的目录地址。</p>
         <h2><T>Ask your AI</T></h2>
         <p><T>After installation, describe the component you need and your AI will search, choose the matching framework and download the actual source files.</T></p>
-        <blockquote><T>Use ZLUIAtlas to find a glass folder component and integrate its React source into my current page.</T></blockquote>
+        <blockquote><T>Use Animuse to find a glass folder component and integrate its React source into my current page.</T></blockquote>
         <p><T>The Skill reads the live catalog every time. Newly published components become searchable without reinstalling it.</T></p>
         <h2><T>The complete collection</T></h2>
         <p><strong>{INTERACTION_COMPONENTS.length}</strong> <T>components are currently searchable, with six framework versions where offered.</T></p>
@@ -62,7 +62,7 @@ export default async function AiIntegrationPage() {
         </ul>
         <h2><T>Search and download with the installed helper</T></h2>
         <p><T>The Skill includes a standalone Node.js helper. Resolve its path from the installed Skill folder and run it in your target project.</T></p>
-        <div className="my-6"><CodeBlock source={COMMANDS} fileName="ZLUIAtlas Skill" /></div>
+        <div className="my-6"><CodeBlock source={COMMANDS} fileName="Animuse Skill" /></div>
         <p><T>Pull downloads the selected framework&apos;s complete file set and checks its content hashes. It preserves different existing files and does not execute code or install dependencies.</T></p>
         <h2><T>Source and distribution</T></h2>
       <p><T>For learning use only.</T></p>

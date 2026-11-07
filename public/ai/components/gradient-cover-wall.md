@@ -7,7 +7,7 @@ Six grainy gradient covers with fine SVG patterns, drifting colours, and spring-
 Docs: http://127.0.0.1:3000/docs/animations/gradient-cover-wall
 Detail: http://127.0.0.1:3000/ai/components/gradient-cover-wall.json
 
-Use the installed ZLUIAtlas Skill to pull the selected framework's complete source, or fetch one package JSON directly:
+Use the installed Animuse Skill to pull the selected framework's complete source, or fetch one package JSON directly:
 
 - React: http://127.0.0.1:3000/ai/packages/gradient-cover-wall/react.json
 - Vue: http://127.0.0.1:3000/ai/packages/gradient-cover-wall/vue.json

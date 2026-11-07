@@ -43,7 +43,7 @@ export function CopyMenu({ title, standalone, motionPackages }: CopyMenuProps) {
   const motionPackage = motionPackages?.find(pack => pack.framework === storedFramework) ?? motionPackages?.[0];
   const docsUrl = siteUrl(standalone.href);
   const promptUrl = motionPackage?.promptUrl ?? standalone.promptUrl;
-  const aiPrompt = motionPackage?.prompt ?? standalone.prompt ?? `Help me use the ${title} example from ZLUIAtlas. Reference: ${docsUrl}${promptUrl ? `\nRead the complete recreation specification: ${siteUrl(promptUrl)}` : ""}`;
+  const aiPrompt = motionPackage?.prompt ?? standalone.prompt ?? `Help me use the ${title} example from Animuse. Reference: ${docsUrl}${promptUrl ? `\nRead the complete recreation specification: ${siteUrl(promptUrl)}` : ""}`;
   const [open, setOpen] = useState(false);
   const [feedback, setFeedback] = useState<{ id: string; status: keyof typeof copyFeedbackLabels } | null>(null);
   const rootRef = useRef<HTMLDivElement | null>(null);

@@ -1,4 +1,6 @@
-# ZLUIAtlas：参考组件全量审计与多维分类方案
+# Animuse：参考组件全量审计与多维分类方案
+
+> 名称更新：项目已更名为 **Animuse**。下文保留更名前提出的方案及当时的参考站审计范围；文中的 ZLUIAtlas 是项目旧名，不表示对当前 Animuse 构建重新执行了验证。
 
 > 实施更新：2026-11-08 已完成网页多维筛选，见 [交付记录](multidimensional-filtering.md)。本文保留参考站审计与最初方案；本地已有标注的补充核对见 [当前分类分析](current-classification-analysis.md)。
 

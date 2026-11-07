@@ -7,7 +7,7 @@ Drag the upper-right notch to peel open a solid 3D foil pouch. Stop halfway, reg
 Docs: http://127.0.0.1:3000/docs/animations/matcha-powder-reveal
 Detail: http://127.0.0.1:3000/ai/components/matcha-powder-reveal.json
 
-Use the installed ZLUIAtlas Skill to pull the selected framework's complete source, or fetch one package JSON directly:
+Use the installed Animuse Skill to pull the selected framework's complete source, or fetch one package JSON directly:
 
 - React: http://127.0.0.1:3000/ai/packages/matcha-powder-reveal/react.json
 - Vue: http://127.0.0.1:3000/ai/packages/matcha-powder-reveal/vue.json

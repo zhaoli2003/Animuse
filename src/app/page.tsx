@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const JSON_LD = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: "ZLUIAtlas",
+  name: "Animuse",
   description:
     "A personal collection of UI inspiration, creative components, and design references for people and AI assistants.",
   url: SITE_URL,

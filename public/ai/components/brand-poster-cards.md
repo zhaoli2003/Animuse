@@ -7,7 +7,7 @@ Three portrait posters pair a small corner symbol, a centered brand wordmark, an
 Docs: http://127.0.0.1:3000/docs/animations/brand-poster-cards
 Detail: http://127.0.0.1:3000/ai/components/brand-poster-cards.json
 
-Use the installed ZLUIAtlas Skill to pull the selected framework's complete source, or fetch one package JSON directly:
+Use the installed Animuse Skill to pull the selected framework's complete source, or fetch one package JSON directly:
 
 - React: http://127.0.0.1:3000/ai/packages/brand-poster-cards/react.json
 - Vue: http://127.0.0.1:3000/ai/packages/brand-poster-cards/vue.json

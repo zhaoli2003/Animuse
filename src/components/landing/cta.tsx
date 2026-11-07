@@ -32,7 +32,7 @@ export function Cta() {
                   <Link href="/docs/mcp"
                     className="group inline-flex h-11 items-center justify-center gap-2 rounded-full bg-white px-6 text-[15px] font-medium tracking-[-0.01em] text-black transition-[opacity,transform] duration-150 ease-out hover:opacity-85 active:scale-[0.98]"
                   ><T>
-                    Install the ZLUIAtlas Skill
+                    Install the Animuse Skill
                     </T><Code2
                       aria-hidden
                       strokeWidth={2.25}

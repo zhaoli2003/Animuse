@@ -7,7 +7,7 @@ One dark capsule follows six navigation items, changes width, and reveals anchor
 Docs: http://127.0.0.1:3000/docs/animations/fluid-tooltip
 Detail: http://127.0.0.1:3000/ai/components/fluid-tooltip.json
 
-Use the installed ZLUIAtlas Skill to pull the selected framework's complete source, or fetch one package JSON directly:
+Use the installed Animuse Skill to pull the selected framework's complete source, or fetch one package JSON directly:
 
 - React: http://127.0.0.1:3000/ai/packages/fluid-tooltip/react.json
 - Vue: http://127.0.0.1:3000/ai/packages/fluid-tooltip/vue.json

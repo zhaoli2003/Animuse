@@ -17,7 +17,7 @@ const motionLayouts = new Map(INTERACTION_COMPONENTS
 export const metadata: Metadata = {
   title: "Components",
   description:
-    "Browse all ZLUIAtlas components, interactions, and visual effects in one collection, with live previews, source code, and recreation prompts.",
+    "Browse all Animuse components, interactions, and visual effects in one collection, with live previews, source code, and recreation prompts.",
   alternates: { canonical: "/components" },
 };
 

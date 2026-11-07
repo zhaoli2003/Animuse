@@ -24,7 +24,7 @@ try {
   const page = await browser.newPage({ viewport: { width: 1440, height: 1100 }, reducedMotion: 'reduce', colorScheme: 'light' });
   const errors = [];
   page.on('pageerror', error => errors.push(error.message));
-  await page.addInitScript(() => { try { localStorage.setItem('leibox:locale', 'zh'); localStorage.setItem('theme', 'light'); } catch {} });
+  await page.addInitScript(() => { try { localStorage.setItem('animuse:locale', 'zh'); localStorage.setItem('theme', 'light'); } catch {} });
   for (const { route, filename, label, state, height } of captures) {
     await page.setViewportSize({ width: 1440, height });
     const response = await page.goto(base + route, { waitUntil: 'networkidle' });

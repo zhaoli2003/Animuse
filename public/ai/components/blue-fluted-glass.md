@@ -7,7 +7,7 @@ Slow blue fluid folds refract through vertical frosted-glass ribs behind a fixed
 Docs: http://127.0.0.1:3000/docs/animations/blue-fluted-glass
 Detail: http://127.0.0.1:3000/ai/components/blue-fluted-glass.json
 
-Use the installed ZLUIAtlas Skill to pull the selected framework's complete source, or fetch one package JSON directly:
+Use the installed Animuse Skill to pull the selected framework's complete source, or fetch one package JSON directly:
 
 - React: http://127.0.0.1:3000/ai/packages/blue-fluted-glass/react.json
 - Vue: http://127.0.0.1:3000/ai/packages/blue-fluted-glass/vue.json

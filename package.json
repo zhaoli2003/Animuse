@@ -1,5 +1,5 @@
 {
-  "name": "zhaoli-free-ui-atlas",
+  "name": "animuse",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -25,12 +25,13 @@
     "preview": "npm run start",
     "ai:catalog": "node --experimental-strip-types scripts/build-ai-catalog.mts",
     "ui": "node scripts/collection-cli.mjs",
-    "test:ai": "node --test scripts/collection-cli.test.mjs scripts/zlui-atlas-skill.test.mjs",
+    "test:ai": "node --test scripts/collection-cli.test.mjs scripts/animuse-skill.test.mjs",
     "test:actions": "node scripts/test-ui-actions.mjs",
     "test:locale": "node scripts/test-localization.cjs",
     "test:filters": "node --test scripts/atlas-filters.test.mjs",
     "test:filters:browser": "node scripts/test-atlas-filters-browser.mjs",
-    "prepare:assets": "npm run motion:build && npm run registry && npm run docs:assets && npm run assets:optimize && npm run ai:catalog",
+    "brand:build": "node scripts/build-brand-assets.mjs",
+    "prepare:assets": "npm run brand:build && npm run motion:build && npm run registry && npm run docs:assets && npm run assets:optimize && npm run ai:catalog",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
@@ -86,11 +87,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zhaoli2003/zhaoli-free-ui-atlas.git"
+    "url": "git+https://github.com/zhaoli2003/Animuse.git"
   },
-  "homepage": "https://github.com/zhaoli2003/zhaoli-free-ui-atlas#readme",
+  "homepage": "https://github.com/zhaoli2003/Animuse#readme",
   "bugs": {
-    "url": "https://github.com/zhaoli2003/zhaoli-free-ui-atlas/issues"
+    "url": "https://github.com/zhaoli2003/Animuse/issues"
   },
   "license": "SEE LICENSE IN LICENSE.md",
   "browserslist": [

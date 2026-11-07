@@ -201,7 +201,7 @@ for(const entry of INTERACTION_COMPONENTS){
    const packageName=separator>0?dependency.slice(0,separator):dependency;
    return [packageName,pinned??JSON.parse(await read(`node_modules/${packageName}/package.json`)).version];
   })));
-  await fs.writeFile(path.join(folder,"package.json"),JSON.stringify({...pack,name:`@leibox/${entry.slug}-${framework.id}`,version:"0.0.0",private:true,type:"module",dependencies:dependencyVersions,files:files.map(({fileName})=>fileName),bundle:undefined,prompt:undefined},null,2));
+  await fs.writeFile(path.join(folder,"package.json"),JSON.stringify({...pack,name:`@animuse/${entry.slug}-${framework.id}`,version:"0.0.0",private:true,type:"module",dependencies:dependencyVersions,files:files.map(({fileName})=>fileName),bundle:undefined,prompt:undefined},null,2));
   matrix.push({slug:entry.slug,framework:framework.id,entry:`/motion-frameworks/${entry.slug}/${framework.id}/${fileName}`,files:files.length});
  }
  await fs.mkdir(path.join(OUT,entry.slug),{recursive:true});

@@ -7,7 +7,7 @@ Six monochrome actions spring inward with a short clockwise stagger, framed by f
 Docs: http://127.0.0.1:3000/docs/animations/soft-action-wheel
 Detail: http://127.0.0.1:3000/ai/components/soft-action-wheel.json
 
-Use the installed ZLUIAtlas Skill to pull the selected framework's complete source, or fetch one package JSON directly:
+Use the installed Animuse Skill to pull the selected framework's complete source, or fetch one package JSON directly:
 
 - React: http://127.0.0.1:3000/ai/packages/soft-action-wheel/react.json
 - Vue: http://127.0.0.1:3000/ai/packages/soft-action-wheel/vue.json

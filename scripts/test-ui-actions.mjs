@@ -12,7 +12,7 @@ try {
   const page=await context.newPage();
   await page.goto(base+'/docs/animations/glass-folder');
   await expect(page.getByRole('heading',{name:'玻璃文件夹展开',exact:true})).toBeVisible();
-  check('ZLUIAtlas page and logo', (await page.title()).includes('ZLUIAtlas') && await page.locator('img[alt="ZLUIAtlas"]').first().isVisible());
+  check('Animuse page and logo', (await page.title()).includes('Animuse') && await page.locator('img[alt="Animuse"]').first().isVisible());
   check('Contact and mail entry removed', await page.locator('[data-contact-trigger],a[href^="mailto:"]').count()===0);
   const assetIndex=await (await page.request.get(base+'/doc-assets-index.json')).json();
   const refs=assetIndex.motion['glass-folder'].find(p=>p.framework==='react');
@@ -58,7 +58,7 @@ try {
   check('Theme persists across reload',true);
   for(const width of [375,768,1440]){
     await page.setViewportSize({width,height:1000});await page.goto(base+'/docs/mcp');
-    await expect(page.getByRole('heading',{name:'使用 ZLUIAtlas Skill',exact:true})).toBeVisible();
+    await expect(page.getByRole('heading',{name:'使用 Animuse Skill',exact:true})).toBeVisible();
     check(`Skill guide fits ${width}px`,await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
   }
   await context.close();console.log(`${checks.length} UI checks passed.`);

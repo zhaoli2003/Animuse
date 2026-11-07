@@ -83,7 +83,7 @@ export function Hero() {
                   className="absolute inset-0 -z-10 rounded-[inherit] backdrop-blur-md"
                 />
                 <div className="flex items-center justify-between">
-                  <p className="text-sm font-medium sm:text-base">ZLUIAtlas Skill</p>
+                  <p className="text-sm font-medium sm:text-base">Animuse Skill</p>
                   <p className="font-mono text-[10px] tracking-widest text-white/70 uppercase sm:text-xs"><T>
                     Install once, access every component
                   </T></p>

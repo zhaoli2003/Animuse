@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import { createHash } from 'node:crypto';
 
 const read = file => fs.readFile(file, 'utf8');
 const studies = ['ascii-object', 'asciify', 'frost', 'glass', 'glass-object', 'glyph-rain', 'liquid-object', 'particle-object', 'particle-scroll'];
@@ -25,17 +26,31 @@ test('local original demos retain provenance without claiming project source dis
 
 test('download folders contain only current project registry and referenced code assets', async () => {
   const registry = JSON.parse(await read('public/r/registry.json'));
-  assert.equal(registry.name, 'leibox');
+  assert.equal(registry.name, 'animuse');
+  for (const item of registry.items) {
+    assert.match(item.name, /^animuse-/);
+    assert.match(item.title, /^Animuse · /);
+    const detail = JSON.parse(await read(`public/r/${item.name}.json`));
+    assert.equal(detail.author, 'LeiBox');
+    for (const file of item.files) assert.match(file.target, /^@components\/animuse\//);
+  }
   const expected = ['registry.json', ...registry.items.map(item => `${item.name}.json`)];
   assert.deepEqual((await fs.readdir('public/r')).sort(), expected.sort());
   const index = JSON.parse(await read('public/doc-assets-index.json'));
   assert.deepEqual(index.canvas, {});
   const urls = new Set();
   for (const packages of Object.values(index.motion)) for (const pack of packages) {
-    urls.add(path.basename(pack.bundleUrl));
-    for (const file of pack.files) urls.add(path.basename(file.url));
+    for (const url of [pack.bundleUrl, pack.promptUrl, ...pack.files.map(file => file.url)]) {
+      assert.match(url, /^\/doc-assets\/[a-f0-9]{24}\.json$/, `${pack.slug}/${pack.framework} asset reference`);
+      urls.add(path.basename(url));
+    }
   }
   assert.deepEqual((await fs.readdir('public/doc-assets')).sort(), [...urls].sort());
+  for (const filename of urls) {
+    const bytes = await fs.readFile(path.join('public/doc-assets', filename));
+    assert.equal(filename, `${createHash('sha256').update(bytes).digest('hex').slice(0, 24)}.json`);
+    assert.equal(typeof JSON.parse(bytes.toString('utf8')).source, 'string', filename);
+  }
   assert.deepEqual((await fs.readdir('out/r')).sort(), expected.sort());
 });
 

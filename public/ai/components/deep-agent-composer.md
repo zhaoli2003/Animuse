@@ -7,7 +7,7 @@ The original Deep Agent Composer, including permission controls, context capacit
 Docs: http://127.0.0.1:3000/docs/animations/deep-agent-composer
 Detail: http://127.0.0.1:3000/ai/components/deep-agent-composer.json
 
-Use the installed ZLUIAtlas Skill to pull the selected framework's complete source, or fetch one package JSON directly:
+Use the installed Animuse Skill to pull the selected framework's complete source, or fetch one package JSON directly:
 
 - React: http://127.0.0.1:3000/ai/packages/deep-agent-composer/react.json
 - Vue: http://127.0.0.1:3000/ai/packages/deep-agent-composer/vue.json

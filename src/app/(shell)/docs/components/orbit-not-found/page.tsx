@@ -34,9 +34,9 @@ export default function OrbitNotFoundDoc() {
         <section className="mt-8" aria-labelledby="orbit-source">
           <h2 id="orbit-source" className="text-lg font-semibold tracking-[-0.01em]"><T>Code</T></h2>
           <p className="mt-2 text-sm leading-6 text-muted-foreground">
-            <T>ZLUIAtlas renders this component from Next.js app/not-found.tsx. The items prop supplies the previews and destination links.</T>
+            <T>Animuse renders this component from Next.js app/not-found.tsx. The items prop supplies the previews and destination links.</T>
           </p>
-          <a href="https://github.com/zhaoli2003/ZLUIAtlas/tree/main/src/components/not-found-experiments" target="_blank" rel="noreferrer" className="mt-3 inline-flex items-center gap-1.5 rounded text-sm underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2">
+          <a href="https://github.com/zhaoli2003/Animuse/tree/main/src/components/not-found-experiments" target="_blank" rel="noreferrer" className="mt-3 inline-flex items-center gap-1.5 rounded text-sm underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2">
             <T>View source on GitHub</T><ArrowUpRight aria-hidden className="size-3.5" />
           </a>
         </section>

@@ -7,7 +7,7 @@ An ASCII hammerhead swims along three forecast price paths and tags each with it
 Docs: http://127.0.0.1:3000/docs/animations/hammerhead-chart
 Detail: http://127.0.0.1:3000/ai/components/hammerhead-chart.json
 
-Use the installed ZLUIAtlas Skill to pull the selected framework's complete source, or fetch one package JSON directly:
+Use the installed Animuse Skill to pull the selected framework's complete source, or fetch one package JSON directly:
 
 - React: http://127.0.0.1:3000/ai/packages/hammerhead-chart/react.json
 - Vue: http://127.0.0.1:3000/ai/packages/hammerhead-chart/vue.json

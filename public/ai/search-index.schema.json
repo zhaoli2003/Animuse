@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "ZLUIAtlas task-oriented component search index",
+  "title": "Animuse task-oriented component search index",
   "type": "object",
   "additionalProperties": false,
   "required": ["$schema", "schemaVersion", "revision", "total", "links", "facets", "items"],
@@ -40,7 +40,7 @@
         "docsPath": { "$ref": "#/definitions/path" },
         "detailPath": { "$ref": "#/definitions/path" },
         "previewPath": { "$ref": "#/definitions/path" },
-        "sourceProvider": { "enum": ["zlui-atlas", "upstream"] },
+        "sourceProvider": { "enum": ["animuse", "upstream"] },
         "discovery": {
           "type": "object", "additionalProperties": false,
           "required": ["category", "useCases", "searchTerms", "visualTags", "interactions", "caveat"],

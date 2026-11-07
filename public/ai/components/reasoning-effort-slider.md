@@ -7,7 +7,7 @@ A three-stop thinking slider with a flowing star field, velocity-driven jelly de
 Docs: http://127.0.0.1:3000/docs/animations/reasoning-effort-slider
 Detail: http://127.0.0.1:3000/ai/components/reasoning-effort-slider.json
 
-Use the installed ZLUIAtlas Skill to pull the selected framework's complete source, or fetch one package JSON directly:
+Use the installed Animuse Skill to pull the selected framework's complete source, or fetch one package JSON directly:
 
 - React: http://127.0.0.1:3000/ai/packages/reasoning-effort-slider/react.json
 - Vue: http://127.0.0.1:3000/ai/packages/reasoning-effort-slider/vue.json

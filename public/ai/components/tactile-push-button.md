@@ -7,7 +7,7 @@ A sculpted CSS button that sinks on hover and compresses while pressed.
 Docs: http://127.0.0.1:3000/docs/animations/tactile-push-button
 Detail: http://127.0.0.1:3000/ai/components/tactile-push-button.json
 
-Use the installed ZLUIAtlas Skill to pull the selected framework's complete source, or fetch one package JSON directly:
+Use the installed Animuse Skill to pull the selected framework's complete source, or fetch one package JSON directly:
 
 - React: http://127.0.0.1:3000/ai/packages/tactile-push-button/react.json
 - Vue: http://127.0.0.1:3000/ai/packages/tactile-push-button/vue.json

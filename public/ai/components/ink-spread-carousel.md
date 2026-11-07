@@ -7,7 +7,7 @@ A new photo spreads from your press with a rippling ink edge and a thin lens dis
 Docs: http://127.0.0.1:3000/docs/animations/ink-spread-carousel
 Detail: http://127.0.0.1:3000/ai/components/ink-spread-carousel.json
 
-Use the installed ZLUIAtlas Skill to pull the selected framework's complete source, or fetch one package JSON directly:
+Use the installed Animuse Skill to pull the selected framework's complete source, or fetch one package JSON directly:
 
 - React: http://127.0.0.1:3000/ai/packages/ink-spread-carousel/react.json
 - Vue: http://127.0.0.1:3000/ai/packages/ink-spread-carousel/vue.json

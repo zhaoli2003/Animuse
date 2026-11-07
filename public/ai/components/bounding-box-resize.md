@@ -7,7 +7,7 @@ Eight square handles morph into directional arrows, with live size pills, editab
 Docs: http://127.0.0.1:3000/docs/animations/bounding-box-resize
 Detail: http://127.0.0.1:3000/ai/components/bounding-box-resize.json
 
-Use the installed ZLUIAtlas Skill to pull the selected framework's complete source, or fetch one package JSON directly:
+Use the installed Animuse Skill to pull the selected framework's complete source, or fetch one package JSON directly:
 
 - React: http://127.0.0.1:3000/ai/packages/bounding-box-resize/react.json
 - Vue: http://127.0.0.1:3000/ai/packages/bounding-box-resize/vue.json

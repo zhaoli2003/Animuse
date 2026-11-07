@@ -7,7 +7,7 @@ Apple, Google, and Tesla emerge from flowing vertical lines, with spring motion 
 Docs: http://127.0.0.1:3000/docs/animations/brand-line-cards
 Detail: http://127.0.0.1:3000/ai/components/brand-line-cards.json
 
-Use the installed ZLUIAtlas Skill to pull the selected framework's complete source, or fetch one package JSON directly:
+Use the installed Animuse Skill to pull the selected framework's complete source, or fetch one package JSON directly:
 
 - React: http://127.0.0.1:3000/ai/packages/brand-line-cards/react.json
 - Vue: http://127.0.0.1:3000/ai/packages/brand-line-cards/vue.json

@@ -7,7 +7,7 @@ Three fixed dot-matrix shapes reveal flowing blue-green particles, hollow white 
 Docs: http://127.0.0.1:3000/docs/animations/particle-texture-trio
 Detail: http://127.0.0.1:3000/ai/components/particle-texture-trio.json
 
-Use the installed ZLUIAtlas Skill to pull the selected framework's complete source, or fetch one package JSON directly:
+Use the installed Animuse Skill to pull the selected framework's complete source, or fetch one package JSON directly:
 
 - React: http://127.0.0.1:3000/ai/packages/particle-texture-trio/react.json
 - Vue: http://127.0.0.1:3000/ai/packages/particle-texture-trio/vue.json

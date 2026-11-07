@@ -12,19 +12,19 @@ import { ComponentEntryTransition } from "@/components/common/component-entry-tr
 import { SITE_URL } from "@/lib/site-url";
 import { FONT_BOOTSTRAP_SCRIPT } from "@/lib/site-fonts";
 const DESCRIPTION =
-  "ZLUIAtlas is a personal collection of UI inspiration, interaction experiments and design references for learning and research.";
+  "Animuse is a personal collection of UI inspiration, interaction experiments and design references for learning and research.";
 
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "ZLUIAtlas — 免费 UI 组件图鉴",
-    template: "%s | ZLUIAtlas",
+    default: "Animuse — 免费 UI 组件图鉴",
+    template: "%s | Animuse",
   },
   description: DESCRIPTION,
-  applicationName: "ZLUIAtlas",
+  applicationName: "Animuse",
   authors: [{ name: "zhaoli", url: "https://github.com/zhaoli2003" }],
-  creator: "ZLUIAtlas",
+  creator: "Animuse",
   keywords: [
     "component library",
     "react component library",
@@ -52,16 +52,16 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: SITE_URL,
-    siteName: "ZLUIAtlas",
+    siteName: "Animuse",
     locale: "zh_CN",
-    images: [{ url: "/zlui-atlas-og.png", width: 1200, height: 630, alt: "ZLUIAtlas" }],
+    images: [{ url: "/animuse-og.png", width: 1200, height: 630, alt: "Animuse" }],
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/zlui-atlas-og.png"],
+    images: ["/animuse-og.png"],
   },
   icons: {
-    icon: [{ url: "/favicon.svg?v=zlui-atlas", type: "image/svg+xml" }],
+    icon: [{ url: "/favicon.svg?v=animuse", type: "image/svg+xml" }],
     apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
   },
   manifest: "/site.webmanifest",

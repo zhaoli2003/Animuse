@@ -7,7 +7,7 @@ Orbital loading, flowing halftone clouds, and floating isometric servers form a 
 Docs: http://127.0.0.1:3000/docs/animations/cosmic-panels
 Detail: http://127.0.0.1:3000/ai/components/cosmic-panels.json
 
-Use the installed ZLUIAtlas Skill to pull the selected framework's complete source, or fetch one package JSON directly:
+Use the installed Animuse Skill to pull the selected framework's complete source, or fetch one package JSON directly:
 
 - React: http://127.0.0.1:3000/ai/packages/cosmic-panels/react.json
 - Vue: http://127.0.0.1:3000/ai/packages/cosmic-panels/vue.json

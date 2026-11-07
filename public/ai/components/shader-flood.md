@@ -7,7 +7,7 @@ Live marbled liquid fills each feature card from your entry point and drains tow
 Docs: http://127.0.0.1:3000/docs/animations/shader-flood
 Detail: http://127.0.0.1:3000/ai/components/shader-flood.json
 
-Use the installed ZLUIAtlas Skill to pull the selected framework's complete source, or fetch one package JSON directly:
+Use the installed Animuse Skill to pull the selected framework's complete source, or fetch one package JSON directly:
 
 - React: http://127.0.0.1:3000/ai/packages/shader-flood/react.json
 - Vue: http://127.0.0.1:3000/ai/packages/shader-flood/vue.json

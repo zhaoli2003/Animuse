@@ -3,7 +3,7 @@ export const studyTranslations: Record<string, string> = {
   "Explore interactive examples": "查看交互实验",
   "Browse the live examples, inspect the documented behavior, and check the recorded source and permissions before reusing code or media.": "浏览实际运行的示例、查看交互说明，并在复用代码或素材前核对已记录的来源和许可。",
   "Installation and usage": "安装与使用",
-  "Use the ZLUIAtlas Skill to find an example and retrieve the framework package that the selected page actually provides.": "通过 ZLUIAtlas Skill 查找示例，获取所选页面实际提供的框架代码包。",
+  "Use the Animuse Skill to find an example and retrieve the framework package that the selected page actually provides.": "通过 Animuse Skill 查找示例，获取所选页面实际提供的框架代码包。",
   "Install the Skill": "安装 Skill",
   "Use a component package": "使用组件代码包",
   "Open an example, choose your framework, review its source and license, then copy the complete files and install only the dependencies your project needs.": "打开示例、选择项目框架、核对来源与许可，再复制完整文件，仅安装项目所缺的依赖。",
@@ -19,5 +19,5 @@ export const studyTranslations: Record<string, string> = {
   "For learning use only. Each item keeps its own source and license. A reference link or free access does not grant permission to redistribute protected code, designs or media.": "仅供学习使用。各条目遵循各自的来源和许可；提供参考链接或免费访问，不代表取得受保护代码、设计或素材的再分发授权。",
   "Use a current browser with JavaScript enabled. The collection contains DOM, SVG, Canvas and WebGL experiments. Requirements are documented per component; no experimental browser flag is required by the website.": "请使用启用 JavaScript 的现代浏览器。收藏包含 DOM、SVG、Canvas 和 WebGL 实验，具体要求以组件说明为准；网站本身无需开启实验性浏览器开关。",
   "Most examples offer React, Vue, Svelte, Solid, Preact and TypeScript versions. Check the selected example for its actual frameworks and dependencies.": "多数示例提供 React、Vue、Svelte、Solid、Preact 和 TypeScript 版本。请查看所选示例实际支持的框架及依赖。",
-  "ZLUIAtlas · source and permissions": "ZLUIAtlas · 来源与使用说明"
+  "Animuse · source and permissions": "Animuse · 来源与使用说明"
 };

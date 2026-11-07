@@ -4,7 +4,7 @@ import http from 'node:http';
 import {build} from 'esbuild';
 import {chromium,expect} from 'playwright/test';
 
-const command='npx skills add https://leibox.pantoria.cn --skill leibox';
+const command='npx skills add zhaoli2003/Animuse --skill animuse';
 let server,browser,context,port,moduleSource;
 test.before(async()=>{
  moduleSource=(await build({entryPoints:['src/lib/copy-text.ts'],bundle:true,write:false,format:'esm',logLevel:'silent'})).outputFiles[0].text;
@@ -20,7 +20,7 @@ test.before(async()=>{
   </script>`);
  });
  await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));port=server.address().port;
- browser=await chromium.launch({channel:'chrome',headless:true,args:['--host-resolver-rules=MAP leibox-copy.test 127.0.0.1','--no-proxy-server']});
+ browser=await chromium.launch({channel:'chrome',headless:true,args:['--host-resolver-rules=MAP animuse-copy.test 127.0.0.1','--no-proxy-server']});
  context=await browser.newContext({permissions:['clipboard-read','clipboard-write']});
 });
 test.after(async()=>{await context?.close();await browser?.close();if(server)await new Promise(resolve=>server.close(resolve));});
@@ -30,7 +30,7 @@ async function open(host='127.0.0.1'){
 async function clipboardText(){const reader=await open();try{return await reader.evaluate(()=>navigator.clipboard.readText());}finally{await reader.close();}}
 
 test('public HTTP without navigator.clipboard copies the exact command and restores focus/selection',async()=>{
- const page=await open('leibox-copy.test');
+ const page=await open('animuse-copy.test');
  try{
   assert.deepEqual(await page.evaluate(()=>({secure:isSecureContext,clipboard:typeof navigator.clipboard})),{secure:false,clipboard:'undefined'});
   await page.evaluate(()=>{const range=document.createRange();range.selectNodeContents(document.getElementById('selection'));getSelection().removeAllRanges();getSelection().addRange(range);});
@@ -53,7 +53,7 @@ test('an explicit modern API denial stays a failure and never uses legacy copy',
  }finally{await page.close();}
 });
 test('a rejected legacy operation reports failure and removes its temporary field',async()=>{
- const page=await open('leibox-copy.test');
+ const page=await open('animuse-copy.test');
  try{
   await page.evaluate(()=>document.execCommand=()=>false);await page.locator('#copy').click();await expect(page.locator('#copy')).toHaveAttribute('data-status','failed');assert.equal(await page.locator('textarea').count(),0);assert.equal(await page.evaluate(()=>document.activeElement.id),'copy');
  }finally{await page.close();}

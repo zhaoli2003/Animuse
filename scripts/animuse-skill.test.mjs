@@ -5,10 +5,10 @@ import path from 'node:path';
 import { createServer } from 'node:http';
 import { createHash } from 'node:crypto';
 import Ajv from 'ajv';
-import { run } from '../integrations/skills/zlui-atlas/scripts/zlui-atlas.mjs';
+import { run } from '../integrations/skills/animuse/scripts/animuse.mjs';
 
 const publicRoot = path.resolve('public');
-const fixtureRoot = path.resolve('node_modules/.cache/zlui-atlas-skill-tests');
+const fixtureRoot = path.resolve('node_modules/.cache/animuse-skill-tests');
 let origin, server;
 const overrides = new Map();
 const requests = [];
@@ -141,12 +141,12 @@ test('pull downloads every required file and repeated pulls reuse identical cont
 
 test('origin uses local default, environment configuration and command override in that order', async () => {
   const help = await run(['help'], { env: {} });
-  assert.equal(help.name, 'zlui-atlas');
+  assert.equal(help.name, 'animuse');
   assert.equal(help.origin, 'http://127.0.0.1:3000');
-  assert.equal(help.originEnvironment, 'ZLUI_ATLAS_ORIGIN');
-  const configured = await run(['list'], { env: { ZLUI_ATLAS_ORIGIN: origin } });
+  assert.equal(help.originEnvironment, 'ANIMUSE_ORIGIN');
+  const configured = await run(['list'], { env: { ANIMUSE_ORIGIN: origin } });
   assert(configured.items.some((item) => item.slug === 'glass-folder'));
-  const overridden = await run(['list', '--origin', origin], { env: { ZLUI_ATLAS_ORIGIN: 'https://unused.invalid' } });
+  const overridden = await run(['list', '--origin', origin], { env: { ANIMUSE_ORIGIN: 'https://unused.invalid' } });
   assert.deepEqual(overridden, configured);
   assert.equal((await run(['help', '--origin', origin + '/'], { env: {} })).origin, origin);
   for (const invalid of ['not-a-url', 'file:///tmp', 'https://user:password@example.com', origin + '/ai', origin + '?query=1', origin + '#section']) {
@@ -156,9 +156,9 @@ test('origin uses local default, environment configuration and command override 
 
 test('default pull destination uses the new namespace and preserves source attribution', async () => {
   const folder = await fs.mkdtemp(path.join(fixtureRoot, 'default-pull-'));
-  const result = await run(['pull', 'dot-matrix-trio'], { cwd: folder, env: { ZLUI_ATLAS_ORIGIN: origin } });
-  assert.equal(result.destination, path.join(folder, 'components', 'zlui-atlas', 'dot-matrix-trio'));
-  assert.equal(result.provider, 'zlui-atlas');
+  const result = await run(['pull', 'dot-matrix-trio'], { cwd: folder, env: { ANIMUSE_ORIGIN: origin } });
+  assert.equal(result.destination, path.join(folder, 'components', 'animuse', 'dot-matrix-trio'));
+  assert.equal(result.provider, 'animuse');
   assert.equal(result.origin, origin);
   const detail = JSON.parse(await fs.readFile(path.join(publicRoot, 'ai/components/dot-matrix-trio.json')));
   assert.deepEqual(result.source, detail.source);
@@ -200,33 +200,34 @@ test('tampered hashes and path traversal in downloaded source are rejected befor
 });
 
 test('skill discovery installs Chinese instructions, UI metadata and the source helper', async () => {
-  const source = await fs.readFile('integrations/skills/zlui-atlas/SKILL.md', 'utf8');
+  const source = await fs.readFile('integrations/skills/animuse/SKILL.md', 'utf8');
   const description = source.match(/^description: (.+)$/m)[1];
-  assert.match(source, /^name: zlui-atlas$/m);
+  assert.match(source, /^name: animuse$/m);
   assert.equal(await fs.readFile(path.join(publicRoot, 'ai/SKILL.md'), 'utf8'), source);
-  const metadata = await fs.readFile('integrations/skills/zlui-atlas/agents/openai.yaml', 'utf8');
+  const metadata = await fs.readFile('integrations/skills/animuse/agents/openai.yaml', 'utf8');
   assert.match(metadata, /allow_implicit_invocation: true/);
   assert.equal(await fs.readFile(path.join(publicRoot, 'ai/agents/openai.yaml'), 'utf8'), metadata);
   for (const prefix of ['agent-skills', 'skills']) {
     const folder = path.join(publicRoot, '.well-known', prefix);
     const index = JSON.parse(await fs.readFile(path.join(folder, 'index.json')));
-    assert.equal(index.skills[0].name, 'zlui-atlas');
+    assert.equal(index.skills[0].name, 'animuse');
     assert.equal(index.skills[0].description, description);
-    assert.deepEqual(index.skills[0].files, ['SKILL.md', 'scripts/zlui-atlas.mjs', 'agents/openai.yaml']);
-    for (const filename of index.skills[0].files) assert.equal(await fs.readFile(path.join(folder, 'zlui-atlas', filename), 'utf8'), await fs.readFile(path.join('integrations/skills/zlui-atlas', filename), 'utf8'));
-    await assert.rejects(fs.access(path.join(folder, 'leibox')), { code: 'ENOENT' });
+    assert.deepEqual(index.skills[0].files, ['SKILL.md', 'scripts/animuse.mjs', 'agents/openai.yaml']);
+    for (const filename of index.skills[0].files) assert.equal(await fs.readFile(path.join(folder, 'animuse', filename), 'utf8'), await fs.readFile(path.join('integrations/skills/animuse', filename), 'utf8'));
+    assert.deepEqual((await fs.readdir(folder, { withFileTypes: true })).filter(entry => entry.isDirectory()).map(entry => entry.name), ['animuse']);
   }
+  assert.deepEqual((await fs.readdir(path.join(publicRoot, 'ai/scripts'))).filter(filename => filename.endsWith('.mjs')), ['animuse.mjs']);
 });
 
 test('published helpers retain the local default and support a configured site', async () => {
   const expected = 'http://127.0.0.1:3000';
   assert.equal((await run(['help'], { env: {} })).origin, expected);
-  for (const prefix of ['ai', '.well-known/agent-skills/zlui-atlas', '.well-known/skills/zlui-atlas']) {
+  for (const prefix of ['ai', '.well-known/agent-skills/animuse', '.well-known/skills/animuse']) {
     const folder = path.join(publicRoot, prefix);
     const instructions = await fs.readFile(path.join(folder, 'SKILL.md'), 'utf8');
     assert(instructions.includes(expected));
-    const helper = await import(new URL('../' + path.join('public', prefix, 'scripts/zlui-atlas.mjs').replaceAll('\\', '/'), import.meta.url));
+    const helper = await import(new URL('../' + path.join('public', prefix, 'scripts/animuse.mjs').replaceAll('\\', '/'), import.meta.url));
     assert.equal((await helper.run(['help'], { env: {} })).origin, expected);
-    assert.equal((await helper.run(['help'], { env: { ZLUI_ATLAS_ORIGIN: origin } })).origin, origin);
+    assert.equal((await helper.run(['help'], { env: { ANIMUSE_ORIGIN: origin } })).origin, origin);
   }
 });

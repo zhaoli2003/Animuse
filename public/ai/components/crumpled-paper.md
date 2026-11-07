@@ -7,7 +7,7 @@ Three crumpled paper meshes unfold into a handwritten letter, a blue mountain ph
 Docs: http://127.0.0.1:3000/docs/animations/crumpled-paper
 Detail: http://127.0.0.1:3000/ai/components/crumpled-paper.json
 
-Use the installed ZLUIAtlas Skill to pull the selected framework's complete source, or fetch one package JSON directly:
+Use the installed Animuse Skill to pull the selected framework's complete source, or fetch one package JSON directly:
 
 - React: http://127.0.0.1:3000/ai/packages/crumpled-paper/react.json
 - Vue: http://127.0.0.1:3000/ai/packages/crumpled-paper/vue.json

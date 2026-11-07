@@ -31,7 +31,7 @@ export function Agents() {
               Ready for your AI workflow.
             </T></h2>
             <p className="mt-4 max-w-md text-base leading-7 text-muted-foreground"><T>
-              Install ZLUIAtlas Skill once. Ask your AI to find a component,
+              Install Animuse Skill once. Ask your AI to find a component,
               choose your framework, and pull the complete source into your project.
             </T></p>
             <Link
@@ -39,7 +39,7 @@ export function Agents() {
               prefetch={false}
               className="group mt-6 inline-flex items-center gap-1.5 text-[15px] font-medium text-foreground transition-colors duration-150 hover:text-muted-foreground"
             ><T>
-              Install the ZLUIAtlas Skill
+              Install the Animuse Skill
               </T><ArrowRight
                 aria-hidden
                 strokeWidth={2.25}

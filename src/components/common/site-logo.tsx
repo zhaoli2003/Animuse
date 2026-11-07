@@ -21,8 +21,8 @@ export function SiteLogo({ className, navigation = false }: { className?: string
   return (
     <Image
       ref={ref}
-      src="/zlui-atlas-logo.svg"
-      alt="ZLUIAtlas"
+      src="/animuse-logo.svg"
+      alt="Animuse"
       width={640}
       height={160}
       priority

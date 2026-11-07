@@ -38,7 +38,7 @@ export function Footer({
           <div className="flex flex-col items-start">
             <Link
               href="/"
-              aria-label={t("ZLUIAtlas home")}
+              aria-label={t("Animuse home")}
               className="transition-opacity duration-150 hover:opacity-70"
             >
               <SiteLogo />
@@ -84,7 +84,7 @@ export function Footer({
         <LearningNotice className="border-t border-border/40 py-5" />
         <div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-3 border-t border-border/40 py-6">
           <p className="text-[13px] text-muted-foreground">
-            © {new Date().getFullYear()}<T> ZLUIAtlas. Curated by</T>{" "}
+            © {new Date().getFullYear()}<T> Animuse. Curated by</T>{" "}
             <a
               href="https://github.com/zhaoli2003"
               target="_blank"

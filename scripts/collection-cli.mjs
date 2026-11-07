@@ -2,13 +2,13 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
-import { searchItems } from '../integrations/skills/zlui-atlas/scripts/zlui-atlas.mjs';
+import { searchItems } from '../integrations/skills/animuse/scripts/animuse.mjs';
 export { searchItems };
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const CATALOG = path.join(ROOT, 'public/ai/catalog.json');
 export const CLI_HELP = {
-  name: 'zlui-atlas',
+  name: 'animuse',
   readOnly: true,
   output: 'JSON',
   commands: {
@@ -19,7 +19,7 @@ export const CLI_HELP = {
   },
   examples: ['node scripts/collection-cli.mjs search 玻璃', 'node scripts/collection-cli.mjs show glass-folder'],
   exitCodes: { 0: 'Success', 1: 'Catalog/read error', 2: 'Invalid arguments', 3: 'No matching entries or unknown slug' },
-  installation: 'This local catalog CLI is read-only. The ZLUIAtlas Skill provides recommend/list/search/show/pull against a running site. Install from the published repository: npx skills add zhaoli2003/zhaoli-free-ui-atlas --skill zlui-atlas.',
+  installation: 'This local catalog CLI is read-only. The Animuse Skill provides recommend/list/search/show/pull against a running site. Install from the published repository: npx skills add zhaoli2003/Animuse --skill animuse.',
 };
 
 class CliError extends Error {

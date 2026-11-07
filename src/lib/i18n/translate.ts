@@ -9,7 +9,7 @@ import { studyTranslations } from "./study";
 import { copyrightTranslations } from "./copyright";
 
 export type Locale = "zh" | "en";
-export const LOCALE_STORAGE_KEY = "zlui-atlas:locale";
+export const LOCALE_STORAGE_KEY = "animuse:locale";
 const rawTranslations: Readonly<Record<string, string>> = {
   ...commonTranslations,
   ...landingTranslations,
@@ -20,7 +20,7 @@ const rawTranslations: Readonly<Record<string, string>> = {
   ...privacyTranslations,
   ...copyrightTranslations,
   ...studyTranslations,
-  "This local demo uses the original effect with ZLUIAtlas's selected background.": "本地演示保留原有效果，背景替换为 ZLUIAtlas 选定的画面。",
+  "This local demo uses the original effect with Animuse's selected background.": "本地演示保留原有效果，背景替换为 Animuse 选定的画面。",
   "Source code and license are available from the original author.": "源码与许可说明请查看原作者页面。",
   "Visit original author": "查看原作者",
 };

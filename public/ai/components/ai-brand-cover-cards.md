@@ -7,7 +7,7 @@ Claude、Codex、Cursor 三张竖版封面，保留选定配图、真实 SVG 标
 Docs: http://127.0.0.1:3000/docs/animations/ai-brand-cover-cards
 Detail: http://127.0.0.1:3000/ai/components/ai-brand-cover-cards.json
 
-Use the installed ZLUIAtlas Skill to pull the selected framework's complete source, or fetch one package JSON directly:
+Use the installed Animuse Skill to pull the selected framework's complete source, or fetch one package JSON directly:
 
 - React: http://127.0.0.1:3000/ai/packages/ai-brand-cover-cards/react.json
 - Vue: http://127.0.0.1:3000/ai/packages/ai-brand-cover-cards/vue.json

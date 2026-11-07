@@ -18,7 +18,7 @@ export default function ShellLayout({
       <DocsSidebar />
 
       <ScrollHideHeader className="sticky top-0 z-40 flex items-center justify-between border-b border-border/40 bg-background/70 pt-5 pb-4 pl-5 pr-[calc(1.25rem+var(--demo-sbw,0px))] backdrop-blur-xl backdrop-saturate-150 [view-transition-name:docs-mobile-header] lg:hidden">
-        <Link href="/" aria-label="ZLUIAtlas home">
+        <Link href="/" aria-label="Animuse home">
           <SiteLogo navigation />
         </Link>
         <div className="flex items-center gap-1 sm:gap-2">

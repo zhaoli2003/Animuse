@@ -39,7 +39,7 @@ export function HomeLogoLink({ className }: { className?: string }) {
   }
 
   return (
-    <Link href="/" prefetch={pathname === "/" ? false : undefined} aria-label="ZLUIAtlas home" className={className} onClick={returnToTop}>
+    <Link href="/" prefetch={pathname === "/" ? false : undefined} aria-label="Animuse home" className={className} onClick={returnToTop}>
       <SiteLogo navigation />
     </Link>
   );

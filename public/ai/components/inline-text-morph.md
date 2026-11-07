@@ -7,7 +7,7 @@ Click three inline pills to morph shared letters, resize the sentence, and swap 
 Docs: http://127.0.0.1:3000/docs/animations/inline-text-morph
 Detail: http://127.0.0.1:3000/ai/components/inline-text-morph.json
 
-Use the installed ZLUIAtlas Skill to pull the selected framework's complete source, or fetch one package JSON directly:
+Use the installed Animuse Skill to pull the selected framework's complete source, or fetch one package JSON directly:
 
 - React: http://127.0.0.1:3000/ai/packages/inline-text-morph/react.json
 - Vue: http://127.0.0.1:3000/ai/packages/inline-text-morph/vue.json

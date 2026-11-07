@@ -15,30 +15,30 @@ fs.mkdirSync(OUT_DIR, { recursive: true });
 // Serve the homepage's own implementation instead of relabeling upstream code.
 const heroPackage = (await getMotionPackages(LEIBOX_HERO_COMPONENT)).find((entry) => entry.framework === "react")!;
 const heroEntry = INTERACTION_COMPONENTS.find((entry) => entry.slug === LEIBOX_HERO_COMPONENT)!;
-const leiboxItem = {
+const animuseItem = {
   $schema: "https://ui.shadcn.com/schema/registry-item.json",
   name: LEIBOX_HERO_REGISTRY_NAME,
   type: "registry:block",
-  title: `LeiBox · ${heroEntry.name} (React)`,
+  title: `Animuse · ${heroEntry.name} (React)`,
   description: heroEntry.description,
   author: "LeiBox",
   dependencies: heroPackage.dependencies,
   files: heroPackage.files.map((file) => ({
-    path: `registry/leibox/${LEIBOX_HERO_COMPONENT}/${file.fileName}`,
+    path: `registry/animuse/${LEIBOX_HERO_COMPONENT}/${file.fileName}`,
     type: "registry:file",
-    target: `@components/leibox/${LEIBOX_HERO_COMPONENT}/${file.fileName}`,
+    target: `@components/animuse/${LEIBOX_HERO_COMPONENT}/${file.fileName}`,
     content: file.source,
   })),
   meta: { implementation: "LeiBox recreation", designReference: heroEntry.referenceUrl, designAuthor: heroEntry.referenceAuthor },
-  docs: `Import { ${heroPackage.component} } from '@/components/leibox/${LEIBOX_HERO_COMPONENT}/${heroPackage.component}'. Design reference: ${heroEntry.referenceUrl}`,
+  docs: `Import { ${heroPackage.component} } from '@/components/animuse/${LEIBOX_HERO_COMPONENT}/${heroPackage.component}'. Design reference: ${heroEntry.referenceUrl}`,
 };
-fs.writeFileSync(path.join(OUT_DIR, `${LEIBOX_HERO_REGISTRY_NAME}.json`), JSON.stringify(leiboxItem, null, 2));
+fs.writeFileSync(path.join(OUT_DIR, `${LEIBOX_HERO_REGISTRY_NAME}.json`), JSON.stringify(animuseItem, null, 2));
 
 const registry = {
   $schema: "https://ui.shadcn.com/schema/registry.json",
-  name: "leibox",
+  name: "animuse",
   homepage: PUBLIC_SITE_URL,
-  items: [leiboxItem].map((item) => ({
+  items: [animuseItem].map((item) => ({
     name: item.name,
     type: item.type,
     title: item.title,
@@ -57,4 +57,4 @@ fs.writeFileSync(
   JSON.stringify(registry, null, 2),
 );
 
-console.log("Built the LeiBox project registry entry and index.");
+console.log("Built the Animuse project registry entry and index.");

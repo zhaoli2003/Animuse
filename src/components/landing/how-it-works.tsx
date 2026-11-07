@@ -11,13 +11,13 @@ const STEPS = [
     index: "01",
     title: "Pick a component",
     body: "Browse the library and find the effect that fits. Every demo on this site is the real component, running live.",
-    window: "ZLUIAtlas / Components",
+    window: "Animuse / Components",
   },
   {
     index: "02",
     title: "Check the source and license",
     body: "Each item keeps its original source and license. Copy or install it only when that license permits.",
-    window: "ZLUIAtlas · source and permissions",
+    window: "Animuse · source and permissions",
   },
   {
     index: "03",
