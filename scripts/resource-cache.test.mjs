@@ -37,12 +37,13 @@ const rawRequest = (origin, target, method = 'GET', headers = {}) => new Promise
   req.on('error', reject); req.end();
 });
 
-async function fixture(t) {
+async function fixture(t, prepare = async () => {}) {
   const temporary = await fs.mkdtemp(path.join(os.tmpdir(), 'zlui-static-test-'));
   const root = path.join(temporary, 'site');
   await fs.mkdir(root);
   await fs.writeFile(path.join(root, 'index.html'), '<h1>Fixture</h1>');
   await fs.writeFile(path.join(root, '404.html'), '<h1>Missing</h1>');
+  await prepare({ root, temporary });
   const server = await createStaticServer(root);
   await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
   t.after(async () => {
@@ -130,6 +131,71 @@ test('RSC navigation serves exported payloads and never falls back to HTML', asy
     assert.equal(response.headers.get('cache-control'), 'no-store');
     assert(!response.headers.get('content-type').includes('text/html'));
   }
+});
+
+test('every exported nested RSC segment resolves through its dotted prefetch alias', async () => {
+  const exportedRoot = path.resolve('out');
+  const entries = await fs.readdir(exportedRoot, { recursive: true, withFileTypes: true });
+  const nested = entries.filter(entry => entry.isFile() && entry.name.endsWith('.txt'))
+    .map(entry => path.relative(exportedRoot, path.join(entry.parentPath, entry.name)).replaceAll(path.sep, '/'))
+    .filter(relative => relative.split('/').slice(0, -1).some(part => part.startsWith('__next.')));
+  assert(nested.length > 0, 'The real export must include segment payloads');
+  for (const relative of nested) {
+    const parts = relative.split('/');
+    const marker = parts.findIndex(part => part.startsWith('__next.'));
+    const alias = '/' + [...parts.slice(0, marker), parts.slice(marker).join('.')].join('/');
+    const response = await fetch(base + alias + '?_rsc=prefetch');
+    assert.equal(response.status, 200, alias);
+    assert.match(response.headers.get('content-type'), /^text\/x-component/);
+    assert.equal(response.headers.get('cache-control'), 'no-cache');
+    assert.deepEqual(Buffer.from(await response.arrayBuffer()), await fs.readFile(path.join(exportedRoot, relative)), alias);
+  }
+  for (const [alias, direct] of [
+    ['/components/__next.!KHNoZWxsKQ.components.__PAGE__.txt', '/components/__next.!KHNoZWxsKQ/components/__PAGE__.txt'],
+    ['/docs/__next.!KHNoZWxsKQ.docs.__PAGE__.txt', '/docs/__next.!KHNoZWxsKQ/docs/__PAGE__.txt'],
+  ]) {
+    const first = await fetch(base + alias + '?_rsc=head', { method: 'HEAD' });
+    const canonical = await fetch(base + direct, { method: 'HEAD' });
+    assert.equal(first.status, 200);
+    assert.equal(canonical.status, 200);
+    for (const header of ['content-type', 'content-length', 'etag']) assert.equal(first.headers.get(header), canonical.headers.get(header));
+    assert.equal((await first.arrayBuffer()).byteLength, 0);
+    const cached = await fetch(base + alias, { headers: { 'If-None-Match': first.headers.get('etag') } });
+    assert.equal(cached.status, 304);
+  }
+});
+
+test('segment aliases preserve literal dots and reject collisions, missing payloads and linked escapes', async t => {
+  const { origin } = await fixture(t, async ({ root, temporary }) => {
+    const payloads = {
+      '__next.test/route.with.dot/__PAGE__.txt': 'literal dot payload',
+      '__next.test/a.b.txt': 'one segment',
+      '__next.test/a/b.txt': 'two segments',
+      'ordinary/folder/file.txt': 'not a segment payload',
+    };
+    for (const [relative, text] of Object.entries(payloads)) {
+      const file = path.join(root, relative);
+      await fs.mkdir(path.dirname(file), { recursive: true });
+      await fs.writeFile(file, text);
+    }
+    const outside = path.join(temporary, 'private');
+    await fs.mkdir(outside);
+    await fs.writeFile(path.join(outside, 'secret.txt'), 'private marker');
+    await fs.symlink(outside, path.join(root, '__next.test/escape'), process.platform === 'win32' ? 'junction' : 'dir');
+  });
+  const literal = await fetch(origin + '/__next.test.route.with.dot.__PAGE__.txt?_rsc=known');
+  assert.equal(literal.status, 200);
+  assert.match(literal.headers.get('content-type'), /^text\/x-component/);
+  assert.equal(await literal.text(), 'literal dot payload');
+  for (const url of ['/__next.test.a.b.txt', '/__next.test.missing.__PAGE__.txt', '/ordinary.folder.file.txt', '/__next.test.escape.secret.txt']) {
+    const response = await fetch(origin + url + '?_rsc=missing');
+    assert.equal(response.status, 404, url);
+    assert.equal(response.headers.get('cache-control'), 'no-store');
+    assert(!response.headers.get('content-type').includes('text/html'));
+  }
+  assert.equal((await fetch(origin + '/__next.test/escape/secret.txt?_rsc=escape')).status, 403);
+  const traversal = await rawRequest(origin, '/__next.test/%2e%2e/%2e%2e/private/secret.txt?_rsc=escape');
+  assert.equal(traversal.status, 403);
 });
 
 test('only GET and HEAD are supported, including for former business API routes', async () => {

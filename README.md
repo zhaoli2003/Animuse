@@ -12,7 +12,7 @@
 - **43 个组件提供六框架源码包**：React、Vue、Svelte、Solid、Preact、Vanilla，共 258 个包。其余 10 项保留原有预览和上游使用入口，不冒充为六框架代码包。
 - 搜索、深浅色主题、中英文切换、复制提示词、复制源码、独立 HTML 下载和 AI 快捷入口。
 - 独立 Agent Skill：`zlui-atlas`，支持搜索、推荐、查看详情和下载完整源码。
-- 多维分类方案已完成，尚未改动第一版的浏览组织方式。详见 [分类提案](docs/component-taxonomy-proposal.md)。
+- 53 项统一多维筛选：10 个用途大类及子类型、视觉、交互、框架和应用场景。支持中英文搜索、动态数量、组合筛选、网址分享与浏览器前进后退；详情标签可点击浏览同类组件。
 
 ## 本地运行
 
@@ -56,11 +56,13 @@ npm run test:delivery
 npm run test:performance
 npm run test:actions
 npm run test:locale
+npm run test:filters
+npm run test:filters:browser
 ```
 
-后两项浏览器检查需要先启动本地网站。当前交付的检查范围与结果见 [验证记录](docs/verification-review.md)。
+`test:actions`、`test:locale`、`test:filters:browser` 需要先启动本地网站。初版复刻的检查范围与结果见 [验证记录](docs/verification-review.md)。筛选分类集中维护在 `src/data/atlas-taxonomy.ts`，筛选规则在 `src/lib/atlas-filters.ts`。
 
-全量目录审计见 [组件分类提案](docs/component-taxonomy-proposal.md)，其统计指参考站调研时的状态，不等同于本项目的运行验证结果。
+多维筛选的行为、维护位置与检查结果见 [筛选交付记录](docs/multidimensional-filtering.md)。全量目录审计见 [组件分类提案](docs/component-taxonomy-proposal.md)，其统计指参考站调研时的状态，不等同于本项目的运行验证结果。
 
 ## 来源与许可
 

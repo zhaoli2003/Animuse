@@ -28,6 +28,8 @@
     "test:ai": "node --test scripts/collection-cli.test.mjs scripts/zlui-atlas-skill.test.mjs",
     "test:actions": "node scripts/test-ui-actions.mjs",
     "test:locale": "node scripts/test-localization.cjs",
+    "test:filters": "node --test scripts/atlas-filters.test.mjs",
+    "test:filters:browser": "node scripts/test-atlas-filters-browser.mjs",
     "prepare:assets": "npm run motion:build && npm run registry && npm run docs:assets && npm run assets:optimize && npm run ai:catalog",
     "typecheck": "tsc --noEmit"
   },

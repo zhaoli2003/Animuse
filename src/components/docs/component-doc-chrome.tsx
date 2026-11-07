@@ -2,9 +2,11 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import type { ReactNode, Ref } from "react";
 import { T } from "@/components/common/language-provider";
+import { AtlasDetailTags } from "@/components/docs/atlas-detail-tags";
 import type { MotionDocLayout } from "@/lib/motion-doc-layout";
 
-export function ComponentDocHeader({ title, description, tags, actions }: {
+export function ComponentDocHeader({ slug, title, description, tags, actions }: {
+  slug?: string;
   title: string;
   description: string;
   tags?: string[];
@@ -21,15 +23,7 @@ export function ComponentDocHeader({ title, description, tags, actions }: {
         {actions}
       </div>
       <p className="mt-3 max-w-xl text-base leading-7 text-muted-foreground"><T>{description}</T></p>
-      {tags?.length ? (
-        <div className="mt-4 flex flex-wrap gap-1.5">
-          {[...new Set(tags)].map(tag => (
-            <span key={tag} className="rounded-full border border-border/60 px-2.5 py-0.5 text-[11.5px] text-muted-foreground">
-              <T>{tag}</T>
-            </span>
-          ))}
-        </div>
-      ) : null}
+      <AtlasDetailTags slug={slug} title={title} tags={tags} />
     </>
   );
 }

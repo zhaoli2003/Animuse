@@ -1,0 +1,2948 @@
+{
+  "summary": {
+    "components": 53,
+    "visibleTags": [
+      [
+        "六框架",
+        43
+      ],
+      [
+        "TypeScript",
+        43
+      ],
+      [
+        "画布交互",
+        7
+      ],
+      [
+        "面板形变",
+        6
+      ],
+      [
+        "拖拽与聚焦",
+        5
+      ],
+      [
+        "html-in-canvas",
+        5
+      ],
+      [
+        "3D",
+        4
+      ],
+      [
+        "three.js",
+        4
+      ],
+      [
+        "webgl",
+        4
+      ],
+      [
+        "GSAP",
+        3
+      ],
+      [
+        "菜单交互",
+        2
+      ],
+      [
+        "文字选区",
+        2
+      ],
+      [
+        "按钮交互",
+        1
+      ],
+      [
+        "布局切换",
+        1
+      ],
+      [
+        "弹窗转场",
+        1
+      ],
+      [
+        "点阵动效",
+        1
+      ],
+      [
+        "滚动导航",
+        1
+      ],
+      [
+        "滚动动效",
+        1
+      ],
+      [
+        "滚动交互",
+        1
+      ],
+      [
+        "加载反馈",
+        1
+      ],
+      [
+        "雷师傅原创",
+        1
+      ],
+      [
+        "立体轮播",
+        1
+      ],
+      [
+        "粒子动效",
+        1
+      ],
+      [
+        "粒子转场",
+        1
+      ],
+      [
+        "列表交互",
+        1
+      ],
+      [
+        "品牌卡片",
+        1
+      ],
+      [
+        "品牌排版",
+        1
+      ],
+      [
+        "三维交互",
+        1
+      ],
+      [
+        "提示交互",
+        1
+      ],
+      [
+        "图片切换",
+        1
+      ],
+      [
+        "文字交互",
+        1
+      ],
+      [
+        "页面模板",
+        1
+      ],
+      [
+        "音乐交互",
+        1
+      ],
+      [
+        "着色器交互",
+        1
+      ],
+      [
+        "字符动画",
+        1
+      ],
+      [
+        "Next.js",
+        1
+      ]
+    ],
+    "displayCategories": [
+      [
+        "画布交互",
+        7
+      ],
+      [
+        "面板形变",
+        6
+      ],
+      [
+        "拖拽与聚焦",
+        5
+      ],
+      [
+        "菜单交互",
+        2
+      ],
+      [
+        "文字选区",
+        2
+      ],
+      [
+        "按钮交互",
+        1
+      ],
+      [
+        "布局切换",
+        1
+      ],
+      [
+        "弹窗转场",
+        1
+      ],
+      [
+        "点阵动效",
+        1
+      ],
+      [
+        "滚动导航",
+        1
+      ],
+      [
+        "滚动动效",
+        1
+      ],
+      [
+        "滚动交互",
+        1
+      ],
+      [
+        "加载反馈",
+        1
+      ],
+      [
+        "立体轮播",
+        1
+      ],
+      [
+        "粒子动效",
+        1
+      ],
+      [
+        "粒子转场",
+        1
+      ],
+      [
+        "列表交互",
+        1
+      ],
+      [
+        "品牌卡片",
+        1
+      ],
+      [
+        "品牌排版",
+        1
+      ],
+      [
+        "三维交互",
+        1
+      ],
+      [
+        "提示交互",
+        1
+      ],
+      [
+        "图片切换",
+        1
+      ],
+      [
+        "文字交互",
+        1
+      ],
+      [
+        "页面模板",
+        1
+      ],
+      [
+        "音乐交互",
+        1
+      ],
+      [
+        "着色器交互",
+        1
+      ],
+      [
+        "字符动画",
+        1
+      ]
+    ],
+    "discoveryEntries": 52,
+    "discoveryCategories": [
+      [
+        "cards",
+        8
+      ],
+      [
+        "background",
+        6
+      ],
+      [
+        "hero",
+        6
+      ],
+      [
+        "input",
+        6
+      ],
+      [
+        "navigation",
+        6
+      ],
+      [
+        "layout",
+        4
+      ],
+      [
+        "cursor",
+        3
+      ],
+      [
+        "feedback",
+        3
+      ],
+      [
+        "text",
+        3
+      ],
+      [
+        "collaboration",
+        2
+      ],
+      [
+        "media",
+        2
+      ],
+      [
+        "data",
+        1
+      ],
+      [
+        "files",
+        1
+      ],
+      [
+        "scroll",
+        1
+      ]
+    ],
+    "visualTags": [
+      [
+        "3d",
+        8
+      ],
+      [
+        "minimal",
+        8
+      ],
+      [
+        "particles",
+        8
+      ],
+      [
+        "glass",
+        6
+      ],
+      [
+        "ascii",
+        5
+      ],
+      [
+        "cards",
+        4
+      ],
+      [
+        "dark",
+        4
+      ],
+      [
+        "capsule",
+        3
+      ],
+      [
+        "cosmic",
+        3
+      ],
+      [
+        "dots",
+        3
+      ],
+      [
+        "elastic",
+        3
+      ],
+      [
+        "gradient",
+        3
+      ],
+      [
+        "liquid",
+        3
+      ],
+      [
+        "photography",
+        3
+      ],
+      [
+        "canvas",
+        2
+      ],
+      [
+        "compact",
+        2
+      ],
+      [
+        "monochrome",
+        2
+      ],
+      [
+        "product",
+        2
+      ],
+      [
+        "refraction",
+        2
+      ],
+      [
+        "spring",
+        2
+      ],
+      [
+        "tactile",
+        2
+      ],
+      [
+        "artwork",
+        1
+      ],
+      [
+        "bloom",
+        1
+      ],
+      [
+        "blue",
+        1
+      ],
+      [
+        "blur",
+        1
+      ],
+      [
+        "botanical",
+        1
+      ],
+      [
+        "brand",
+        1
+      ],
+      [
+        "chart",
+        1
+      ],
+      [
+        "chromatic",
+        1
+      ],
+      [
+        "colorful",
+        1
+      ],
+      [
+        "cursors",
+        1
+      ],
+      [
+        "cyber",
+        1
+      ],
+      [
+        "depth",
+        1
+      ],
+      [
+        "dialog",
+        1
+      ],
+      [
+        "dot-matrix",
+        1
+      ],
+      [
+        "editor",
+        1
+      ],
+      [
+        "editorial",
+        1
+      ],
+      [
+        "emoji",
+        1
+      ],
+      [
+        "fluid",
+        1
+      ],
+      [
+        "foil",
+        1
+      ],
+      [
+        "folded",
+        1
+      ],
+      [
+        "glow",
+        1
+      ],
+      [
+        "grain",
+        1
+      ],
+      [
+        "green",
+        1
+      ],
+      [
+        "grid",
+        1
+      ],
+      [
+        "ice",
+        1
+      ],
+      [
+        "illustration",
+        1
+      ],
+      [
+        "image",
+        1
+      ],
+      [
+        "ink",
+        1
+      ],
+      [
+        "light",
+        1
+      ],
+      [
+        "line-art",
+        1
+      ],
+      [
+        "list",
+        1
+      ],
+      [
+        "marble",
+        1
+      ],
+      [
+        "nautical",
+        1
+      ],
+      [
+        "navigation",
+        1
+      ],
+      [
+        "noise",
+        1
+      ],
+      [
+        "overlap",
+        1
+      ],
+      [
+        "paper",
+        1
+      ],
+      [
+        "pills",
+        1
+      ],
+      [
+        "portrait",
+        1
+      ],
+      [
+        "print",
+        1
+      ],
+      [
+        "scroll",
+        1
+      ],
+      [
+        "shader",
+        1
+      ],
+      [
+        "silver",
+        1
+      ],
+      [
+        "spider",
+        1
+      ],
+      [
+        "stickers",
+        1
+      ],
+      [
+        "translucent",
+        1
+      ],
+      [
+        "typographic",
+        1
+      ],
+      [
+        "typography",
+        1
+      ]
+    ],
+    "interactions": [
+      [
+        "keyboard",
+        29
+      ],
+      [
+        "click",
+        26
+      ],
+      [
+        "pointer",
+        11
+      ],
+      [
+        "hover",
+        10
+      ],
+      [
+        "touch",
+        10
+      ],
+      [
+        "autoplay",
+        8
+      ],
+      [
+        "drag",
+        8
+      ],
+      [
+        "input",
+        5
+      ],
+      [
+        "pause",
+        5
+      ],
+      [
+        "scroll",
+        5
+      ],
+      [
+        "focus",
+        3
+      ],
+      [
+        "play",
+        2
+      ],
+      [
+        "text-selection",
+        2
+      ],
+      [
+        "replay",
+        1
+      ],
+      [
+        "search",
+        1
+      ],
+      [
+        "seek",
+        1
+      ]
+    ],
+    "missingDiscovery": [
+      "orbit-not-found"
+    ]
+  },
+  "rows": [
+    {
+      "slug": "orbit-not-found",
+      "name": "组件环游 404",
+      "href": "/docs/components/orbit-not-found",
+      "visibleTags": [
+        "页面模板",
+        "Next.js",
+        "GSAP"
+      ],
+      "category": "Page template",
+      "categoryZh": "页面模板",
+      "discovery": null,
+      "exportedToSkill": false,
+      "proposedPrimary": "页面模板",
+      "proposedChildren": "404 / 错误页"
+    },
+    {
+      "slug": "tactile-push-button",
+      "name": "立体按压按钮",
+      "href": "/docs/animations/tactile-push-button",
+      "visibleTags": [
+        "按钮交互",
+        "六框架",
+        "TypeScript"
+      ],
+      "category": "Button interaction",
+      "categoryZh": "按钮交互",
+      "discovery": {
+        "category": "input",
+        "useCases": [
+          "立体按钮",
+          "按压反馈",
+          "tactile push button"
+        ],
+        "searchTerms": [
+          "按钮",
+          "按压",
+          "触感",
+          "立体",
+          "button",
+          "press",
+          "css"
+        ],
+        "visualTags": [
+          "3d",
+          "silver",
+          "gradient"
+        ],
+        "interactions": [
+          "hover",
+          "click",
+          "keyboard",
+          "touch"
+        ],
+        "caveat": "少荃投稿。按压效果由 HTML 和 CSS 实现，可通过 CSS 变量调整外观和过渡。"
+      },
+      "exportedToSkill": true,
+      "proposedPrimary": "输入与选择",
+      "proposedChildren": "按钮、选择器、滑块、输入框、验证码"
+    },
+    {
+      "slug": "multi-cursor-builder",
+      "name": "多光标页面搭建",
+      "href": "/docs/animations/multi-cursor-builder",
+      "visibleTags": [
+        "滚动动效",
+        "六框架",
+        "TypeScript"
+      ],
+      "category": "Scroll animation",
+      "categoryZh": "滚动动效",
+      "discovery": {
+        "category": "hero",
+        "useCases": [
+          "多光标搭建演示",
+          "页面自动排版动画",
+          "scrolling page construction"
+        ],
+        "searchTerms": [
+          "多光标",
+          "搭建",
+          "页面",
+          "选框",
+          "排版",
+          "回退",
+          "Figma",
+          "cursor",
+          "builder",
+          "construction"
+        ],
+        "visualTags": [
+          "cursors",
+          "canvas",
+          "typography",
+          "scroll"
+        ],
+        "interactions": [
+          "scroll",
+          "keyboard",
+          "touch",
+          "pause",
+          "replay"
+        ],
+        "caveat": "用户提供HTML的本地演示；内层独立滚动，不是多人协作编辑器或真实建站后台。"
+      },
+      "exportedToSkill": true,
+      "proposedPrimary": "首屏与模型展示",
+      "proposedChildren": "首屏演示、产品动效、模型展示"
+    },
+    {
+      "slug": "album-cover-tunnel",
+      "name": "专辑封面隧道",
+      "href": "/docs/animations/album-cover-tunnel",
+      "visibleTags": [
+        "三维交互",
+        "六框架",
+        "TypeScript",
+        "雷师傅原创"
+      ],
+      "category": "3D interaction",
+      "categoryZh": "三维交互",
+      "discovery": {
+        "category": "media",
+        "useCases": [
+          "三维专辑封面墙",
+          "专辑封面隧道穿行",
+          "interactive album cover tunnel"
+        ],
+        "searchTerms": [
+          "专辑",
+          "封面",
+          "隧道",
+          "飞入",
+          "三维",
+          "原创",
+          "雷师傅",
+          "album",
+          "cover",
+          "tunnel",
+          "3d"
+        ],
+        "visualTags": [
+          "3d",
+          "photography",
+          "bloom",
+          "depth",
+          "dark"
+        ],
+        "interactions": [
+          "hover",
+          "click",
+          "scroll",
+          "drag",
+          "keyboard",
+          "touch",
+          "pause"
+        ],
+        "caveat": "雷师傅原创交互，默认55张真实专辑封面；封面图片版权归各自权利人，支持自定义图片。"
+      },
+      "exportedToSkill": true,
+      "proposedPrimary": "卡片、列表与媒体",
+      "proposedChildren": "专辑展示、音乐播放器"
+    },
+    {
+      "slug": "stacked-metadata",
+      "name": "标签叠放展开",
+      "href": "/docs/animations/stacked-metadata",
+      "visibleTags": [
+        "列表交互",
+        "六框架",
+        "TypeScript"
+      ],
+      "category": "List interaction",
+      "categoryZh": "列表交互",
+      "discovery": {
+        "category": "navigation",
+        "useCases": [
+          "任务列表元数据",
+          "悬停展开标签",
+          "compact task metadata"
+        ],
+        "searchTerms": [
+          "标签",
+          "叠放",
+          "任务",
+          "列表",
+          "展开",
+          "metadata",
+          "stacked",
+          "tags",
+          "hover"
+        ],
+        "visualTags": [
+          "pills",
+          "overlap",
+          "list",
+          "dark"
+        ],
+        "interactions": [
+          "hover",
+          "focus",
+          "click",
+          "keyboard",
+          "touch"
+        ],
+        "caveat": "独立DOM/CSS重建；仅展开本地标签，不连接真实任务服务。"
+      },
+      "exportedToSkill": true,
+      "proposedPrimary": "卡片、列表与媒体",
+      "proposedChildren": "列表与元数据"
+    },
+    {
+      "slug": "transfer-glow",
+      "name": "转账光雾确认",
+      "href": "/docs/animations/transfer-glow",
+      "visibleTags": [
+        "弹窗转场",
+        "六框架",
+        "TypeScript"
+      ],
+      "category": "Dialog transition",
+      "categoryZh": "弹窗转场",
+      "discovery": {
+        "category": "feedback",
+        "useCases": [
+          "转账光雾确认",
+          "处理状态弹窗",
+          "payment confirmation glow"
+        ],
+        "searchTerms": [
+          "转账",
+          "确认",
+          "弹窗",
+          "光雾",
+          "模糊",
+          "粒子",
+          "成功",
+          "transfer",
+          "payment",
+          "glow",
+          "blur"
+        ],
+        "visualTags": [
+          "glow",
+          "particles",
+          "blur",
+          "dialog"
+        ],
+        "interactions": [
+          "click",
+          "keyboard",
+          "touch"
+        ],
+        "caveat": "仅为本地视觉演示，不执行真实转账；处理完成可通过回调连接自己的业务。"
+      },
+      "exportedToSkill": true,
+      "proposedPrimary": "反馈与状态",
+      "proposedChildren": "加载、处理中、成功确认"
+    },
+    {
+      "slug": "shader-flood",
+      "name": "液体注入卡片",
+      "href": "/docs/animations/shader-flood",
+      "visibleTags": [
+        "着色器交互",
+        "六框架",
+        "TypeScript"
+      ],
+      "category": "Shader interaction",
+      "categoryZh": "着色器交互",
+      "discovery": {
+        "category": "cards",
+        "useCases": [
+          "液体注入卡片",
+          "功能网格悬停揭示",
+          "directional liquid feature cards"
+        ],
+        "searchTerms": [
+          "液体",
+          "注入",
+          "卡片",
+          "着色器",
+          "三色",
+          "方向",
+          "shader",
+          "flood",
+          "liquid",
+          "palette",
+          "seed"
+        ],
+        "visualTags": [
+          "liquid",
+          "marble",
+          "shader",
+          "cards"
+        ],
+        "interactions": [
+          "hover",
+          "focus",
+          "click",
+          "keyboard",
+          "touch"
+        ],
+        "caveat": "独立程序化重建；支持自定义项目和三色色板，不包含付费原始源码。"
+      },
+      "exportedToSkill": true,
+      "proposedPrimary": "卡片、列表与媒体",
+      "proposedChildren": "卡片、列表、画廊、轮播"
+    },
+    {
+      "slug": "ascii-sharks",
+      "name": "字符鲨鱼与鱼群",
+      "href": "/docs/animations/ascii-sharks",
+      "visibleTags": [
+        "字符动画",
+        "六框架",
+        "TypeScript"
+      ],
+      "category": "ASCII animation",
+      "categoryZh": "字符动画",
+      "discovery": {
+        "category": "background",
+        "useCases": [
+          "字符鲨鱼与鱼群",
+          "交互式海洋背景",
+          "ASCII shark ocean"
+        ],
+        "searchTerms": [
+          "ASCII",
+          "字符",
+          "鲨鱼",
+          "鱼群",
+          "海洋",
+          "shark",
+          "ocean",
+          "fish"
+        ],
+        "visualTags": [
+          "ascii",
+          "grid",
+          "light"
+        ],
+        "interactions": [
+          "hover",
+          "click",
+          "keyboard",
+          "touch"
+        ],
+        "caveat": "本地动画与可选输入界面；语音输入需要调用方回调。"
+      },
+      "exportedToSkill": true,
+      "proposedPrimary": "背景与页面特效",
+      "proposedChildren": "动态背景"
+    },
+    {
+      "slug": "ink-spread-carousel",
+      "name": "墨水扩散图片轮播",
+      "href": "/docs/animations/ink-spread-carousel",
+      "visibleTags": [
+        "图片切换",
+        "六框架",
+        "TypeScript"
+      ],
+      "category": "Image transition",
+      "categoryZh": "图片切换",
+      "discovery": {
+        "category": "cards",
+        "useCases": [
+          "墨水扩散图片轮播",
+          "点击位置图片揭示",
+          "ink spread carousel"
+        ],
+        "searchTerms": [
+          "墨水",
+          "扩散",
+          "晕染",
+          "轮播",
+          "折射",
+          "ink",
+          "spread",
+          "carousel"
+        ],
+        "visualTags": [
+          "image",
+          "ink",
+          "refraction"
+        ],
+        "interactions": [
+          "click",
+          "keyboard",
+          "touch"
+        ],
+        "caveat": "本地图片过渡重建；不包含付费组件原始源码。"
+      },
+      "exportedToSkill": true,
+      "proposedPrimary": "卡片、列表与媒体",
+      "proposedChildren": "卡片、列表、画廊、轮播"
+    },
+    {
+      "slug": "particle-texture-trio",
+      "name": "粒子纹理三联",
+      "href": "/docs/animations/particle-texture-trio",
+      "visibleTags": [
+        "粒子动效",
+        "六框架",
+        "TypeScript"
+      ],
+      "category": "Particle animation",
+      "categoryZh": "粒子动效",
+      "discovery": {
+        "category": "background",
+        "useCases": [
+          "点阵品牌动效",
+          "三联粒子纹理",
+          "particle field study"
+        ],
+        "searchTerms": [
+          "粒子",
+          "纹理",
+          "点阵",
+          "三联",
+          "空心",
+          "流动",
+          "Sarvam",
+          "Anushka",
+          "particle",
+          "texture"
+        ],
+        "visualTags": [
+          "particles",
+          "dark",
+          "noise",
+          "dot-matrix"
+        ],
+        "interactions": [
+          "play",
+          "pause",
+          "keyboard",
+          "touch"
+        ],
+        "caveat": "本地点阵视觉重建；非原作者生成工具，不包含真实 AI 接口。"
+      },
+      "exportedToSkill": true,
+      "proposedPrimary": "背景与页面特效",
+      "proposedChildren": "动态背景"
+    },
+    {
+      "slug": "matcha-powder-reveal",
+      "name": "包装撕开粒子消散",
+      "href": "/docs/animations/matcha-powder-reveal",
+      "visibleTags": [
+        "粒子转场",
+        "六框架",
+        "TypeScript"
+      ],
+      "category": "Particle transition",
+      "categoryZh": "粒子转场",
+      "discovery": {
+        "category": "hero",
+        "useCases": [
+          "产品包装撕开",
+          "粉末粒子文字揭示",
+          "product powder reveal"
+        ],
+        "searchTerms": [
+          "包装",
+          "撕开",
+          "粉末",
+          "粒子",
+          "消散",
+          "抹茶",
+          "package",
+          "tear",
+          "powder",
+          "reveal"
+        ],
+        "visualTags": [
+          "3d",
+          "foil",
+          "particles",
+          "green"
+        ],
+        "interactions": [
+          "play",
+          "pause",
+          "seek",
+          "drag",
+          "keyboard"
+        ],
+        "caveat": "本地程序化产品动效；无真实商品购买或上传功能。"
+      },
+      "exportedToSkill": true,
+      "proposedPrimary": "首屏与模型展示",
+      "proposedChildren": "首屏演示、产品动效、模型展示"
+    },
+    {
+      "slug": "ai-brand-cover-cards",
+      "name": "AI 品牌封面三联卡片",
+      "href": "/docs/animations/ai-brand-cover-cards",
+      "visibleTags": [
+        "品牌卡片",
+        "六框架",
+        "TypeScript"
+      ],
+      "category": "Brand cards",
+      "categoryZh": "品牌卡片",
+      "discovery": {
+        "category": "cards",
+        "useCases": [
+          "AI 品牌封面",
+          "产品三联海报"
+        ],
+        "searchTerms": [
+          "Claude",
+          "Codex",
+          "Cursor",
+          "AI",
+          "品牌",
+          "封面",
+          "三联",
+          "poster"
+        ],
+        "visualTags": [
+          "portrait",
+          "artwork",
+          "brand"
+        ],
+        "interactions": [
+          "hover",
+          "click",
+          "keyboard"
+        ],
+        "caveat": "展示卡片，不调用真实 AI 服务；品牌标志不代表官方合作。"
+      },
+      "exportedToSkill": true,
+      "proposedPrimary": "卡片、列表与媒体",
+      "proposedChildren": "卡片、列表、画廊、轮播"
+    },
+    {
+      "slug": "folded-emoji-scroll",
+      "name": "折边滚动表情选择器",
+      "href": "/docs/animations/folded-emoji-scroll",
+      "visibleTags": [
+        "滚动交互",
+        "六框架",
+        "TypeScript"
+      ],
+      "category": "Scroll interaction",
+      "categoryZh": "滚动交互",
+      "discovery": {
+        "category": "input",
+        "useCases": [
+          "折边滚动表情选择",
+          "带几何变形的滚动边缘",
+          "folded emoji picker"
+        ],
+        "searchTerms": [
+          "表情",
+          "滚动",
+          "折边",
+          "折叠",
+          "emoji",
+          "picker",
+          "fold",
+          "scroll",
+          "canvas"
+        ],
+        "visualTags": [
+          "dark",
+          "folded",
+          "canvas",
+          "emoji"
+        ],
+        "interactions": [
+          "scroll",
+          "search",
+          "click",
+          "keyboard",
+          "touch"
+        ],
+        "caveat": "纯本地选择器；系统 Emoji 字形有差异，HTML-in-Canvas 不可用时使用 Canvas2D 捕获兼容路径。"
+      },
+      "exportedToSkill": true,
+      "proposedPrimary": "输入与选择",
+      "proposedChildren": "按钮、选择器、滑块、输入框、验证码"
+    },
+    {
+      "slug": "gradient-ring-cards",
+      "name": "渐变卡片环形轮播",
+      "href": "/docs/animations/gradient-ring-cards",
+      "visibleTags": [
+        "立体轮播",
+        "六框架",
+        "TypeScript"
+      ],
+      "category": "3D carousel",
+      "categoryZh": "立体轮播",
+      "discovery": {
+        "category": "cards",
+        "useCases": [
+          "立体卡片轮播",
+          "渐变作品展示",
+          "3D gradient card carousel"
+        ],
+        "searchTerms": [
+          "渐变",
+          "卡片",
+          "轮播",
+          "环形",
+          "粒子",
+          "色散",
+          "gradient",
+          "ring",
+          "carousel",
+          "3d"
+        ],
+        "visualTags": [
+          "gradient",
+          "3d",
+          "particles",
+          "chromatic"
+        ],
+        "interactions": [
+          "drag",
+          "keyboard",
+          "click",
+          "pause"
+        ],
+        "caveat": "卡片内容为本地视觉演示；渐变与图形由程序独立绘制，WebGL 不可用时提供平面切换。"
+      },
+      "exportedToSkill": true,
+      "proposedPrimary": "卡片、列表与媒体",
+      "proposedChildren": "卡片、列表、画廊、轮播"
+    },
+    {
+      "slug": "fluid-tooltip",
+      "name": "流体提示气泡",
+      "href": "/docs/animations/fluid-tooltip",
+      "visibleTags": [
+        "提示交互",
+        "六框架",
+        "TypeScript"
+      ],
+      "category": "Tooltip interaction",
+      "categoryZh": "提示交互",
+      "discovery": {
+        "category": "navigation",
+        "useCases": [
+          "侧栏导航提示",
+          "头像提示气泡",
+          "fluid navigation tooltip"
+        ],
+        "searchTerms": [
+          "流体",
+          "提示",
+          "气泡",
+          "胶囊",
+          "导航",
+          "头像",
+          "logo",
+          "fluid",
+          "tooltip",
+          "sidebar",
+          "hover"
+        ],
+        "visualTags": [
+          "fluid",
+          "capsule",
+          "navigation"
+        ],
+        "interactions": [
+          "hover",
+          "focus",
+          "click",
+          "keyboard"
+        ],
+        "caveat": "默认仅切换本地选中项，通过 onSelect 接入导航；Logo 与提示文字可替换。"
+      },
+      "exportedToSkill": true,
+      "proposedPrimary": "导航与布局",
+      "proposedChildren": "菜单、标签导航、提示气泡、目录"
+    },
+    {
+      "slug": "spider-music-player",
+      "name": "蜘蛛牵引切歌",
+      "href": "/docs/animations/spider-music-player",
+      "visibleTags": [
+        "音乐交互",
+        "六框架",
+        "TypeScript"
+      ],
+      "category": "Music interaction",
+      "categoryZh": "音乐交互",
+      "discovery": {
+        "category": "media",
+        "useCases": [
+          "专辑封面连续切换",
+          "趣味音乐播放器",
+          "animated album queue"
+        ],
+        "searchTerms": [
+          "蜘蛛",
+          "蛛丝",
+          "结网",
+          "音乐",
+          "专辑",
+          "封面",
+          "切歌",
+          "队列",
+          "spider",
+          "music",
+          "album",
+          "player",
+          "queue"
+        ],
+        "visualTags": [
+          "photography",
+          "tactile",
+          "spider"
+        ],
+        "interactions": [
+          "click",
+          "keyboard",
+          "input"
+        ],
+        "caveat": "使用真实封面与本地播放计时；接入真实音源时替换媒体数据并核对封面权限。"
+      },
+      "exportedToSkill": true,
+      "proposedPrimary": "卡片、列表与媒体",
+      "proposedChildren": "专辑展示、音乐播放器"
+    },
+    {
+      "slug": "collection-layout-morph",
+      "name": "列表卡片堆叠切换",
+      "href": "/docs/animations/collection-layout-morph",
+      "visibleTags": [
+        "布局切换",
+        "六框架",
+        "TypeScript"
+      ],
+      "category": "Layout transition",
+      "categoryZh": "布局切换",
+      "discovery": {
+        "category": "layout",
+        "useCases": [
+          "收藏列表切换",
+          "卡片布局变换",
+          "list grid layout switch"
+        ],
+        "searchTerms": [
+          "列表",
+          "卡片",
+          "堆叠",
+          "布局",
+          "切换",
+          "list",
+          "grid",
+          "layout",
+          "stack"
+        ],
+        "visualTags": [
+          "cards"
+        ],
+        "interactions": [
+          "click",
+          "keyboard"
+        ],
+        "caveat": "接入时替换演示图片和条目，保留共享元素的连续布局。"
+      },
+      "exportedToSkill": true,
+      "proposedPrimary": "导航与布局",
+      "proposedChildren": "布局切换、面板/选框缩放、拖拽布局"
+    },
+    {
+      "slug": "brand-poster-cards",
+      "name": "品牌海报三联卡片",
+      "href": "/docs/animations/brand-poster-cards",
+      "visibleTags": [
+        "品牌排版",
+        "六框架",
+        "TypeScript"
+      ],
+      "category": "Brand layout",
+      "categoryZh": "品牌排版",
+      "discovery": {
+        "category": "cards",
+        "useCases": [
+          "品牌海报展示",
+          "人物作品集",
+          "brand poster portfolio"
+        ],
+        "searchTerms": [
+          "品牌",
+          "海报",
+          "人物",
+          "作品集",
+          "brand",
+          "poster",
+          "portrait",
+          "portfolio"
+        ],
+        "visualTags": [
+          "photography",
+          "editorial"
+        ],
+        "interactions": [
+          "hover",
+          "click",
+          "keyboard"
+        ],
+        "caveat": "替换演示人像、品牌标志和文案，并确认素材使用权限。"
+      },
+      "exportedToSkill": true,
+      "proposedPrimary": "卡片、列表与媒体",
+      "proposedChildren": "卡片、列表、画廊、轮播"
+    },
+    {
+      "slug": "dot-matrix-trio",
+      "name": "点阵波纹与旋涡",
+      "href": "/docs/animations/dot-matrix-trio",
+      "visibleTags": [
+        "点阵动效",
+        "六框架",
+        "TypeScript"
+      ],
+      "category": "Dot animation",
+      "categoryZh": "点阵动效",
+      "discovery": {
+        "category": "background",
+        "useCases": [
+          "品牌点阵展示",
+          "印刷风动效卡片",
+          "dot matrix brand cards"
+        ],
+        "searchTerms": [
+          "点阵",
+          "波纹",
+          "旋涡",
+          "品牌",
+          "dot",
+          "matrix",
+          "ripple",
+          "spiral"
+        ],
+        "visualTags": [
+          "dots",
+          "print"
+        ],
+        "interactions": [
+          "autoplay",
+          "click",
+          "keyboard"
+        ],
+        "caveat": "三联卡片视觉；等待反馈可优先比较 ai-generating。"
+      },
+      "exportedToSkill": true,
+      "proposedPrimary": "背景与页面特效",
+      "proposedChildren": "动态背景"
+    },
+    {
+      "slug": "selection-flower",
+      "name": "文字选区开花",
+      "href": "/docs/animations/selection-flower",
+      "visibleTags": [
+        "文字选区",
+        "六框架",
+        "TypeScript"
+      ],
+      "category": "Text selection",
+      "categoryZh": "文字选区",
+      "discovery": {
+        "category": "text",
+        "useCases": [
+          "文章趣味选区",
+          "编辑型作品集",
+          "playful text selection"
+        ],
+        "searchTerms": [
+          "文字",
+          "选区",
+          "开花",
+          "花朵",
+          "文章",
+          "text",
+          "selection",
+          "flowers"
+        ],
+        "visualTags": [
+          "botanical",
+          "illustration"
+        ],
+        "interactions": [
+          "text-selection",
+          "keyboard"
+        ],
+        "caveat": "装饰性文字互动；需要编辑文字颜色时选择 notes-text-color。"
+      },
+      "exportedToSkill": true,
+      "proposedPrimary": "文字与排版",
+      "proposedChildren": "文字选区、文本编辑、标题变形"
+    },
+    {
+      "slug": "inline-text-morph",
+      "name": "内联词组变形",
+      "href": "/docs/animations/inline-text-morph",
+      "visibleTags": [
+        "文字交互",
+        "六框架",
+        "TypeScript"
+      ],
+      "category": "Text interaction",
+      "categoryZh": "文字交互",
+      "discovery": {
+        "category": "text",
+        "useCases": [
+          "可切换标题",
+          "品牌标语互动",
+          "interactive headline"
+        ],
+        "searchTerms": [
+          "文字",
+          "标题",
+          "词组",
+          "变形",
+          "标语",
+          "text",
+          "headline",
+          "morph"
+        ],
+        "visualTags": [
+          "typographic",
+          "stickers"
+        ],
+        "interactions": [
+          "click",
+          "keyboard"
+        ],
+        "caveat": "接入时替换词组与贴纸，并检查目标语言的字形和排版。"
+      },
+      "exportedToSkill": true,
+      "proposedPrimary": "文字与排版",
+      "proposedChildren": "文字选区、文本编辑、标题变形"
+    },
+    {
+      "slug": "galaxy-effort-slider",
+      "name": "脑形滑块粒子增强",
+      "href": "/docs/animations/galaxy-effort-slider",
+      "visibleTags": [
+        "拖拽与聚焦",
+        "六框架",
+        "TypeScript"
+      ],
+      "category": "Drag & focus",
+      "categoryZh": "拖拽与聚焦",
+      "discovery": {
+        "category": "input",
+        "useCases": [
+          "AI 思考强度选择",
+          "模型参数调节",
+          "AI reasoning effort"
+        ],
+        "searchTerms": [
+          "思考",
+          "推理",
+          "强度",
+          "滑块",
+          "脑",
+          "reasoning",
+          "effort",
+          "slider"
+        ],
+        "visualTags": [
+          "particles",
+          "cosmic"
+        ],
+        "interactions": [
+          "drag",
+          "keyboard"
+        ],
+        "caveat": "视觉强度选择器；实际模型参数需映射到目标项目的接口。"
+      },
+      "exportedToSkill": true,
+      "proposedPrimary": "输入与选择",
+      "proposedChildren": "按钮、选择器、滑块、输入框、验证码"
+    },
+    {
+      "slug": "notes-text-color",
+      "name": "文字选区调色器",
+      "href": "/docs/animations/notes-text-color",
+      "visibleTags": [
+        "文字选区",
+        "六框架",
+        "TypeScript"
+      ],
+      "category": "Text selection",
+      "categoryZh": "文字选区",
+      "discovery": {
+        "category": "text",
+        "useCases": [
+          "笔记高亮",
+          "文字颜色编辑",
+          "note text highlighting"
+        ],
+        "searchTerms": [
+          "文字",
+          "选区",
+          "颜色",
+          "调色",
+          "笔记",
+          "高亮",
+          "highlight",
+          "color",
+          "notes"
+        ],
+        "visualTags": [
+          "glass",
+          "minimal"
+        ],
+        "interactions": [
+          "text-selection",
+          "click"
+        ],
+        "caveat": "将颜色选择结果接入目标编辑器，核对选区与持久化行为。"
+      },
+      "exportedToSkill": true,
+      "proposedPrimary": "文字与排版",
+      "proposedChildren": "文字选区、文本编辑、标题变形"
+    },
+    {
+      "slug": "bounding-box-resize",
+      "name": "选框拖拽缩放",
+      "href": "/docs/animations/bounding-box-resize",
+      "visibleTags": [
+        "拖拽与聚焦",
+        "六框架",
+        "TypeScript"
+      ],
+      "category": "Drag & focus",
+      "categoryZh": "拖拽与聚焦",
+      "discovery": {
+        "category": "layout",
+        "useCases": [
+          "画布选框缩放",
+          "设计编辑器",
+          "canvas resize handles"
+        ],
+        "searchTerms": [
+          "选框",
+          "缩放",
+          "尺寸",
+          "画布",
+          "resize",
+          "bounds",
+          "editor"
+        ],
+        "visualTags": [
+          "minimal",
+          "editor"
+        ],
+        "interactions": [
+          "drag",
+          "input"
+        ],
+        "caveat": "缩放交互演示；尺寸结果需接入目标项目的画布状态。"
+      },
+      "exportedToSkill": true,
+      "proposedPrimary": "导航与布局",
+      "proposedChildren": "布局切换、面板/选框缩放、拖拽布局"
+    },
+    {
+      "slug": "soft-action-wheel",
+      "name": "柔光环形菜单展开",
+      "href": "/docs/animations/soft-action-wheel",
+      "visibleTags": [
+        "菜单交互",
+        "六框架",
+        "TypeScript"
+      ],
+      "category": "Menu interaction",
+      "categoryZh": "菜单交互",
+      "discovery": {
+        "category": "navigation",
+        "useCases": [
+          "快捷操作菜单",
+          "工具栏展开",
+          "minimal radial actions"
+        ],
+        "searchTerms": [
+          "菜单",
+          "环形",
+          "快捷",
+          "工具栏",
+          "简洁",
+          "黑白",
+          "menu",
+          "radial",
+          "actions",
+          "toolbar"
+        ],
+        "visualTags": [
+          "minimal",
+          "monochrome"
+        ],
+        "interactions": [
+          "click",
+          "keyboard"
+        ],
+        "caveat": "替换演示操作，检查展开后按钮与页面边界的间距。"
+      },
+      "exportedToSkill": true,
+      "proposedPrimary": "导航与布局",
+      "proposedChildren": "菜单、标签导航、提示气泡、目录"
+    },
+    {
+      "slug": "staggered-radial-menu",
+      "name": "环形菜单交错展开",
+      "href": "/docs/animations/staggered-radial-menu",
+      "visibleTags": [
+        "菜单交互",
+        "六框架",
+        "TypeScript"
+      ],
+      "category": "Menu interaction",
+      "categoryZh": "菜单交互",
+      "discovery": {
+        "category": "navigation",
+        "useCases": [
+          "彩色快捷菜单",
+          "创意工具入口",
+          "colorful radial menu"
+        ],
+        "searchTerms": [
+          "菜单",
+          "环形",
+          "彩色",
+          "快捷",
+          "menu",
+          "radial",
+          "colorful",
+          "actions"
+        ],
+        "visualTags": [
+          "colorful",
+          "spring"
+        ],
+        "interactions": [
+          "click",
+          "keyboard"
+        ],
+        "caveat": "适合少量快捷操作，接入时替换演示动作。"
+      },
+      "exportedToSkill": true,
+      "proposedPrimary": "导航与布局",
+      "proposedChildren": "菜单、标签导航、提示气泡、目录"
+    },
+    {
+      "slug": "elastic-panel-resize",
+      "name": "弹性面板缩放",
+      "href": "/docs/animations/elastic-panel-resize",
+      "visibleTags": [
+        "拖拽与聚焦",
+        "六框架",
+        "TypeScript"
+      ],
+      "category": "Drag & focus",
+      "categoryZh": "拖拽与聚焦",
+      "discovery": {
+        "category": "layout",
+        "useCases": [
+          "侧栏宽度调节",
+          "可拖拽面板",
+          "resizable sidebar panel"
+        ],
+        "searchTerms": [
+          "面板",
+          "侧栏",
+          "缩放",
+          "宽度",
+          "拖拽",
+          "panel",
+          "sidebar",
+          "resize",
+          "drag"
+        ],
+        "visualTags": [
+          "minimal",
+          "elastic"
+        ],
+        "interactions": [
+          "drag"
+        ],
+        "caveat": "将拖拽尺寸接入实际布局，并检查项目需要的最小宽度。"
+      },
+      "exportedToSkill": true,
+      "proposedPrimary": "导航与布局",
+      "proposedChildren": "布局切换、面板/选框缩放、拖拽布局"
+    },
+    {
+      "slug": "blue-fluted-glass",
+      "name": "蓝色棱纹流动背景",
+      "href": "/docs/animations/blue-fluted-glass",
+      "visibleTags": [
+        "画布交互",
+        "六框架",
+        "TypeScript"
+      ],
+      "category": "Canvas interaction",
+      "categoryZh": "画布交互",
+      "discovery": {
+        "category": "background",
+        "useCases": [
+          "品牌首屏背景",
+          "蓝色玻璃场景",
+          "blue glass hero background"
+        ],
+        "searchTerms": [
+          "背景",
+          "首屏",
+          "蓝色",
+          "棱纹",
+          "毛玻璃",
+          "background",
+          "hero",
+          "blue",
+          "fluted"
+        ],
+        "visualTags": [
+          "blue",
+          "glass",
+          "liquid"
+        ],
+        "interactions": [
+          "autoplay"
+        ],
+        "caveat": "替换演示 Logo；正文需要在流动背景上保持可读。"
+      },
+      "exportedToSkill": true,
+      "proposedPrimary": "背景与页面特效",
+      "proposedChildren": "动态背景"
+    },
+    {
+      "slug": "reasoning-effort-slider",
+      "name": "模型思考强度滑块",
+      "href": "/docs/animations/reasoning-effort-slider",
+      "visibleTags": [
+        "拖拽与聚焦",
+        "六框架",
+        "TypeScript"
+      ],
+      "category": "Drag & focus",
+      "categoryZh": "拖拽与聚焦",
+      "discovery": {
+        "category": "input",
+        "useCases": [
+          "AI 推理档位选择",
+          "模型设置",
+          "reasoning effort settings"
+        ],
+        "searchTerms": [
+          "思考",
+          "推理",
+          "强度",
+          "滑块",
+          "模型",
+          "简洁",
+          "三档",
+          "reasoning",
+          "effort",
+          "slider"
+        ],
+        "visualTags": [
+          "cosmic",
+          "elastic"
+        ],
+        "interactions": [
+          "drag",
+          "keyboard"
+        ],
+        "caveat": "三档选择界面；实际模型参数需映射到目标项目的接口。"
+      },
+      "exportedToSkill": true,
+      "proposedPrimary": "输入与选择",
+      "proposedChildren": "按钮、选择器、滑块、输入框、验证码"
+    },
+    {
+      "slug": "deep-agent-composer",
+      "name": "Agent 对话输入框",
+      "href": "/docs/animations/deep-agent-composer",
+      "visibleTags": [
+        "面板形变",
+        "六框架",
+        "TypeScript"
+      ],
+      "category": "Panel morphing",
+      "categoryZh": "面板形变",
+      "discovery": {
+        "category": "input",
+        "useCases": [
+          "AI 聊天输入",
+          "智能体对话",
+          "AI chat composer"
+        ],
+        "searchTerms": [
+          "聊天",
+          "对话",
+          "输入框",
+          "附件",
+          "模型",
+          "chat",
+          "agent",
+          "composer",
+          "prompt"
+        ],
+        "visualTags": [
+          "product",
+          "compact"
+        ],
+        "interactions": [
+          "input",
+          "click",
+          "keyboard"
+        ],
+        "caveat": "业务接口、附件上传、权限和模型调用需由目标项目接入。"
+      },
+      "exportedToSkill": true,
+      "proposedPrimary": "输入与选择",
+      "proposedChildren": "按钮、选择器、滑块、输入框、验证码"
+    },
+    {
+      "slug": "hammerhead-chart",
+      "name": "字符鲨鱼追踪价格路径",
+      "href": "/docs/animations/hammerhead-chart",
+      "visibleTags": [
+        "画布交互",
+        "六框架",
+        "TypeScript"
+      ],
+      "category": "Canvas interaction",
+      "categoryZh": "画布交互",
+      "discovery": {
+        "category": "data",
+        "useCases": [
+          "创意图表叙事",
+          "价格路径演示",
+          "price path visualization"
+        ],
+        "searchTerms": [
+          "图表",
+          "价格",
+          "路径",
+          "鲨鱼",
+          "chart",
+          "price",
+          "shark",
+          "forecast"
+        ],
+        "visualTags": [
+          "ascii",
+          "chart"
+        ],
+        "interactions": [
+          "pointer",
+          "autoplay"
+        ],
+        "caveat": "价格路径是界面演示，使用前确认数据来源与业务含义。"
+      },
+      "exportedToSkill": true,
+      "proposedPrimary": "数据展示",
+      "proposedChildren": "图表与数据叙事"
+    },
+    {
+      "slug": "glass-tab-menu",
+      "name": "玻璃标签栏展开菜单",
+      "href": "/docs/animations/glass-tab-menu",
+      "visibleTags": [
+        "面板形变",
+        "六框架",
+        "TypeScript"
+      ],
+      "category": "Panel morphing",
+      "categoryZh": "面板形变",
+      "discovery": {
+        "category": "navigation",
+        "useCases": [
+          "标签页导航",
+          "可展开应用菜单",
+          "expandable tab navigation"
+        ],
+        "searchTerms": [
+          "导航",
+          "标签",
+          "菜单",
+          "玻璃",
+          "navigation",
+          "tabs",
+          "menu",
+          "glass"
+        ],
+        "visualTags": [
+          "glass",
+          "minimal"
+        ],
+        "interactions": [
+          "click",
+          "keyboard"
+        ],
+        "caveat": "根据真实页面定义导航项与选中状态。"
+      },
+      "exportedToSkill": true,
+      "proposedPrimary": "导航与布局",
+      "proposedChildren": "菜单、标签导航、提示气泡、目录"
+    },
+    {
+      "slug": "crumpled-paper",
+      "name": "揉皱纸张展开",
+      "href": "/docs/animations/crumpled-paper",
+      "visibleTags": [
+        "画布交互",
+        "六框架",
+        "TypeScript"
+      ],
+      "category": "Canvas interaction",
+      "categoryZh": "画布交互",
+      "discovery": {
+        "category": "cards",
+        "useCases": [
+          "信件展示",
+          "照片便笺互动",
+          "paper letter photo reveal"
+        ],
+        "searchTerms": [
+          "纸张",
+          "揉皱",
+          "信件",
+          "照片",
+          "便笺",
+          "paper",
+          "letter",
+          "photo",
+          "unfold"
+        ],
+        "visualTags": [
+          "paper",
+          "tactile"
+        ],
+        "interactions": [
+          "hover"
+        ],
+        "caveat": "替换示例信件和照片，并为触摸设备检查交互路径。"
+      },
+      "exportedToSkill": true,
+      "proposedPrimary": "卡片、列表与媒体",
+      "proposedChildren": "卡片、列表、画廊、轮播"
+    },
+    {
+      "slug": "sailing-toc",
+      "name": "帆船滚动目录",
+      "href": "/docs/animations/sailing-toc",
+      "visibleTags": [
+        "滚动导航",
+        "六框架",
+        "TypeScript"
+      ],
+      "category": "Scroll navigation",
+      "categoryZh": "滚动导航",
+      "discovery": {
+        "category": "navigation",
+        "useCases": [
+          "长文章节目录",
+          "文档阅读导航",
+          "article table of contents"
+        ],
+        "searchTerms": [
+          "目录",
+          "章节",
+          "长文",
+          "阅读",
+          "导航",
+          "文章",
+          "文档",
+          "toc",
+          "article",
+          "documentation",
+          "navigation"
+        ],
+        "visualTags": [
+          "nautical",
+          "minimal"
+        ],
+        "interactions": [
+          "scroll",
+          "click"
+        ],
+        "caveat": "章节 ID 与页面标题保持一致；帆船意象需符合页面风格。"
+      },
+      "exportedToSkill": true,
+      "proposedPrimary": "导航与布局",
+      "proposedChildren": "菜单、标签导航、提示气泡、目录"
+    },
+    {
+      "slug": "thinking-particles",
+      "name": "思考步骤粒子变形",
+      "href": "/docs/animations/thinking-particles",
+      "visibleTags": [
+        "画布交互",
+        "六框架",
+        "TypeScript"
+      ],
+      "category": "Canvas interaction",
+      "categoryZh": "画布交互",
+      "discovery": {
+        "category": "feedback",
+        "useCases": [
+          "AI 思考等待反馈",
+          "推理步骤展示",
+          "AI thinking steps"
+        ],
+        "searchTerms": [
+          "等待",
+          "思考",
+          "推理",
+          "步骤",
+          "加载",
+          "thinking",
+          "reasoning",
+          "steps",
+          "loading"
+        ],
+        "visualTags": [
+          "particles"
+        ],
+        "interactions": [
+          "autoplay",
+          "click"
+        ],
+        "caveat": "把演示步骤绑定真实任务状态，不把动画进度当作真实推理进度。"
+      },
+      "exportedToSkill": true,
+      "proposedPrimary": "反馈与状态",
+      "proposedChildren": "加载、处理中、成功确认"
+    },
+    {
+      "slug": "glass-folder",
+      "name": "玻璃文件夹展开",
+      "href": "/docs/animations/glass-folder",
+      "visibleTags": [
+        "面板形变",
+        "六框架",
+        "TypeScript"
+      ],
+      "category": "Panel morphing",
+      "categoryZh": "面板形变",
+      "discovery": {
+        "category": "files",
+        "useCases": [
+          "文件管理",
+          "作品集分组",
+          "document file manager"
+        ],
+        "searchTerms": [
+          "文件",
+          "文件夹",
+          "资料",
+          "管理",
+          "玻璃",
+          "file",
+          "files",
+          "folder",
+          "documents",
+          "manager"
+        ],
+        "visualTags": [
+          "glass",
+          "cards"
+        ],
+        "interactions": [
+          "hover",
+          "click",
+          "keyboard"
+        ],
+        "caveat": "文件卡片展示界面；存储、上传与真实文件权限需接入项目。"
+      },
+      "exportedToSkill": true,
+      "proposedPrimary": "文件与协作",
+      "proposedChildren": "文件展示与操作"
+    },
+    {
+      "slug": "cosmic-panels",
+      "name": "轨道与点阵动效",
+      "href": "/docs/animations/cosmic-panels",
+      "visibleTags": [
+        "画布交互",
+        "六框架",
+        "TypeScript"
+      ],
+      "category": "Canvas interaction",
+      "categoryZh": "画布交互",
+      "discovery": {
+        "category": "background",
+        "useCases": [
+          "云服务品牌视觉",
+          "宇宙主题展示",
+          "cosmic infrastructure showcase"
+        ],
+        "searchTerms": [
+          "轨道",
+          "星云",
+          "宇宙",
+          "服务器",
+          "cosmic",
+          "orbit",
+          "nebula",
+          "server"
+        ],
+        "visualTags": [
+          "cosmic",
+          "dots"
+        ],
+        "interactions": [
+          "autoplay"
+        ],
+        "caveat": "包含多个视觉模块，按页面需要选择，避免全部挤入小区域。"
+      },
+      "exportedToSkill": true,
+      "proposedPrimary": "背景与页面特效",
+      "proposedChildren": "动态背景"
+    },
+    {
+      "slug": "gradient-cover-wall",
+      "name": "渐变卡片跟随",
+      "href": "/docs/animations/gradient-cover-wall",
+      "visibleTags": [
+        "画布交互",
+        "六框架",
+        "TypeScript"
+      ],
+      "category": "Canvas interaction",
+      "categoryZh": "画布交互",
+      "discovery": {
+        "category": "cards",
+        "useCases": [
+          "封面画廊",
+          "渐变作品展示",
+          "gradient cover gallery"
+        ],
+        "searchTerms": [
+          "渐变",
+          "封面",
+          "画廊",
+          "作品集",
+          "gradient",
+          "cover",
+          "gallery",
+          "portfolio"
+        ],
+        "visualTags": [
+          "gradient",
+          "grain"
+        ],
+        "interactions": [
+          "pointer",
+          "autoplay"
+        ],
+        "caveat": "装饰性封面展示；业务列表的名称与链接需接入项目。"
+      },
+      "exportedToSkill": true,
+      "proposedPrimary": "卡片、列表与媒体",
+      "proposedChildren": "卡片、列表、画廊、轮播"
+    },
+    {
+      "slug": "otp-verification",
+      "name": "验证码输入验证",
+      "href": "/docs/components/otp-verification",
+      "visibleTags": [
+        "面板形变",
+        "六框架",
+        "TypeScript",
+        "GSAP"
+      ],
+      "category": "Panel morphing",
+      "categoryZh": "面板形变",
+      "discovery": {
+        "category": "input",
+        "useCases": [
+          "登录验证码",
+          "身份验证反馈",
+          "login verification code"
+        ],
+        "searchTerms": [
+          "验证码",
+          "登录",
+          "验证",
+          "短信",
+          "otp",
+          "verification",
+          "login",
+          "code"
+        ],
+        "visualTags": [
+          "minimal",
+          "capsule"
+        ],
+        "interactions": [
+          "input",
+          "keyboard"
+        ],
+        "caveat": "输入与结果反馈界面；验证码发送和校验需接入真实服务。"
+      },
+      "exportedToSkill": true,
+      "proposedPrimary": "输入与选择",
+      "proposedChildren": "按钮、选择器、滑块、输入框、验证码"
+    },
+    {
+      "slug": "brand-line-cards",
+      "name": "鼠标感应线条",
+      "href": "/docs/animations/brand-line-cards",
+      "visibleTags": [
+        "画布交互",
+        "六框架",
+        "TypeScript"
+      ],
+      "category": "Canvas interaction",
+      "categoryZh": "画布交互",
+      "discovery": {
+        "category": "cards",
+        "useCases": [
+          "交互品牌卡片",
+          "线条 Logo 展示",
+          "interactive line logo cards"
+        ],
+        "searchTerms": [
+          "线条",
+          "品牌",
+          "标志",
+          "鼠标",
+          "line",
+          "brand",
+          "logo",
+          "pointer"
+        ],
+        "visualTags": [
+          "line-art",
+          "monochrome"
+        ],
+        "interactions": [
+          "pointer"
+        ],
+        "caveat": "演示含第三方品牌标志，接入时替换为项目自己的素材。"
+      },
+      "exportedToSkill": true,
+      "proposedPrimary": "卡片、列表与媒体",
+      "proposedChildren": "卡片、列表、画廊、轮播"
+    },
+    {
+      "slug": "share-invite",
+      "name": "分享邀请面板",
+      "href": "/docs/components/share-invite",
+      "visibleTags": [
+        "面板形变",
+        "六框架",
+        "TypeScript",
+        "GSAP"
+      ],
+      "category": "Panel morphing",
+      "categoryZh": "面板形变",
+      "discovery": {
+        "category": "collaboration",
+        "useCases": [
+          "分享链接",
+          "团队成员邀请",
+          "team member sharing invite"
+        ],
+        "searchTerms": [
+          "分享",
+          "邀请",
+          "成员",
+          "团队",
+          "权限",
+          "share",
+          "invite",
+          "invitation",
+          "members",
+          "team"
+        ],
+        "visualTags": [
+          "product",
+          "compact"
+        ],
+        "interactions": [
+          "input",
+          "click",
+          "keyboard"
+        ],
+        "caveat": "链接复制可接实际地址；邀请发送与权限变更需接入业务接口。"
+      },
+      "exportedToSkill": true,
+      "proposedPrimary": "文件与协作",
+      "proposedChildren": "分享、成员、访问权限"
+    },
+    {
+      "slug": "bouncy-access",
+      "name": "访问申请展开",
+      "href": "/docs/animations/bouncy-access",
+      "visibleTags": [
+        "面板形变",
+        "六框架",
+        "TypeScript"
+      ],
+      "category": "Panel morphing",
+      "categoryZh": "面板形变",
+      "discovery": {
+        "category": "collaboration",
+        "useCases": [
+          "访问权限申请",
+          "成员列表展开",
+          "request access members"
+        ],
+        "searchTerms": [
+          "访问",
+          "申请",
+          "权限",
+          "成员",
+          "access",
+          "request",
+          "permission",
+          "members"
+        ],
+        "visualTags": [
+          "capsule",
+          "spring"
+        ],
+        "interactions": [
+          "click"
+        ],
+        "caveat": "权限申请与成员状态需绑定项目业务数据。"
+      },
+      "exportedToSkill": true,
+      "proposedPrimary": "文件与协作",
+      "proposedChildren": "分享、成员、访问权限"
+    },
+    {
+      "slug": "velocity-drag",
+      "name": "日历惯性拖拽",
+      "href": "/docs/animations/velocity-drag",
+      "visibleTags": [
+        "拖拽与聚焦",
+        "六框架",
+        "TypeScript"
+      ],
+      "category": "Drag & focus",
+      "categoryZh": "拖拽与聚焦",
+      "discovery": {
+        "category": "layout",
+        "useCases": [
+          "日程卡片拖拽",
+          "日历交互反馈",
+          "calendar event drag"
+        ],
+        "searchTerms": [
+          "日历",
+          "日程",
+          "拖拽",
+          "惯性",
+          "calendar",
+          "schedule",
+          "drag",
+          "velocity"
+        ],
+        "visualTags": [
+          "elastic",
+          "cards"
+        ],
+        "interactions": [
+          "drag"
+        ],
+        "caveat": "拖拽视觉反馈；实际排期、碰撞与保存逻辑需接入项目。"
+      },
+      "exportedToSkill": true,
+      "proposedPrimary": "导航与布局",
+      "proposedChildren": "布局切换、面板/选框缩放、拖拽布局"
+    },
+    {
+      "slug": "ai-generating",
+      "name": "点阵加载",
+      "href": "/docs/animations/ai-generating",
+      "visibleTags": [
+        "加载反馈",
+        "六框架",
+        "TypeScript"
+      ],
+      "category": "Loading feedback",
+      "categoryZh": "加载反馈",
+      "discovery": {
+        "category": "feedback",
+        "useCases": [
+          "图片生成等待",
+          "AI 加载反馈",
+          "image generation loading"
+        ],
+        "searchTerms": [
+          "等待",
+          "生成",
+          "加载",
+          "点阵",
+          "图片",
+          "loading",
+          "loader",
+          "generating",
+          "generation",
+          "image"
+        ],
+        "visualTags": [
+          "dots",
+          "minimal"
+        ],
+        "interactions": [
+          "autoplay"
+        ],
+        "caveat": "等待动画不表示真实完成百分比，需要绑定实际任务结束状态。"
+      },
+      "exportedToSkill": true,
+      "proposedPrimary": "反馈与状态",
+      "proposedChildren": "加载、处理中、成功确认"
+    },
+    {
+      "slug": "ascii-object",
+      "name": "ASCII 物体",
+      "href": "/docs/components/ascii-object",
+      "visibleTags": [
+        "webgl",
+        "three.js",
+        "3D"
+      ],
+      "category": null,
+      "categoryZh": null,
+      "discovery": {
+        "category": "hero",
+        "useCases": [
+          "品牌模型展示",
+          "首屏视觉",
+          "3D model showcase"
+        ],
+        "searchTerms": [
+          "字符",
+          "ascii",
+          "模型",
+          "3d",
+          "logo",
+          "首屏",
+          "hero"
+        ],
+        "visualTags": [
+          "ascii",
+          "3d"
+        ],
+        "interactions": [
+          "pointer"
+        ],
+        "caveat": "需准备目标模型、SVG 或图片；渲染器要求见详情。"
+      },
+      "exportedToSkill": false,
+      "proposedPrimary": "首屏与模型展示",
+      "proposedChildren": "首屏演示、产品动效、模型展示"
+    },
+    {
+      "slug": "asciify",
+      "name": "字符透镜",
+      "href": "/docs/components/asciify",
+      "visibleTags": [
+        "html-in-canvas"
+      ],
+      "category": null,
+      "categoryZh": null,
+      "discovery": {
+        "category": "cursor",
+        "useCases": [
+          "鼠标探索效果",
+          "网页局部字符化",
+          "cursor lens"
+        ],
+        "searchTerms": [
+          "字符",
+          "ascii",
+          "透镜",
+          "鼠标",
+          "光标",
+          "cursor",
+          "lens"
+        ],
+        "visualTags": [
+          "ascii"
+        ],
+        "interactions": [
+          "pointer"
+        ],
+        "caveat": "涉及实时 HTML 捕获，先查看详情中的浏览器要求与回退说明。"
+      },
+      "exportedToSkill": false,
+      "proposedPrimary": "背景与页面特效",
+      "proposedChildren": "指针/光标效果"
+    },
+    {
+      "slug": "frost",
+      "name": "冰霜",
+      "href": "/docs/components/frost",
+      "visibleTags": [
+        "html-in-canvas"
+      ],
+      "category": null,
+      "categoryZh": null,
+      "discovery": {
+        "category": "cursor",
+        "useCases": [
+          "冰霜擦除互动",
+          "节日活动首屏",
+          "ice reveal"
+        ],
+        "searchTerms": [
+          "冰霜",
+          "冰冻",
+          "融化",
+          "擦除",
+          "ice",
+          "frost",
+          "reveal"
+        ],
+        "visualTags": [
+          "ice",
+          "translucent"
+        ],
+        "interactions": [
+          "pointer"
+        ],
+        "caveat": "涉及实时 HTML 捕获，先查看详情中的浏览器要求与回退说明。"
+      },
+      "exportedToSkill": false,
+      "proposedPrimary": "背景与页面特效",
+      "proposedChildren": "指针/光标效果"
+    },
+    {
+      "slug": "glass",
+      "name": "玻璃透镜",
+      "href": "/docs/components/glass",
+      "visibleTags": [
+        "html-in-canvas"
+      ],
+      "category": null,
+      "categoryZh": null,
+      "discovery": {
+        "category": "cursor",
+        "useCases": [
+          "鼠标放大镜",
+          "首屏玻璃透镜",
+          "magnifying cursor"
+        ],
+        "searchTerms": [
+          "玻璃",
+          "透镜",
+          "放大镜",
+          "折射",
+          "鼠标",
+          "glass",
+          "lens",
+          "magnifier"
+        ],
+        "visualTags": [
+          "glass",
+          "refraction"
+        ],
+        "interactions": [
+          "pointer"
+        ],
+        "caveat": "涉及实时 HTML 捕获；玻璃文件管理卡片应选择 glass-folder。"
+      },
+      "exportedToSkill": false,
+      "proposedPrimary": "背景与页面特效",
+      "proposedChildren": "指针/光标效果"
+    },
+    {
+      "slug": "glass-object",
+      "name": "玻璃物体",
+      "href": "/docs/components/glass-object",
+      "visibleTags": [
+        "webgl",
+        "three.js",
+        "3D"
+      ],
+      "category": null,
+      "categoryZh": null,
+      "discovery": {
+        "category": "hero",
+        "useCases": [
+          "玻璃品牌标志",
+          "产品模型展示",
+          "glass logo showcase"
+        ],
+        "searchTerms": [
+          "玻璃",
+          "液态",
+          "折射",
+          "模型",
+          "logo",
+          "glass",
+          "3d",
+          "hero"
+        ],
+        "visualTags": [
+          "glass",
+          "3d"
+        ],
+        "interactions": [
+          "pointer"
+        ],
+        "caveat": "需准备目标模型、SVG 或图片；渲染器要求见详情。"
+      },
+      "exportedToSkill": false,
+      "proposedPrimary": "首屏与模型展示",
+      "proposedChildren": "首屏演示、产品动效、模型展示"
+    },
+    {
+      "slug": "glyph-rain",
+      "name": "字符雨",
+      "href": "/docs/components/glyph-rain",
+      "visibleTags": [
+        "html-in-canvas"
+      ],
+      "category": null,
+      "categoryZh": null,
+      "discovery": {
+        "category": "background",
+        "useCases": [
+          "代码雨背景",
+          "科技主题首屏",
+          "matrix code rain"
+        ],
+        "searchTerms": [
+          "代码雨",
+          "字符雨",
+          "黑客",
+          "矩阵",
+          "matrix",
+          "rain",
+          "background"
+        ],
+        "visualTags": [
+          "ascii",
+          "cyber"
+        ],
+        "interactions": [
+          "pointer",
+          "autoplay"
+        ],
+        "caveat": "涉及实时 HTML 捕获；保持正文可读，浏览器要求见详情。"
+      },
+      "exportedToSkill": false,
+      "proposedPrimary": "背景与页面特效",
+      "proposedChildren": "动态背景"
+    },
+    {
+      "slug": "particle-object",
+      "name": "粒子物体",
+      "href": "/docs/components/particle-object",
+      "visibleTags": [
+        "webgl",
+        "three.js",
+        "3D"
+      ],
+      "category": null,
+      "categoryZh": null,
+      "discovery": {
+        "category": "hero",
+        "useCases": [
+          "粒子 Logo",
+          "交互模型展示",
+          "interactive particle logo"
+        ],
+        "searchTerms": [
+          "粒子",
+          "散开",
+          "聚合",
+          "模型",
+          "logo",
+          "particles",
+          "3d",
+          "hero"
+        ],
+        "visualTags": [
+          "particles",
+          "3d"
+        ],
+        "interactions": [
+          "pointer"
+        ],
+        "caveat": "需准备目标模型、SVG 或图片；渲染器要求见详情。"
+      },
+      "exportedToSkill": false,
+      "proposedPrimary": "首屏与模型展示",
+      "proposedChildren": "首屏演示、产品动效、模型展示"
+    },
+    {
+      "slug": "particle-scroll",
+      "name": "粒子滚动",
+      "href": "/docs/components/particle-scroll",
+      "visibleTags": [
+        "html-in-canvas"
+      ],
+      "category": null,
+      "categoryZh": null,
+      "discovery": {
+        "category": "scroll",
+        "useCases": [
+          "滚动叙事",
+          "页面消散过渡",
+          "scroll storytelling"
+        ],
+        "searchTerms": [
+          "滚动",
+          "消散",
+          "细沙",
+          "粒子",
+          "scroll",
+          "dissolve",
+          "particles"
+        ],
+        "visualTags": [
+          "particles"
+        ],
+        "interactions": [
+          "scroll"
+        ],
+        "caveat": "涉及实时 HTML 捕获；适合局部叙事段落，浏览器要求见详情。"
+      },
+      "exportedToSkill": false,
+      "proposedPrimary": "背景与页面特效",
+      "proposedChildren": "滚动转场"
+    },
+    {
+      "slug": "liquid-object",
+      "name": "流体物体",
+      "href": "/docs/components/liquid-object",
+      "visibleTags": [
+        "webgl",
+        "three.js",
+        "3D"
+      ],
+      "category": null,
+      "categoryZh": null,
+      "discovery": {
+        "category": "hero",
+        "useCases": [
+          "液态品牌展示",
+          "流体模型互动",
+          "liquid model showcase"
+        ],
+        "searchTerms": [
+          "液态",
+          "流体",
+          "模型",
+          "logo",
+          "liquid",
+          "fluid",
+          "3d",
+          "hero"
+        ],
+        "visualTags": [
+          "liquid",
+          "3d"
+        ],
+        "interactions": [
+          "pointer"
+        ],
+        "caveat": "需准备目标模型、SVG 或图片；渲染器要求见详情。"
+      },
+      "exportedToSkill": false,
+      "proposedPrimary": "首屏与模型展示",
+      "proposedChildren": "首屏演示、产品动效、模型展示"
+    }
+  ],
+  "scope": "Local source and exported HTML; proposedPrimary is a recommendation only",
+  "baselineCommit": "91a22ac"
+}

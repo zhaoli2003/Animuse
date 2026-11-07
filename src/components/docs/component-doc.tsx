@@ -69,6 +69,7 @@ export async function ComponentDoc({
   return (
     <article className="mx-auto w-full max-w-3xl" data-component-document={installItem}>
       <ComponentDocHeader
+        slug={installItem}
         title={title}
         description={description}
         tags={hasWebGPU ? [...(tags ?? []), "webgl", "webgpu"] : tags}

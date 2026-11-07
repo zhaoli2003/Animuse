@@ -49,6 +49,28 @@ function rangeFor(header, size) {
 export async function createStaticServer(directory = defaultRoot) {
   const root = await fs.realpath(path.resolve(directory));
   await fs.access(path.join(root, 'index.html'));
+  const segmentPayloads = new Set();
+  const segmentAliases = new Map();
+  // Next requests dotted segment names while export writes nested directories.
+  // Index actual payloads once; never derive a filesystem path by replacing request dots.
+  async function indexSegments(folder, ancestors = []) {
+    for (const entry of await fs.readdir(folder, { withFileTypes: true })) {
+      const parts = [...ancestors, entry.name];
+      if (entry.isDirectory()) await indexSegments(path.join(folder, entry.name), parts);
+      else if (entry.isFile() && entry.name.endsWith('.txt')) {
+        const marker = parts.findIndex(part => part.startsWith('__next.'));
+        if (marker < 0) continue;
+        const relative = parts.join('/');
+        segmentPayloads.add(relative);
+        if (marker === parts.length - 1) continue;
+        const alias = '/' + [...parts.slice(0, marker), parts.slice(marker).join('.')].join('/');
+        // Distinct paths can contain literal dots. Ambiguous aliases stay unavailable.
+        if (!segmentAliases.has(alias)) segmentAliases.set(alias, relative);
+        else if (segmentAliases.get(alias) !== relative) segmentAliases.set(alias, null);
+      }
+    }
+  }
+  await indexSegments(root);
 
   async function findFile(candidates) {
     for (const candidate of candidates) {
@@ -94,6 +116,10 @@ export async function createStaticServer(directory = defaultRoot) {
         if (base !== root && !extension) candidates.push(base + '.html', path.join(base, 'index.html'));
       }
       let found = await findFile(candidates);
+      if (!found && extension === '.txt') {
+        const relative = segmentAliases.get(pathname);
+        if (relative) found = await findFile([path.join(root, relative)]);
+      }
       let status = 200;
       if (!found) {
         // Missing RSC payloads and assets never fall back to successful HTML documents.
@@ -105,7 +131,7 @@ export async function createStaticServer(directory = defaultRoot) {
       const { file, stat, relative } = found;
       if (['404.html', '_not-found.html'].includes(relative)) status = 404;
       const ext = path.extname(file).toLowerCase();
-      const isRsc = ext === '.txt' && (path.basename(file).startsWith('__next.') || Boolean(await findFile([file.slice(0, -4) + '.html'])));
+      const isRsc = ext === '.txt' && (segmentPayloads.has(relative) || path.basename(file).startsWith('__next.') || Boolean(await findFile([file.slice(0, -4) + '.html'])));
       if (wantsRsc && !isRsc) return errorResponse(404, 'Not found');
       const modified = stat.mtime.toUTCString();
       // Metadata validators are weak; If-Range never treats them as byte-identical strong tags.

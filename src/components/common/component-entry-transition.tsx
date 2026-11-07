@@ -340,6 +340,13 @@ export function ComponentEntryTransition({ children }: { children: ReactNode }) 
       const destination = navigation ? new URL(navigation.href) : null;
       const returningToCollection = destination?.origin === location.origin && destination.pathname === collectionHref;
       if (navigation?.target === "_blank" || navigation?.hasAttribute("download")) return;
+      // A facet link starts a new collection view; it is not the animated Back link.
+      if (returningToCollection && (destination.search || destination.hash)) {
+        finish();
+        closeOpening(false);
+        restore.current = null;
+        return;
+      }
       if (openingRef.current) {
         if (returningToCollection) {
           event.preventDefault();
@@ -481,12 +488,17 @@ export function ComponentEntryTransition({ children }: { children: ReactNode }) 
       reduced.removeEventListener("change", motionChange);
       theme.disconnect();
     };
-  }, [pathname, router, finish, beginReturn]);
+  }, [pathname, router, finish, beginReturn, closeOpening]);
 
   useEffect(() => {
     const pop = () => {
       const entry = pending.current;
       const backToCollection = window.location.pathname === collectionHref;
+      // Query-only history entries belong to the filters. Do not replay an old
+      // detail return or restore its scroll position while browsing those entries.
+      const returningFromDetail = Boolean(openingRef.current || entry?.direction === "enter" ||
+        [...(main.current?.querySelectorAll<HTMLElement>("[data-component-document]") ?? [])]
+          .some(detail => detail.getBoundingClientRect().width > 0));
       const pose = backToCollection && entry?.quick && entry.direction === "enter" ? {
         card: box(entry.card),
         media: box(entry.media),
@@ -502,12 +514,12 @@ export function ComponentEntryTransition({ children }: { children: ReactNode }) 
         router.replace(queued, { scroll: false });
         return;
       }
-      if (backToCollection && previous.current) {
+      if (backToCollection && returningFromDetail && previous.current) {
         restore.current = previous.current;
         if (!interrupted) beginReturn(pose);
         setReturnVisit(visit => visit + 1);
       }
-      closeOpening(backToCollection);
+      closeOpening(backToCollection && returningFromDetail);
     };
     // Next can commit its popstate update before later listeners are called.
     // Keep this subscription alive across pathname changes and request a fresh

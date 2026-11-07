@@ -8,6 +8,7 @@ import { InteractionPreview } from "@/components/common/interaction-preview";
 import { COMPONENT_CATALOG } from "@/data/component-catalog";
 import { INTERACTION_COMPONENTS } from "@/data/interaction-components";
 import { motionDocLayout } from "@/lib/motion-doc-layout";
+import { ComponentExplorer } from "@/components/catalog/component-explorer";
 
 const motionLayouts = new Map(INTERACTION_COMPONENTS
   .filter(entry => entry.href.startsWith("/docs/animations/"))
@@ -29,9 +30,9 @@ export default function ComponentsPage() {
         and make them yours. More on the way.
       </T></p>
 
-      <section id="interaction" className="mt-10 scroll-mt-24" aria-labelledby="components-title">
-        <ul className="grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
-          {COMPONENT_CATALOG.map((component) => (
+      <ComponentExplorer cards={COMPONENT_CATALOG.map((component) => ({
+        slug: component.href.split("/").at(-1)!,
+        content: (
             <li key={component.href} data-preview-card data-component-card={component.href} data-component-doc-layout={motionLayouts.get(component.href)} className="group relative flex h-full flex-col gap-4">
                 <div className="relative flex aspect-4/3 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-[#f4f4f4]">
                   {component.kind === "interaction" ? (
@@ -45,9 +46,8 @@ export default function ComponentsPage() {
                   <p className="mt-1 text-sm leading-6 text-pretty text-muted-foreground"><T>{component.description}</T></p>
                 </Link>
             </li>
-          ))}
-        </ul>
-      </section>
+        ),
+      }))} />
 
       <div className="mt-24">
         <Footer variant="docs" />
