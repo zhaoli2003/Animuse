@@ -1,0 +1,58 @@
+import Link from "next/link";
+import { MaintainerLinks } from "@/components/common/maintainer-links";
+
+import { GitHubStars } from "@/components/common/github-stars";
+import { MobileMenu } from "@/components/landing/mobile-menu";
+import { SearchButton, SearchDialog } from "@/components/common/site-search";
+import { HomeLogoLink } from "@/components/common/home-logo-link";
+import { ThemeToggle } from "@/components/common/theme-toggle";
+import { LanguageToggle } from "@/components/common/language-toggle";
+import { T } from "@/components/common/language-provider";
+import { ScrollHideHeader } from "@/components/common/scroll-hide-header";
+
+const links = [
+  { href: "/docs", label: "Docs" },
+  { href: "/components", label: "Components" },
+];
+
+export function Navbar() {
+  return (
+    <>
+    <ScrollHideHeader className="fixed inset-x-0 top-0 z-50 border-b border-border/40 bg-background/70 backdrop-blur-xl backdrop-saturate-150">
+      <nav
+        aria-label="Main"
+        className="mx-auto grid h-14 w-full max-w-6xl grid-cols-[1fr_auto_1fr] items-center px-5 sm:px-8"
+      >
+        <HomeLogoLink
+          className="col-start-1 justify-self-start transition-opacity duration-150 hover:opacity-70"
+        />
+
+        <ul className="col-start-2 hidden items-center gap-1 sm:flex">
+          {links.map((link) => (
+            <li key={link.href}>
+              <Link
+                href={link.href}
+                prefetch={false}
+                className="rounded-full px-3.5 py-1.5 text-sm text-muted-foreground transition-colors duration-150 hover:bg-muted hover:text-foreground"
+              >
+                <T>{link.label}</T>
+              </Link>
+            </li>
+          ))}
+        </ul>
+
+        <div className="col-start-3 flex items-center gap-1 justify-self-end sm:gap-2">
+          <MaintainerLinks />
+          <LanguageToggle />
+          <SearchButton />
+          <ThemeToggle />
+          <GitHubStars />
+          <MobileMenu />
+        </div>
+      </nav>
+
+    </ScrollHideHeader>
+    <SearchDialog />
+    </>
+  );
+}

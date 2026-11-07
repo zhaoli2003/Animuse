@@ -1,0 +1,226 @@
+{
+  "images": {
+    "/assets/components/ai-brand-cover-cards.png": {
+      "src": "/assets/optimized/ai-brand-cover-cards-92b3dfd45ff2-1200.webp",
+      "srcSet": "/assets/optimized/ai-brand-cover-cards-92b3dfd45ff2-320.webp 320w, /assets/optimized/ai-brand-cover-cards-92b3dfd45ff2-640.webp 640w, /assets/optimized/ai-brand-cover-cards-92b3dfd45ff2-960.webp 960w, /assets/optimized/ai-brand-cover-cards-92b3dfd45ff2-1200.webp 1200w"
+    },
+    "/assets/components/ai-generating.png": {
+      "src": "/assets/optimized/ai-generating-5b80f735c260-546.webp",
+      "srcSet": "/assets/optimized/ai-generating-5b80f735c260-320.webp 320w, /assets/optimized/ai-generating-5b80f735c260-546.webp 546w"
+    },
+    "/assets/components/album-cover-tunnel.png": {
+      "src": "/assets/optimized/album-cover-tunnel-64b842415ff2-1200.webp",
+      "srcSet": "/assets/optimized/album-cover-tunnel-64b842415ff2-320.webp 320w, /assets/optimized/album-cover-tunnel-64b842415ff2-640.webp 640w, /assets/optimized/album-cover-tunnel-64b842415ff2-960.webp 960w, /assets/optimized/album-cover-tunnel-64b842415ff2-1200.webp 1200w"
+    },
+    "/assets/components/ascii-sharks.png": {
+      "src": "/assets/optimized/ascii-sharks-da85d8407873-1173.webp",
+      "srcSet": "/assets/optimized/ascii-sharks-da85d8407873-320.webp 320w, /assets/optimized/ascii-sharks-da85d8407873-640.webp 640w, /assets/optimized/ascii-sharks-da85d8407873-960.webp 960w, /assets/optimized/ascii-sharks-da85d8407873-1173.webp 1173w"
+    },
+    "/assets/components/blue-fluted-glass.png": {
+      "src": "/assets/optimized/blue-fluted-glass-671d8aaa6981-1200.webp",
+      "srcSet": "/assets/optimized/blue-fluted-glass-671d8aaa6981-320.webp 320w, /assets/optimized/blue-fluted-glass-671d8aaa6981-640.webp 640w, /assets/optimized/blue-fluted-glass-671d8aaa6981-960.webp 960w, /assets/optimized/blue-fluted-glass-671d8aaa6981-1200.webp 1200w"
+    },
+    "/assets/components/bouncy-access.png": {
+      "src": "/assets/optimized/bouncy-access-b1c0b785650d-546.webp",
+      "srcSet": "/assets/optimized/bouncy-access-b1c0b785650d-320.webp 320w, /assets/optimized/bouncy-access-b1c0b785650d-546.webp 546w"
+    },
+    "/assets/components/bounding-box-resize.png": {
+      "src": "/assets/optimized/bounding-box-resize-4cd91e02561a-1200.webp",
+      "srcSet": "/assets/optimized/bounding-box-resize-4cd91e02561a-320.webp 320w, /assets/optimized/bounding-box-resize-4cd91e02561a-640.webp 640w, /assets/optimized/bounding-box-resize-4cd91e02561a-960.webp 960w, /assets/optimized/bounding-box-resize-4cd91e02561a-1200.webp 1200w"
+    },
+    "/assets/components/brand-line-cards.png": {
+      "src": "/assets/optimized/brand-line-cards-affe198300a7-546.webp",
+      "srcSet": "/assets/optimized/brand-line-cards-affe198300a7-320.webp 320w, /assets/optimized/brand-line-cards-affe198300a7-546.webp 546w"
+    },
+    "/assets/components/brand-poster-cards.png": {
+      "src": "/assets/optimized/brand-poster-cards-251561b75c9e-1200.webp",
+      "srcSet": "/assets/optimized/brand-poster-cards-251561b75c9e-320.webp 320w, /assets/optimized/brand-poster-cards-251561b75c9e-640.webp 640w, /assets/optimized/brand-poster-cards-251561b75c9e-960.webp 960w, /assets/optimized/brand-poster-cards-251561b75c9e-1200.webp 1200w"
+    },
+    "/assets/components/collection-layout-morph.png": {
+      "src": "/assets/optimized/collection-layout-morph-5cf78720c78b-1200.webp",
+      "srcSet": "/assets/optimized/collection-layout-morph-5cf78720c78b-320.webp 320w, /assets/optimized/collection-layout-morph-5cf78720c78b-640.webp 640w, /assets/optimized/collection-layout-morph-5cf78720c78b-960.webp 960w, /assets/optimized/collection-layout-morph-5cf78720c78b-1200.webp 1200w"
+    },
+    "/assets/components/cosmic-panels.png": {
+      "src": "/assets/optimized/cosmic-panels-5acfcbf36766-1200.webp",
+      "srcSet": "/assets/optimized/cosmic-panels-5acfcbf36766-320.webp 320w, /assets/optimized/cosmic-panels-5acfcbf36766-640.webp 640w, /assets/optimized/cosmic-panels-5acfcbf36766-960.webp 960w, /assets/optimized/cosmic-panels-5acfcbf36766-1200.webp 1200w"
+    },
+    "/assets/components/crumpled-paper.png": {
+      "src": "/assets/optimized/crumpled-paper-a96eaca8710a-1200.webp",
+      "srcSet": "/assets/optimized/crumpled-paper-a96eaca8710a-320.webp 320w, /assets/optimized/crumpled-paper-a96eaca8710a-640.webp 640w, /assets/optimized/crumpled-paper-a96eaca8710a-960.webp 960w, /assets/optimized/crumpled-paper-a96eaca8710a-1200.webp 1200w"
+    },
+    "/assets/components/deep-agent-composer.png": {
+      "src": "/assets/optimized/deep-agent-composer-6004c7b68f42-900.webp",
+      "srcSet": "/assets/optimized/deep-agent-composer-6004c7b68f42-320.webp 320w, /assets/optimized/deep-agent-composer-6004c7b68f42-640.webp 640w, /assets/optimized/deep-agent-composer-6004c7b68f42-900.webp 900w"
+    },
+    "/assets/components/dot-matrix-trio.png": {
+      "src": "/assets/optimized/dot-matrix-trio-caf48c73102c-1200.webp",
+      "srcSet": "/assets/optimized/dot-matrix-trio-caf48c73102c-320.webp 320w, /assets/optimized/dot-matrix-trio-caf48c73102c-640.webp 640w, /assets/optimized/dot-matrix-trio-caf48c73102c-960.webp 960w, /assets/optimized/dot-matrix-trio-caf48c73102c-1200.webp 1200w"
+    },
+    "/assets/components/elastic-panel-resize.png": {
+      "src": "/assets/optimized/elastic-panel-resize-9282c19c34b5-1200.webp",
+      "srcSet": "/assets/optimized/elastic-panel-resize-9282c19c34b5-320.webp 320w, /assets/optimized/elastic-panel-resize-9282c19c34b5-640.webp 640w, /assets/optimized/elastic-panel-resize-9282c19c34b5-960.webp 960w, /assets/optimized/elastic-panel-resize-9282c19c34b5-1200.webp 1200w"
+    },
+    "/assets/components/fluid-tooltip.png": {
+      "src": "/assets/optimized/fluid-tooltip-06951f011c5d-960.webp",
+      "srcSet": "/assets/optimized/fluid-tooltip-06951f011c5d-320.webp 320w, /assets/optimized/fluid-tooltip-06951f011c5d-640.webp 640w, /assets/optimized/fluid-tooltip-06951f011c5d-960.webp 960w"
+    },
+    "/assets/components/folded-emoji-scroll.png": {
+      "src": "/assets/optimized/folded-emoji-scroll-5dcda494a41f-1200.webp",
+      "srcSet": "/assets/optimized/folded-emoji-scroll-5dcda494a41f-320.webp 320w, /assets/optimized/folded-emoji-scroll-5dcda494a41f-640.webp 640w, /assets/optimized/folded-emoji-scroll-5dcda494a41f-960.webp 960w, /assets/optimized/folded-emoji-scroll-5dcda494a41f-1200.webp 1200w"
+    },
+    "/assets/components/galaxy-effort-slider.png": {
+      "src": "/assets/optimized/galaxy-effort-slider-83888a47b8cb-945.webp",
+      "srcSet": "/assets/optimized/galaxy-effort-slider-83888a47b8cb-320.webp 320w, /assets/optimized/galaxy-effort-slider-83888a47b8cb-640.webp 640w, /assets/optimized/galaxy-effort-slider-83888a47b8cb-945.webp 945w"
+    },
+    "/assets/components/glass-folder.png": {
+      "src": "/assets/optimized/glass-folder-a237d1600d80-1200.webp",
+      "srcSet": "/assets/optimized/glass-folder-a237d1600d80-320.webp 320w, /assets/optimized/glass-folder-a237d1600d80-640.webp 640w, /assets/optimized/glass-folder-a237d1600d80-960.webp 960w, /assets/optimized/glass-folder-a237d1600d80-1200.webp 1200w"
+    },
+    "/assets/components/glass-tab-menu.png": {
+      "src": "/assets/optimized/glass-tab-menu-57b8e6d1de24-1200.webp",
+      "srcSet": "/assets/optimized/glass-tab-menu-57b8e6d1de24-320.webp 320w, /assets/optimized/glass-tab-menu-57b8e6d1de24-640.webp 640w, /assets/optimized/glass-tab-menu-57b8e6d1de24-960.webp 960w, /assets/optimized/glass-tab-menu-57b8e6d1de24-1200.webp 1200w"
+    },
+    "/assets/components/gradient-cover-wall.png": {
+      "src": "/assets/optimized/gradient-cover-wall-bf32d9d76606-1200.webp",
+      "srcSet": "/assets/optimized/gradient-cover-wall-bf32d9d76606-320.webp 320w, /assets/optimized/gradient-cover-wall-bf32d9d76606-640.webp 640w, /assets/optimized/gradient-cover-wall-bf32d9d76606-960.webp 960w, /assets/optimized/gradient-cover-wall-bf32d9d76606-1200.webp 1200w"
+    },
+    "/assets/components/gradient-ring-cards.png": {
+      "src": "/assets/optimized/gradient-ring-cards-054c455bea47-960.webp",
+      "srcSet": "/assets/optimized/gradient-ring-cards-054c455bea47-320.webp 320w, /assets/optimized/gradient-ring-cards-054c455bea47-640.webp 640w, /assets/optimized/gradient-ring-cards-054c455bea47-960.webp 960w"
+    },
+    "/assets/components/hammerhead-chart.png": {
+      "src": "/assets/optimized/hammerhead-chart-55720a189153-1200.webp",
+      "srcSet": "/assets/optimized/hammerhead-chart-55720a189153-320.webp 320w, /assets/optimized/hammerhead-chart-55720a189153-640.webp 640w, /assets/optimized/hammerhead-chart-55720a189153-960.webp 960w, /assets/optimized/hammerhead-chart-55720a189153-1200.webp 1200w"
+    },
+    "/assets/components/ink-spread-carousel.png": {
+      "src": "/assets/optimized/ink-spread-carousel-beadc3c131ba-1168.webp",
+      "srcSet": "/assets/optimized/ink-spread-carousel-beadc3c131ba-320.webp 320w, /assets/optimized/ink-spread-carousel-beadc3c131ba-640.webp 640w, /assets/optimized/ink-spread-carousel-beadc3c131ba-960.webp 960w, /assets/optimized/ink-spread-carousel-beadc3c131ba-1168.webp 1168w"
+    },
+    "/assets/components/inline-text-morph.png": {
+      "src": "/assets/optimized/inline-text-morph-8daecfa57f4c-1044.webp",
+      "srcSet": "/assets/optimized/inline-text-morph-8daecfa57f4c-320.webp 320w, /assets/optimized/inline-text-morph-8daecfa57f4c-640.webp 640w, /assets/optimized/inline-text-morph-8daecfa57f4c-960.webp 960w, /assets/optimized/inline-text-morph-8daecfa57f4c-1044.webp 1044w"
+    },
+    "/assets/components/matcha-powder-reveal.png": {
+      "src": "/assets/optimized/matcha-powder-reveal-31a1d8dafe39-960.webp",
+      "srcSet": "/assets/optimized/matcha-powder-reveal-31a1d8dafe39-320.webp 320w, /assets/optimized/matcha-powder-reveal-31a1d8dafe39-640.webp 640w, /assets/optimized/matcha-powder-reveal-31a1d8dafe39-960.webp 960w"
+    },
+    "/assets/components/morphing-timer.png": {
+      "src": "/assets/optimized/morphing-timer-daf9fb769107-546.webp",
+      "srcSet": "/assets/optimized/morphing-timer-daf9fb769107-320.webp 320w, /assets/optimized/morphing-timer-daf9fb769107-546.webp 546w"
+    },
+    "/assets/components/multi-cursor-builder.png": {
+      "src": "/assets/optimized/multi-cursor-builder-3d9293b89563-1120.webp",
+      "srcSet": "/assets/optimized/multi-cursor-builder-3d9293b89563-320.webp 320w, /assets/optimized/multi-cursor-builder-3d9293b89563-640.webp 640w, /assets/optimized/multi-cursor-builder-3d9293b89563-960.webp 960w, /assets/optimized/multi-cursor-builder-3d9293b89563-1120.webp 1120w"
+    },
+    "/assets/components/notes-text-color.png": {
+      "src": "/assets/optimized/notes-text-color-bed022555fe4-900.webp",
+      "srcSet": "/assets/optimized/notes-text-color-bed022555fe4-320.webp 320w, /assets/optimized/notes-text-color-bed022555fe4-640.webp 640w, /assets/optimized/notes-text-color-bed022555fe4-900.webp 900w"
+    },
+    "/assets/components/orbit-not-found.png": {
+      "src": "/assets/optimized/orbit-not-found-c6f8e7a3b066-960.webp",
+      "srcSet": "/assets/optimized/orbit-not-found-c6f8e7a3b066-320.webp 320w, /assets/optimized/orbit-not-found-c6f8e7a3b066-640.webp 640w, /assets/optimized/orbit-not-found-c6f8e7a3b066-960.webp 960w"
+    },
+    "/assets/components/original-ascii-object.png": {
+      "src": "/assets/optimized/original-ascii-object-36b063d51642-768.webp",
+      "srcSet": "/assets/optimized/original-ascii-object-36b063d51642-320.webp 320w, /assets/optimized/original-ascii-object-36b063d51642-640.webp 640w, /assets/optimized/original-ascii-object-36b063d51642-768.webp 768w"
+    },
+    "/assets/components/original-asciify.png": {
+      "src": "/assets/optimized/original-asciify-d9d6f169a0be-768.webp",
+      "srcSet": "/assets/optimized/original-asciify-d9d6f169a0be-320.webp 320w, /assets/optimized/original-asciify-d9d6f169a0be-640.webp 640w, /assets/optimized/original-asciify-d9d6f169a0be-768.webp 768w"
+    },
+    "/assets/components/original-frost.png": {
+      "src": "/assets/optimized/original-frost-7d94d274daaa-768.webp",
+      "srcSet": "/assets/optimized/original-frost-7d94d274daaa-320.webp 320w, /assets/optimized/original-frost-7d94d274daaa-640.webp 640w, /assets/optimized/original-frost-7d94d274daaa-768.webp 768w"
+    },
+    "/assets/components/original-glass-object.png": {
+      "src": "/assets/optimized/original-glass-object-e431c55f52be-768.webp",
+      "srcSet": "/assets/optimized/original-glass-object-e431c55f52be-320.webp 320w, /assets/optimized/original-glass-object-e431c55f52be-640.webp 640w, /assets/optimized/original-glass-object-e431c55f52be-768.webp 768w"
+    },
+    "/assets/components/original-glass.png": {
+      "src": "/assets/optimized/original-glass-06ee63a1e90c-768.webp",
+      "srcSet": "/assets/optimized/original-glass-06ee63a1e90c-320.webp 320w, /assets/optimized/original-glass-06ee63a1e90c-640.webp 640w, /assets/optimized/original-glass-06ee63a1e90c-768.webp 768w"
+    },
+    "/assets/components/original-glyph-rain.png": {
+      "src": "/assets/optimized/original-glyph-rain-ee2698b950e6-768.webp",
+      "srcSet": "/assets/optimized/original-glyph-rain-ee2698b950e6-320.webp 320w, /assets/optimized/original-glyph-rain-ee2698b950e6-640.webp 640w, /assets/optimized/original-glyph-rain-ee2698b950e6-768.webp 768w"
+    },
+    "/assets/components/original-liquid-object.png": {
+      "src": "/assets/optimized/original-liquid-object-1c2eacb9e793-768.webp",
+      "srcSet": "/assets/optimized/original-liquid-object-1c2eacb9e793-320.webp 320w, /assets/optimized/original-liquid-object-1c2eacb9e793-640.webp 640w, /assets/optimized/original-liquid-object-1c2eacb9e793-768.webp 768w"
+    },
+    "/assets/components/original-particle-object.png": {
+      "src": "/assets/optimized/original-particle-object-0a55156ebb96-768.webp",
+      "srcSet": "/assets/optimized/original-particle-object-0a55156ebb96-320.webp 320w, /assets/optimized/original-particle-object-0a55156ebb96-640.webp 640w, /assets/optimized/original-particle-object-0a55156ebb96-768.webp 768w"
+    },
+    "/assets/components/original-particle-scroll.png": {
+      "src": "/assets/optimized/original-particle-scroll-09be555ba970-768.webp",
+      "srcSet": "/assets/optimized/original-particle-scroll-09be555ba970-320.webp 320w, /assets/optimized/original-particle-scroll-09be555ba970-640.webp 640w, /assets/optimized/original-particle-scroll-09be555ba970-768.webp 768w"
+    },
+    "/assets/components/otp-verification.png": {
+      "src": "/assets/optimized/otp-verification-eeec5a945ac9-546.webp",
+      "srcSet": "/assets/optimized/otp-verification-eeec5a945ac9-320.webp 320w, /assets/optimized/otp-verification-eeec5a945ac9-546.webp 546w"
+    },
+    "/assets/components/particle-texture-trio.png": {
+      "src": "/assets/optimized/particle-texture-trio-324731fc5f0b-960.webp",
+      "srcSet": "/assets/optimized/particle-texture-trio-324731fc5f0b-320.webp 320w, /assets/optimized/particle-texture-trio-324731fc5f0b-640.webp 640w, /assets/optimized/particle-texture-trio-324731fc5f0b-960.webp 960w"
+    },
+    "/assets/components/reasoning-effort-slider.png": {
+      "src": "/assets/optimized/reasoning-effort-slider-12cde9adac9e-520.webp",
+      "srcSet": "/assets/optimized/reasoning-effort-slider-12cde9adac9e-320.webp 320w, /assets/optimized/reasoning-effort-slider-12cde9adac9e-520.webp 520w"
+    },
+    "/assets/components/sailing-toc.png": {
+      "src": "/assets/optimized/sailing-toc-2d86ebba867c-1200.webp",
+      "srcSet": "/assets/optimized/sailing-toc-2d86ebba867c-320.webp 320w, /assets/optimized/sailing-toc-2d86ebba867c-640.webp 640w, /assets/optimized/sailing-toc-2d86ebba867c-960.webp 960w, /assets/optimized/sailing-toc-2d86ebba867c-1200.webp 1200w"
+    },
+    "/assets/components/selection-flower.png": {
+      "src": "/assets/optimized/selection-flower-7797a6f018b5-822.webp",
+      "srcSet": "/assets/optimized/selection-flower-7797a6f018b5-320.webp 320w, /assets/optimized/selection-flower-7797a6f018b5-640.webp 640w, /assets/optimized/selection-flower-7797a6f018b5-822.webp 822w"
+    },
+    "/assets/components/shader-flood.png": {
+      "src": "/assets/optimized/shader-flood-849f40876fff-1120.webp",
+      "srcSet": "/assets/optimized/shader-flood-849f40876fff-320.webp 320w, /assets/optimized/shader-flood-849f40876fff-640.webp 640w, /assets/optimized/shader-flood-849f40876fff-960.webp 960w, /assets/optimized/shader-flood-849f40876fff-1120.webp 1120w"
+    },
+    "/assets/components/share-invite.png": {
+      "src": "/assets/optimized/share-invite-2e45dac61dff-546.webp",
+      "srcSet": "/assets/optimized/share-invite-2e45dac61dff-320.webp 320w, /assets/optimized/share-invite-2e45dac61dff-546.webp 546w"
+    },
+    "/assets/components/soft-action-wheel.png": {
+      "src": "/assets/optimized/soft-action-wheel-f63ea380bcdb-1200.webp",
+      "srcSet": "/assets/optimized/soft-action-wheel-f63ea380bcdb-320.webp 320w, /assets/optimized/soft-action-wheel-f63ea380bcdb-640.webp 640w, /assets/optimized/soft-action-wheel-f63ea380bcdb-960.webp 960w, /assets/optimized/soft-action-wheel-f63ea380bcdb-1200.webp 1200w"
+    },
+    "/assets/components/spider-music-player.png": {
+      "src": "/assets/optimized/spider-music-player-2052b7bac279-960.webp",
+      "srcSet": "/assets/optimized/spider-music-player-2052b7bac279-320.webp 320w, /assets/optimized/spider-music-player-2052b7bac279-640.webp 640w, /assets/optimized/spider-music-player-2052b7bac279-960.webp 960w"
+    },
+    "/assets/components/stacked-metadata.png": {
+      "src": "/assets/optimized/stacked-metadata-0386559271b0-800.webp",
+      "srcSet": "/assets/optimized/stacked-metadata-0386559271b0-320.webp 320w, /assets/optimized/stacked-metadata-0386559271b0-640.webp 640w, /assets/optimized/stacked-metadata-0386559271b0-800.webp 800w"
+    },
+    "/assets/components/staggered-radial-menu.png": {
+      "src": "/assets/optimized/staggered-radial-menu-ef5939c3f398-1200.webp",
+      "srcSet": "/assets/optimized/staggered-radial-menu-ef5939c3f398-320.webp 320w, /assets/optimized/staggered-radial-menu-ef5939c3f398-640.webp 640w, /assets/optimized/staggered-radial-menu-ef5939c3f398-960.webp 960w, /assets/optimized/staggered-radial-menu-ef5939c3f398-1200.webp 1200w"
+    },
+    "/assets/components/tactile-push-button.png": {
+      "src": "/assets/optimized/tactile-push-button-08146a8ffae6-720.webp",
+      "srcSet": "/assets/optimized/tactile-push-button-08146a8ffae6-320.webp 320w, /assets/optimized/tactile-push-button-08146a8ffae6-640.webp 640w, /assets/optimized/tactile-push-button-08146a8ffae6-720.webp 720w"
+    },
+    "/assets/components/thinking-particles.png": {
+      "src": "/assets/optimized/thinking-particles-f108db0f714f-1200.webp",
+      "srcSet": "/assets/optimized/thinking-particles-f108db0f714f-320.webp 320w, /assets/optimized/thinking-particles-f108db0f714f-640.webp 640w, /assets/optimized/thinking-particles-f108db0f714f-960.webp 960w, /assets/optimized/thinking-particles-f108db0f714f-1200.webp 1200w"
+    },
+    "/assets/components/transfer-glow.png": {
+      "src": "/assets/optimized/transfer-glow-e1d9820fb883-1120.webp",
+      "srcSet": "/assets/optimized/transfer-glow-e1d9820fb883-320.webp 320w, /assets/optimized/transfer-glow-e1d9820fb883-640.webp 640w, /assets/optimized/transfer-glow-e1d9820fb883-960.webp 960w, /assets/optimized/transfer-glow-e1d9820fb883-1120.webp 1120w"
+    },
+    "/assets/components/velocity-drag.png": {
+      "src": "/assets/optimized/velocity-drag-d0fca960906f-546.webp",
+      "srcSet": "/assets/optimized/velocity-drag-d0fca960906f-320.webp 320w, /assets/optimized/velocity-drag-d0fca960906f-546.webp 546w"
+    },
+    "/landing/agent-demo/alpine-lake.png": {
+      "src": "/assets/optimized/alpine-lake-a6d766f87344-1200.webp",
+      "srcSet": "/assets/optimized/alpine-lake-a6d766f87344-320.webp 320w, /assets/optimized/alpine-lake-a6d766f87344-640.webp 640w, /assets/optimized/alpine-lake-a6d766f87344-960.webp 960w, /assets/optimized/alpine-lake-a6d766f87344-1200.webp 1200w"
+    }
+  },
+  "video": {},
+  "previews": {}
+}

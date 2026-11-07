@@ -1,0 +1,48 @@
+import { commonTranslations } from "./common";
+import { landingTranslations } from "./landing";
+import { docsTranslations } from "./docs";
+import { contactTranslations } from "./contact";
+import { aiTranslations } from "./ai";
+import { interactionTranslations } from "./interactions";
+import { privacyTranslations } from "./privacy";
+import { studyTranslations } from "./study";
+import { copyrightTranslations } from "./copyright";
+
+export type Locale = "zh" | "en";
+export const LOCALE_STORAGE_KEY = "zlui-atlas:locale";
+const rawTranslations: Readonly<Record<string, string>> = {
+  ...commonTranslations,
+  ...landingTranslations,
+  ...docsTranslations,
+  ...contactTranslations,
+  ...aiTranslations,
+  ...interactionTranslations,
+  ...privacyTranslations,
+  ...copyrightTranslations,
+  ...studyTranslations,
+  "This local demo uses the original effect with ZLUIAtlas's selected background.": "本地演示保留原有效果，背景替换为 ZLUIAtlas 选定的画面。",
+  "Source code and license are available from the original author.": "源码与许可说明请查看原作者页面。",
+  "Visit original author": "查看原作者",
+};
+const entities: Record<string, string> = { apos: "'", quot: '"', amp: "&", lt: "<", gt: ">", nbsp: " ", lsquo: "‘", rsquo: "’", ldquo: "“", rdquo: "”", middot: "·", larr: "←", rarr: "→", ndash: "–", mdash: "—" };
+export function normalizeCopy(text: string): string {
+  return text.replace(/&([a-z]+);/gi, (full, name: string) => entities[name] ?? full).trim().replace(/\s+/g, " ");
+}
+export const translations: Readonly<Record<string, string>> = Object.fromEntries(Object.entries(rawTranslations).map(([key, value]) => [normalizeCopy(key), value]));
+
+/** Translate presentation copy only. Callers keep code, URLs and data keys intact. */
+export function translateText(text: string, locale: Locale): string {
+  if (locale === "en" || !text.trim()) return text;
+  const normalized = normalizeCopy(text);
+  let translated = translations[normalized];
+  if (!translated) {
+    const empty = normalized.match(/^No results for [“"](.*)[”"]$/);
+    if (empty) translated = `没有找到“${empty[1]}”的相关结果`;
+    const copyForAi = normalized.match(/^Copy (.+) for AI$/);
+    if (copyForAi) translated = `复制${translateText(copyForAi[1], locale)}供 AI 使用`;
+    const sharePlayground = normalized.match(/^Share the (.+) playground$/);
+    if (sharePlayground) translated = `分享${translateText(sharePlayground[1], locale)}演练场`;
+  }
+  if (!translated) return text;
+  return `${text.match(/^\s*/)?.[0] ?? ""}${translated}${text.match(/\s*$/)?.[0] ?? ""}`;
+}

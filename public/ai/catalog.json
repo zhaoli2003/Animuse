@@ -1,0 +1,3107 @@
+{
+  "schemaVersion": 1,
+  "title": "ZLUIAtlas UI collection metadata",
+  "revision": "9744599de609f3e9cd28a855c9859053f2f326f0a00d32b117d881350d5880cb",
+  "siteOrigin": "http://127.0.0.1:3000",
+  "links": {
+    "searchIndex": "/ai/search-index.json",
+    "searchSchema": "/ai/search-index.schema.json",
+    "agentGuide": "/ai/README.md",
+    "catalog": "/ai/catalog.json",
+    "llms": "/llms.txt",
+    "docs": "/docs",
+    "components": "/components",
+    "skill": "/ai/SKILL.md",
+    "aiGuide": "/docs/mcp"
+  },
+  "capabilities": {
+    "list": true,
+    "bilingualSearch": true,
+    "componentMetadata": true,
+    "sourceDownload": true,
+    "sourceRedistribution": true,
+    "perComponentDistribution": true,
+    "autoInstall": false
+  },
+  "classificationPolicy": {
+    "supportedKinds": [
+      "project-source"
+    ],
+    "currentKind": "project-source",
+    "distribution": "Framework packages are served by ZLUIAtlas with LeiBox author's permission. Original authorship and per-component third-party licenses are retained; no blanket MIT license is assigned."
+  },
+  "items": [
+    {
+      "slug": "tactile-push-button",
+      "name": {
+        "en": "Tactile Push Button",
+        "zh": "立体按压按钮"
+      },
+      "description": {
+        "en": "A sculpted CSS button that sinks on hover and compresses while pressed.",
+        "zh": "纯 CSS 立体按钮，悬停时下沉，按住时表面内缩。"
+      },
+      "keywords": "按压 按钮 立体 触感 投稿 少荃 tactile button press css",
+      "docsPath": "/docs/animations/tactile-push-button",
+      "detailPath": "/ai/components/tactile-push-button.json",
+      "markdownPath": "/ai/components/tactile-push-button.md",
+      "previewPath": "/assets/components/tactile-push-button.png",
+      "discovery": {
+        "category": "input",
+        "useCases": [
+          "立体按钮",
+          "按压反馈",
+          "tactile push button"
+        ],
+        "searchTerms": [
+          "按钮",
+          "按压",
+          "触感",
+          "立体",
+          "button",
+          "press",
+          "css"
+        ],
+        "visualTags": [
+          "3d",
+          "silver",
+          "gradient"
+        ],
+        "interactions": [
+          "hover",
+          "click",
+          "keyboard",
+          "touch"
+        ],
+        "caveat": "少荃投稿。按压效果由 HTML 和 CSS 实现，可通过 CSS 变量调整外观和过渡。"
+      },
+      "frameworks": [
+        "react",
+        "vue",
+        "svelte",
+        "solid",
+        "preact",
+        "vanilla"
+      ],
+      "renderers": [],
+      "source": {
+        "kind": "project-source",
+        "provider": "LeiBox",
+        "implementation": "Original HTML and CSS submitted by 少荃 (Douyin: 宝龙体育优品小铺), adapted for the LeiBox demo.",
+        "designReference": null,
+        "designAuthor": "少荃 (Douyin: 宝龙体育优品小铺)",
+        "license": "Community submission by 少荃 (Douyin: 宝龙体育优品小铺). No separate license was supplied."
+      },
+      "distribution": {
+        "canRedistributeSource": true,
+        "installFromThisSite": true,
+        "installProvider": "zlui-atlas",
+        "notice": {
+          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+        }
+      }
+    },
+    {
+      "slug": "multi-cursor-builder",
+      "name": {
+        "en": "Multi Cursor Page Builder",
+        "zh": "多光标页面搭建"
+      },
+      "description": {
+        "en": "Twelve colorful cursors type, draw, carry images and arrange a page as you scroll, with live selection boxes and reversible construction.",
+        "zh": "12个彩色光标随滚动打字、画框、搬入图片并排版，选框实时跟随，上滚可撤回搭建。"
+      },
+      "keywords": "多光标 页面 搭建 自动 排版 选框 滚动 回退 字体 Figma cursor builder page scroll construction",
+      "docsPath": "/docs/animations/multi-cursor-builder",
+      "detailPath": "/ai/components/multi-cursor-builder.json",
+      "markdownPath": "/ai/components/multi-cursor-builder.md",
+      "previewPath": "/assets/components/multi-cursor-builder.png",
+      "discovery": {
+        "category": "hero",
+        "useCases": [
+          "多光标搭建演示",
+          "页面自动排版动画",
+          "scrolling page construction"
+        ],
+        "searchTerms": [
+          "多光标",
+          "搭建",
+          "页面",
+          "选框",
+          "排版",
+          "回退",
+          "Figma",
+          "cursor",
+          "builder",
+          "construction"
+        ],
+        "visualTags": [
+          "cursors",
+          "canvas",
+          "typography",
+          "scroll"
+        ],
+        "interactions": [
+          "scroll",
+          "keyboard",
+          "touch",
+          "pause",
+          "replay"
+        ],
+        "caveat": "用户提供HTML的本地演示；内层独立滚动，不是多人协作编辑器或真实建站后台。"
+      },
+      "frameworks": [
+        "react",
+        "vue",
+        "svelte",
+        "solid",
+        "preact",
+        "vanilla"
+      ],
+      "renderers": [],
+      "source": {
+        "kind": "project-source",
+        "provider": "LeiBox",
+        "implementation": "User-supplied HTML with local performance, geometry and native lifecycle adaptations. Six native framework wrappers share the same DOM/Canvas2D core; no iframe implementation or remote runtime assets.",
+        "designReference": null,
+        "designAuthor": "User-provided HTML",
+        "license": "Supplied HTML used with the user's instruction to collect it. Image provenance and original upstream code license were not supplied or independently verified. Font copyright and SIL OFL notices are retained. LeiBox vector branding belongs to its owner; no third-party attribution or redistribution permission is invented."
+      },
+      "distribution": {
+        "canRedistributeSource": true,
+        "installFromThisSite": true,
+        "installProvider": "zlui-atlas",
+        "notice": {
+          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+        }
+      }
+    },
+    {
+      "slug": "album-cover-tunnel",
+      "name": {
+        "en": "Album Cover Tunnel",
+        "zh": "专辑封面隧道"
+      },
+      "description": {
+        "en": "A three-dimensional wall of real album covers: hover to lift, click to fly a cover into the center, then scroll or drag through the endless tunnel.",
+        "zh": "真实专辑封面组成三维隧道，悬停吸起，点击沿弧线飞入中央，滚动或拖动不断穿行。"
+      },
+      "keywords": "专辑 封面 隧道 飞入 原创 雷师傅 三维 厚度 雾 光 专辑墙 album cover tunnel wall fly hover scroll drag LeiShiFu original",
+      "docsPath": "/docs/animations/album-cover-tunnel",
+      "detailPath": "/ai/components/album-cover-tunnel.json",
+      "markdownPath": "/ai/components/album-cover-tunnel.md",
+      "previewPath": "/assets/components/album-cover-tunnel.png",
+      "discovery": {
+        "category": "media",
+        "useCases": [
+          "三维专辑封面墙",
+          "专辑封面隧道穿行",
+          "interactive album cover tunnel"
+        ],
+        "searchTerms": [
+          "专辑",
+          "封面",
+          "隧道",
+          "飞入",
+          "三维",
+          "原创",
+          "雷师傅",
+          "album",
+          "cover",
+          "tunnel",
+          "3d"
+        ],
+        "visualTags": [
+          "3d",
+          "photography",
+          "bloom",
+          "depth",
+          "dark"
+        ],
+        "interactions": [
+          "hover",
+          "click",
+          "scroll",
+          "drag",
+          "keyboard",
+          "touch",
+          "pause"
+        ],
+        "caveat": "雷师傅原创交互，默认55张真实专辑封面；封面图片版权归各自权利人，支持自定义图片。"
+      },
+      "frameworks": [
+        "react",
+        "vue",
+        "svelte",
+        "solid",
+        "preact",
+        "vanilla"
+      ],
+      "renderers": [
+        "webgl"
+      ],
+      "source": {
+        "kind": "project-source",
+        "provider": "LeiBox",
+        "implementation": "LeiShiFu original HTML and interaction, ported into a scoped native Three.js core shared by six framework lifecycles.",
+        "designReference": null,
+        "designAuthor": "雷师傅",
+        "original": true,
+        "author": "雷师傅",
+        "license": "Interaction credited to LeiShiFu. Album artwork is demonstration content; rights remain with the respective artwork owners. Three.js retains its MIT notice. Original attribution applies to the interaction, not album artwork."
+      },
+      "distribution": {
+        "canRedistributeSource": true,
+        "installFromThisSite": true,
+        "installProvider": "zlui-atlas",
+        "notice": {
+          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+        }
+      }
+    },
+    {
+      "slug": "stacked-metadata",
+      "name": {
+        "en": "Stacked Metadata Tags",
+        "zh": "标签叠放展开"
+      },
+      "description": {
+        "en": "Overlapping priority, date and assignee tags leave room for task titles, then spread to the left when a row is hovered or focused.",
+        "zh": "优先级、日期和负责人标签相互叠放，为任务标题留出空间；悬停或聚焦时向左展开。"
+      },
+      "keywords": "标签 叠放 展开 任务 列表 元数据 优先级 日期 负责人 hover stacked metadata tags task Gabriel",
+      "docsPath": "/docs/animations/stacked-metadata",
+      "detailPath": "/ai/components/stacked-metadata.json",
+      "markdownPath": "/ai/components/stacked-metadata.md",
+      "previewPath": "/assets/components/stacked-metadata.png",
+      "discovery": {
+        "category": "navigation",
+        "useCases": [
+          "任务列表元数据",
+          "悬停展开标签",
+          "compact task metadata"
+        ],
+        "searchTerms": [
+          "标签",
+          "叠放",
+          "任务",
+          "列表",
+          "展开",
+          "metadata",
+          "stacked",
+          "tags",
+          "hover"
+        ],
+        "visualTags": [
+          "pills",
+          "overlap",
+          "list",
+          "dark"
+        ],
+        "interactions": [
+          "hover",
+          "focus",
+          "click",
+          "keyboard",
+          "touch"
+        ],
+        "caveat": "独立DOM/CSS重建；仅展开本地标签，不连接真实任务服务。"
+      },
+      "frameworks": [
+        "react",
+        "vue",
+        "svelte",
+        "solid",
+        "preact",
+        "vanilla"
+      ],
+      "renderers": [],
+      "source": {
+        "kind": "project-source",
+        "provider": "LeiBox",
+        "implementation": "Independent scoped DOM/CSS implementation with a measured analytic damped spring, velocity-preserving interruptions and six framework lifecycle wrappers. No original footage, remote assets or author implementation is distributed.",
+        "designReference": "https://x.com/gabriell_lab/status/2117611847805272267/video/1",
+        "designAuthor": "Gabriel",
+        "license": "Design reference by Gabriel; no author code or redistribution permission is claimed. Independently written DOM/CSS implementation. Lucide icons retain ISC and embedded Inter retains OFL. Original footage and extracted frames stay internal."
+      },
+      "distribution": {
+        "canRedistributeSource": true,
+        "installFromThisSite": true,
+        "installProvider": "zlui-atlas",
+        "notice": {
+          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+        }
+      }
+    },
+    {
+      "slug": "transfer-glow",
+      "name": {
+        "en": "Transfer Glow Confirmation",
+        "zh": "转账光雾确认"
+      },
+      "description": {
+        "en": "Payment details blur behind drifting pink and gold light, with floating particles and two processing steps before a crisp success state.",
+        "zh": "转账详情在粉金色光雾与上浮粒子后逐渐虚化，经过两段处理提示，再恢复为清晰的成功状态。"
+      },
+      "keywords": "转账 确认 弹窗 光雾 模糊 粒子 处理 成功 transfer confirm payment glow blur dialog Gabriel",
+      "docsPath": "/docs/animations/transfer-glow",
+      "detailPath": "/ai/components/transfer-glow.json",
+      "markdownPath": "/ai/components/transfer-glow.md",
+      "previewPath": "/assets/components/transfer-glow.png",
+      "discovery": {
+        "category": "feedback",
+        "useCases": [
+          "转账光雾确认",
+          "处理状态弹窗",
+          "payment confirmation glow"
+        ],
+        "searchTerms": [
+          "转账",
+          "确认",
+          "弹窗",
+          "光雾",
+          "模糊",
+          "粒子",
+          "成功",
+          "transfer",
+          "payment",
+          "glow",
+          "blur"
+        ],
+        "visualTags": [
+          "glow",
+          "particles",
+          "blur",
+          "dialog"
+        ],
+        "interactions": [
+          "click",
+          "keyboard",
+          "touch"
+        ],
+        "caveat": "仅为本地视觉演示，不执行真实转账；处理完成可通过回调连接自己的业务。"
+      },
+      "frameworks": [
+        "react",
+        "vue",
+        "svelte",
+        "solid",
+        "preact",
+        "vanilla"
+      ],
+      "renderers": [],
+      "source": {
+        "kind": "project-source",
+        "provider": "LeiBox",
+        "implementation": "Independently authored scoped DOM state machine, procedural Canvas2D light haze and particle renderer, with six native framework lifecycle wrappers. Local visual demo only.",
+        "designReference": "https://x.com/gabriell_lab/status/2117982465415389633/video/1",
+        "designAuthor": "Gabriel",
+        "license": "Design reference by Gabriel; no author code or redistribution permission is claimed. Independently written DOM/Canvas2D implementation. Lucide icons retain ISC and embedded Inter retains OFL. Original clip and extracted frames remain internal."
+      },
+      "distribution": {
+        "canRedistributeSource": true,
+        "installFromThisSite": true,
+        "installProvider": "zlui-atlas",
+        "notice": {
+          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+        }
+      }
+    },
+    {
+      "slug": "shader-flood",
+      "name": {
+        "en": "Liquid Flood Cards",
+        "zh": "液体注入卡片"
+      },
+      "description": {
+        "en": "Live marbled liquid fills each feature card from your entry point and drains toward your exit. Each card has its own three-color palette.",
+        "zh": "实时液体纹理从鼠标进入的位置铺满卡片，再向离开的位置收拢。每张卡片拥有独立的三色色板。"
+      },
+      "keywords": "液体 注入 卡片 网格 三色 着色器 悬浮 方向 shader flood liquid feature cards hover palette seed Planes Ashish Gogula",
+      "docsPath": "/docs/animations/shader-flood",
+      "detailPath": "/ai/components/shader-flood.json",
+      "markdownPath": "/ai/components/shader-flood.md",
+      "previewPath": "/assets/components/shader-flood.png",
+      "discovery": {
+        "category": "cards",
+        "useCases": [
+          "液体注入卡片",
+          "功能网格悬停揭示",
+          "directional liquid feature cards"
+        ],
+        "searchTerms": [
+          "液体",
+          "注入",
+          "卡片",
+          "着色器",
+          "三色",
+          "方向",
+          "shader",
+          "flood",
+          "liquid",
+          "palette",
+          "seed"
+        ],
+        "visualTags": [
+          "liquid",
+          "marble",
+          "shader",
+          "cards"
+        ],
+        "interactions": [
+          "hover",
+          "focus",
+          "click",
+          "keyboard",
+          "touch"
+        ],
+        "caveat": "独立程序化重建；支持自定义项目和三色色板，不包含付费原始源码。"
+      },
+      "frameworks": [
+        "react",
+        "vue",
+        "svelte",
+        "solid",
+        "preact",
+        "vanilla"
+      ],
+      "renderers": [
+        "webgl"
+      ],
+      "source": {
+        "kind": "project-source",
+        "provider": "LeiBox",
+        "implementation": "Independent framework-neutral DOM/WebGL1 renderer with procedural domain-warp noise, Canvas2D fallback and six native framework lifecycle wrappers. No author shader, paid source, footage, raster texture or remote font is distributed.",
+        "designReference": "https://x.com/Ashishgogula/status/2111150387227156670/video/1",
+        "designAuthor": "Ashish Gogula",
+        "license": "Original design rights remain with Ashish Gogula / Planes. Pro source is not included or accessed; no redistribution permission is claimed. Independently authored rendering and lifecycle. Lucide icons retain their ISC notice. Reference video and extracted frames stay internal."
+      },
+      "distribution": {
+        "canRedistributeSource": true,
+        "installFromThisSite": true,
+        "installProvider": "zlui-atlas",
+        "notice": {
+          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+        }
+      }
+    },
+    {
+      "slug": "ascii-sharks",
+      "name": {
+        "en": "ASCII Shark Ocean",
+        "zh": "字符鲨鱼与鱼群"
+      },
+      "description": {
+        "en": "Character-built sharks swim, hunt and bend through schools of fish on a fine grid, with pointer avoidance, splash reactions and an optional translucent local composer.",
+        "zh": "字符鲨鱼在细网格上摆尾游动、追逐鱼群，支持指针避让与点击惊散，并可叠加半透明本地输入框。"
+      },
+      "keywords": "ASCII 字符 鲨鱼 鱼群 游动 海洋 捕食 追逐 避让 水波 网格 背景 输入框 shark ocean fish boids stacked drewdi",
+      "docsPath": "/docs/animations/ascii-sharks",
+      "detailPath": "/ai/components/ascii-sharks.json",
+      "markdownPath": "/ai/components/ascii-sharks.md",
+      "previewPath": "/assets/components/ascii-sharks.png",
+      "discovery": {
+        "category": "background",
+        "useCases": [
+          "字符鲨鱼与鱼群",
+          "交互式海洋背景",
+          "ASCII shark ocean"
+        ],
+        "searchTerms": [
+          "ASCII",
+          "字符",
+          "鲨鱼",
+          "鱼群",
+          "海洋",
+          "shark",
+          "ocean",
+          "fish"
+        ],
+        "visualTags": [
+          "ascii",
+          "grid",
+          "light"
+        ],
+        "interactions": [
+          "hover",
+          "click",
+          "keyboard",
+          "touch"
+        ],
+        "caveat": "本地动画与可选输入界面；语音输入需要调用方回调。"
+      },
+      "frameworks": [
+        "react",
+        "vue",
+        "svelte",
+        "solid",
+        "preact",
+        "vanilla"
+      ],
+      "renderers": [],
+      "source": {
+        "kind": "project-source",
+        "provider": "LeiBox",
+        "implementation": "https://github.com/stackedlol/ascii-sharks/tree/a0074c16a106f0abc665fe9712ca445f8f98ad8e — original World, AsciiRenderer, math and species modules, MIT. LeiBox supplies the instance-scoped lifecycle and optional local UI; no original backend is included.",
+        "designReference": "https://x.com/stackedlol/status/2112257760628986188/video/1",
+        "designAuthor": "stacked",
+        "license": "MIT License, Copyright (c) 2026 drewdi; full notice retained in the vendored source and every generated engine/HTML. Geist fonts retain their OFL notice, Lucide controls their ISC notice. Original video and raw reference frames remain internal."
+      },
+      "distribution": {
+        "canRedistributeSource": true,
+        "installFromThisSite": true,
+        "installProvider": "zlui-atlas",
+        "notice": {
+          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+        }
+      }
+    },
+    {
+      "slug": "ink-spread-carousel",
+      "name": {
+        "en": "Ink Spread Carousel",
+        "zh": "墨水扩散图片轮播"
+      },
+      "description": {
+        "en": "A new photo spreads from your press with a rippling ink edge and a thin lens distortion, while a soft image shadow changes behind the white card.",
+        "zh": "新图从点击位置沿不规则墨水边缘向外晕开，边界带有轻微透镜折射，白色卡片后的柔焦色影同步换色。"
+      },
+      "keywords": "墨水 扩散 晕染 图片 轮播 点击 液态 遮罩 折射 ink bloom spread carousel WebGL Lorenzo Cabra Bencho",
+      "docsPath": "/docs/animations/ink-spread-carousel",
+      "detailPath": "/ai/components/ink-spread-carousel.json",
+      "markdownPath": "/ai/components/ink-spread-carousel.md",
+      "previewPath": "/assets/components/ink-spread-carousel.png",
+      "discovery": {
+        "category": "cards",
+        "useCases": [
+          "墨水扩散图片轮播",
+          "点击位置图片揭示",
+          "ink spread carousel"
+        ],
+        "searchTerms": [
+          "墨水",
+          "扩散",
+          "晕染",
+          "轮播",
+          "折射",
+          "ink",
+          "spread",
+          "carousel"
+        ],
+        "visualTags": [
+          "image",
+          "ink",
+          "refraction"
+        ],
+        "interactions": [
+          "click",
+          "keyboard",
+          "touch"
+        ],
+        "caveat": "本地图片过渡重建；不包含付费组件原始源码。"
+      },
+      "frameworks": [
+        "react",
+        "vue",
+        "svelte",
+        "solid",
+        "preact",
+        "vanilla"
+      ],
+      "renderers": [],
+      "source": {
+        "kind": "project-source",
+        "provider": "LeiBox",
+        "implementation": "Independent instance-scoped WebGL1 shader, Canvas2D fallback and DOM controls, reusing the existing native six-framework lifecycle. Includes generated inline artwork and licensed Lucide icons; no paid Bencho source code.",
+        "designReference": "https://x.com/cabralorenzo/status/2114082220566860026/video/1",
+        "designAuthor": "Lorenzo Cabra",
+        "license": "Original design and image/source license not supplied or independently verified. Original footage, photos and Pro source are not redistributed. Four new images were generated for this reconstruction. Lucide icons retain their ISC notice."
+      },
+      "distribution": {
+        "canRedistributeSource": true,
+        "installFromThisSite": true,
+        "installProvider": "zlui-atlas",
+        "notice": {
+          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+        }
+      }
+    },
+    {
+      "slug": "particle-texture-trio",
+      "name": {
+        "en": "Particle Texture Trio",
+        "zh": "粒子纹理三联"
+      },
+      "description": {
+        "en": "Three fixed dot-matrix shapes reveal flowing blue-green particles, hollow white contours and warm orange-pink textures.",
+        "zh": "三个固定点阵轮廓，分别呈现蓝绿粒子流、黑白空心圆弧与橙红纹理。"
+      },
+      "keywords": "粒子 纹理 点阵 三联 流动 空心 圆弧 蓝绿 橙红 Sarvam Anushka particle texture trio noise flow field",
+      "docsPath": "/docs/animations/particle-texture-trio",
+      "detailPath": "/ai/components/particle-texture-trio.json",
+      "markdownPath": "/ai/components/particle-texture-trio.md",
+      "previewPath": "/assets/components/particle-texture-trio.png",
+      "discovery": {
+        "category": "background",
+        "useCases": [
+          "点阵品牌动效",
+          "三联粒子纹理",
+          "particle field study"
+        ],
+        "searchTerms": [
+          "粒子",
+          "纹理",
+          "点阵",
+          "三联",
+          "空心",
+          "流动",
+          "Sarvam",
+          "Anushka",
+          "particle",
+          "texture"
+        ],
+        "visualTags": [
+          "particles",
+          "dark",
+          "noise",
+          "dot-matrix"
+        ],
+        "interactions": [
+          "play",
+          "pause",
+          "keyboard",
+          "touch"
+        ],
+        "caveat": "本地点阵视觉重建；非原作者生成工具，不包含真实 AI 接口。"
+      },
+      "frameworks": [
+        "react",
+        "vue",
+        "svelte",
+        "solid",
+        "preact",
+        "vanilla"
+      ],
+      "renderers": [],
+      "source": {
+        "kind": "project-source",
+        "provider": "LeiBox",
+        "implementation": "Independent Canvas2D renderer with compact Chebyshev motion fields fitted to tracked particle paths, seeded color/size noise, analytic colored silhouettes and measured monochrome contours. Reuses the existing LeiBox lifecycle. No reference video or raster texture is played at runtime; this is a reconstruction, not the author's generator or Sarvam source code.",
+        "designReference": "https://x.com/anushka_dzn/status/2115406152167297211/video/1",
+        "designAuthor": "Anushka",
+        "license": "Original design and Sarvam mark rights remain with their respective owners; source license not supplied or verified. No original video, raster artwork, font files or author source code is redistributed."
+      },
+      "distribution": {
+        "canRedistributeSource": true,
+        "installFromThisSite": true,
+        "installProvider": "zlui-atlas",
+        "notice": {
+          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+        }
+      }
+    },
+    {
+      "slug": "matcha-powder-reveal",
+      "name": {
+        "en": "Package Tear and Powder Reveal",
+        "zh": "包装撕开粒子消散"
+      },
+      "description": {
+        "en": "Drag the upper-right notch to peel open a solid 3D foil pouch. Stop halfway, regrab the bent strip and finish tearing to release the powder.",
+        "zh": "从右上角拖开立体金属包装，可停在半途并继续拉动弯折封条，完全撕开后释放抹茶粉末。"
+      },
+      "keywords": "包装 撕开 撕口 抹茶 粉末 粒子 消散 金属 产品 package tear matcha powder reveal Andreas",
+      "docsPath": "/docs/animations/matcha-powder-reveal",
+      "detailPath": "/ai/components/matcha-powder-reveal.json",
+      "markdownPath": "/ai/components/matcha-powder-reveal.md",
+      "previewPath": "/assets/components/matcha-powder-reveal.png",
+      "discovery": {
+        "category": "hero",
+        "useCases": [
+          "产品包装撕开",
+          "粉末粒子文字揭示",
+          "product powder reveal"
+        ],
+        "searchTerms": [
+          "包装",
+          "撕开",
+          "粉末",
+          "粒子",
+          "消散",
+          "抹茶",
+          "package",
+          "tear",
+          "powder",
+          "reveal"
+        ],
+        "visualTags": [
+          "3d",
+          "foil",
+          "particles",
+          "green"
+        ],
+        "interactions": [
+          "play",
+          "pause",
+          "seek",
+          "drag",
+          "keyboard"
+        ],
+        "caveat": "本地程序化产品动效；无真实商品购买或上传功能。"
+      },
+      "frameworks": [
+        "react",
+        "vue",
+        "svelte",
+        "solid",
+        "preact",
+        "vanilla"
+      ],
+      "renderers": [],
+      "source": {
+        "kind": "project-source",
+        "provider": "LeiBox",
+        "implementation": "Independent procedural Three.js foil geometry, Canvas lettering, staged surface erosion, mass-dependent Gaussian grain transport and instanced turbulent dust, with tear-velocity feedback, scoped lifecycle and a Canvas2D fallback.",
+        "designReference": "https://x.com/andreaskruszaki/status/2115308820687950002/video/1",
+        "designAuthor": "Andreas Kruszakin-Liboska",
+        "license": "Original design/model/source license not supplied or independently verified. No reference video, screenshots, original 3D assets or proprietary fonts are redistributed. Embedded Inter retains OFL and controls retain the Lucide MIT notice."
+      },
+      "distribution": {
+        "canRedistributeSource": true,
+        "installFromThisSite": true,
+        "installProvider": "zlui-atlas",
+        "notice": {
+          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+        }
+      }
+    },
+    {
+      "slug": "ai-brand-cover-cards",
+      "name": {
+        "en": "AI Brand Cover Cards",
+        "zh": "AI 品牌封面三联卡片"
+      },
+      "description": {
+        "en": "Three portrait covers for Claude, Codex and Cursor, with user-selected artwork, real SVG brand marks and independent Chinese captions.",
+        "zh": "Claude、Codex、Cursor 三张竖版封面，保留选定配图、真实 SVG 标志与独立中文介绍。"
+      },
+      "keywords": "AI Claude Codex Cursor 品牌 封面 三联 卡片 海报",
+      "docsPath": "/docs/animations/ai-brand-cover-cards",
+      "detailPath": "/ai/components/ai-brand-cover-cards.json",
+      "markdownPath": "/ai/components/ai-brand-cover-cards.md",
+      "previewPath": "/assets/components/ai-brand-cover-cards.png",
+      "discovery": {
+        "category": "cards",
+        "useCases": [
+          "AI 品牌封面",
+          "产品三联海报"
+        ],
+        "searchTerms": [
+          "Claude",
+          "Codex",
+          "Cursor",
+          "AI",
+          "品牌",
+          "封面",
+          "三联",
+          "poster"
+        ],
+        "visualTags": [
+          "portrait",
+          "artwork",
+          "brand"
+        ],
+        "interactions": [
+          "hover",
+          "click",
+          "keyboard"
+        ],
+        "caveat": "展示卡片，不调用真实 AI 服务；品牌标志不代表官方合作。"
+      },
+      "frameworks": [
+        "react",
+        "vue",
+        "svelte",
+        "solid",
+        "preact",
+        "vanilla"
+      ],
+      "renderers": [],
+      "source": {
+        "kind": "project-source",
+        "provider": "LeiBox",
+        "implementation": "LeiBox native implementation reusing the existing poster-card lifecycle and interaction core.",
+        "designReference": null,
+        "designAuthor": "雷师傅",
+        "license": "User-supplied artwork. Claude and Cursor marks follow their brand terms; Codex vectors retain the bundled Lobe Icons MIT notice. No affiliation implied."
+      },
+      "distribution": {
+        "canRedistributeSource": true,
+        "installFromThisSite": true,
+        "installProvider": "zlui-atlas",
+        "notice": {
+          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+        }
+      }
+    },
+    {
+      "slug": "folded-emoji-scroll",
+      "name": {
+        "en": "Folded Emoji Scroll",
+        "zh": "折边滚动表情选择器"
+      },
+      "description": {
+        "en": "A searchable emoji grid folds its actual content into the top and bottom edges as you scroll, while the search field stays fixed.",
+        "zh": "表情网格滚入上下边缘时向内弯折、压缩，搜索栏保持固定，支持搜索与选择。"
+      },
+      "keywords": "折边 折叠 滚动 表情 选择器 上下 边缘 emoji scroll folded edges canvas html drawElementImage Enes",
+      "docsPath": "/docs/animations/folded-emoji-scroll",
+      "detailPath": "/ai/components/folded-emoji-scroll.json",
+      "markdownPath": "/ai/components/folded-emoji-scroll.md",
+      "previewPath": "/assets/components/folded-emoji-scroll.png",
+      "discovery": {
+        "category": "input",
+        "useCases": [
+          "折边滚动表情选择",
+          "带几何变形的滚动边缘",
+          "folded emoji picker"
+        ],
+        "searchTerms": [
+          "表情",
+          "滚动",
+          "折边",
+          "折叠",
+          "emoji",
+          "picker",
+          "fold",
+          "scroll",
+          "canvas"
+        ],
+        "visualTags": [
+          "dark",
+          "folded",
+          "canvas",
+          "emoji"
+        ],
+        "interactions": [
+          "scroll",
+          "search",
+          "click",
+          "keyboard",
+          "touch"
+        ],
+        "caveat": "纯本地选择器；系统 Emoji 字形有差异，HTML-in-Canvas 不可用时使用 Canvas2D 捕获兼容路径。"
+      },
+      "frameworks": [
+        "react",
+        "vue",
+        "svelte",
+        "solid",
+        "preact",
+        "vanilla"
+      ],
+      "renderers": [],
+      "source": {
+        "kind": "project-source",
+        "provider": "LeiBox",
+        "implementation": "Independent accessible DOM picker and Canvas2D fold resampler; reuses the project's HTML-in-Canvas preparation/drawing helpers and instance lifecycle. Source geometry and hit testing share the same inverse projection.",
+        "designReference": "https://x.com/enesozturkdev/status/2115816197266477213/video/1",
+        "designAuthor": "Enes",
+        "license": "Original design/source license not supplied or independently verified. No original video, screenshots, Apple emoji artwork or proprietary font files are redistributed. Embedded Inter retains its OFL notice; Unicode emoji are rendered by installed system fonts."
+      },
+      "distribution": {
+        "canRedistributeSource": true,
+        "installFromThisSite": true,
+        "installProvider": "zlui-atlas",
+        "notice": {
+          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+        }
+      }
+    },
+    {
+      "slug": "gradient-ring-cards",
+      "name": {
+        "en": "Gradient Ring Cards",
+        "zh": "渐变卡片环形轮播"
+      },
+      "description": {
+        "en": "Five gradient cards rotate around a 3D ring, with mirrored backs, fine particle graphics and curved chromatic trails at the edges.",
+        "zh": "五张渐变卡片沿立体圆环旋转，背面镜像显示，搭配精细粒子图形和边缘弯曲色散拖影。"
+      },
+      "keywords": "渐变 卡片 环形 旋转 轮播 立体 粒子 球体 色散 弯曲 Basit gradient ring cards carousel 3d chromatic",
+      "docsPath": "/docs/animations/gradient-ring-cards",
+      "detailPath": "/ai/components/gradient-ring-cards.json",
+      "markdownPath": "/ai/components/gradient-ring-cards.md",
+      "previewPath": "/assets/components/gradient-ring-cards.png",
+      "discovery": {
+        "category": "cards",
+        "useCases": [
+          "立体卡片轮播",
+          "渐变作品展示",
+          "3D gradient card carousel"
+        ],
+        "searchTerms": [
+          "渐变",
+          "卡片",
+          "轮播",
+          "环形",
+          "粒子",
+          "色散",
+          "gradient",
+          "ring",
+          "carousel",
+          "3d"
+        ],
+        "visualTags": [
+          "gradient",
+          "3d",
+          "particles",
+          "chromatic"
+        ],
+        "interactions": [
+          "drag",
+          "keyboard",
+          "click",
+          "pause"
+        ],
+        "caveat": "卡片内容为本地视觉演示；渐变与图形由程序独立绘制，WebGL 不可用时提供平面切换。"
+      },
+      "frameworks": [
+        "react",
+        "vue",
+        "svelte",
+        "solid",
+        "preact",
+        "vanilla"
+      ],
+      "renderers": [],
+      "source": {
+        "kind": "project-source",
+        "provider": "LeiBox",
+        "implementation": "Three.js, Canvas and GSAP reconstruction with measured color fields and reference-derived white vector shapes. Rendering, typography, optical effects and interactions are implemented locally; no original author source code or reference video is included.",
+        "designReference": "https://x.com/basit_designs/status/2114733820155134045/video/1",
+        "designAuthor": "Basit A. Khan",
+        "license": "Original design and gradient/source license not supplied or verified. Reference footage stays internal; original images and source code are not redistributed."
+      },
+      "distribution": {
+        "canRedistributeSource": true,
+        "installFromThisSite": true,
+        "installProvider": "zlui-atlas",
+        "notice": {
+          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+        }
+      }
+    },
+    {
+      "slug": "fluid-tooltip",
+      "name": {
+        "en": "Fluid Tooltip",
+        "zh": "流体提示气泡"
+      },
+      "description": {
+        "en": "One dark capsule follows six navigation items, changes width, and reveals anchored labels through a moving crop. The profile uses the LeiBox logo.",
+        "zh": "黑色胶囊随六个导航入口移动、变宽，通过裁切切换文字；头像使用 LeiBox Logo。"
+      },
+      "keywords": "流体 提示 气泡 胶囊 导航 侧栏 悬浮 Logo LeiBox fluid tooltip capsule navigation sidebar hover profile",
+      "docsPath": "/docs/animations/fluid-tooltip",
+      "detailPath": "/ai/components/fluid-tooltip.json",
+      "markdownPath": "/ai/components/fluid-tooltip.md",
+      "previewPath": "/assets/components/fluid-tooltip.png",
+      "discovery": {
+        "category": "navigation",
+        "useCases": [
+          "侧栏导航提示",
+          "头像提示气泡",
+          "fluid navigation tooltip"
+        ],
+        "searchTerms": [
+          "流体",
+          "提示",
+          "气泡",
+          "胶囊",
+          "导航",
+          "头像",
+          "logo",
+          "fluid",
+          "tooltip",
+          "sidebar",
+          "hover"
+        ],
+        "visualTags": [
+          "fluid",
+          "capsule",
+          "navigation"
+        ],
+        "interactions": [
+          "hover",
+          "focus",
+          "click",
+          "keyboard"
+        ],
+        "caveat": "默认仅切换本地选中项，通过 onSelect 接入导航；Logo 与提示文字可替换。"
+      },
+      "frameworks": [
+        "react",
+        "vue",
+        "svelte",
+        "solid",
+        "preact",
+        "vanilla"
+      ],
+      "renderers": [],
+      "source": {
+        "kind": "project-source",
+        "provider": "LeiBox",
+        "implementation": "Independent LeiBox DOM/CSS/GSAP tooltip implementation with an embedded brand mark, Lucide icons and Inter font.",
+        "designReference": null,
+        "designAuthor": null,
+        "license": "Retain source notices and design-reference attribution; no blanket license is assigned by the catalog."
+      },
+      "distribution": {
+        "canRedistributeSource": true,
+        "installFromThisSite": true,
+        "installProvider": "zlui-atlas",
+        "notice": {
+          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+        }
+      }
+    },
+    {
+      "slug": "spider-music-player",
+      "name": {
+        "en": "Spider Track Switcher",
+        "zh": "蜘蛛牵引切歌"
+      },
+      "description": {
+        "en": "An eight-legged spider spins a web around an album cover and carries it between the queue and player, with real album artwork and working local controls.",
+        "zh": "八足蜘蛛结网牵引专辑封面，在队列与播放区之间连续搬运，搭配真实专辑图片和可操作的本地播放控件。"
+      },
+      "keywords": "蜘蛛 蛛丝 结网 专辑 封面 音乐 播放器 队列 切歌 牵引 spider web music player album cover queue track switcher Divan Raj",
+      "docsPath": "/docs/animations/spider-music-player",
+      "detailPath": "/ai/components/spider-music-player.json",
+      "markdownPath": "/ai/components/spider-music-player.md",
+      "previewPath": "/assets/components/spider-music-player.png",
+      "discovery": {
+        "category": "media",
+        "useCases": [
+          "专辑封面连续切换",
+          "趣味音乐播放器",
+          "animated album queue"
+        ],
+        "searchTerms": [
+          "蜘蛛",
+          "蛛丝",
+          "结网",
+          "音乐",
+          "专辑",
+          "封面",
+          "切歌",
+          "队列",
+          "spider",
+          "music",
+          "album",
+          "player",
+          "queue"
+        ],
+        "visualTags": [
+          "photography",
+          "tactile",
+          "spider"
+        ],
+        "interactions": [
+          "click",
+          "keyboard",
+          "input"
+        ],
+        "caveat": "使用真实封面与本地播放计时；接入真实音源时替换媒体数据并核对封面权限。"
+      },
+      "frameworks": [
+        "react",
+        "vue",
+        "svelte",
+        "solid",
+        "preact",
+        "vanilla"
+      ],
+      "renderers": [],
+      "source": {
+        "kind": "project-source",
+        "provider": "LeiBox",
+        "implementation": "Independent DOM, inline SVG and GSAP reconstruction. Eight verified third-party album covers with copyright and source records are used as requested; no AI-generated cover art is used.",
+        "designReference": "https://x.com/desdivj/status/2114305692547043677/video/1",
+        "designAuthor": "Divan Raj",
+        "license": "Original motion design/source license not supplied or independently verified. Reference footage remains internal. Album covers retain their respective owners' rights and Apple Music source records; no free artwork redistribution license is claimed. No song audio, commercial font or original author code is included."
+      },
+      "distribution": {
+        "canRedistributeSource": true,
+        "installFromThisSite": true,
+        "installProvider": "zlui-atlas",
+        "notice": {
+          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+        }
+      }
+    },
+    {
+      "slug": "collection-layout-morph",
+      "name": {
+        "en": "Collection Layout Morph",
+        "zh": "列表卡片堆叠切换"
+      },
+      "description": {
+        "en": "The same three Claude, Codex and Grok SVG images smoothly move between a list, a card row and an overlapping pack.",
+        "zh": "Claude、Codex、Grok 三张 SVG 在列表、并排卡片与叠放之间连续移动、缩放和重排。"
+      },
+      "keywords": "列表 卡片 叠放 堆叠 布局 切换 图片 共享 元素 Claude Codex Grok list card pack shared layout morph collectibles Shawn Kel",
+      "docsPath": "/docs/animations/collection-layout-morph",
+      "detailPath": "/ai/components/collection-layout-morph.json",
+      "markdownPath": "/ai/components/collection-layout-morph.md",
+      "previewPath": "/assets/components/collection-layout-morph.png",
+      "discovery": {
+        "category": "layout",
+        "useCases": [
+          "收藏列表切换",
+          "卡片布局变换",
+          "list grid layout switch"
+        ],
+        "searchTerms": [
+          "列表",
+          "卡片",
+          "堆叠",
+          "布局",
+          "切换",
+          "list",
+          "grid",
+          "layout",
+          "stack"
+        ],
+        "visualTags": [
+          "cards"
+        ],
+        "interactions": [
+          "click",
+          "keyboard"
+        ],
+        "caveat": "接入时替换演示图片和条目，保留共享元素的连续布局。"
+      },
+      "frameworks": [
+        "react",
+        "vue",
+        "svelte",
+        "solid",
+        "preact",
+        "vanilla"
+      ],
+      "renderers": [],
+      "source": {
+        "kind": "project-source",
+        "provider": "LeiBox",
+        "implementation": "Independent persistent-DOM layout state machine and GSAP transitions. Three embedded SVGs reuse the project's pinned Graphical/Lobe Icons assets, with their source records and applicable license notices retained.",
+        "designReference": "https://x.com/shawn_kel/status/2087937950424129978/video/1",
+        "designAuthor": "Previous Leon",
+        "license": "Original layout/code license not supplied or independently verified; original illustrations and reference video are not redistributed. Reused existing Claude/Codex vectors retain Lobe Icons Copyright (c) 2023 LobeHub and MIT notice. Grok Bot artwork source is recorded separately without claiming an MIT license for it."
+      },
+      "distribution": {
+        "canRedistributeSource": true,
+        "installFromThisSite": true,
+        "installProvider": "zlui-atlas",
+        "notice": {
+          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+        }
+      }
+    },
+    {
+      "slug": "brand-poster-cards",
+      "name": {
+        "en": "Brand Poster Cards",
+        "zh": "品牌海报三联卡片"
+      },
+      "description": {
+        "en": "Three portrait posters pair a small corner symbol, a centered brand wordmark, and a shared introduction. The photographs gently zoom while the branding stays fixed.",
+        "zh": "三张人像海报统一搭配左上角标、中央品牌字标与底部介绍，图片轻缓缩放，标志和文字保持固定。"
+      },
+      "keywords": "品牌 海报 三联 卡片 人像 图片 肖像 字标 标志 排版 LeiBox brand poster cards portrait triptych logo identity photography",
+      "docsPath": "/docs/animations/brand-poster-cards",
+      "detailPath": "/ai/components/brand-poster-cards.json",
+      "markdownPath": "/ai/components/brand-poster-cards.md",
+      "previewPath": "/assets/components/brand-poster-cards.png",
+      "discovery": {
+        "category": "cards",
+        "useCases": [
+          "品牌海报展示",
+          "人物作品集",
+          "brand poster portfolio"
+        ],
+        "searchTerms": [
+          "品牌",
+          "海报",
+          "人物",
+          "作品集",
+          "brand",
+          "poster",
+          "portrait",
+          "portfolio"
+        ],
+        "visualTags": [
+          "photography",
+          "editorial"
+        ],
+        "interactions": [
+          "hover",
+          "click",
+          "keyboard"
+        ],
+        "caveat": "替换演示人像、品牌标志和文案，并确认素材使用权限。"
+      },
+      "frameworks": [
+        "react",
+        "vue",
+        "svelte",
+        "solid",
+        "preact",
+        "vanilla"
+      ],
+      "renderers": [],
+      "source": {
+        "kind": "project-source",
+        "provider": "LeiBox",
+        "implementation": "Independent DOM/CSS/GSAP reconstruction of a user-provided screenshot, with user-provided portrait assets and existing LeiBox brand vectors.",
+        "designReference": null,
+        "designAuthor": "User-provided screenshot; author unknown",
+        "license": "Original layout designer/license unknown. User supplied the replacement portraits and requested reuse of the site's own LeiBox brand assets; no original Ninja images, logo or copy are redistributed."
+      },
+      "distribution": {
+        "canRedistributeSource": true,
+        "installFromThisSite": true,
+        "installProvider": "zlui-atlas",
+        "notice": {
+          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+        }
+      }
+    },
+    {
+      "slug": "dot-matrix-trio",
+      "name": {
+        "en": "Dot Matrix Ripple and Spiral",
+        "zh": "点阵波纹与旋涡"
+      },
+      "description": {
+        "en": "Three synchronized dot grids form expanding two-color ripples, a rotating spiral, and a growing circular pulse on printed cards.",
+        "zh": "三张点阵卡片同步呈现双色扩散波纹、旋转旋涡与圆形扩张，保留印刷排版和渐变背景。"
+      },
+      "keywords": "点阵 波纹 旋涡 漩涡 圆形 扩散 三联 卡片 LeiBox 雷师傅 Chris Halaska dot matrix ripple spiral pulse",
+      "docsPath": "/docs/animations/dot-matrix-trio",
+      "detailPath": "/ai/components/dot-matrix-trio.json",
+      "markdownPath": "/ai/components/dot-matrix-trio.md",
+      "previewPath": "/assets/components/dot-matrix-trio.png",
+      "discovery": {
+        "category": "background",
+        "useCases": [
+          "品牌点阵展示",
+          "印刷风动效卡片",
+          "dot matrix brand cards"
+        ],
+        "searchTerms": [
+          "点阵",
+          "波纹",
+          "旋涡",
+          "品牌",
+          "dot",
+          "matrix",
+          "ripple",
+          "spiral"
+        ],
+        "visualTags": [
+          "dots",
+          "print"
+        ],
+        "interactions": [
+          "autoplay",
+          "click",
+          "keyboard"
+        ],
+        "caveat": "三联卡片视觉；等待反馈可优先比较 ai-generating。"
+      },
+      "frameworks": [
+        "react",
+        "vue",
+        "svelte",
+        "solid",
+        "preact",
+        "vanilla"
+      ],
+      "renderers": [],
+      "source": {
+        "kind": "project-source",
+        "provider": "LeiBox",
+        "implementation": "Independent DOM and Canvas reconstruction by LeiBox; no original author source code was obtained or redistributed.",
+        "designReference": "https://x.com/chalaska/status/2096917032621199665/video/1",
+        "designAuthor": "Chris Halaska",
+        "license": "Original design, Circuit brand and artwork license not verified. Reference media is retained only as internal evidence; no original artwork, font or source code is included."
+      },
+      "distribution": {
+        "canRedistributeSource": true,
+        "installFromThisSite": true,
+        "installProvider": "zlui-atlas",
+        "notice": {
+          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+        }
+      }
+    },
+    {
+      "slug": "selection-flower",
+      "name": {
+        "en": "Text Selection Flowers",
+        "zh": "文字选区开花"
+      },
+      "description": {
+        "en": "Drag to select real text and grow seeded, outlined flowers around each character; release to fold the petals, leaves, and stems back into the page.",
+        "zh": "拖选真实文字，每个字符周围长出随机配色的描边花朵；松手后花瓣、叶片和茎依次反向收回。"
+      },
+      "keywords": "文字 选区 选择 拖选 开花 花朵 生长 收回 植物 随机 text selection flowers bloom grow reverse seeded canvas Omerico",
+      "docsPath": "/docs/animations/selection-flower",
+      "detailPath": "/ai/components/selection-flower.json",
+      "markdownPath": "/ai/components/selection-flower.md",
+      "previewPath": "/assets/components/selection-flower.png",
+      "discovery": {
+        "category": "text",
+        "useCases": [
+          "文章趣味选区",
+          "编辑型作品集",
+          "playful text selection"
+        ],
+        "searchTerms": [
+          "文字",
+          "选区",
+          "开花",
+          "花朵",
+          "文章",
+          "text",
+          "selection",
+          "flowers"
+        ],
+        "visualTags": [
+          "botanical",
+          "illustration"
+        ],
+        "interactions": [
+          "text-selection",
+          "keyboard"
+        ],
+        "caveat": "装饰性文字互动；需要编辑文字颜色时选择 notes-text-color。"
+      },
+      "frameworks": [
+        "react",
+        "vue",
+        "svelte",
+        "solid",
+        "preact",
+        "vanilla"
+      ],
+      "renderers": [],
+      "source": {
+        "kind": "project-source",
+        "provider": "LeiBox",
+        "implementation": "Independent DOM Selection/Range and Canvas 2D implementation from observed video frames. Flower geometry and deterministic generator are newly written local reconstruction code.",
+        "designReference": "https://x.com/omer_assa/status/2083862523640496179/video/1",
+        "designAuthor": "Omerico",
+        "license": "Original design/source license not supplied or independently verified. Reference footage is internal evidence only; no original source, font files or vector artwork are redistributed."
+      },
+      "distribution": {
+        "canRedistributeSource": true,
+        "installFromThisSite": true,
+        "installProvider": "zlui-atlas",
+        "notice": {
+          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+        }
+      }
+    },
+    {
+      "slug": "inline-text-morph",
+      "name": {
+        "en": "Inline Phrase Morph",
+        "zh": "内联词组变形"
+      },
+      "description": {
+        "en": "Click three inline pills to morph shared letters, resize the sentence, and swap illustrated stickers with a spring.",
+        "zh": "点击三处内联胶囊，相同字母连续重排，句子随宽度变化居中，贴纸图标弹性切换。"
+      },
+      "keywords": "内联 词组 文字 字符 字母 变形 重排 胶囊 图标 Torph Graphical text morph inline phrase letter flip",
+      "docsPath": "/docs/animations/inline-text-morph",
+      "detailPath": "/ai/components/inline-text-morph.json",
+      "markdownPath": "/ai/components/inline-text-morph.md",
+      "previewPath": "/assets/components/inline-text-morph.png",
+      "discovery": {
+        "category": "text",
+        "useCases": [
+          "可切换标题",
+          "品牌标语互动",
+          "interactive headline"
+        ],
+        "searchTerms": [
+          "文字",
+          "标题",
+          "词组",
+          "变形",
+          "标语",
+          "text",
+          "headline",
+          "morph"
+        ],
+        "visualTags": [
+          "typographic",
+          "stickers"
+        ],
+        "interactions": [
+          "click",
+          "keyboard"
+        ],
+        "caveat": "接入时替换词组与贴纸，并检查目标语言的字形和排版。"
+      },
+      "frameworks": [
+        "react",
+        "vue",
+        "svelte",
+        "solid",
+        "preact",
+        "vanilla"
+      ],
+      "renderers": [],
+      "source": {
+        "kind": "project-source",
+        "provider": "LeiBox",
+        "implementation": "Independently rebuilt layout, remaining feature stickers, width spring and lifecycle; themes/spacing SVG geometry and paint order follow the reference. Existing agent SVGs from Graphical and Lobe Icons retain their source records and applicable notices. Bundled Torph 0.1.3 by Lochie Axon under MIT with its complete notice retained.",
+        "designReference": "https://x.com/lochieaxon/status/2107673625696641174/video/1",
+        "designAuthor": "Graphical",
+        "license": "Graphical's design and additional artwork license not independently verified. Lobe Icons' Codex, Claude and Cursor vector contributions retain Copyright (c) 2023 LobeHub and the full MIT notice. Grok Bot's source is recorded separately without claiming an MIT license for it. No commercial font files or reference video are redistributed."
+      },
+      "distribution": {
+        "canRedistributeSource": true,
+        "installFromThisSite": true,
+        "installProvider": "zlui-atlas",
+        "notice": {
+          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+        }
+      }
+    },
+    {
+      "slug": "galaxy-effort-slider",
+      "name": {
+        "en": "Brain Particle Effort Slider",
+        "zh": "脑形滑块粒子增强"
+      },
+      "description": {
+        "en": "A pink brain gains more folds as effort increases through six levels, then glows with a twinkling pixel track, dotted rays, and a brief shake in Galaxy mode.",
+        "zh": "脑形褶皱随六档思考强度逐层增加，进入 Galaxy 后点亮闪动点阵、放射粒子与光晕，并伴随短促震动。"
+      },
+      "keywords": "脑形 大脑 褶皱 脑沟 沟回 生长 滑块 推理 强度 粒子 点阵 发光 六档 银河 brain folds wrinkles particle effort slider galaxy low medium high extra max ozzy",
+      "docsPath": "/docs/animations/galaxy-effort-slider",
+      "detailPath": "/ai/components/galaxy-effort-slider.json",
+      "markdownPath": "/ai/components/galaxy-effort-slider.md",
+      "previewPath": "/assets/components/galaxy-effort-slider.png",
+      "discovery": {
+        "category": "input",
+        "useCases": [
+          "AI 思考强度选择",
+          "模型参数调节",
+          "AI reasoning effort"
+        ],
+        "searchTerms": [
+          "思考",
+          "推理",
+          "强度",
+          "滑块",
+          "脑",
+          "reasoning",
+          "effort",
+          "slider"
+        ],
+        "visualTags": [
+          "particles",
+          "cosmic"
+        ],
+        "interactions": [
+          "drag",
+          "keyboard"
+        ],
+        "caveat": "视觉强度选择器；实际模型参数需映射到目标项目的接口。"
+      },
+      "frameworks": [
+        "react",
+        "vue",
+        "svelte",
+        "solid",
+        "preact",
+        "vanilla"
+      ],
+      "renderers": [],
+      "source": {
+        "kind": "project-source",
+        "provider": "LeiBox",
+        "implementation": "Independent DOM, inline SVG and Canvas reconstruction from the reference video; no original author code, fonts or assets obtained.",
+        "designReference": "https://x.com/ozzyxs1a/status/2107523169649389677/video/1",
+        "designAuthor": "ozzy",
+        "license": "Original design/source license not supplied or independently verified. The reference video is retained for internal comparison only."
+      },
+      "distribution": {
+        "canRedistributeSource": true,
+        "installFromThisSite": true,
+        "installProvider": "zlui-atlas",
+        "notice": {
+          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+        }
+      }
+    },
+    {
+      "slug": "notes-text-color",
+      "name": {
+        "en": "Notes Text Color",
+        "zh": "文字选区调色器"
+      },
+      "description": {
+        "en": "Select note text to open a frosted nine-color palette, tint a real multiline selection, and return to recently colored passages.",
+        "zh": "选择笔记文字，唤出磨砂九色调色器；跨行选区随颜色变化，并可跳回最近上色的段落。"
+      },
+      "keywords": "文字 选区 调色器 颜色 笔记 备忘录 荧光 历史 磨砂 notes text color selection palette highlight typography",
+      "docsPath": "/docs/animations/notes-text-color",
+      "detailPath": "/ai/components/notes-text-color.json",
+      "markdownPath": "/ai/components/notes-text-color.md",
+      "previewPath": "/assets/components/notes-text-color.png",
+      "discovery": {
+        "category": "text",
+        "useCases": [
+          "笔记高亮",
+          "文字颜色编辑",
+          "note text highlighting"
+        ],
+        "searchTerms": [
+          "文字",
+          "选区",
+          "颜色",
+          "调色",
+          "笔记",
+          "高亮",
+          "highlight",
+          "color",
+          "notes"
+        ],
+        "visualTags": [
+          "glass",
+          "minimal"
+        ],
+        "interactions": [
+          "text-selection",
+          "click"
+        ],
+        "caveat": "将颜色选择结果接入目标编辑器，核对选区与持久化行为。"
+      },
+      "frameworks": [
+        "react",
+        "vue",
+        "svelte",
+        "solid",
+        "preact",
+        "vanilla"
+      ],
+      "renderers": [],
+      "source": {
+        "kind": "project-source",
+        "provider": "LeiBox",
+        "implementation": "Independent DOM, Selection/Range, CSS and GSAP reconstruction from observed video frames.",
+        "designReference": "https://x.com/heydamir/status/2106779932659470606/video/1",
+        "designAuthor": "Damir Sokolovsky",
+        "license": "Original design/source license not supplied or verified; the original video and author source are not redistributed."
+      },
+      "distribution": {
+        "canRedistributeSource": true,
+        "installFromThisSite": true,
+        "installProvider": "zlui-atlas",
+        "notice": {
+          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+        }
+      }
+    },
+    {
+      "slug": "bounding-box-resize",
+      "name": {
+        "en": "Bounding Box Resize",
+        "zh": "选框拖拽缩放"
+      },
+      "description": {
+        "en": "Eight square handles morph into directional arrows, with live size pills, editable dimensions, and guides as the selection resizes.",
+        "zh": "八个方形控制点连续变成方向箭头，拖动时显示实时尺寸胶囊和辅助线，支持直接输入宽高。"
+      },
+      "keywords": "选框 拖拽 缩放 边框 控制点 箭头 尺寸 输入 形变 bounding box resize handles arrows dimensions guides selection",
+      "docsPath": "/docs/animations/bounding-box-resize",
+      "detailPath": "/ai/components/bounding-box-resize.json",
+      "markdownPath": "/ai/components/bounding-box-resize.md",
+      "previewPath": "/assets/components/bounding-box-resize.png",
+      "discovery": {
+        "category": "layout",
+        "useCases": [
+          "画布选框缩放",
+          "设计编辑器",
+          "canvas resize handles"
+        ],
+        "searchTerms": [
+          "选框",
+          "缩放",
+          "尺寸",
+          "画布",
+          "resize",
+          "bounds",
+          "editor"
+        ],
+        "visualTags": [
+          "minimal",
+          "editor"
+        ],
+        "interactions": [
+          "drag",
+          "input"
+        ],
+        "caveat": "缩放交互演示；尺寸结果需接入目标项目的画布状态。"
+      },
+      "frameworks": [
+        "react",
+        "vue",
+        "svelte",
+        "solid",
+        "preact",
+        "vanilla"
+      ],
+      "renderers": [],
+      "source": {
+        "kind": "project-source",
+        "provider": "LeiBox",
+        "implementation": "Independent native DOM/SVG reconstruction from observed frames; no original author source or assets obtained.",
+        "designReference": "https://x.com/azlenelza/status/2106600214593462393/video/1",
+        "designAuthor": "Azlen",
+        "license": "Original design license not supplied or independently verified; the video is retained only for internal comparison."
+      },
+      "distribution": {
+        "canRedistributeSource": true,
+        "installFromThisSite": true,
+        "installProvider": "zlui-atlas",
+        "notice": {
+          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+        }
+      }
+    },
+    {
+      "slug": "soft-action-wheel",
+      "name": {
+        "en": "Soft Action Wheel",
+        "zh": "柔光环形菜单展开"
+      },
+      "description": {
+        "en": "Six monochrome actions spring inward with a short clockwise stagger, framed by fine grey rims, white highlights, and soft shadows; all scatter out together on close.",
+        "zh": "黑色图标随短暂顺时针错峰收拢成环，保留细灰边、白色高光与柔和阴影，关闭时六项一起向外散开。"
+      },
+      "keywords": "柔光 浅色 环形 菜单 展开 细边 高光 阴影 模糊 弹簧 action wheel soft neumorphic radial menu",
+      "docsPath": "/docs/animations/soft-action-wheel",
+      "detailPath": "/ai/components/soft-action-wheel.json",
+      "markdownPath": "/ai/components/soft-action-wheel.md",
+      "previewPath": "/assets/components/soft-action-wheel.png",
+      "discovery": {
+        "category": "navigation",
+        "useCases": [
+          "快捷操作菜单",
+          "工具栏展开",
+          "minimal radial actions"
+        ],
+        "searchTerms": [
+          "菜单",
+          "环形",
+          "快捷",
+          "工具栏",
+          "简洁",
+          "黑白",
+          "menu",
+          "radial",
+          "actions",
+          "toolbar"
+        ],
+        "visualTags": [
+          "minimal",
+          "monochrome"
+        ],
+        "interactions": [
+          "click",
+          "keyboard"
+        ],
+        "caveat": "替换演示操作，检查展开后按钮与页面边界的间距。"
+      },
+      "frameworks": [
+        "react",
+        "vue",
+        "svelte",
+        "solid",
+        "preact",
+        "vanilla"
+      ],
+      "renderers": [],
+      "source": {
+        "kind": "project-source",
+        "provider": "LeiBox",
+        "implementation": "Variant of the local native radial-menu core, with independently reconstructed SVGs and light-surface styling; no original author source obtained.",
+        "designReference": "https://x.com/withAnimationUI/status/2110643020890849625/video/1",
+        "designAuthor": "withAnimation",
+        "license": "Original design license not supplied or independently verified; the reference video is retained only for internal comparison."
+      },
+      "distribution": {
+        "canRedistributeSource": true,
+        "installFromThisSite": true,
+        "installProvider": "zlui-atlas",
+        "notice": {
+          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+        }
+      }
+    },
+    {
+      "slug": "staggered-radial-menu",
+      "name": {
+        "en": "Staggered Radial Menu",
+        "zh": "环形菜单交错展开"
+      },
+      "description": {
+        "en": "Six coloured actions arrive from the outside in clockwise order, spring into a ring, then scatter outwards in reverse with soft blur.",
+        "zh": "六个彩色按钮从外围顺时针依次收拢成环，弹性停稳；关闭时逆序向外散开并模糊淡出。"
+      },
+      "keywords": "环形 菜单 交错 展开 圆形 按钮 加号 模糊 错峰 弹簧 stagger radial menu clockwise blur spring",
+      "docsPath": "/docs/animations/staggered-radial-menu",
+      "detailPath": "/ai/components/staggered-radial-menu.json",
+      "markdownPath": "/ai/components/staggered-radial-menu.md",
+      "previewPath": "/assets/components/staggered-radial-menu.png",
+      "discovery": {
+        "category": "navigation",
+        "useCases": [
+          "彩色快捷菜单",
+          "创意工具入口",
+          "colorful radial menu"
+        ],
+        "searchTerms": [
+          "菜单",
+          "环形",
+          "彩色",
+          "快捷",
+          "menu",
+          "radial",
+          "colorful",
+          "actions"
+        ],
+        "visualTags": [
+          "colorful",
+          "spring"
+        ],
+        "interactions": [
+          "click",
+          "keyboard"
+        ],
+        "caveat": "适合少量快捷操作，接入时替换演示动作。"
+      },
+      "frameworks": [
+        "react",
+        "vue",
+        "svelte",
+        "solid",
+        "preact",
+        "vanilla"
+      ],
+      "renderers": [],
+      "source": {
+        "kind": "project-source",
+        "provider": "LeiBox",
+        "implementation": "Independent DOM/CSS/SVG reconstruction; no original author source or vector files obtained.",
+        "designReference": "https://x.com/nitishkmrk/status/2110936271078281321/video/1",
+        "designAuthor": "Nitish Khagwal",
+        "license": "Original design license not verified; attribution does not grant redistribution rights to original assets."
+      },
+      "distribution": {
+        "canRedistributeSource": true,
+        "installFromThisSite": true,
+        "installProvider": "zlui-atlas",
+        "notice": {
+          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+        }
+      }
+    },
+    {
+      "slug": "elastic-panel-resize",
+      "name": {
+        "en": "Elastic Panel Resize",
+        "zh": "弹性面板缩放"
+      },
+      "description": {
+        "en": "A resizable blank panel with a hidden handle, directional bending, and a short resisted stretch beyond its width limits.",
+        "zh": "把手靠近时显现，拖动时同向弯曲；超过面板宽度边界后弹性拉伸，松手回弹。"
+      },
+      "keywords": "弹性 面板 缩放 调整 宽度 拖动 把手 弯曲 回弹 elastic panel resize spring handle drag",
+      "docsPath": "/docs/animations/elastic-panel-resize",
+      "detailPath": "/ai/components/elastic-panel-resize.json",
+      "markdownPath": "/ai/components/elastic-panel-resize.md",
+      "previewPath": "/assets/components/elastic-panel-resize.png",
+      "discovery": {
+        "category": "layout",
+        "useCases": [
+          "侧栏宽度调节",
+          "可拖拽面板",
+          "resizable sidebar panel"
+        ],
+        "searchTerms": [
+          "面板",
+          "侧栏",
+          "缩放",
+          "宽度",
+          "拖拽",
+          "panel",
+          "sidebar",
+          "resize",
+          "drag"
+        ],
+        "visualTags": [
+          "minimal",
+          "elastic"
+        ],
+        "interactions": [
+          "drag"
+        ],
+        "caveat": "将拖拽尺寸接入实际布局，并检查项目需要的最小宽度。"
+      },
+      "frameworks": [
+        "react",
+        "vue",
+        "svelte",
+        "solid",
+        "preact",
+        "vanilla"
+      ],
+      "renderers": [],
+      "source": {
+        "kind": "project-source",
+        "provider": "LeiBox",
+        "implementation": "Independent DOM/SVG reconstruction under the repository license; no original author source supplied.",
+        "designReference": "https://x.com/alvish/status/2111084319716647114/video/1",
+        "designAuthor": "Alvish",
+        "license": "Reference design license not supplied or independently verified; the original video and source are not redistributed."
+      },
+      "distribution": {
+        "canRedistributeSource": true,
+        "installFromThisSite": true,
+        "installProvider": "zlui-atlas",
+        "notice": {
+          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+        }
+      }
+    },
+    {
+      "slug": "blue-fluted-glass",
+      "name": {
+        "en": "Blue Fluted Glass Background",
+        "zh": "蓝色棱纹流动背景"
+      },
+      "description": {
+        "en": "Slow blue fluid folds refract through vertical frosted-glass ribs behind a fixed white LeiBox logo.",
+        "zh": "蓝色流体缓慢折叠流动，经竖向毛玻璃棱纹折射，中央白色 LeiBox 标志保持固定。"
+      },
+      "keywords": "蓝色 棱纹 流动 背景 毛玻璃 竖纹 流体 渐变 品牌 标志 blue fluted ribbed frosted glass fluid gradient background logo LeiBox",
+      "docsPath": "/docs/animations/blue-fluted-glass",
+      "detailPath": "/ai/components/blue-fluted-glass.json",
+      "markdownPath": "/ai/components/blue-fluted-glass.md",
+      "previewPath": "/assets/components/blue-fluted-glass.png",
+      "discovery": {
+        "category": "background",
+        "useCases": [
+          "品牌首屏背景",
+          "蓝色玻璃场景",
+          "blue glass hero background"
+        ],
+        "searchTerms": [
+          "背景",
+          "首屏",
+          "蓝色",
+          "棱纹",
+          "毛玻璃",
+          "background",
+          "hero",
+          "blue",
+          "fluted"
+        ],
+        "visualTags": [
+          "blue",
+          "glass",
+          "liquid"
+        ],
+        "interactions": [
+          "autoplay"
+        ],
+        "caveat": "替换演示 Logo；正文需要在流动背景上保持可读。"
+      },
+      "frameworks": [
+        "react",
+        "vue",
+        "svelte",
+        "solid",
+        "preact",
+        "vanilla"
+      ],
+      "renderers": [],
+      "source": {
+        "kind": "project-source",
+        "provider": "LeiBox",
+        "implementation": "Independent WebGL reconstruction from observed video frames; existing LeiBox vector artwork embedded locally.",
+        "designReference": "https://x.com/sashabirukoff/status/2113002960892649916/video/1",
+        "designAuthor": "sasha birukoff",
+        "license": "Original design/source license not supplied or verified; no original code or video is included in the component package."
+      },
+      "distribution": {
+        "canRedistributeSource": true,
+        "installFromThisSite": true,
+        "installProvider": "zlui-atlas",
+        "notice": {
+          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+        }
+      }
+    },
+    {
+      "slug": "reasoning-effort-slider",
+      "name": {
+        "en": "Reasoning Effort Slider",
+        "zh": "模型思考强度滑块"
+      },
+      "description": {
+        "en": "A three-stop thinking slider with a flowing star field, velocity-driven jelly deformation, and soft snapping from Simple to Deep.",
+        "zh": "三档模型思考强度滑块，保留流动星空填充、随拖速变化的果冻形变与柔和吸附。"
+      },
+      "keywords": "模型 思考 强度 推理 滑块 深度 简单 中度 深度 星空 液态 拖拽 Deep Agent reasoning effort thinking slider jelly",
+      "docsPath": "/docs/animations/reasoning-effort-slider",
+      "detailPath": "/ai/components/reasoning-effort-slider.json",
+      "markdownPath": "/ai/components/reasoning-effort-slider.md",
+      "previewPath": "/assets/components/reasoning-effort-slider.png",
+      "discovery": {
+        "category": "input",
+        "useCases": [
+          "AI 推理档位选择",
+          "模型设置",
+          "reasoning effort settings"
+        ],
+        "searchTerms": [
+          "思考",
+          "推理",
+          "强度",
+          "滑块",
+          "模型",
+          "简洁",
+          "三档",
+          "reasoning",
+          "effort",
+          "slider"
+        ],
+        "visualTags": [
+          "cosmic",
+          "elastic"
+        ],
+        "interactions": [
+          "drag",
+          "keyboard"
+        ],
+        "caveat": "三档选择界面；实际模型参数需映射到目标项目的接口。"
+      },
+      "frameworks": [
+        "react",
+        "vue",
+        "svelte",
+        "solid",
+        "preact",
+        "vanilla"
+      ],
+      "renderers": [],
+      "source": {
+        "kind": "project-source",
+        "provider": "LeiBox",
+        "implementation": "LeiBox component package",
+        "designReference": null,
+        "designAuthor": null,
+        "license": "Retain source notices and design-reference attribution; no blanket license is assigned by the catalog."
+      },
+      "distribution": {
+        "canRedistributeSource": true,
+        "installFromThisSite": true,
+        "installProvider": "zlui-atlas",
+        "notice": {
+          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+        }
+      }
+    },
+    {
+      "slug": "deep-agent-composer",
+      "name": {
+        "en": "Deep Agent Composer",
+        "zh": "Agent 对话输入框"
+      },
+      "description": {
+        "en": "The original Deep Agent Composer, including permission controls, context capacity, attachments, model selection, and the thinking-effort slider.",
+        "zh": "直接迁入 Deep Agent 原版对话输入框，包含权限菜单、上下文容量、附件、模型选择和思考强度滑块。"
+      },
+      "keywords": "Agent 对话 输入框 模型 思考 强度 推理 菜单 附件 计划 模式 Deep Agent composer chat model thinking reasoning effort slider",
+      "docsPath": "/docs/animations/deep-agent-composer",
+      "detailPath": "/ai/components/deep-agent-composer.json",
+      "markdownPath": "/ai/components/deep-agent-composer.md",
+      "previewPath": "/assets/components/deep-agent-composer.png",
+      "discovery": {
+        "category": "input",
+        "useCases": [
+          "AI 聊天输入",
+          "智能体对话",
+          "AI chat composer"
+        ],
+        "searchTerms": [
+          "聊天",
+          "对话",
+          "输入框",
+          "附件",
+          "模型",
+          "chat",
+          "agent",
+          "composer",
+          "prompt"
+        ],
+        "visualTags": [
+          "product",
+          "compact"
+        ],
+        "interactions": [
+          "input",
+          "click",
+          "keyboard"
+        ],
+        "caveat": "业务接口、附件上传、权限和模型调用需由目标项目接入。"
+      },
+      "frameworks": [
+        "react",
+        "vue",
+        "svelte",
+        "solid",
+        "preact",
+        "vanilla"
+      ],
+      "renderers": [],
+      "source": {
+        "kind": "project-source",
+        "provider": "LeiBox",
+        "implementation": "LeiBox component package",
+        "designReference": null,
+        "designAuthor": null,
+        "license": "Retain source notices and design-reference attribution; no blanket license is assigned by the catalog."
+      },
+      "distribution": {
+        "canRedistributeSource": true,
+        "installFromThisSite": true,
+        "installProvider": "zlui-atlas",
+        "notice": {
+          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+        }
+      }
+    },
+    {
+      "slug": "hammerhead-chart",
+      "name": {
+        "en": "ASCII Shark Price Paths",
+        "zh": "字符鲨鱼追踪价格路径"
+      },
+      "description": {
+        "en": "An ASCII hammerhead swims along three forecast price paths and tags each with its odds, volatility and dealer gamma; the pointer steers it to the nearest path, or lets it swim freely over the candle history.",
+        "zh": "字符锤头鲨沿三条预测价格路径游动，依次标记概率、波动率与 dealer gamma；指针在预测区时鲨鱼追向最近的路径，移到左侧K线区时鲨鱼跟着指针自由游动。"
+      },
+      "keywords": "鲨鱼 锤头鲨 字符 ASCII 价格 路径 预测 K线 概率 金融 图表 终端 hammerhead shark price paths forecast candles chart terminal",
+      "docsPath": "/docs/animations/hammerhead-chart",
+      "detailPath": "/ai/components/hammerhead-chart.json",
+      "markdownPath": "/ai/components/hammerhead-chart.md",
+      "previewPath": "/assets/components/hammerhead-chart.png",
+      "discovery": {
+        "category": "data",
+        "useCases": [
+          "创意图表叙事",
+          "价格路径演示",
+          "price path visualization"
+        ],
+        "searchTerms": [
+          "图表",
+          "价格",
+          "路径",
+          "鲨鱼",
+          "chart",
+          "price",
+          "shark",
+          "forecast"
+        ],
+        "visualTags": [
+          "ascii",
+          "chart"
+        ],
+        "interactions": [
+          "pointer",
+          "autoplay"
+        ],
+        "caveat": "价格路径是界面演示，使用前确认数据来源与业务含义。"
+      },
+      "frameworks": [
+        "react",
+        "vue",
+        "svelte",
+        "solid",
+        "preact",
+        "vanilla"
+      ],
+      "renderers": [],
+      "source": {
+        "kind": "project-source",
+        "provider": "LeiBox",
+        "implementation": "LeiBox component package",
+        "designReference": "https://x.com/stackedlol/status/2113757384656974179/video/1",
+        "designAuthor": "stacked",
+        "license": "Retain source notices and design-reference attribution; no blanket license is assigned by the catalog."
+      },
+      "distribution": {
+        "canRedistributeSource": true,
+        "installFromThisSite": true,
+        "installProvider": "zlui-atlas",
+        "notice": {
+          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+        }
+      }
+    },
+    {
+      "slug": "glass-tab-menu",
+      "name": {
+        "en": "Glass Tab Menu",
+        "zh": "玻璃标签栏展开菜单"
+      },
+      "description": {
+        "en": "A frosted four-tab bar expands into six creation actions, with a translucent sliding selection and a rotating plus button.",
+        "zh": "四项磨砂标签栏连续展开为六宫格菜单，选中块通透滑动，加号旋转为关闭按钮。"
+      },
+      "keywords": "玻璃 标签栏 菜单 展开 六宫格 加号 磨砂 滑动 glass tabs menu morph frosted toolbar creation",
+      "docsPath": "/docs/animations/glass-tab-menu",
+      "detailPath": "/ai/components/glass-tab-menu.json",
+      "markdownPath": "/ai/components/glass-tab-menu.md",
+      "previewPath": "/assets/components/glass-tab-menu.png",
+      "discovery": {
+        "category": "navigation",
+        "useCases": [
+          "标签页导航",
+          "可展开应用菜单",
+          "expandable tab navigation"
+        ],
+        "searchTerms": [
+          "导航",
+          "标签",
+          "菜单",
+          "玻璃",
+          "navigation",
+          "tabs",
+          "menu",
+          "glass"
+        ],
+        "visualTags": [
+          "glass",
+          "minimal"
+        ],
+        "interactions": [
+          "click",
+          "keyboard"
+        ],
+        "caveat": "根据真实页面定义导航项与选中状态。"
+      },
+      "frameworks": [
+        "react",
+        "vue",
+        "svelte",
+        "solid",
+        "preact",
+        "vanilla"
+      ],
+      "renderers": [],
+      "source": {
+        "kind": "project-source",
+        "provider": "LeiBox",
+        "implementation": "LeiBox component package",
+        "designReference": "https://x.com/SolutionB2u/status/2113575003341881728/video/1",
+        "designAuthor": "solutionb",
+        "license": "Retain source notices and design-reference attribution; no blanket license is assigned by the catalog."
+      },
+      "distribution": {
+        "canRedistributeSource": true,
+        "installFromThisSite": true,
+        "installProvider": "zlui-atlas",
+        "notice": {
+          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+        }
+      }
+    },
+    {
+      "slug": "crumpled-paper",
+      "name": {
+        "en": "Crumpled Paper Unfold",
+        "zh": "揉皱纸张展开"
+      },
+      "description": {
+        "en": "Three crumpled paper meshes unfold into a handwritten letter, a blue mountain photograph, and a printed note as you hover.",
+        "zh": "三张纸团随悬停展开为手写信、蓝色山景照片和印刷便笺，纸面沿真实折叠网格连续变形。"
+      },
+      "keywords": "揉皱 纸团 纸张 展开 信件 照片 折痕 网格 悬停 crumpled paper unfold mesh letter photograph webgl",
+      "docsPath": "/docs/animations/crumpled-paper",
+      "detailPath": "/ai/components/crumpled-paper.json",
+      "markdownPath": "/ai/components/crumpled-paper.md",
+      "previewPath": "/assets/components/crumpled-paper.png",
+      "discovery": {
+        "category": "cards",
+        "useCases": [
+          "信件展示",
+          "照片便笺互动",
+          "paper letter photo reveal"
+        ],
+        "searchTerms": [
+          "纸张",
+          "揉皱",
+          "信件",
+          "照片",
+          "便笺",
+          "paper",
+          "letter",
+          "photo",
+          "unfold"
+        ],
+        "visualTags": [
+          "paper",
+          "tactile"
+        ],
+        "interactions": [
+          "hover"
+        ],
+        "caveat": "替换示例信件和照片，并为触摸设备检查交互路径。"
+      },
+      "frameworks": [
+        "react",
+        "vue",
+        "svelte",
+        "solid",
+        "preact",
+        "vanilla"
+      ],
+      "renderers": [],
+      "source": {
+        "kind": "project-source",
+        "provider": "LeiBox",
+        "implementation": "LeiBox component package",
+        "designReference": "https://x.com/insporadesign/status/2113586239110828465/video/1",
+        "designAuthor": "Matt",
+        "license": "Retain source notices and design-reference attribution; no blanket license is assigned by the catalog."
+      },
+      "distribution": {
+        "canRedistributeSource": true,
+        "installFromThisSite": true,
+        "installProvider": "zlui-atlas",
+        "notice": {
+          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+        }
+      }
+    },
+    {
+      "slug": "sailing-toc",
+      "name": {
+        "en": "Sailing Scroll Contents",
+        "zh": "帆船滚动目录"
+      },
+      "description": {
+        "en": "A sailing ship follows the current section along a bending dashed route, with scroll tracking and smooth contents navigation.",
+        "zh": "帆船随当前章节沿弯曲虚线移动，支持滚动跟随与点击目录平滑跳转。"
+      },
+      "keywords": "帆船 滚动 目录 导航 航线 虚线 弹簧 船 阅读 sailing ship scroll contents navigation toc spring",
+      "docsPath": "/docs/animations/sailing-toc",
+      "detailPath": "/ai/components/sailing-toc.json",
+      "markdownPath": "/ai/components/sailing-toc.md",
+      "previewPath": "/assets/components/sailing-toc.png",
+      "discovery": {
+        "category": "navigation",
+        "useCases": [
+          "长文章节目录",
+          "文档阅读导航",
+          "article table of contents"
+        ],
+        "searchTerms": [
+          "目录",
+          "章节",
+          "长文",
+          "阅读",
+          "导航",
+          "文章",
+          "文档",
+          "toc",
+          "article",
+          "documentation",
+          "navigation"
+        ],
+        "visualTags": [
+          "nautical",
+          "minimal"
+        ],
+        "interactions": [
+          "scroll",
+          "click"
+        ],
+        "caveat": "章节 ID 与页面标题保持一致；帆船意象需符合页面风格。"
+      },
+      "frameworks": [
+        "react",
+        "vue",
+        "svelte",
+        "solid",
+        "preact",
+        "vanilla"
+      ],
+      "renderers": [],
+      "source": {
+        "kind": "project-source",
+        "provider": "LeiBox",
+        "implementation": "LeiBox component package",
+        "designReference": "https://x.com/emirayaz/status/2113414926911881647/video/1",
+        "designAuthor": "Emir Ayaz",
+        "license": "Retain source notices and design-reference attribution; no blanket license is assigned by the catalog."
+      },
+      "distribution": {
+        "canRedistributeSource": true,
+        "installFromThisSite": true,
+        "installProvider": "zlui-atlas",
+        "notice": {
+          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+        }
+      }
+    },
+    {
+      "slug": "thinking-particles",
+      "name": {
+        "en": "Thinking Step Particle Morph",
+        "zh": "思考步骤粒子变形"
+      },
+      "description": {
+        "en": "Particles morph through five thinking steps, then collapse into a streamed answer with replay and copy controls.",
+        "zh": "粒子随五个思考步骤连续变形，完成后收起并逐字显示回答，支持暂停、重播和复制。"
+      },
+      "keywords": "思考 步骤 粒子 变形 放大镜 魔方 积木 机械臂 礼物 AI 推理 thinking reasoning particles morph agent",
+      "docsPath": "/docs/animations/thinking-particles",
+      "detailPath": "/ai/components/thinking-particles.json",
+      "markdownPath": "/ai/components/thinking-particles.md",
+      "previewPath": "/assets/components/thinking-particles.png",
+      "discovery": {
+        "category": "feedback",
+        "useCases": [
+          "AI 思考等待反馈",
+          "推理步骤展示",
+          "AI thinking steps"
+        ],
+        "searchTerms": [
+          "等待",
+          "思考",
+          "推理",
+          "步骤",
+          "加载",
+          "thinking",
+          "reasoning",
+          "steps",
+          "loading"
+        ],
+        "visualTags": [
+          "particles"
+        ],
+        "interactions": [
+          "autoplay",
+          "click"
+        ],
+        "caveat": "把演示步骤绑定真实任务状态，不把动画进度当作真实推理进度。"
+      },
+      "frameworks": [
+        "react",
+        "vue",
+        "svelte",
+        "solid",
+        "preact",
+        "vanilla"
+      ],
+      "renderers": [],
+      "source": {
+        "kind": "project-source",
+        "provider": "LeiBox",
+        "implementation": "LeiBox component package",
+        "designReference": "https://x.com/shridharathi/status/2113255894423158914/video/1",
+        "designAuthor": "Shridhar",
+        "license": "Retain source notices and design-reference attribution; no blanket license is assigned by the catalog."
+      },
+      "distribution": {
+        "canRedistributeSource": true,
+        "installFromThisSite": true,
+        "installProvider": "zlui-atlas",
+        "notice": {
+          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+        }
+      }
+    },
+    {
+      "slug": "glass-folder",
+      "name": {
+        "en": "Glass Folder Cards",
+        "zh": "玻璃文件夹展开"
+      },
+      "description": {
+        "en": "Frosted folders open into a fan of real files, with generated artwork, a drop-in add action, and keyboard menus.",
+        "zh": "磨砂文件夹展开为扇形文件，支持生成纹理、添加落入动效和键盘菜单。"
+      },
+      "keywords": "glass folder files frosted blur art marble add fan menu 玻璃 文件夹 文件 磨砂 扇出 添加 菜单 纹理",
+      "docsPath": "/docs/animations/glass-folder",
+      "detailPath": "/ai/components/glass-folder.json",
+      "markdownPath": "/ai/components/glass-folder.md",
+      "previewPath": "/assets/components/glass-folder.png",
+      "discovery": {
+        "category": "files",
+        "useCases": [
+          "文件管理",
+          "作品集分组",
+          "document file manager"
+        ],
+        "searchTerms": [
+          "文件",
+          "文件夹",
+          "资料",
+          "管理",
+          "玻璃",
+          "file",
+          "files",
+          "folder",
+          "documents",
+          "manager"
+        ],
+        "visualTags": [
+          "glass",
+          "cards"
+        ],
+        "interactions": [
+          "hover",
+          "click",
+          "keyboard"
+        ],
+        "caveat": "文件卡片展示界面；存储、上传与真实文件权限需接入项目。"
+      },
+      "frameworks": [
+        "react",
+        "vue",
+        "svelte",
+        "solid",
+        "preact",
+        "vanilla"
+      ],
+      "renderers": [],
+      "source": {
+        "kind": "project-source",
+        "provider": "LeiBox",
+        "implementation": "LeiBox component package",
+        "designReference": null,
+        "designAuthor": null,
+        "license": "Retain source notices and design-reference attribution; no blanket license is assigned by the catalog."
+      },
+      "distribution": {
+        "canRedistributeSource": true,
+        "installFromThisSite": true,
+        "installProvider": "zlui-atlas",
+        "notice": {
+          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+        }
+      }
+    },
+    {
+      "slug": "cosmic-panels",
+      "name": {
+        "en": "Orbit & Halftone Animation",
+        "zh": "轨道与点阵动效"
+      },
+      "description": {
+        "en": "Orbital loading, flowing halftone clouds, and floating isometric servers form a three-panel cosmic visual system.",
+        "zh": "轨道加载、流动半色调星云和悬浮服务器组成三联宇宙视觉。"
+      },
+      "keywords": "cosmic space orbit loading astronaut servers globe halftone canvas 宇宙 星云 轨道 点阵 半色调 地球 服务器",
+      "docsPath": "/docs/animations/cosmic-panels",
+      "detailPath": "/ai/components/cosmic-panels.json",
+      "markdownPath": "/ai/components/cosmic-panels.md",
+      "previewPath": "/assets/components/cosmic-panels.png",
+      "discovery": {
+        "category": "background",
+        "useCases": [
+          "云服务品牌视觉",
+          "宇宙主题展示",
+          "cosmic infrastructure showcase"
+        ],
+        "searchTerms": [
+          "轨道",
+          "星云",
+          "宇宙",
+          "服务器",
+          "cosmic",
+          "orbit",
+          "nebula",
+          "server"
+        ],
+        "visualTags": [
+          "cosmic",
+          "dots"
+        ],
+        "interactions": [
+          "autoplay"
+        ],
+        "caveat": "包含多个视觉模块，按页面需要选择，避免全部挤入小区域。"
+      },
+      "frameworks": [
+        "react",
+        "vue",
+        "svelte",
+        "solid",
+        "preact",
+        "vanilla"
+      ],
+      "renderers": [],
+      "source": {
+        "kind": "project-source",
+        "provider": "LeiBox",
+        "implementation": "LeiBox component package",
+        "designReference": "https://x.com/acream_1/status/2113235166453964924/video/1",
+        "designAuthor": "Acream",
+        "license": "Retain source notices and design-reference attribution; no blanket license is assigned by the catalog."
+      },
+      "distribution": {
+        "canRedistributeSource": true,
+        "installFromThisSite": true,
+        "installProvider": "zlui-atlas",
+        "notice": {
+          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+        }
+      }
+    },
+    {
+      "slug": "gradient-cover-wall",
+      "name": {
+        "en": "Interactive Gradient Cards",
+        "zh": "渐变卡片跟随"
+      },
+      "description": {
+        "en": "Six grainy gradient covers with fine SVG patterns, drifting colours, and spring-driven pointer light.",
+        "zh": "六张颗粒渐变封面，搭配细线纹样、缓慢漂移的色团和弹簧柔光交互。"
+      },
+      "keywords": "渐变 封面 卡片墙 颗粒 噪点 柔光 纹样 弹簧 gradient grain noise cover wall radial spring canvas",
+      "docsPath": "/docs/animations/gradient-cover-wall",
+      "detailPath": "/ai/components/gradient-cover-wall.json",
+      "markdownPath": "/ai/components/gradient-cover-wall.md",
+      "previewPath": "/assets/components/gradient-cover-wall.png",
+      "discovery": {
+        "category": "cards",
+        "useCases": [
+          "封面画廊",
+          "渐变作品展示",
+          "gradient cover gallery"
+        ],
+        "searchTerms": [
+          "渐变",
+          "封面",
+          "画廊",
+          "作品集",
+          "gradient",
+          "cover",
+          "gallery",
+          "portfolio"
+        ],
+        "visualTags": [
+          "gradient",
+          "grain"
+        ],
+        "interactions": [
+          "pointer",
+          "autoplay"
+        ],
+        "caveat": "装饰性封面展示；业务列表的名称与链接需接入项目。"
+      },
+      "frameworks": [
+        "react",
+        "vue",
+        "svelte",
+        "solid",
+        "preact",
+        "vanilla"
+      ],
+      "renderers": [],
+      "source": {
+        "kind": "project-source",
+        "provider": "LeiBox",
+        "implementation": "LeiBox component package",
+        "designReference": null,
+        "designAuthor": null,
+        "license": "Retain source notices and design-reference attribution; no blanket license is assigned by the catalog."
+      },
+      "distribution": {
+        "canRedistributeSource": true,
+        "installFromThisSite": true,
+        "installProvider": "zlui-atlas",
+        "notice": {
+          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+        }
+      }
+    },
+    {
+      "slug": "otp-verification",
+      "name": {
+        "en": "OTP Input Verification",
+        "zh": "验证码输入验证"
+      },
+      "description": {
+        "en": "A six-digit code unfolds from a pill, contracts to verify, and responds with an error shake or a green confirmation.",
+        "zh": "胶囊展开为六位验证码输入框，收拢验证后呈现错误摇动或绿色成功反馈。"
+      },
+      "keywords": "otp verification code input password authentication pill morph error success 验证码 验证 输入 密码 胶囊 动效 错误 成功",
+      "docsPath": "/docs/components/otp-verification",
+      "detailPath": "/ai/components/otp-verification.json",
+      "markdownPath": "/ai/components/otp-verification.md",
+      "previewPath": "/assets/components/otp-verification.png",
+      "discovery": {
+        "category": "input",
+        "useCases": [
+          "登录验证码",
+          "身份验证反馈",
+          "login verification code"
+        ],
+        "searchTerms": [
+          "验证码",
+          "登录",
+          "验证",
+          "短信",
+          "otp",
+          "verification",
+          "login",
+          "code"
+        ],
+        "visualTags": [
+          "minimal",
+          "capsule"
+        ],
+        "interactions": [
+          "input",
+          "keyboard"
+        ],
+        "caveat": "输入与结果反馈界面；验证码发送和校验需接入真实服务。"
+      },
+      "frameworks": [
+        "react",
+        "vue",
+        "svelte",
+        "solid",
+        "preact",
+        "vanilla"
+      ],
+      "renderers": [],
+      "source": {
+        "kind": "project-source",
+        "provider": "LeiBox",
+        "implementation": "LeiBox component package",
+        "designReference": "https://x.com/bestsaasdesigns/status/2111020282551132539/video/1",
+        "designAuthor": "sucodee",
+        "license": "Retain source notices and design-reference attribution; no blanket license is assigned by the catalog."
+      },
+      "distribution": {
+        "canRedistributeSource": true,
+        "installFromThisSite": true,
+        "installProvider": "zlui-atlas",
+        "notice": {
+          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+        }
+      }
+    },
+    {
+      "slug": "brand-line-cards",
+      "name": {
+        "en": "Pointer Line Cards",
+        "zh": "鼠标感应线条"
+      },
+      "description": {
+        "en": "Apple, Google, and Tesla emerge from flowing vertical lines, with spring motion and pointer-driven detection boxes.",
+        "zh": "竖线重构 Apple、Google 与 Tesla 标志，结合弹簧回弹及随鼠标变化的检测框连线。"
+      },
+      "keywords": "品牌 线条 卡片 竖线 苹果 谷歌 特斯拉 检测框 连线 识别 噪声 弹簧 logo brand apple google tesla canvas luminance detection spring",
+      "docsPath": "/docs/animations/brand-line-cards",
+      "detailPath": "/ai/components/brand-line-cards.json",
+      "markdownPath": "/ai/components/brand-line-cards.md",
+      "previewPath": "/assets/components/brand-line-cards.png",
+      "discovery": {
+        "category": "cards",
+        "useCases": [
+          "交互品牌卡片",
+          "线条 Logo 展示",
+          "interactive line logo cards"
+        ],
+        "searchTerms": [
+          "线条",
+          "品牌",
+          "标志",
+          "鼠标",
+          "line",
+          "brand",
+          "logo",
+          "pointer"
+        ],
+        "visualTags": [
+          "line-art",
+          "monochrome"
+        ],
+        "interactions": [
+          "pointer"
+        ],
+        "caveat": "演示含第三方品牌标志，接入时替换为项目自己的素材。"
+      },
+      "frameworks": [
+        "react",
+        "vue",
+        "svelte",
+        "solid",
+        "preact",
+        "vanilla"
+      ],
+      "renderers": [],
+      "source": {
+        "kind": "project-source",
+        "provider": "LeiBox",
+        "implementation": "LeiBox component package",
+        "designReference": "https://x.com/ianneo_ai/status/2112718197690691657/video/1",
+        "designAuthor": "Ian (伊恩)",
+        "license": "Retain source notices and design-reference attribution; no blanket license is assigned by the catalog."
+      },
+      "distribution": {
+        "canRedistributeSource": true,
+        "installFromThisSite": true,
+        "installProvider": "zlui-atlas",
+        "notice": {
+          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+        }
+      }
+    },
+    {
+      "slug": "share-invite",
+      "name": {
+        "en": "Share Invite Panel",
+        "zh": "分享邀请面板"
+      },
+      "description": {
+        "en": "An expandable sharing panel with email invitations, member roles, and a real copy-link action.",
+        "zh": "可展开收拢的分享面板，支持邮箱邀请、成员权限和真实链接复制。"
+      },
+      "keywords": "motion animation share invite collaboration permissions email 动效 分享 邀请 协作 权限 邮箱 弹簧 面板 形变",
+      "docsPath": "/docs/components/share-invite",
+      "detailPath": "/ai/components/share-invite.json",
+      "markdownPath": "/ai/components/share-invite.md",
+      "previewPath": "/assets/components/share-invite.png",
+      "discovery": {
+        "category": "collaboration",
+        "useCases": [
+          "分享链接",
+          "团队成员邀请",
+          "team member sharing invite"
+        ],
+        "searchTerms": [
+          "分享",
+          "邀请",
+          "成员",
+          "团队",
+          "权限",
+          "share",
+          "invite",
+          "invitation",
+          "members",
+          "team"
+        ],
+        "visualTags": [
+          "product",
+          "compact"
+        ],
+        "interactions": [
+          "input",
+          "click",
+          "keyboard"
+        ],
+        "caveat": "链接复制可接实际地址；邀请发送与权限变更需接入业务接口。"
+      },
+      "frameworks": [
+        "react",
+        "vue",
+        "svelte",
+        "solid",
+        "preact",
+        "vanilla"
+      ],
+      "renderers": [],
+      "source": {
+        "kind": "project-source",
+        "provider": "LeiBox",
+        "implementation": "LeiBox component package",
+        "designReference": "https://x.com/sucodeee/status/2111061993599713612/video/1",
+        "designAuthor": "sucodee",
+        "license": "Retain source notices and design-reference attribution; no blanket license is assigned by the catalog."
+      },
+      "distribution": {
+        "canRedistributeSource": true,
+        "installFromThisSite": true,
+        "installProvider": "zlui-atlas",
+        "notice": {
+          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+        }
+      }
+    },
+    {
+      "slug": "bouncy-access",
+      "name": {
+        "en": "Expandable Access Request",
+        "zh": "访问申请展开"
+      },
+      "description": {
+        "en": "A compact access request expands into an avatar list with staggered spring motion.",
+        "zh": "权限申请胶囊弹性展开，堆叠头像与成员列表交错切换。"
+      },
+      "keywords": "动效 访问 权限 申请 弹性 展开 收起 头像 access request spring morph panel",
+      "docsPath": "/docs/animations/bouncy-access",
+      "detailPath": "/ai/components/bouncy-access.json",
+      "markdownPath": "/ai/components/bouncy-access.md",
+      "previewPath": "/assets/components/bouncy-access.png",
+      "discovery": {
+        "category": "collaboration",
+        "useCases": [
+          "访问权限申请",
+          "成员列表展开",
+          "request access members"
+        ],
+        "searchTerms": [
+          "访问",
+          "申请",
+          "权限",
+          "成员",
+          "access",
+          "request",
+          "permission",
+          "members"
+        ],
+        "visualTags": [
+          "capsule",
+          "spring"
+        ],
+        "interactions": [
+          "click"
+        ],
+        "caveat": "权限申请与成员状态需绑定项目业务数据。"
+      },
+      "frameworks": [
+        "react",
+        "vue",
+        "svelte",
+        "solid",
+        "preact",
+        "vanilla"
+      ],
+      "renderers": [],
+      "source": {
+        "kind": "project-source",
+        "provider": "LeiBox",
+        "implementation": "LeiBox component package",
+        "designReference": null,
+        "designAuthor": null,
+        "license": "Retain source notices and design-reference attribution; no blanket license is assigned by the catalog."
+      },
+      "distribution": {
+        "canRedistributeSource": true,
+        "installFromThisSite": true,
+        "installProvider": "zlui-atlas",
+        "notice": {
+          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+        }
+      }
+    },
+    {
+      "slug": "velocity-drag",
+      "name": {
+        "en": "Inertial Calendar Drag",
+        "zh": "日历惯性拖拽"
+      },
+      "description": {
+        "en": "Calendar events turn into a floating focus card that stretches and follows drag velocity.",
+        "zh": "日程卡片随拖拽速度拉伸、跟随，并在浮动状态中切换聚焦内容。"
+      },
+      "keywords": "动效 气动 对焦 拖拽 日历 日程 速度 惯性 形变 drag velocity focus calendar physics",
+      "docsPath": "/docs/animations/velocity-drag",
+      "detailPath": "/ai/components/velocity-drag.json",
+      "markdownPath": "/ai/components/velocity-drag.md",
+      "previewPath": "/assets/components/velocity-drag.png",
+      "discovery": {
+        "category": "layout",
+        "useCases": [
+          "日程卡片拖拽",
+          "日历交互反馈",
+          "calendar event drag"
+        ],
+        "searchTerms": [
+          "日历",
+          "日程",
+          "拖拽",
+          "惯性",
+          "calendar",
+          "schedule",
+          "drag",
+          "velocity"
+        ],
+        "visualTags": [
+          "elastic",
+          "cards"
+        ],
+        "interactions": [
+          "drag"
+        ],
+        "caveat": "拖拽视觉反馈；实际排期、碰撞与保存逻辑需接入项目。"
+      },
+      "frameworks": [
+        "react",
+        "vue",
+        "svelte",
+        "solid",
+        "preact",
+        "vanilla"
+      ],
+      "renderers": [],
+      "source": {
+        "kind": "project-source",
+        "provider": "LeiBox",
+        "implementation": "LeiBox component package",
+        "designReference": null,
+        "designAuthor": null,
+        "license": "Retain source notices and design-reference attribution; no blanket license is assigned by the catalog."
+      },
+      "distribution": {
+        "canRedistributeSource": true,
+        "installFromThisSite": true,
+        "installProvider": "zlui-atlas",
+        "notice": {
+          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+        }
+      }
+    },
+    {
+      "slug": "ai-generating",
+      "name": {
+        "en": "Dot Grid Loader",
+        "zh": "点阵加载"
+      },
+      "description": {
+        "en": "A restrained 20-by-20 dot field pulses around two moving focal points while an image is generating.",
+        "zh": "20 × 20 点阵围绕两个移动焦点呼吸，呈现图片生成中的等待反馈。"
+      },
+      "keywords": "动效 AI 生成 图片 加载 等待 反馈 点阵 光点 loading generating dots focus",
+      "docsPath": "/docs/animations/ai-generating",
+      "detailPath": "/ai/components/ai-generating.json",
+      "markdownPath": "/ai/components/ai-generating.md",
+      "previewPath": "/assets/components/ai-generating.png",
+      "discovery": {
+        "category": "feedback",
+        "useCases": [
+          "图片生成等待",
+          "AI 加载反馈",
+          "image generation loading"
+        ],
+        "searchTerms": [
+          "等待",
+          "生成",
+          "加载",
+          "点阵",
+          "图片",
+          "loading",
+          "loader",
+          "generating",
+          "generation",
+          "image"
+        ],
+        "visualTags": [
+          "dots",
+          "minimal"
+        ],
+        "interactions": [
+          "autoplay"
+        ],
+        "caveat": "等待动画不表示真实完成百分比，需要绑定实际任务结束状态。"
+      },
+      "frameworks": [
+        "react",
+        "vue",
+        "svelte",
+        "solid",
+        "preact",
+        "vanilla"
+      ],
+      "renderers": [],
+      "source": {
+        "kind": "project-source",
+        "provider": "LeiBox",
+        "implementation": "LeiBox component package",
+        "designReference": null,
+        "designAuthor": null,
+        "license": "Retain source notices and design-reference attribution; no blanket license is assigned by the catalog."
+      },
+      "distribution": {
+        "canRedistributeSource": true,
+        "installFromThisSite": true,
+        "installProvider": "zlui-atlas",
+        "notice": {
+          "en": "Distributed by ZLUIAtlas with LeiBox author's permission. Preserve all original source, third-party license and design-reference notices; no blanket MIT license is assigned.",
+          "zh": "ZLUIAtlas 经 LeiBox 作者授权收录与复刻；保留原代码、第三方许可和设计参考声明，不将全部内容统一许可为 MIT。"
+        }
+      }
+    }
+  ]
+}
