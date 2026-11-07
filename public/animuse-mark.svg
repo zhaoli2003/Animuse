@@ -1,6 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-labelledby="title description">
   <title id="title">Animuse</title>
-  <desc id="description">An original single-storey lowercase a. A broad rounded loop and a rising diagonal terminal suggest a component in motion.</desc>
-  <rect width="128" height="128" rx="30" fill="#111111"/>
-  <path fill="#ffffff" fill-rule="evenodd" d="M61 19C35 19 18 38 18 65C18 92 35 110 60 110C73 110 83 105 89 96V108H110V19L89 27V34C82 24 72 19 61 19ZM63 41C78 41 88 51 88 65C88 79 78 89 63 89C48 89 39 79 39 65C39 51 48 41 63 41Z"/>
+  <desc id="description">Two offset UI cards with a cursor cut into the front card: pick an interactive component and make it yours.</desc>
+  <defs>
+    <mask id="cursor-cutout" x="0" y="0" width="128" height="128" maskUnits="userSpaceOnUse">
+      <rect width="128" height="128" fill="#fff"/>
+      <path d="M77 74C73.5 72 70.5 74.5 71.2 78L77.5 108C78.2 111.5 81.7 112 84 109.5L90.5 102.5L108 125L123 113L104 92.5L113.5 89.8C117 88.8 117.4 85.4 114 83.5Z" fill="#000"/>
+    </mask>
+  </defs>
+  <path fill="#ff4b16" d="M28 14L91 6C104 4.3 113 12 113 25V28L43 37C28 38.9 20.9 47.8 19.5 63L17 88C9 86.5 5 80.5 5 71V40C5 25 12 16 28 14Z"/>
+  <path class="front-card" fill="#151515" mask="url(#cursor-cutout)" d="M47 47L102 40C115 38.4 123 46 123 59V94C123 108 116 115 102 116L45 122C31 123.5 24 116 25 102L27 71C28 57 34 48.7 47 47Z"/>
 </svg>

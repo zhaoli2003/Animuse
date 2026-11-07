@@ -4,12 +4,13 @@ import { publicPath } from "@/lib/site-url";
 
 import { gsap } from "gsap";
 import { usePathname } from "next/navigation";
+import { useHydratedTheme } from "@/hooks/use-hydrated-theme";
 import { createContext, useCallback, useEffect, useLayoutEffect, useMemo, useRef, type ReactNode } from "react";
 
 import styles from "./logo-transition-provider.module.css";
 
 type LogoRect = { left: number; top: number; width: number; height: number };
-type Snapshot = { rect: LogoRect; pathname: string; filter: string };
+type Snapshot = { rect: LogoRect; pathname: string; src: string };
 type LogoTransitionContextValue = { register: (image: HTMLImageElement, pathname: string) => () => void };
 
 export const LogoTransitionContext = createContext<LogoTransitionContextValue | null>(null);
@@ -22,7 +23,7 @@ function visibleRect(image: HTMLImageElement): LogoRect | null {
 }
 
 function placeOverlay(image: HTMLImageElement, snapshot: Snapshot) {
-  image.style.filter = snapshot.filter;
+  image.src = snapshot.src;
   gsap.set(image, {
     x: snapshot.rect.left, y: snapshot.rect.top,
     width: snapshot.rect.width, height: snapshot.rect.height,
@@ -32,6 +33,7 @@ function placeOverlay(image: HTMLImageElement, snapshot: Snapshot) {
 
 /** One persistent carrier for navigation Logos, outside moving page/header parents. */
 export function LogoTransitionProvider({ children }: { children: ReactNode }) {
+  const resolvedTheme = useHydratedTheme();
   const pathname = routePath(usePathname());
   const overlay = useRef<HTMLImageElement>(null);
   const pending = useRef<Snapshot | null>(null);
@@ -89,7 +91,7 @@ export function LogoTransitionProvider({ children }: { children: ReactNode }) {
       const source = target.current === image ? overlay.current : image;
       const rect = visibleRect(source);
       if (!rect) return;
-      const snapshot = { rect, pathname: path, filter: getComputedStyle(source).filter };
+      const snapshot = { rect, pathname: path, src: source.currentSrc || source.src };
       pending.current = snapshot;
       // Keep a running carrier alive until the next registration distinguishes a
       // real route change from Strict Mode replay of this same target.
@@ -149,6 +151,6 @@ export function LogoTransitionProvider({ children }: { children: ReactNode }) {
   return <LogoTransitionContext.Provider value={context}>
     {children}
     {/* eslint-disable-next-line @next/next/no-img-element */}
-    <img ref={overlay} src={publicPath("/animuse-logo.svg")} alt="" aria-hidden="true" width={640} height={160} className={styles.overlay} data-logo-motion="idle" />
+    <img ref={overlay} src={publicPath(resolvedTheme === "dark" ? "/animuse-logo-dark.svg?v=pick-v2" : "/animuse-logo.svg?v=pick-v2")} alt="" aria-hidden="true" width={832} height={160} className={styles.overlay} data-logo-motion="idle" />
   </LogoTransitionContext.Provider>;
 }
