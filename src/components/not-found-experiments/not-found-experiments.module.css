@@ -15,7 +15,7 @@
 .page a:focus-visible, .page button:focus-visible { outline: 2px solid currentColor; outline-offset: 6px; }
 .header { position: relative; z-index: 3; display: flex; height: 104px; flex-shrink: 0; align-items: center; justify-content: space-between; padding: 0 48px; }
 .logoLink { display: flex; align-items: center; }
-.wordmark { width: 100px; height: auto; filter: invert(1); }
+.wordmark { width: 100px; height: auto; }
 .switcher { position: absolute; left: 50%; display: flex; gap: 3px; padding: 4px; border: 1px solid #0b17201a; border-radius: 99px; transform: translateX(-50%); }
 .switcher a { display: flex; min-height: 36px; align-items: center; gap: 9px; border-radius: 99px; padding: 0 17px; color: var(--soft); font-size: 12px; transition: color 160ms, background 160ms; white-space: nowrap; }
 .switcher a:hover { color: var(--ink); background: #0b172008; }
@@ -33,7 +33,7 @@
 .brandIntro { margin: 0 0 36px; font-size: clamp(14px, 1.5vw, 21px); font-weight: 400; letter-spacing: -.03em; }
 .brandComposition { display: flex; width: min(790px, 76vw); align-items: center; justify-content: center; }
 .solidFour { display: block; font-family: var(--font-geist-sans), Arial, sans-serif; font-size: clamp(130px, 34vw, 352px); font-weight: 600; line-height: .9; letter-spacing: -.075em; }
-.brandMark { display: block; width: 37%; height: auto; margin: 0 1.5% 0 2%; mix-blend-mode: multiply; }
+.brandMark { display: block; width: 37%; height: auto; margin: 0 1.5% 0 2%; }
 .brandActions { display: flex; flex-direction: column; align-items: center; gap: 22px; margin-top: 58px; }
 .homeButton { position: relative; display: flex; width: 190px; min-height: 54px; align-items: center; justify-content: center; gap: 32px; border: 1px solid var(--ink); border-radius: 4px; color: var(--paper); background: var(--ink); font-size: 13px; transition: background 160ms; }
 .homeButton:hover { background: #24343f; }
@@ -52,7 +52,6 @@
   --soft: #656560;
   --home: #565651;
   --theme-border: #18181826;
-  --wordmark-filter: invert(1);
   color-scheme: light;
 }
 :global(.dark) .orbit {
@@ -61,10 +60,8 @@
   --soft: #999894;
   --home: #bdbbb6;
   --theme-border: #ffffff26;
-  --wordmark-filter: none;
   color-scheme: dark;
 }
-.orbit .wordmark { filter: var(--wordmark-filter); }
 .orbitMain { display: flex; min-height: 0; flex: 1; flex-direction: column; align-items: center; justify-content: center; padding: 10px 24px 26px; container-type: size; }
 .orbitComposition { position: relative; display: grid; width: min(1200px, 100%); height: min(630px, 100cqh); place-items: center; isolation: isolate; }
 .expressiveFour { position: absolute; z-index: -1; top: 50%; font-family: "Times New Roman", Georgia, serif; font-size: min(clamp(300px, 35vw, 510px), 76cqh); font-style: italic; font-weight: 400; line-height: .8; letter-spacing: -.1em; transform: translateY(-54%) scaleY(1.2); user-select: none; }

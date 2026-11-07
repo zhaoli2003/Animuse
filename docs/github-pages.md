@@ -2,8 +2,8 @@
 
 - 网站：https://zhaoli2003.github.io/Animuse/
 - 组件：https://zhaoli2003.github.io/Animuse/components/
-- 发布流程：[GitHub Actions run 42395474124](https://github.com/zhaoli2003/Animuse/actions/runs/42395474124)
-- 本次发布的产品提交：`de248aea9bb7c7a26abb6fb76759c67b370570c0`。
+- 首次发布流程：[GitHub Actions run 42395474124](https://github.com/zhaoli2003/Animuse/actions/runs/42395474124)
+- 首次发布的产品提交：`de248aea9bb7c7a26abb6fb76759c67b370570c0`。
 
 ## 更新与本地运行
 
@@ -28,9 +28,9 @@ npx skills add zhaoli2003/Animuse --skill animuse
 
 ## 图标
 
-原创小写 a：粗圆角主体、单一内孔、右上斜切。唯一矢量源为 `design/brand/animuse-mark.svg`，`npm run brand:build` 生成 SVG、16/32/48px ICO 和 180/192/512px 安装图标。字体字标保持 Animuse。明暗及小尺寸展示见 `design/brand/animuse-icon-preview.png`。
+采用用户确认的橙紫液态玻璃标识，带虹彩内缘和像素粒子。透明主图为 `design/brand/animuse-glass-master.png`；浏览器图标使用去掉细线与粒子的 `animuse-glass-small.png`。`npm run brand:build` 生成浅深主题组合标识、SVG/PNG/ICO 浏览器图标、180/192/512px 安装图标和分享封面。SVG 为内嵌 PNG 的容器，保留确认稿的材质细节。全部网站品牌资源使用 `glass-v1` 缓存标记；主题切换保留彩色图形的原色。实际尺寸与浅深背景对照见 `design/brand/animuse-icon-preview.png`。
 
-## 2026-11-08 实际验证
+## 2026-11-08 首次发布验证
 
 - GitHub Linux 构建、筛选检查及部署均成功。
 - 公网浏览器 60/60 项通过，6 张截图；本站 HTTP 错误、路径越界、页面异常及控制台错误均为 0。

@@ -7,12 +7,19 @@ import { usePathname } from "next/navigation";
 import { useContext, useLayoutEffect, useRef } from "react";
 
 import { LogoTransitionContext } from "@/components/common/logo-transition-provider";
+import { useHydratedTheme } from "@/hooks/use-hydrated-theme";
 import { cn } from "@/lib/utils";
 
-export function SiteLogo({ className, navigation = false }: { className?: string; navigation?: boolean }) {
+export function SiteLogo({ className, navigation = false, appearance }: {
+  className?: string;
+  navigation?: boolean;
+  appearance?: "light" | "dark";
+}) {
   const ref = useRef<HTMLImageElement>(null);
   const transition = useContext(LogoTransitionContext);
   const pathname = routePath(usePathname());
+  const resolvedTheme = useHydratedTheme();
+  const logoTheme = appearance ?? resolvedTheme;
 
   useLayoutEffect(() => {
     const el = ref.current;
@@ -23,13 +30,13 @@ export function SiteLogo({ className, navigation = false }: { className?: string
   return (
     <Image
       ref={ref}
-      src={publicPath("/animuse-logo.svg")}
+      src={publicPath(logoTheme === "dark" ? "/animuse-logo-dark.svg?v=glass-v1" : "/animuse-logo.svg?v=glass-v1")}
       alt="Animuse"
-      width={640}
+      width={832}
       height={160}
       priority
       data-site-logo={navigation ? "navigation" : undefined}
-      className={cn("h-[25px] w-auto invert dark:invert-0", className)}
+      className={cn("h-[25px] w-auto", className)}
     />
   );
 }
